@@ -459,3 +459,8 @@ dd {
         gap: 15px !important;
     }
 }
+/* Checklist item hover animations */
+.checklist-item:hover .ing-text {
+    color: #d4af37; /* Glow gold slightly on mouse hover to indicate clickability */
+    transition: color 0.2s ease;
+}
