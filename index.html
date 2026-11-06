@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚙️ The Ultimate Recipe Vault</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Immersive UI Overlay Animations & Layout */
+        #fullscreen-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #1c212a;
+            z-index: 1000;
+            overflow-y: auto;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.4s;
+        }
+
+        #fullscreen-overlay.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .close-btn-container {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .close-vault-btn {
+            background: none;
+            border: none;
+            color: #d4af37;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            padding: 0;
+        }
+
+        .close-vault-btn:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #d4af37;
+        }
+        
+        /* Utility to freeze background body scroll when full-screen view is active */
+        body.modal-open {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="home-page" id="top">
+
+    <section>
+        <h1>The Ultimate Recipe Vault</h1>
+        <h2>Featured Recipes</h2> 
+        <p>Welcome to The Ultimate Recipe Vault! Here you'll find the most delicious recipes available online! Browse through the finest selection of recipes and start cooking now!</p>   
+
+        <!-- Isolate your interactive controls into an independent flex-row layout -->
+           <!-- Unified Full-Width Dashboard Console -->
+     <div class="dashboard-wrapper">
+        <div class="vault-control-panel">
+            <div class="control-item">
+                <label for="recipe-search">Search the vault:</label>
+                <input type="text" id="recipe-search" placeholder="Type a keyword..." aria-label="Search recipes">
+            </div>
+
+            <div class="control-item">
+                <label for="recipe-selector">Choose a recipe:</label>
+                <select id="recipe-selector">
+                    <option value="">-- Select a Dish --</option>
+                    <!-- JavaScript data loops will print options here dynamically -->
+                </select>
+            </div>
+
+            <button id="toggle-favorites" class="favorites-toggle-btn dashboard-btn" aria-label="Toggle favorites filtering">Show Favorites ❤️</button>
+            <button id="random-menu-btn" class="favorites-toggle-btn dashboard-btn">🎲 Random Meal Plan</button>
+            <button id="healthy-menu-btn" class="dashboard-btn">🥗 Healthy Meal Plan</button>
+        </div>
+    </div>
+    </section>
+
+    <!-- The Fort Knox Card Container (JavaScript handles printing the cards into here) -->
+    <div id="recipe-grid-container" class="recipe-grid"></div>
+     <div id="load-more-container" style="text-align: center; margin: 30px auto 10px auto;">
+        <button id="load-more-btn" class="favorites-toggle-btn" aria-label="Load more recipes from the vault">Load More Recipes ⏳</button>
+    </div> 
+    <div class="top-link-container">
+        <a href="#top" class="back-link">↑ Return to Top</a>
+    </div>
+
+    <!-- Immersive Immersive Full-Screen View Overlay Component -->
+    <div id="fullscreen-overlay">
+        <div class="recipe-container">
+            <div class="close-btn-container">
+                <button id="close-overlay" class="close-vault-btn">← Back to Main Menu</button>
+            </div>
+            
+            <h1 id="overlay-title"></h1>
+            <p id="overlay-subtitle" style="text-align: center; font-style: italic; margin-bottom: 30px;"></p>
+            
+            <!-- Secure Data Table for Cooking Times -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Prep Time</th>
+                        <th>Cook/Bake Time</th>
+                        <th>Servings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="table-prep"></td>
+                        <td id="table-cook"></td>
+                        <td id="table-servings"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Calorie & Nutrient Breakdown</h2>
+            <!-- Secure Data Table for Nutrition Facts -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                        <th>Fats</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="table-calories"></td>
+                        <td id="table-protein"></td>
+                        <td id="table-carbs"></td>
+                        <td id="table-fats"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Nutritional Highlights</h2>
+            <dl id="overlay-highlights"></dl>
+
+            <h2>Ingredients</h2>
+            <ul id="overlay-ingredients"></ul>
+
+            <h2>Instructions</h2>
+            <ol id="overlay-instructions"></ol>
+        </div>
+    </div>
+
+    <!-- Connecting the script files sequentially -->
+    
+    <script src="script.js"></script>
+</body> 

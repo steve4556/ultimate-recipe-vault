@@ -1,0 +1,2528 @@
+[
+  {
+    "id": "3-egg-omelette",
+    "emoji": "🍳",
+    "title": "3-Egg Omelette",
+    "image": "3 Egg Omelette.jpg",
+    "subtitle": "A simple and delicious breakfast option that's perfect for any time of day.",
+    "times": { "prep": "5 mins", "cook": "5 mins", "servings": "1 person" },
+    "nutrition": { "calories": 430, "protein": 24, "carbs": 2, "fats": 35 },
+    "highlights": [
+      { "category": "Protein", "text": "Contains 18 grams of complete protein from three large eggs to keep you full and energized." },
+      { "category": "Protein", "text": "Contains 6 grams of protein from 1/4 cup of shredded cheddar cheese." },
+      { "category": "Essential Vitamins", "text": "Rich in Vitamin D and B12, which are crucial for bone health and daily energy levels." },
+      { "category": "Healthy Fats & Choline", "text": "The yolks supply healthy fats and choline, an important nutrient for brain health and memory." }
+    ],
+    "ingredients": [
+      "3 large eggs",
+      "1 tablespoon butter",
+      "2 tablespoons shredded cheddar cheese",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Crack the eggs into a bowl, add a pinch of salt and pepper, and whisk until blended.",
+      "Melt the butter in a non-stick skillet over medium-low heat.",
+      "Pour in the eggs and let them cook undisturbed for 1 minute, then gently push the cooked edges toward the center.",
+      "When the top is mostly set but still slightly wet, sprinkle the cheese over one half.",
+      "Fold the omelet in half, slide it onto a plate, and serve hot!"
+    ]
+  },
+  {
+    "id": "blueberry-muffins",
+    "emoji": "🫐",
+    "title": "Blueberry Muffins",
+    "image": "muffins.jpg",
+    "subtitle": "Fluffy, bakery-style muffins bursting with fresh blueberries and finished with a golden crumb topping.",
+    "times": { "prep": "15 mins", "cook": "20 mins", "servings": "12 muffins" },
+    "nutrition": { "calories": 210, "protein": 4, "carbs": 32, "fats": 8 },
+    "highlights": [
+      { "category": "Antioxidant Rich", "text": "Packed with fresh blueberries providing high levels of antioxidants and Vitamin C." },
+      { "category": "Energy Source", "text": "Complex carbohydrates from flour and fruit deliver a steady, sustained energy release." },
+      { "category": "Bakery Quality", "text": "A specialized golden crumb brown-sugar structural topping adds artisan depth and texture." }
+    ],
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "1/2 cup granulated sugar",
+      "2 teaspoons baking powder",
+      "1/2 teaspoon salt",
+      "1 cup fresh blueberries",
+      "1/2 cup whole milk",
+      "1/2 cup melted butter",
+      "2 large eggs",
+      "1/4 cup brown sugar (for topping)"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and line a 12-cup muffin tin with paper liners.",
+      "In a large bowl, whisk together the flour, sugar, baking powder, and salt.",
+      "Toss the fresh blueberries gently into the dry mixture until lightly coated in flour.",
+      "In a separate bowl, whisk the milk, melted butter, and eggs together.",
+      "Pour the wet mixture into the dry ingredients and stir gently until just combined (do not overmix).",
+      "Divide the batter evenly among the muffin cups and sprinkle the tops with brown sugar.",
+      "Bake for 20 minutes or until a toothpick inserted into the center comes out clean. Let cool before serving!"
+    ]
+  },
+  {
+    "id": "chicken-vegetable-stir-fry",
+    "emoji": "🥢",
+    "title": "Chicken and Vegetable Stir Fry",
+    "image": "chicken and veggie stir-fry.jpg",
+    "subtitle": "A healthy and flavorful dish that's quick to prepare and perfect for a weeknight.",
+    "times": { "prep": "10 mins", "cook": "10 mins", "servings": "4 people" },
+    "nutrition": { "calories": 380, "protein": 35, "carbs": 24, "fats": 12 },
+    "highlights": [
+      { "category": "High Protein", "text": "Delivers 35 grams of high-quality lean chicken protein per serving to support satiety." },
+      { "category": "Vitamin Loaded", "text": "Fresh bell peppers and broccoli florets inject a massive dose of Vitamin C and essential dietary fiber." },
+      { "category": "Quick Clean Meal", "text": "A true one-skillet balanced recipe that cooks in under 10 minutes once your prep work is finished." }
+    ],
+    "ingredients": [
+      "1 lb boneless, skinless chicken breasts, cut into bite-sized cubes",
+      "2 cups broccoli florets",
+      "1 large bell pepper (any color), sliced into thin strips",
+      "1 medium carrot, thinly sliced into rounds",
+      "2 cloves garlic, minced",
+      "1 tablespoon freshly grated ginger",
+      "3 tablespoons low-sodium soy sauce",
+      "1 tablespoon sesame oil",
+      "1 tablespoon cornstarch blended with 2 tablespoons water"
+    ],
+    "instructions": [
+      "Heat the sesame oil in a large skillet or wok over medium-high heat until hot.",
+      "Add the cubed chicken to the pan and sauté for 5 to 6 minutes, stirring frequently until cooked through and golden.",
+      "Toss the minced garlic and grated ginger into the pan with the chicken and cook for 30 seconds until highly fragrant.",
+      "Add the broccoli, bell pepper strips, and sliced carrots directly into the skillet, tossing with the chicken.",
+      "Stir-fry the vegetables for 3 to 4 minutes until they are vibrant in color and tender-crisp.",
+      "Pour the low-sodium soy sauce and your cornstarch slurry liquid over the mixture, stirring immediately to combine.",
+      "Simmer for 1 minute as the sauce bubbles and HTML thickens into a beautiful, glossy coating. Serve hot over a bed of rice or noodles!"
+    ]
+  },
+  {
+    "id": "chocolate-chip-cookies",
+    "emoji": "🍪",
+    "title": "Chocolate Chip Cookies",
+    "image": "cookies.jpg",
+    "subtitle": "Classic, golden-brown cookies featuring crisp edges and a soft, chocolatey center.",
+    "times": { "prep": "15 mins", "cook": "10 mins", "servings": "24 cookies" },
+    "nutrition": { "calories": 150, "protein": 2, "carbs": 20, "fats": 7 },
+    "highlights": [
+      { "category": "Texture Control", "text": "A balanced ratio of brown sugar to white sugar creates the perfect crispy edge and chewy middle." },
+      { "category": "Rich Flavor", "text": "Premium semi-sweet chocolate morsels melt into pools of rich chocolate throughout the dough." },
+      { "category": "Holiday Classic", "text": "The perfect quick-bake traditional recipe that fills the kitchen with a comforting aroma." }
+    ],
+    "ingredients": [
+      "2 1/4 cups all-purpose flour",
+      "1/2 teaspoon baking soda",
+      "1 cup unsalted butter, softened",
+      "1/2 cup granulated sugar",
+      "1 cup packed brown sugar",
+      "1 teaspoon salt",
+      "2 teaspoons vanilla extract",
+      "2 large eggs",
+      "2 cups semi-sweet chocolate chips"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and line two large baking sheets with parchment paper.",
+      "In a medium bowl, whisk together the flour and baking soda, then set it aside.",
+      "In a large bowl, cream together the softened butter, granulated sugar, brown sugar, salt, and vanilla extract until smooth.",
+      "Beat in the eggs one at a time until completely integrated into the creamed mixture.",
+      "Gradually stir in the dry ingredients until a soft dough forms, then fold in the chocolate chips uniformly.",
+      "Drop rounded tablespoons of dough about 2 inches apart onto your prepared baking sheets.",
+      "Bake for 9 to 11 minutes or until the edges are beautifully golden brown. Let cool on the sheet for 2 minutes before transferring to a wire rack!"
+    ]
+  },
+  {
+    "id": "crispy-baked-chicken",
+    "emoji": "🍗",
+    "title": "Crispy Baked Chicken",
+    "image": "crispy-chicken.jpg",
+    "subtitle": "Tender chicken pieces rolled in savory parmesan garlic potato flakes and oven-baked in rich melted butter.",
+    "times": { "prep": "15 mins", "cook": "45 mins", "servings": "4 people" },
+    "nutrition": { "calories": 460, "protein": 42, "carbs": 18, "fats": 24 },
+    "highlights": [
+      { "category": "High Protein", "text": "Delivers 42 grams of high-quality protein per serving to keep you full and satisfied." },
+      { "category": "Crunchy Coating", "text": "A unique blend of crushed potato flakes and grated parmesan cheese creates a satisfying, crunchy crust without deep frying." },
+      { "category": "Juicy Interior", "text": "Baking the chicken in a layer of melted butter seals in the natural juices for an incredibly tender result." }
+    ],
+    "ingredients": [
+      "4 boneless, skinless chicken breasts (or chicken tenders)",
+      "1 cup instant potato flakes",
+      "1/2 cup grated parmesan cheese",
+      "1 teaspoon garlic powder",
+      "1 teaspoon dried parsley",
+      "1/2 cup unsalted butter, melted",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and lightly grease a large baking dish.",
+      "In a shallow bowl, mix together the instant potato flakes, grated parmesan cheese, garlic powder, dried parsley, salt, and pepper.",
+      "Melt the butter and pour it into a second separate shallow bowl.",
+      "Dip each piece of chicken thoroughly into the melted butter, coating it completely.",
+      "Roll the buttered chicken immediately in the potato flake and parmesan mixture, pressing gently to make the crunchy coating stick.",
+      "Place the coated chicken pieces side-by-side into your prepared baking dish, and drizzle any remaining melted butter over the top.",
+      "Bake uncovered for 40 to 45 minutes, or until the crust is a deep golden brown and the chicken reaches an internal temperature of 165°F (74°C). Serve hot!"
+    ]
+    },
+    {
+    "id": "double-chocolate-brownies",
+    "emoji": "🟫",
+    "title": "Double Chocolate Brownies",
+    "image": "brownies.jpg",
+    "subtitle": "A rich, fudgy, and incredibly decadent treat packed with double the chocolate goodness.",
+    "times": { "prep": "15 mins", "cook": "30 mins", "servings": "16 squares" },
+    "nutrition": { "calories": 200, "protein": 2, "carbs": 28, "fats": 11 },
+    "highlights": [
+      { "category": "Fudgy Texture", "text": "A higher fat-to-flour ratio ensures these brownies stay dense, fudgy, and moist instead of cakey." },
+      { "category": "Double Chocolate", "text": "Combines rich cocoa powder in the batter with solid semi-sweet chocolate chunks folded in for texture." },
+      { "category": "Shiny Crust", "text": "Whipping the eggs and sugar thoroughly creates that signature, beautiful crinkle-top paper crust." }
+    ],
+    "ingredients": [
+      "1/2 cup unsalted butter, melted",
+      "1/2 cup cocoa powder",
+      "1 cup granulated sugar",
+      "2 large eggs",
+      "1 teaspoon vanilla extract",
+      "1/2 cup all-purpose flour",
+      "1/4 teaspoon salt",
+      "1/4 teaspoon baking powder",
+      "1/2 cup semi-sweet chocolate chips"
+    ],
+    "instructions": [
+      "Preheat your oven to 350°F (175°C) and grease an 8-inch square baking pan or line it with parchment paper.",
+      "In a large bowl, blend the melted butter, sugar, eggs, and vanilla extract together thoroughly.",
+      "Stir in the cocoa powder, flour, salt, and baking powder until just combined (do not overmix or they will lose their fudginess).",
+      "Gently fold in the chocolate chips until they are evenly distributed through the thick batter.",
+      "Spread the batter evenly into your prepared baking pan, smoothing out the top with a spatula.",
+      "Bake for 20 to 22 minutes, or until a toothpick inserted into the center comes out with a few moist crumbs attached. Let cool completely before slicing into squares!"
+    ]
+  },
+    {
+    "id": "onion-canape",
+    "emoji": "🧅",
+    "title": "Onion Canape",
+    "image": "onion-canape.jpg",
+    "subtitle": "A classic party bite featuring a rich whipped butter and mayo base spread over thin bread, topped with fresh onion and bubbly parmesan.",
+    "times": { "prep": "15 mins", "cook": "15 mins", "servings": "Flexible Batches" },
+    "nutrition": { "calories": 85, "protein": 2, "carbs": 5, "fats": 7 },
+    "highlights": [
+      { "category": "Classic Presentation", "text": "Elegant and timeless finger food that makes an impression at any gathering." },
+      { "category": "Rich Base", "text": "A beautifully whipped blend of premium butter and mayonnaise creates a melting, luxurious texture." },
+      { "category": "Bubbly Finish", "text": "Topped with sharp parmesan that browns to absolute crispy perfection under the heat." }
+    ],
+    "ingredients": [
+      "1 loaf thin sliced white or party bread",
+      "1/2 cup unsalted butter, softened",
+      "1/4 cup mayonnaise",
+      "1 cup sweet white onion, finely minced",
+      "1/2 cup grated parmesan cheese",
+      "1/4 teaspoon garlic powder"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and line a large baking sheet with parchment paper.",
+      "Using a cookie cutter or knife, trim the bread slices into clean, decorative circles or squares.",
+      "In a small bowl, whip together the softened butter, mayonnaise, and a pinch of garlic powder until completely smooth.",
+      "Spread a generous layer of the butter mixture across each piece of bread, coating them completely to the edges.",
+      "Top the mixture with a clean layer of finely minced sweet white onions.",
+      "Dust the tops heavily with grated parmesan cheese, pressing lightly so it sticks to the onions.",
+      "Bake for 12 to 15 minutes until the bread is nicely toasted on the bottom, and the cheese on top is completely melted, bubbly, and golden. Serve warm!"
+    ]
+  },
+  {
+    "id": "protein-breakfast-biscuits",
+    "emoji": "🫓",
+    "title": "Protein Breakfast Biscuits",
+    "image": "biscuits.jpg",
+    "subtitle": "A savory, fluffy breakfast meal-prep option packed with chicken sausage, cheddar cheese, and Greek yogurt.",
+    "times": { "prep": "15 mins", "cook": "25 mins", "servings": "12 biscuits" },
+    "nutrition": { "calories": 232, "protein": 13, "carbs": 23, "fats": 10 },
+    "highlights": [
+      { "category": "Meal Prep Friendly", "text": "Yields 12 biscuits that freeze beautifully, making healthy weekday breakfasts completely effortless." },
+      { "category": "Smart Protein Swap", "text": "Utilizes high-protein Greek yogurt and lean chicken sausage to boost protein content without adding excess fat." },
+      { "category": "Fluffy & Savory", "text": "The chemical reaction between baking powder and Greek yogurt creates a wonderfully light, airy texture." }
+    ],
+    "ingredients": [
+      "2 cups self-rising flour",
+      "1 cup plain, non-fat Greek yogurt",
+      "1/2 cup cooked chicken sausage, crumbled",
+      "1/2 cup sharp cheddar cheese, shredded",
+      "1/4 cup unsalted butter, cold and cubed",
+      "1/4 cup whole milk (as needed for moisture)",
+      "1/2 teaspoon garlic powder"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and grease a large baking sheet or line it with parchment paper.",
+      "In a large bowl, combine the self-rising flour and garlic powder.",
+      "Using a pastry cutter or your fingers, work the cold cubed butter into the flour until the mixture resembles coarse crumbs.",
+      "Stir in the shredded cheddar cheese and crumbled chicken sausage until evenly distributed throughout the dry base.",
+      "Add the plain Greek yogurt and stir gently. If the dough is too dry to form, add the milk one tablespoon at a time until a soft dough forms.",
+      "Turn the dough out onto a lightly floured surface, press it down to about 1-inch thickness, and cut into 12 even rounds using a biscuit cutter.",
+      "Arrange the biscuits side-by-side on your prepared baking sheet and bake for 22 to 25 minutes until the tops are beautifully golden brown. Serve warm!"
+    ]
+  },
+  {
+    "id": "pizza-loaves",
+    "emoji": "🍕",
+    "title": "Pizza Loaves",
+    "image": "pizza-loaves.jpg",
+    "subtitle": "A fun and crispy twist on pizza night featuring meat-stuffed sourdough baguettes baked to bubbly perfection.",
+    "times": { "prep": "15 mins", "cook": "23 mins", "servings": "4 people" },
+    "nutrition": { "calories": 615, "protein": 52, "carbs": 34, "fats": 35 },
+    "highlights": [
+      { "category": "High Protein Boost", "text": "Packed with a massive 52 grams of muscle-building protein per serving from high-quality meats and melted cheese." },
+      { "category": "Sourdough Crunch", "text": "Using hollowed-out sourdough baguettes creates an incredibly sturdy, crispy crust that holds toppings perfectly." },
+      { "category": "Customizable Base", "text": "The meat-stuffed foundation can easily handle extra vegetables or a drizzle of hot honey before serving." }
+    ],
+    "ingredients": [
+      "2 sourdough baguettes (about 12 inches each)",
+      "1/2 lb sweet Italian sausage, cooked and crumbled",
+      "1/2 cup pepperoni, finely chopped",
+      "1 1/2 cups marinara sauce",
+      "2 cups shredded mozzarella cheese",
+      "1/4 cup grated parmesan cheese",
+      "1 teaspoon Italian seasoning",
+      "2 tablespoons melted butter mixed with 1/2 teaspoon garlic powder"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and line a large baking sheet with foil.",
+      "Slice the top third off each sourdough baguette lengthwise and hollow out the bottoms slightly to form sturdy bread boats.",
+      "Brush the inside and outside edges of the bread boats with the garlic-infused melted butter.",
+      "Place the baguettes on the baking sheet and toast them in the oven for 5 minutes until lightly crisp.",
+      "Remove from the oven and spread a generous layer of marinara sauce across the bottom of each boat.",
+      "Layer in the crumbled Italian sausage and chopped pepperoni, then blanket heavily with shredded mozzarella cheese.",
+      "Dust the tops with parmesan cheese and Italian seasoning, then bake for 15 to 18 minutes until the cheese is bubbling and golden brown. Slice and serve hot!"
+    ]
+  },
+  {
+    "id": "pumpkin-raisin-nut-bread",
+    "emoji": "🍞",
+    "title": "Pumpkin Raisin Nut Bread",
+    "image": "pumpkin-bread.jpg",
+    "subtitle": "A deeply spiced autumn classic loaded with pure pumpkin, sweet plump raisins, and crunchy chopped pecans.",
+    "times": { "prep": "20 mins", "cook": "25-60 mins", "servings": "Loaves or Muffins" },
+    "nutrition": { "calories": 220, "protein": 3, "carbs": 36, "fats": 8 },
+    "highlights": [
+      { "category": "Autumn Spice Blend", "text": "Infused with cinnnamon, nutmeg, and cloves to deliver an incredible, deeply comforting seasonal aroma." },
+      { "category": "Moisture Balance", "text": "Pure pumpkin puree ensures a perfectly dense, moist texture that stays fresh for days." },
+      { "category": "Textural Contrast", "text": "Combines sweet, juicy plump raisins with crunchy chopped pecans for a satisfying bite." }
+    ],
+    "ingredients": [
+      "1 3/4 cups all-purpose flour",
+      "1 teaspoon baking soda",
+      "1/2 teaspoon salt",
+      "2 teaspoons pumpkin pie spice",
+      "1/2 cup vegetable oil",
+      "1 cup granulated sugar",
+      "2 large eggs",
+      "1 cup pure pumpkin puree",
+      "1/2 cup sweet raisins",
+      "1/2 cup chopped pecans or walnuts"
+    ],
+    "instructions": [
+      "Preheat your oven to 350°F (175°C) and grease an 8x4 inch loaf pan (or prepare a 12-cup muffin tin).",
+      "In a medium bowl, whisk together the flour, baking soda, salt, and pumpkin pie spice, then set aside.",
+      "In a large bowl, beat together the vegetable oil, sugar, eggs, and pure pumpkin puree until completely smooth.",
+      "Gradually add the dry ingredients into the wet mixture, stirring gently with a spatula until just combined.",
+      "Gently fold in the plump raisins and chopped pecans until they are uniformly distributed through the thick batter.",
+      "Pour the batter into your prepared loaf pan, smoothing out the top evenly.",
+      "Bake for 50 to 60 minutes for a loaf (or 25 minutes for muffins) until a toothpick inserted into the center comes out clean. Let cool completely before slicing!"
+    ]
+  },
+  {
+    "id": "roasted-dates",
+    "emoji": "🥓",
+    "title": "Roasted Dates w/ Parm & Bacon",
+    "image": "roasted-dates.jpg",
+    "subtitle": "Sweet, jammy pitted dates stuffed with cream cheese and parmesan, wrapped in crisp smoky bacon.",
+    "times": { "prep": "20 mins", "cook": "20 mins", "servings": "18+ pieces" },
+    "nutrition": { "calories": 90, "protein": 3, "carbs": 10, "fats": 5 },
+    "highlights": [
+      { "category": "Flavor Balance", "text": "Creates a masterful flavor contrast by pairing naturally sweet, jammy dates with salty, smoky bacon." },
+      { "category": "Creamy Filling", "text": "A smooth stuffing blend of rich cream cheese and sharp parmesan melts beautifully in the oven center." },
+      { "category": "Perfect Crisp", "text": "Baking at high heat ensures the outer bacon layer renders down to an incredibly satisfying crunch." }
+    ],
+    "ingredients": [
+      "18 large Medjool dates, pitted",
+      "4 oz cream cheese, softened",
+      "1/4 cup grated parmesan cheese",
+      "9 slices of bacon, cut in half crosswise",
+      "18 toothpicks, soaked in water for 10 minutes",
+      "1 tablespoon hot honey (optional drizzle)"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and line a rimmed baking sheet with aluminum foil or parchment paper.",
+      "In a small bowl, thoroughly mix the softened cream cheese and grated parmesan cheese together until smooth.",
+      "Gently slice open one side of each pitted date to form a pocket, and stuff it with a rounded teaspoon of the cheese mixture.",
+      "Press the stuffed date edges back together tightly to seal the rich cheese filling inside safely.",
+      "Wrap one half-slice of bacon snugly around the middle of each date, securing it completely with a soaked toothpick.",
+      "Arrange the wrapped dates in a single layer on your prepared baking sheet, spacing them evenly.",
+      "Bake for 15 to 20 minutes, flipping them over halfway through, until the bacon wrapping is completely cooked and beautifully crisp. Serve warm!"
+    ]
+  },
+    
+  {
+    "id": "french-scalloped-potatoes",
+    "emoji": "🍽️",
+    "title": "French-Scalloped Potatoes",
+    "image": "scalloped-potatoes.jpg",
+    "subtitle": "Layers of thinly sliced potatoes and tender onions baked in a rich, thyme-infused garlic cream sauce.",
+    "times": { "prep": "20 mins", "cook": "55 mins", "servings": "4 people" },
+    "nutrition": { "calories": 260, "protein": 6, "carbs": 20, "fats": 18 },
+    "highlights": [
+      { "category": "Comfort Classic", "text": "Rich, creamy thyme-infused sauce delivers traditional French comfort flavor in every bite." },
+      { "category": "Perfect Texture", "text": "Thinly sliced layers bake down to tender, melt-in-your-mouth perfection." },
+      { "category": "Garlic & Herb Blend", "text": "Fresh minced garlic and earthy thyme elevate the cream sauce base beautifully." }
+    ],
+    "ingredients": [
+      "4 large baking potatoes, peeled and thinly sliced",
+      "1 medium onion, thinly sliced",
+      "2 cloves garlic, minced",
+      "3 tablespoons butter",
+      "3 tablespoons all-purpose flour",
+      "2 1/2 cups whole milk (or heavy cream)",
+      "1 teaspoon fresh thyme leaves",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and butter a 9x13 inch baking dish.",
+      "In a medium saucepan, melt the butter over medium heat. Stir in the flour and cook for 1 minute.",
+      "Gradually whisk in the milk, minced garlic, thyme, salt, and pepper. Bring to a simmer, stirring constantly until thick and smooth.",
+      "Arrange half of the thinly sliced potatoes in an overlapping layer at the bottom of the prepared baking dish.",
+      "Top with the sliced onions, then arrange the remaining potato slices evenly on top.",
+      "Pour the warm garlic cream sauce uniformly over all the potato layers, pressing down gently so they are submerged.",
+      "Cover the dish with foil and bake for 35 minutes. Remove the foil and bake uncovered for an additional 20 minutes until bubbling and beautifully golden brown on top. Let rest 5 minutes before slicing!"
+    ]
+  },
+  {
+    "id": "grilled-chicken-salad",
+    "emoji": "🥗",
+    "title": "Grilled Chicken Salad",
+    "image": "Grilled Chicken Salad.jpg",
+    "subtitle": "A refreshing and satisfying salad packed with flavor and fresh vegetables.",
+    "times": { "prep": "15 mins", "cook": "10 mins", "servings": "2 people" },
+    "nutrition": { "calories": 390, "protein": 38, "carbs": 10, "fats": 22 },
+    "highlights": [
+      { "category": "High Protein", "text": "Packed with 38 grams of lean protein from grilled chicken breast to support muscle recovery and fullness." },
+      { "category": "Low Carb", "text": "An excellent low-carbohydrate meal option loaded with crisp, fiber-rich garden greens." },
+      { "category": "Micronutrient Rich", "text": "Fresh cucumbers and cherry tomatoes provide essential vitamins, minerals, and clean hydration." }
+    ],
+    "ingredients": [
+      "2 skinless, boneless chicken breasts",
+      "4 cups mixed salad greens (romaine, spinach, or arugula)",
+      "1 cup cherry tomatoes, halved",
+      "1 large cucumber, sliced",
+      "1/4 cup red onion, thinly sliced",
+      "2 tablespoons olive oil",
+      "1 tablespoon balsamic vinegar",
+      "Salt, pepper, and garlic powder to taste"
+    ],
+    "instructions": [
+      "Season both sides of the chicken breasts evenly with salt, black pepper, and garlic powder.",
+      "Heat a grill pan or outdoor grill over medium-high heat and brush lightly with olive oil.",
+      "Grill the chicken for 5 to 6 minutes per side, or until the internal temperature reaches 165°F (74°C). Remove from heat and let rest.",
+      "While the chicken rests, wash and chop your salad greens, cherry tomatoes, and cucumber.",
+      "Toss the greens, tomatoes, cucumber, and sliced red onion together in a large salad bowl.",
+      "Slice the rested grilled chicken breast into clean, bite-sized strips.",
+      "Top the salad with the warm chicken slices, drizzle uniformly with olive oil and balsamic vinegar, and serve immediately!"
+    ]
+  },
+  {
+    "id": "cheese-appetizers",
+    "emoji": "🧀",
+    "title": "Melted Cheese Hor D'oeuvres",
+    "image": "cheese-appetizers.jpg",
+    "subtitle": "A warm, savory party appetizer featuring blended cheddar and Swiss cheese broiled on crisp onion crackers.",
+    "times": { "prep": "10 mins", "cook": "5 mins", "servings": "3 platters" },
+    "nutrition": { "calories": 160, "protein": 5, "carbs": 10, "fats": 11 },
+    "highlights": [
+      { "category": "Party Ready", "text": "Yields three full platters, making it the perfect quick-prep crowd-pleaser for any gathering." },
+      { "category": "Cheese Blend", "text": "Combines sharp cheddar and smooth Swiss cheese for a beautifully balanced, gooey texture." },
+      { "category": "Savory Crunch", "text": "Broiling the cheese directly on crisp onion crackers adds an incredible, savory crunch to every bite." }
+    ],
+    "ingredients": [
+      "1 cup sharp cheddar cheese, shredded",
+      "1 cup Swiss cheese, shredded",
+      "1/2 cup mayonnaise",
+      "1 box crisp onion crackers",
+      "1/2 teaspoon paprika",
+      "2 tablespoons fresh chives, finely chopped"
+    ],
+    "instructions": [
+      "Preheat your oven's broiler to high and line a large baking sheet with foil.",
+      "In a medium bowl, mix together the shredded cheddar, shredded Swiss, and mayonnaise until evenly blended.",
+      "Arrange the onion crackers side-by-side in a single layer on your prepared baking sheet.",
+      "Spoon a rounded tablespoon of the cheese mixture onto the center of each cracker.",
+      "Dust the tops of the cheese mounds lightly with a pinch of paprika for color and subtle flavor.",
+      "Place under the broiler for 3 to 5 minutes, watching very closely, until the cheese is melted, bubbly, and lightly golden brown.",
+      "Garnish with freshly chopped chives and serve immediately while warm!"
+    ]
+  },
+   {
+    "id": "rosemary-steak-fries",
+    "emoji": "🥔",
+    "title": "Rosemary Steak Fries",
+    "image": "steak-fries.jpg",
+    "subtitle": "Thick-cut baking potatoes seasoned with aromatic rosemary, garlic, herbs, and a kick of crushed red pepper flakes.",
+    "times": { "prep": "15 mins", "cook": "40 mins", "servings": "6 people" },
+    "nutrition": { "calories": 190, "protein": 3, "carbs": 25, "fats": 10 },
+    "highlights": [
+      { "category": "Thick Cut", "text": "Heavy steak-house wedge slicing provides a crispy outer skin while retaining a soft, fluffy potato core." },
+      { "category": "Aromatic Herbs", "text": "Fresh chopped rosemary and minced garlic coat the wedges to release an incredible savory fragrance during roasting." },
+      { "category": "Spicy Kick", "text": "A subtle pinch of crushed red pepper flakes cuts through the rich olive oil coating for an exciting depth of heat." }
+    ],
+    "ingredients": [
+      "4 large russet baking potatoes, washed and cut into wedges",
+      "3 tablespoons olive oil",
+      "2 tablespoons fresh rosemary, finely chopped",
+      "3 cloves garlic, minced",
+      "1/2 teaspoon crushed red pepper flakes",
+      "1 teaspoon sea salt",
+      "1/2 teaspoon freshly cracked black pepper"
+    ],
+    "instructions": [
+      "Preheat your oven to 420°F (215°C) and lightly grease two large rimmed baking sheets.",
+      "Thoroughly pat the sliced potato wedges completely dry with paper towels to ensure maximum crispiness.",
+      "In a large bowl, toss the potato wedges with the olive oil until every single wedge is evenly glossy.",
+      "Add the chopped fresh rosemary, minced garlic, pepper flakes, sea salt, and black pepper, tossing again to coat evenly.",
+      "Arrange the wedges in a single layer across your prepared baking sheets, ensuring they don't overlap or crowd each other.",
+      "Roast for 35 to 40 minutes, flipping the wedges halfway through, until they are beautifully browned and crisp on the edges. Serve hot!"
+    ]
+  },
+  {
+    "id": "casserole",
+    "emoji": "🥘",
+    "title": "Southern Chicken Casserole",
+    "image": "casserole.jpg",
+    "subtitle": "A comforting, hearty southern classic featuring crisp bacon, tender chicken, and pan-browned potatoes.",
+    "times": { "prep": "20 mins", "cook": "40 mins", "servings": "4 people" },
+    "nutrition": { "calories": 790, "protein": 62, "carbs": 45, "fats": 40 },
+    "highlights": [
+      { "category": "High Protein Heavyweight", "text": "Delivers a massive 62 grams of high-quality protein per serving from fresh chicken breast and real bacon." },
+      { "category": "Southern Comfort", "text": "Pan-browning the potatoes before baking creates a beautifully rich foundation of flavor." },
+      { "category": "Crowd Pleaser", "text": "A hearty and dense all-in-one skillet meal prep option that reheats beautifully for leftovers." }
+    ],
+    "ingredients": [
+      "1.5 lbs chicken breast, cubed",
+      "4 large baking potatoes, cubed",
+      "6 slices of bacon, diced",
+      "1 cup sharp cheddar cheese, shredded",
+      "1/2 cup heavy cream",
+      "1 teaspoon onion powder",
+      "1 teaspoon smoked paprika",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and grease a large 9x13 inch baking casserole dish.",
+      "In a large skillet over medium-high heat, fry the diced bacon until beautifully crisp, then remove the bacon bits and leave the grease in the pan.",
+      "Toss your cubed potatoes directly into the hot bacon grease and cook for 8 to 10 minutes until lightly browned, then transfer them to the baking dish.",
+      "Season the cubed chicken breasts with smoked paprika, onion powder, salt, and pepper, and sear them in the same skillet for 5 minutes until golden.",
+      "Layer the seared chicken evenly over the pan-browned potatoes inside your baking dish.",
+      "Pour the heavy cream uniformly across the chicken and potatoes, then top with the shredded cheddar cheese and crisp bacon bits.",
+      "Bake uncovered for 20 to 25 minutes until the cheese is completely melted, bubbling, and golden brown. Serve hot!"
+    ]
+  },
+  {
+    "id": "sorbet",
+    "emoji": "🍧",
+    "title": "Strawberry Mango Sorbet",
+    "image": "sorbet.jpg",
+    "subtitle": "A vibrant, icy-smooth refreshment exploding with naturally sweet frozen fruits and a splash of zesty citrus.",
+    "times": { "prep": "10 mins", "cook": "8 hours", "servings": "4 people" },
+    "nutrition": { "calories": 60, "protein": 1, "carbs": 15, "fats": 0 },
+    "highlights": [
+      { "category": "Naturally Sweet", "text": "Zero added sugars or corn syrups—rely entirely on the natural fructose sweetness of ripe mangoes and sweet strawberries." },
+      { "category": "Fat Free Refreshment", "text": "A clean, dairy-free, and 100% fat-free dessert option that is incredibly light on the stomach." },
+      { "category": "Vitamin C Boost", "text": "A massive antioxidant burst driven by a fresh splash of zesty citrus lemon juice." }
+    ],
+    "ingredients": [
+      "2 cups frozen sweet strawberries",
+      "2 cups frozen ripe mango chunks",
+      "1 tablespoon fresh lemon juice",
+      "1/4 cup warm water (added gradually to aid blending moisture)"
+    ],
+    "instructions": [
+      "Pull your frozen strawberries and mango chunks out of the freezer and let them sit at room temperature for 5 minutes to soften slightly.",
+      "Transfer the fruit directly into a high-powered food processor or blender.",
+      "Drizzle the fresh lemon juice and 2 tablespoons of warm water over the fruit pieces.",
+      "Pulse and blend on high speed, scraping down the sides as necessary, until the mixture is completely uniform, glossy, and smooth.",
+      "Pour the smooth sorbet mixture into a chilled loaf pan or freezer-safe container.",
+      "Freeze for a solid 6 to 8 hours until completely firm, then scoop with a warm metal spoon and serve cold!"
+    ]
+  },
+  {
+    "id": "sweet-sour-meatballs",
+    "emoji": "🧆",
+    "title": "Sweet & Sour Meatballs",
+    "image": "sweet-sour-meatballs.jpg",
+    "subtitle": "Savory chopmeat meatballs spiked with horseradish and Tabasco, baked tender and coated in a bold, rich homemade glaze.",
+    "times": { "prep": "20 mins", "cook": "20 mins", "servings": "4-6 people" },
+    "nutrition": { "calories": 410, "protein": 26, "carbs": 32, "fats": 18 },
+    "highlights": [
+      { "category": "Bold Glaze Flavor", "text": "Coated in a bold, rich homemade glaze that perfectly balances sweet and sour elements." },
+      { "category": "Zesty Protein Kick", "text": "Delivers 26 grams of protein per serving, spiked with horseradish and Tabasco for an exciting kick of flavor." },
+      { "category": "Oven Baked Tender", "text": "Baking the savory chopmeat meatballs ensures they stay incredibly juicy and tender on the inside." }
+    ],
+    "ingredients": [
+      "1.5 lbs ground beef (chopmeat)",
+      "1/2 cup breadcrumbs",
+      "1 large egg",
+      "1 tablespoon prepared horseradish",
+      "1/2 teaspoon Tabasco sauce",
+      "1/2 cup ketchup",
+      "1/4 cup brown sugar",
+      "2 tablespoons apple cider vinegar",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and lightly grease a large rimmed baking sheet.",
+      "In a large bowl, combine the ground beef, breadcrumbs, egg, horseradish, Tabasco, salt, and pepper.",
+      "Roll the mixture into even, bite-sized meatballs and arrange them across your prepared baking sheet.",
+      "Bake the meatballs for 15 to 20 minutes until they are completely cooked through and lightly browned.",
+      "While baking, whisk together the ketchup, brown sugar, and apple cider vinegar in a saucepan over medium heat until bubbly and smooth.",
+      "Toss the hot baked meatballs directly into the saucepan, coating them uniformly in the rich sweet and sour glaze. Serve hot!"
+    ]
+  },
+  {
+    "id": "onion-spread",
+    "emoji": "🧅",
+    "title": "Vidalia Onion Spread",
+    "image": "onion-spread.jpg",
+    "subtitle": "A sweet, deeply caramelized roasted Vidalia onion and garlic spread blended with fresh chives.",
+    "times": { "prep": "15 mins", "cook": "40 mins", "servings": "8 servings" },
+    "nutrition": { "calories": 95, "protein": 1, "carbs": 12, "fats": 5 },
+    "highlights": [
+      { "category": "Natural Sweetness", "text": "Relies on the natural sugars released during the slow roasting of genuine Vidalia onions." },
+      { "category": "Smooth Creamy Base", "text": "Blends seamlessly into a velvety texture that pairs perfectly with toasted baguettes or crackers." },
+      { "category": "Aromatic Herbs", "text": "Finished with a generous fold of fresh, sharp chives to balance the deep sweetness." }
+    ],
+    "ingredients": [
+      "2 large Vidalia onions, diced",
+      "1 whole head of garlic",
+      "2 tablespoons olive oil",
+      "4 oz cream cheese, softened",
+      "1/4 cup sour cream",
+      "3 tablespoons fresh chives, finely chopped",
+      "Salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C). Slice the top off the garlic head, drizzle with 1 teaspoon of olive oil, and wrap it tightly in foil.",
+      "Toss the diced Vidalia onions in the remaining olive oil, salt, and pepper, and spread them evenly on a baking sheet.",
+      "Place both the wrapped garlic and the onion sheet into the oven, roasting for 35 to 40 minutes until the onions are deeply caramelized and the garlic is soft.",
+      "Squeeze the roasted garlic cloves out of their skins into a food processor, adding the caramelized onions, cream cheese, and sour cream.",
+      "Pulse until the spread reaches your desired consistency (completely smooth or slightly chunky).",
+      "Transfer to a bowl, fold in the freshly chopped chives, and chill for at least 1 hour before serving cold with your favorite crackers!"
+    ]
+  },
+  {
+    "id": "fudge-cake",
+    "emoji": "🎂",
+    "title": "Wellesley Fudge Cake",
+    "image": "fudge-cake.jpg",
+    "subtitle": "A rich, traditional chocolate fudge layer cake topped with a velvety, smooth, homemade chocolate frosting.",
+    "times": { "prep": "25 mins", "cook": "35 mins", "servings": "2 layers" },
+    "nutrition": { "calories": 380, "protein": 4, "carbs": 54, "fats": 16 },
+    "highlights": [
+      { "category": "Traditional Recipe", "text": "A time-tested, rich chocolate fudge layer cake celebrating authentic New England baking heritage." },
+      { "category": "Velvety Frosting", "text": "Topped with a silky, cooked chocolate fudge frosting that sets to an incredibly smooth finish." },
+      { "category": "Dense Crumb Structure", "text": "A specialized chocolate-custard base creates an exceptionally moist and decadent crumb." }
+    ],
+    "ingredients": [
+      "4 oz unsweetened chocolate, chopped",
+      "1/2 cup water",
+      "1 3/4 cups granulated sugar",
+      "1/2 cup unsalted butter, softened",
+      "3 large eggs",
+      "2 cups all-purpose flour",
+      "1 teaspoon baking soda",
+      "1/2 teaspoon salt",
+      "3/4 cup milk",
+      "1 teaspoon vanilla extract"
+    ],
+    "instructions": [
+      "Preheat your oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.",
+      "In a small saucepan over low heat, cook the chopped chocolate and water together, stirring constantly until melted and smooth. Stir in 1/4 cup of the sugar, then let cool.",
+      "In a large bowl, cream the softened butter and remaining 1 1/2 cups of sugar together until light and fluffy.",
+      "Beat in the eggs one at a time, then stir in the cooled, melted chocolate mixture and vanilla extract thoroughly.",
+      "Whisk together the flour, baking soda, and salt. Add to the creamed mixture alternately with the milk, beating well after each addition.",
+      "Divide the thick chocolate batter evenly between your two prepared cake pans, smoothing the tops.",
+      "Bake for 30 to 35 minutes until a toothpick inserted into the center comes out clean. Let cool completely in the pans before frosting!"
+    ]
+  },
+  {
+    "id": "garlic-butter-salmon",
+    "emoji": "🐟",
+    "title": "Garlic Butter Salmon",
+    "image": "salmon.jpg",
+    "subtitle": "Tender, flaky pan-seared salmon fillets bathed in a rich, zesty garlic butter sauce.",
+    "times": { "prep": "10 mins", "cook": "12 mins", "servings": "2 people" },
+    "nutrition": { "calories": 410, "protein": 34, "carbs": 1, "fats": 29 },
+    "highlights": [
+      { "category": "Omega-3 Heavyweight", "text": "Packed with heart-healthy omega-3 fatty acids and 34g of high-quality lean protein." },
+      { "category": "Zesty Finish", "text": "A splash of fresh lemon juice cuts through the rich butter to create an incredibly bright flavor profile." },
+      { "category": "Quick Gourmet", "text": "A restaurant-quality seafood dish that cooks completely in a single skillet in under 15 minutes." }
+    ],
+    "ingredients": [
+      "2 skin-on salmon fillets (6 oz each)",
+      "2 tablespoons butter",
+      "1 tablespoon olive oil",
+      "3 cloves garlic, minced",
+      "1 tablespoon fresh lemon juice",
+      "Salt, pepper, and paprika to taste"
+    ],
+    "instructions": [
+      "Pat the salmon fillets completely dry with a paper towel and season both sides with salt, pepper, and paprika.",
+      "Heat the olive oil and 1 tablespoon of butter in a skillet over medium-high heat.",
+      "Place the salmon skin-side up in the pan and sear undisturbed for 4 to 5 minutes until a golden crust forms.",
+      "Flip the fillets, add the remaining butter and minced garlic to the pan, and spoon the melting garlic butter over the fish as it cooks for another 4 minutes.",
+      "Squeeze fresh lemon juice over the top just before removing from the heat. Serve hot!"
+    ]
+  },
+  {
+    "id": "buttermilk-pancakes",
+    "emoji": "🥞",
+    "title": "Fluffy Buttermilk Pancakes",
+    "image": "pancakes.jpg",
+    "subtitle": "Classic, diner-style breakfast pancakes that rise up incredibly thick, light, and fluffy.",
+    "times": { "prep": "10 mins", "cook": "15 mins", "servings": "4 people" },
+    "nutrition": { "calories": 290, "protein": 7, "carbs": 48, "fats": 8 },
+    "highlights": [
+      { "category": "Diner Standard", "text": "Real buttermilk triggers a chemical reaction with the baking soda to guarantee a towering, airy texture." },
+      { "category": "Golden Crust", "text": "Cooking on a lightly buttered griddle creates those signature crisp, beautifully mottled golden edges." },
+      { "category": "Make Ahead Friendly", "text": "Leftover pancakes freeze beautifully in layers and can be popped straight into the toaster on busy mornings." }
+    ],
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "2 tablespoons sugar",
+      "2 teaspoons baking powder",
+      "1/2 teaspoon baking soda",
+      "1/2 teaspoon salt",
+      "1 3/4 cups buttermilk",
+      "1/4 cup unsalted butter, melted",
+      "2 large eggs"
+    ],
+    "instructions": [
+      "In a large bowl, whisk together the flour, sugar, baking powder, baking soda, and salt.",
+      "In a separate bowl, blend the buttermilk, eggs, and melted butter together thoroughly.",
+      "Pour the wet ingredients into the dry base and stir with a spatula until just combined (the batter should remain slightly lumpy).",
+      "Heat a non-stick griddle or skillet over medium heat and grease lightly with a tiny pat of butter.",
+      "Pour 1/3 cup of batter per pancake onto the hot surface. Cook until bubbles form on top and the edges look dry, then flip and cook for 1-2 more minutes until golden."
+    ]
+  },
+  {
+    "id": "classic-beef-tacos",
+    "emoji": "🌮",
+    "title": "Classic Beef Tacos",
+    "image": "tacos.jpg",
+    "subtitle": "Perfectly seasoned ground beef loaded into crispy taco shells with all your favorite fresh toppings.",
+    "times": { "prep": "15 mins", "cook": "15 mins", "servings": "4 people" },
+    "nutrition": { "calories": 320, "protein": 22, "carbs": 18, "fats": 19 },
+    "highlights": [
+      { "category": "Customizable Base", "text": "The perfectly seasoned meat acts as a foundation that pairs easily with lettuce, cheese, pico, or hot sauce." },
+      { "category": "Bold Spice Blend", "text": "Simmering the beef with chili powder, cumin, oregano, and tomato paste builds an authentic, deep flavor." },
+      { "category": "Crowd Pleaser", "text": "The ultimate quick-turnaround weeknight family dinner that sets up perfectly as an interactive taco bar." }
+    ],
+    "ingredients": [
+      "1 lb lean ground beef",
+      "1 tablespoon chili powder",
+      "1 teaspoon ground cumin",
+      "1/2 teaspoon onion powder",
+      "1/2 cup tomato sauce or water",
+      "8 crispy corn taco shells",
+      "1 cup shredded iceberg lettuce",
+      "1/2 cup shredded cheddar cheese"
+    ],
+    "instructions": [
+      "Brown the ground beef in a large skillet over medium-high heat for 6 to 8 minutes, breaking it apart with a wooden spoon.",
+      "Carefully drain any excess grease from the pan.",
+      "Stir in the chili powder, cumin, onion powder, and tomato sauce, reducing the heat to medium-low.",
+      "Simmer the meat mixture uncovered for 5 minutes until the sauce thickens and coats the beef uniformly.",
+      "Spoon the warm meat into the taco shells and top immediately with lettuce, cheese, and your preferred garnishes."
+    ]
+  },
+  {
+    "id": "honey-garlic-shrimp",
+    "emoji": "🍤",
+    "title": "Honey Garlic Shrimp",
+    "image": "shrimp.jpg",
+    "subtitle": "Plump, juicy shrimp seared crisp and glazed in a sticky, sweet-and-savory honey garlic soy reduction.",
+    "times": { "prep": "10 mins", "cook": "6 mins", "servings": "3 people" },
+    "nutrition": { "calories": 240, "protein": 24, "carbs": 21, "fats": 4 },
+    "highlights": [
+      { "category": "Sticky Reduction", "text": "The natural sugars in honey caramelize instantly in the hot pan to create a beautifully thick glaze." },
+      { "category": "Ultra Low Fat", "text": "Delivers an impressive 24g of lean protein with only 4g of fat per serving, making it exceptionally clean." },
+      { "category": "6-Minute Flash Sear", "text": "Shrimp cooks incredibly fast, locking in moisture and preventing a rubbery texture under high heat." }
+    ],
+    "ingredients": [
+      "1 lb raw shrimp, peeled and deveined",
+      "1/3 cup honey",
+      "3 tablespoons low-sodium soy sauce",
+      "4 cloves garlic, minced",
+      "1 tablespoon olive oil",
+      "1 tablespoon green onions, sliced"
+    ],
+    "instructions": [
+      "In a medium bowl, whisk together the honey, soy sauce, and minced garlic to create your glaze.",
+      "Toss the shrimp in half of the glaze mixture and let marinate in the refrigerator for 10 minutes.",
+      "Heat olive oil in a large skillet over medium-high heat until hot.",
+      "Add the shrimp to the skillet in a single layer, discarding the used marinade, and sear for 2 to 3 minutes until pink.",
+      "Flip the shrimp, pour the remaining clean half of the glaze into the pan, and simmer for 2 minutes as the sauce bubbles into a sticky coating. Garnish with green onions."
+    ]
+  } ,
+  {
+    "id": "creamy-tuscan-soup",
+    "emoji": "🥣",
+    "title": "Creamy Tuscan Sausage Soup",
+    "image": "tuscan-soup.jpg",
+    "subtitle": "A hearty, rich Italian soup packed with savory sausage, tender potatoes, and fresh wilted kale simmered in a creamy garlic broth.",
+    "times": { "prep": "10 mins", "cook": "25 mins", "servings": "4 people" },
+    "nutrition": { "calories": 440, "protein": 19, "carbs": 22, "fats": 32 },
+    "highlights": [
+      { "category": "Hearty Broth", "text": "A luxurious heavy cream and chicken stock base infused with garlic and red pepper flakes for comforting warmth." },
+      { "category": "Nutrient Loaded", "text": "Fresh chopped kale leaves wilt beautifully into the hot broth to add an iron and vitamin-rich punch." },
+      { "category": "One-Pot Wonder", "text": "Browning the sausage directly in the soup pot builds a deep flavor foundation while keeping cleanup effortless." }
+    ],
+    "ingredients": [
+      "1 lb mild Italian sausage, casings removed",
+      "3 large russet potatoes, washed and thinly sliced",
+      "4 cloves garlic, minced",
+      "4 cups chicken broth",
+      "1 cup heavy cream",
+      "2 cups fresh kale, chopped",
+      "1/4 teaspoon crushed red pepper flakes"
+    ],
+    "instructions": [
+      "In a large pot or Dutch oven over medium-high heat, brown the Italian sausage for 6 to 8 minutes, breaking it apart until fully cooked.",
+      "Drain any excessive grease from the pot, leaving about one tablespoon for flavor.",
+      "Add the minced garlic and red pepper flakes to the pan, stirring constantly for 1 minute until highly fragrant.",
+      "Pour in the chicken broth and add the sliced potatoes, bringing the mixture to a boil before reducing the heat to medium-low.",
+      "Simmer uncovered for 15 minutes until the potatoes are completely fork-tender.",
+      "Stir in the heavy cream and chopped kale, simmering gently for 3 to 4 minutes until the kale is completely wilted, then serve hot."
+    ]
+  },
+  {
+    "id": "garlic-butter-steak-bites",
+    "emoji": "🥩",
+    "title": "Garlic Butter Steak Bites",
+    "image": "steak-bites.jpg",
+    "subtitle": "Tender, juicy cubes of sirloin steak flash-seared to caramelized perfection and tossed in a rich herb garlic butter sauce.",
+    "times": { "prep": "15 mins", "cook": "6 mins", "servings": "3 people" },
+    "nutrition": { "calories": 380, "protein": 36, "carbs": 2, "fats": 26 },
+    "highlights": [
+      { "category": "High Protein Heavyweight", "text": "Delivers an impressive 36g of pure muscle-building protein per serving from lean, trimmed sirloin steak." },
+      { "category": "Cast Iron Crust", "text": "Flash-searing the steak cubes in an ultra-hot skillet locks in juices and builds a deep, savory crust." },
+      { "category": "Aromatic Glaze", "text": "Finishing the pan with fresh rosemary and melting butter coats every steak bite in a velvety, rich glaze." }
+    ],
+    "ingredients": [
+      "1.5 lbs top sirloin steak, cut into 1-inch cubes",
+      "3 tablespoons unsalted butter",
+      "1 tablespoon olive oil",
+      "4 cloves garlic, minced",
+      "1 teaspoon fresh rosemary, finely chopped",
+      "Salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Pat the steak cubes completely dry with paper towels and season generously on all sides with salt and black pepper.",
+      "Heat the olive oil and 1 tablespoon of butter in a large cast-iron skillet over high heat until smoking.",
+      "Add the steak bites to the pan in a single layer, ensuring they don't crowd each other.",
+      "Sear undisturbed for 2 minutes to build a deep crust, then toss and sear for 2 additional minutes until browned on all sides.",
+      "Reduce heat to medium, throw in the remaining butter, minced garlic, and chopped rosemary, tossing the steak to coat uniformly as the butter melts for 1 minute.",
+      "Remove from the pan immediately to prevent overcooking and serve hot!"
+    ]
+  },
+  {
+    "id": "french-toast-casserole",
+    "emoji": "🍞",
+    "title": "Baked French Toast Casserole",
+    "image": "french-toast-casserole.jpg",
+    "subtitle": "An overnight brunch classic featuring spiced, custard-soaked brioche bread baked with a crunchy brown sugar pecan streusel.",
+    "times": { "prep": "15 mins", "cook": "40 mins", "servings": "6 people" },
+    "nutrition": { "calories": 420, "protein": 9, "carbs": 56, "fats": 18 },
+    "highlights": [
+      { "category": "Overnight Prep", "text": "Assemble it the night before so the rich vanilla-cinnamon custard completely saturates the bread cubes." },
+      { "category": "Brioche Foundation", "text": "Using thick-cut brioche bread introduces a naturally sweet, buttery crumb that holds up beautifully to baking." },
+      { "category": "Pecan Streusel Top", "text": "Finished with a heavy layer of brown sugar, butter, and chopped pecans for an unbelievable textural crunch." }
+    ],
+    "ingredients": [
+      "1 loaf brioche bread, cut into 1-inch cubes",
+      "5 large eggs",
+      "1 1/2 cups whole milk",
+      "2 teaspoons vanilla extract",
+      "1 teaspoon ground cinnamon",
+      "1/2 cup packed brown sugar",
+      "1/4 cup unsalted butter, melted",
+      "1/2 cup pecans, finely chopped"
+    ],
+    "instructions": [
+      "Grease a 9x13 inch baking dish and layer the cubed brioche bread evenly inside.",
+      "In a bowl, whisk together the eggs, milk, vanilla, and cinnamon until smooth, then pour the custard uniformly over the bread cubes.",
+      "Cover the dish tightly and refrigerate overnight (or for at least 2 hours) so the liquid absorbs fully.",
+      "Preheat your oven to 350°F (175°C). In a small bowl, mix the brown sugar, melted butter, and chopped pecans together, then crumble the mixture across the top of the casserole.",
+      "Bake uncovered for 35 to 40 minutes until the center is set and the streusel topping is bubbling and deeply golden brown. Serve warm with syrup!"
+    ]
+  },
+  {
+    "id": "ground-beef-philly-skillet",
+    "emoji": "🍳",
+    "title": "Ground Beef Philly Skillet",
+    "image": "philly-skillet.jpg",
+    "subtitle": "A fast, macro-friendly spin on the classic cheesesteak featuring seasoned ground beef, sliced peppers, and melted provolone.",
+    "times": { "prep": "10 mins", "cook": "20 mins", "servings": "4 people" },
+    "nutrition": { "calories": 340, "protein": 28, "carbs": 8, "fats": 22 },
+    "highlights": [
+      { "category": "Quick Weeknight Fix", "text": "A true 30-minute skillet meal designed to feed a hungry table with zero complex prep or planning." },
+      { "category": "Lean Muscle Fuel", "text": "Supplies 28 grams of high-quality protein per serving by utilizing lean ground beef as the savory base." },
+      { "category": "Classic Flavor Profile", "text": "Sautéed green bell peppers, yellow onions, and Worcestershire sauce replicate authentic cheesesteak depth." }
+    ],
+    "ingredients": [
+      "1 lb lean ground beef",
+      "1 large green bell pepper, sliced into thin strips",
+      "1 medium yellow onion, sliced",
+      "2 cloves garlic, minced",
+      "1 tablespoon Worcestershire sauce",
+      "4 slices provolone cheese",
+      "1 tablespoon olive oil"
+    ],
+    "instructions": [
+      "Heat the olive oil in a large skillet over medium-high heat and sauté the onions and bell peppers for 5 minutes until tender-crisp.",
+      "Add the minced garlic and cook for 30 seconds until highly fragrant, then push the vegetables to the side of the pan.",
+      "Crumble the ground beef into the empty side of the skillet and cook for 6 to 8 minutes until entirely browned, breaking it apart as you go.",
+      "Drain any excess grease, then stir the beef, vegetables, and Worcestershire sauce together completely.",
+      "Lay the provolone cheese slices uniformly across the top, cover the skillet with a lid for 2 minutes until the cheese is melted and bubbly, and serve hot."
+    ]
+  },
+  {
+    "id": "crockpot-mozzarella-chicken",
+    "emoji": "🍗",
+    "title": "Crockpot Mozzarella Chicken",
+    "image": "mozzarella-chicken.jpg",
+    "subtitle": "Tender, juicy chicken breasts slow-cooked in rich marinara sauce and blanketed under a gooey layer of melted mozzarella.",
+    "times": { "prep": "5 mins", "cook": "4 hours", "servings": "4 people" },
+    "nutrition": { "calories": 290, "protein": 41, "carbs": 11, "fats": 9 },
+    "highlights": [
+      { "category": "Set-And-Forget Prep", "text": "Takes less than 5 minutes to set up in the morning, letting the slow cooker handle all the work during the day." },
+      { "category": "High-Protein Champion", "text": "Delivers a massive 41 grams of protein per serving with under 10 grams of fat, keeping your macros incredibly clean." },
+      { "category": "Meal Prep Ready", "text": "Yields beautifully tender chicken that keeps its moisture and shreds perfectly for healthy lunches throughout the week." }
+    ],
+    "ingredients": [
+      "1.5 lbs boneless, skinless chicken breasts",
+      "2 cups premium marinara sauce",
+      "1 cup shredded mozzarella cheese",
+      "1 teaspoon Italian seasoning",
+      "1/2 teaspoon garlic powder",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Place the chicken breasts in a single flat layer across the bottom of your crockpot.",
+      "Season the tops of the chicken evenly with the Italian seasoning, garlic powder, salt, and black pepper.",
+      "Pour the marinara sauce uniformly over the chicken breasts, ensuring they are completely covered.",
+      "Cover the crockpot with the lid and cook on LOW for 4 hours (or on HIGH for 2 hours) until the chicken is tender.",
+      "Uncover, sprinkle the shredded mozzarella cheese heavily across the chicken, replace the lid for 5 minutes until completely melted, and serve hot over pasta or roasted veggies."
+    ]
+  },
+  {
+    "id": "classic-beef-stew",
+    "emoji": "🍲",
+    "title": "Classic Hearty Beef Stew",
+    "image": "beef-stew.jpg",
+    "subtitle": "A comforting, rich, slow-simmered stew loaded with tender chunks of beef, thick carrots, and potatoes in a savory broth.",
+    "times": { "prep": "20 mins", "cook": "2 hours", "servings": "6 people" },
+    "nutrition": { "calories": 360, "protein": 31, "carbs": 26, "fats": 14 },
+    "highlights": [
+      { "category": "Traditional Comfort", "text": "Slow-simmering the beef chunks builds an exceptionally deep, velvety gravy broth that tastes like home." },
+      { "category": "Fork-Tender Texture", "text": "A long, low-heat cooking cycle melts the braising beef into incredibly tender, pull-apart chunks." },
+      { "category": "Balanced Nutrition", "text": "Combines starchy potatoes, fibrous carrots, and lean beef to deliver a highly satisfying all-in-one meal." }
+    ],
+    "ingredients": [
+      "1.5 lbs beef stew meat, cut into 1-inch chunks",
+      "3 large carrots, peeled and sliced into thick rounds",
+      "3 medium baking potatoes, washed and cubed",
+      "1 medium yellow onion, diced",
+      "3 cups beef broth",
+      "2 tablespoons tomato paste",
+      "2 tablespoons all-purpose flour",
+      "2 tablespoons olive oil"
+    ],
+    "instructions": [
+      "Toss the beef stew chunks with the flour, salt, and pepper until lightly coated.",
+      "Heat the olive oil in a large heavy-bottomed pot or Dutch oven over medium-high heat and sear the beef for 5 minutes until browned on all sides, then remove beef.",
+      "Add the diced onion to the same pot and cook for 3 minutes until soft, then stir in the tomato paste for 1 minute.",
+      "Pour in the beef broth, scraping up any delicious browned bits stuck to the bottom of the pot with a wooden spoon.",
+      "Return the seared beef to the pot, bring the liquid to a boil, then cover tightly, lower heat to low, and simmer undisturbed for 1 hour.",
+      "Add the carrot rounds and potato cubes to the pot, cover again, and continue simmering for an additional 45 to 50 minutes until the vegetables and meat are completely fork-tender."
+    ]
+  },
+  {
+    "id": "lemon-herb-roasted-chicken",
+    "emoji": "🍋",
+    "title": "Lemon Herb Roasted Chicken",
+    "image": "roasted-chicken.jpg",
+    "subtitle": "Crispy skin, tender juicy meat, and a deep marinade of fresh lemon juices, rosemary, thyme, and roasted garlic cloves.",
+    "times": { "prep": "15 mins", "cook": "1 hour", "servings": "4 people" },
+    "nutrition": { "calories": 420, "protein": 38, "carbs": 3, "fats": 28 },
+    "highlights": [
+      { "category": "Crispy Skin Finish", "text": "High-heat roasting renders down fat layers to deliver an incredible, beautifully browned outer crunch." },
+      { "category": "Zesty Citrus Infusion", "text": "Fresh squeezed lemons slice straight through the rich pan drippings to keep flavors vibrant and bright." },
+      { "category": "Natural Pan Gravy", "text": "The combination of melting butter and chicken juices creates a built-in rich sauce perfect for drizzling." }
+    ],
+    "ingredients": [
+      "1 whole chicken (approx. 4 lbs), patted dry",
+      "2 large lemons, cut into thick halves",
+      "4 tablespoons unsalted butter, softened",
+      "3 sprigs fresh rosemary, rough chopped",
+      "3 sprigs fresh thyme leaves",
+      "1 whole head of garlic, sliced horizontally"
+    ],
+    "instructions": [
+      "Preheat your oven to 425°F (218°C) and lightly grease a large roasting pan or cast-iron skillet.",
+      "Rub the softened butter thoroughly all over the outside skin and underneath the breast area of the chicken.",
+      "Season the entire chicken heavily with salt, black pepper, chopped rosemary, and fresh thyme leaves.",
+      "Stuff the chicken cavity tightly with the sliced garlic head and half of the cut lemon pieces.",
+      "Place the chicken breast-side up in your roasting pan, scattering the remaining lemon halves around the base.",
+      "Roast uncovered for 1 hour or until a meat thermometer inserted into the thickest part of the thigh reads 165°F (74°C). Let rest 10 minutes before carving!"
+    ]
+  },
+  {
+    "id": "honey-bbq-chicken-tenders",
+    "emoji": "🥖",
+    "title": "Honey BBQ Chicken Tenders",
+    "image": "bbq-tenders.jpg",
+    "subtitle": "Crisp cornflake-crusted chicken strips baked golden brown and tossed heavily in a sticky sweet honey BBQ glaze.",
+    "times": { "prep": "15 mins", "cook": "18 mins", "servings": "3 people" },
+    "nutrition": { "calories": 370, "protein": 29, "carbs": 44, "fats": 8 },
+    "highlights": [
+      { "category": "Crunch Without Frying", "text": "Utilizes a highly specialized crushed cornflake coating to seal in structural texture perfectly inside the oven layer." },
+      { "category": "Sticky Sweet Reduction", "text": "Glazed in a rich, bubbling mixture of premium barbecue sauce and organic honey for absolute lip-smacking depth." },
+      { "category": "Lean High Protein", "text": "Packs 29 grams of muscle-building chicken breast protein per plate while keeping total fats remarkably lean." }
+    ],
+    "ingredients": [
+      "1 lb chicken breast tenderloins",
+      "2 cups cornflakes cereal, finely crushed",
+      "2 large eggs, whisked thoroughly",
+      "1/2 cup sweet barbecue sauce",
+      "3 tablespoons raw honey",
+      "1 teaspoon garlic powder"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and line a large rimmed baking sheet with parchment paper.",
+      "Season the chicken tenders evenly with garlic powder, salt, and black pepper on both sides.",
+      "Dip each tender thoroughly into the whisked eggs, then roll immediately in the crushed cornflakes, pressing firmly so it adheres.",
+      "Arrange the crusted tenders in a single layer on your baking sheet and bake for 15 to 18 minutes until golden and crisp.",
+      "While baking, warm your barbecue sauce and honey together in a small saucepan over low heat until fully melted and smooth.",
+      "Transfer the hot baked tenders into a large bowl, pour the sticky glaze right over them, and toss gently until uniformly coated. Serve hot!"
+    ]
+  },
+  {
+    "id": "classic-caesar-salad",
+    "emoji": "🥬",
+    "title": "Classic Crisp Caesar Salad",
+    "image": "caesar-salad.jpg",
+    "subtitle": "Crisp, cold chopped romaine hearts tossed uniformly in a creamy, bold garlic parmesan dressing with crunchy sourdough croutons.",
+    "times": { "prep": "10 mins", "cook": "0 mins", "servings": "2 people" },
+    "nutrition": { "calories": 210, "protein": 6, "carbs": 12, "fats": 16 },
+    "highlights": [
+      { "category": "Maximal Crisp Texture", "text": "Relying on premium chilled romaine hearts provides a clean, highly satisfying crunch in every single forkful." },
+      { "category": "Bold Dynamic Flavor", "text": "An ultra-creamy dressing built with cracked black pepper, smooth dijon, garlic, and aged parmesan cheese keys." },
+      { "category": "Perfect Side Pairing", "text": "The absolute ultimate light and fast salad addition to accompany steak bites, salmon fillets, or pasta nights." }
+    ],
+    "ingredients": [
+      "4 cups romaine lettuce hearts, washed and chopped",
+      "1/2 cup baked sourdough croutons",
+      "1/4 cup shredded parmesan cheese",
+      "3 tablespoons creamy Caesar dressing",
+      "1/2 teaspoon freshly cracked black pepper",
+      "1 tablespoon fresh lemon juice"
+    ],
+    "instructions": [
+      "Thoroughly wash, dry, and chop your fresh romaine hearts into clean, bite-sized salad pieces.",
+      "Place the chopped greens directly into a large, chilled mixing bowl.",
+      "Drizzle the creamy dressing and fresh lemon juice over the top, tossing thoroughly until every leaf is glossed.",
+      "Add the baked sourdough croutons and shredded parmesan cheese, folding gently so they don't break apart.",
+      "Dust heavily with freshly cracked black pepper and divide cleanly onto two presentation plates. Serve immediately!"
+    ]
+  },
+  {
+    "id": "beef-and-broccoli",
+    "emoji": "🥦",
+    "title": "Classic Beef and Broccoli",
+    "image": "beef-broccoli.jpg",
+    "subtitle": "Tender, thinly sliced flank steak and crisp broccoli florets tossed in a rich, savory ginger garlic soy glaze.",
+    "times": { "prep": "15 mins", "cook": "10 mins", "servings": "3 people" },
+    "nutrition": { "calories": 360, "protein": 32, "carbs": 14, "fats": 18 },
+    "highlights": [
+      { "category": "Velvet Beef Finish", "text": "Thinly slicing the flank steak against the grain ensures the meat stays incredibly tender and melt-in-your-mouth soft." },
+      { "category": "Sticky Takeout Sauce", "text": "A rich reduction of brown sugar, soy sauce, and garlic mimics your favorite authentic restaurant glaze." },
+      { "category": "High-Fiber Crunch", "text": "Flash-steaming the broccoli florets directly in the skillet keeps them vibrant, colorful, and tender-crisp." }
+    ],
+    "ingredients": [
+      "1 lb flank steak, thinly sliced against the grain",
+      "2 cups broccoli florets",
+      "3 cloves garlic, minced",
+      "1 tablespoon fresh ginger, grated",
+      "1/4 cup low-sodium soy sauce",
+      "2 tablespoons brown sugar",
+      "1 tablespoon cornstarch mixed with 2 tablespoons water"
+    ],
+    "instructions": [
+      "Whisk together the soy sauce, brown sugar, minced garlic, and grated ginger in a small bowl to create your base sauce.",
+      "Heat a large skillet or wok over high heat with a splash of oil and sear the sliced steak for 3 to 4 minutes until browned, then remove from the pan.",
+      "Toss the broccoli florets directly into the hot skillet with 2 tablespoons of water, covering with a lid to steam for 2 minutes.",
+      "Pour your whisked sauce into the skillet with the broccoli, bringing it to a bubble over medium heat.",
+      "Stir in the cornstarch slurry liquid immediately, letting the glaze simmer for 1 minute until beautifully thick and glossy.",
+      "Return the seared steak to the pan, tossing completely to coat the beef and broccoli in the rich glaze. Serve hot over rice!"
+    ]
+  },
+  {
+    "id": "lemon-pepper-tilapia",
+    "emoji": "🐟",
+    "title": "Lemon Pepper Tilapia",
+    "image": "tilapia.jpg",
+    "subtitle": "Light, flaky tilapia fillets seasoned with a bold lemon pepper crust and pan-seared to a golden finish.",
+    "times": { "prep": "5 mins", "cook": "8 mins", "servings": "2 people" },
+    "nutrition": { "calories": 190, "protein": 26, "carbs": 2, "fats": 8 },
+    "highlights": [
+      { "category": "Ultra-Lean Protein", "text": "Supplies an impressive 26 grams of clean protein per serving with minimal fats, perfect for strict macro goals." },
+      { "category": "Zesty Spice Blend", "text": "Coated heavily in cracked black pepper and dried lemon peel to deliver a punchy, sharp bite without heavy sauces." },
+      { "category": "8-Minute Cooking Window", "text": "An exceptionally fast seafood dinner that flash-sears to a delicate crust in just a few minutes per side." }
+    ],
+    "ingredients": [
+      "2 fresh tilapia fillets (approx. 6 oz each)",
+      "1 tablespoon lemon pepper seasoning",
+      "1/2 teaspoon garlic powder",
+      "1 tablespoon olive oil",
+      "1/2 fresh lemon, cut into wedges"
+    ],
+    "instructions": [
+      "Pat the tilapia fillets completely dry on both sides with a clean paper towel.",
+      "Season the fillets evenly on both sides with the lemon pepper seasoning and garlic powder, pressing gently so it sticks.",
+      "Heat the olive oil in a non-stick skillet over medium-high heat until hot.",
+      "Place the seasoned fish into the skillet and sear undisturbed for 3 to 4 minutes until a light golden crust forms.",
+      "Carefully flip the fillets with a flat spatula and cook for another 3 to 4 minutes until the fish flakes easily with a fork.",
+      "Squeeze fresh lemon wedges over the hot fillets directly in the pan and serve immediately."
+    ]
+  },
+  {
+    "id": "turkey-sausage-scramble",
+    "emoji": "🍳",
+    "title": "Turkey Sausage Egg Scramble",
+    "image": "sausage-scramble.jpg",
+    "subtitle": "A protein-packed breakfast bowl featuring fluffy scrambled eggs, lean turkey sausage, and melted cheddar.",
+    "times": { "prep": "5 mins", "cook": "10 mins", "servings": "1 person" },
+    "nutrition": { "calories": 310, "protein": 28, "carbs": 3, "fats": 21 },
+    "highlights": [
+      { "category": "Morning Power Fuel", "text": "Combines whole eggs and lean turkey sausage to fuel your morning with 28 grams of high-quality protein." },
+      { "category": "Fluffy Scramble Tech", "text": "Whisking the eggs thoroughly before cooking introduces micro-bubbles for an exceptionally soft, pillowy texture." },
+      { "category": "Easy Custom Loading", "text": "An incredibly flexible breakfast base that easily handles extra diced bell peppers, spinach, or hot sauce." }
+    ],
+    "ingredients": [
+      "2 large eggs",
+      "2 links lean turkey sausage, sliced into rounds",
+      "2 tablespoons shredded cheddar cheese",
+      "1 pat unsalted butter",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Crack the eggs into a small bowl, add a pinch of salt and pepper, and whisk vigorously with a fork until fully blended.",
+      "Melt the pat of butter in a non-stick skillet over medium heat and sauté the turkey sausage slices for 4 to 5 minutes until browned and hot.",
+      "Lower the skillet heat to medium-low and pour the whisked eggs directly over the cooked turkey sausage.",
+      "Let the eggs sit undisturbed for 30 seconds, then gently pull a spatula across the pan to form large, fluffy curds.",
+      "When the eggs are mostly cooked through but still slightly glossy, sprinkle the shredded cheddar cheese across the top.",
+      "Remove the skillet from the heat, let the residual pan warmth melt the cheese completely for 1 minute, and slide onto a plate to serve warm."
+    ]
+  },
+  {
+    "id": "garlic-herb-butter-lobster",
+    "emoji": "🦞",
+    "title": "Gourmet Garlic Butter Lobster Tails",
+    "image": "lobster.jpg",
+    "subtitle": "Succulent, sweet cold-water lobster tails split open, broiled to tender perfection, and drenched in a rich garlic-herb butter.",
+    "times": { "prep": "10 mins", "cook": "8 mins", "servings": "2 people" },
+    "nutrition": { "calories": 280, "protein": 24, "carbs": 1, "fats": 20 },
+    "highlights": [
+      { "category": "Steakhouse Standard", "text": "Butter-poaching the lobster flesh under a high-heat broiler guarantees an incredibly tender, melt-in-your-mouth bite." },
+      { "category": "Elegant Presentation", "text": "Butterfly cutting the lobster shell lifts the meat perfectly to the top, making a visual statement on any dinner plate." },
+      { "category": "Low-Carb Luxury", "text": "Delivers 24 grams of premium protein with virtually zero carbohydrates, keeping your late-night macros incredibly clean." }
+    ],
+    "ingredients": [
+      "2 cold-water lobster tails (approx. 6 oz each)",
+      "3 tablespoons unsalted butter, melted",
+      "2 cloves garlic, finely minced",
+      "1 teaspoon fresh parsley, chopped",
+      "1/2 teaspoon sweet smoked paprika",
+      "1 lemon, cut into wedges for serving"
+    ],
+    "instructions": [
+      "Preheat your oven's broiler to HIGH and position your oven rack about 6 inches away from the top heating elements.",
+      "Using sharp kitchen shears, cut down the center of the top lobster shell lengthwise, stopping right before you hit the tail fin.",
+      "Gently pry the shell apart and slide your fingers underneath the meat to separate it from the bottom shell, lifting it up and resting it securely on top of the closed shell.",
+      "In a small bowl, whisk together the melted butter, minced garlic, chopped parsley, sweet paprika, salt, and pepper.",
+      "Brush the garlic butter mixture heavily and uniformly over the exposed lobster meat.",
+      "Broil for 6 to 8 minutes until the lobster meat is completely opaque in the center and the top edges are beautifully golden brown. Serve hot with extra lemon wedges!"
+    ]
+  },
+  {
+    "id": "slow-cooker-honey-garlic-chicken",
+    "emoji": "🍯",
+    "title": "Slow-Cooker Honey Garlic Chicken",
+    "image": "honey-garlic-chicken.jpg",
+    "subtitle": "Tender chicken thighs slow-simmered in a sticky reduction of sweet raw honey, rich soy sauce, and aromatic garlic cloves.",
+    "times": { "prep": "10 mins", "cook": "5 hours", "servings": "6 people" },
+    "nutrition": { "calories": 360, "protein": 29, "carbs": 34, "fats": 11 },
+    "highlights": [
+      { "category": "Low-Effort Masterclass", "text": "Requires zero pre-browning or active cooking—simply layer the ingredients into the slow cooker and walk away for the day." },
+      { "category": "Sticky Honey Reduction", "text": "Simmering the pan juices with a quick cornstarch slurry builds an exceptionally thick, glossy glaze that clings perfectly to the meat." },
+      { "category": "Juicy Shredded Meat", "text": "Utilizing bone-in or boneless chicken thighs ensures the meat retains its natural juices and never dries out during the long cook cycle." }
+    ],
+    "ingredients": [
+      "2 lbs boneless, skinless chicken thighs",
+      "1/2 cup organic raw honey",
+      "1/2 cup low-sodium soy sauce",
+      "4 cloves garlic, minced",
+      "1/2 cup diced yellow onion",
+      "2 tablespoons cornstarch blended with 3 tablespoons cold water"
+    ],
+    "instructions": [
+      "Place the chicken thighs in a flat, even layer across the bottom of your slow cooker.",
+      "In a small bowl, whisk together the raw honey, low-sodium soy sauce, minced garlic, and diced yellow onions until fully combined.",
+      "Pour the honey garlic mixture uniformly over the chicken thighs, ensuring every piece is completely coated.",
+      "Cover with the lid and cook on LOW for 4 to 5 hours (or on HIGH for 2 to 3 hours) until the chicken is effortlessly tender.",
+      "Remove the chicken thighs from the slow cooker, place them on a clean board, and shred them into thick bites using two forks.",
+      "Pour the liquid from the cooker into a saucepan, stir in your cornstarch slurry, and simmer over medium heat for 2 minutes until it bubbles into a sticky, thick glaze. Toss the shredded chicken back in the glaze and serve hot over rice!"
+    ]
+  },
+  {
+    "id": "classic-deviled-eggs",
+    "emoji": "🥚",
+    "title": "Traditional Savory Deviled Eggs",
+    "image": "deviled-eggs.jpg",
+    "subtitle": "A timeless party favorite featuring perfectly hard-boiled eggs stuffed with a velvety, zesty mustard yolk cream.",
+    "times": { "prep": "15 mins", "cook": "12 mins", "servings": "12 pieces" },
+    "nutrition": { "calories": 90, "protein": 6, "carbs": 1, "fats": 7 },
+    "highlights": [
+      { "category": "Velvety Yolk Center", "text": "Whipping the cooked yolks with premium mayonnaise and sharp dijon creates an exceptionally silky, luxurious filling." },
+      { "category": "Punchy Flavor Spike", "text": "A tiny splash of crisp apple cider vinegar and sweet relish adds a sharp, acidic bite that balances the rich yolk fats." },
+      { "category": "Timeless Finger Food", "text": "The absolute gold standard holiday appetizer that is effortlessly portioned, beautiful to display, and loved by crowds." }
+    ],
+    "ingredients": [
+      "6 large eggs",
+      "1/4 cup premium mayonnaise",
+      "1 teaspoon sharp Dijon mustard",
+      "1 teaspoon apple cider vinegar",
+      "1/2 teaspoon smoked paprika (for final dusting)",
+      "Salt and white pepper to taste"
+    ],
+    "instructions": [
+      "Place the eggs in a large saucepan, cover them completely with cold water, and bring to a rolling boil over high heat.",
+      "Once boiling, turn off the heat completely, cover the pot tightly with a lid, and let the eggs sit undisturbed in the hot water for exactly 12 minutes.",
+      "Transfer the eggs immediately into a large bowl filled with ice water for 5 minutes to shock them and ensure effortless peeling.",
+      "Peel the eggs carefully, slice them completely in half lengthwise, and gently pop the cooked yellow yolks out into a small mixing bowl.",
+      "Mash the egg yolks completely with a fork, then add the mayonnaise, Dijon mustard, and apple cider vinegar, whipping vigorously until completely smooth and creamy.",
+      "Spoon or pipe the creamy yolk filling cleanly back into the hollowed-out egg white halves, dust lightly with a pinch of smoked paprika, and chill for 30 minutes before serving cold!"
+    ]
+  },
+  {
+  "id": "magic-cake",
+  "emoji": "🎂",
+  "title": "Magic Cake",
+  "image": "magic-cake.jpg",
+  "subtitle": "A prized family heirloom recipe featuring a unique melted chocolate base and a rich, traditional homemade fudge frosting.",
+  "times": { "prep": "25 mins", "cook": "30 mins", "servings": "2 layers" },
+  "nutrition": { "calories": 440, "protein": 5, "carbs": 62, "fats": 21 },
+  "highlights": [
+    { "category": "Family Secret", "text": "Melting unsweetened chocolate directly with hot water and sugar creates a unique base that keeps the crumb exceptionally rich and moist." },
+    { "category": "Classic Frosting", "text": "Topped with a traditional fudge frosting made from scratch using a full pound of confectioners' sugar and real chocolate." },
+    { "category": "Perfect Structure", "text": "Sifting the dry ingredients and beating the eggs one by one yields a beautifully tender, bakery-quality crumb layer." }
+  ],
+  "ingredients": [
+    "4 oz unsweetened chocolate, chopped (for cake)",
+    "1/2 cup hot water",
+    "1/4 cup granulated sugar (for chocolate melt)",
+    "2 cups flour",
+    "1 teaspoon baking soda",
+    "1 teaspoon salt",
+    "1/2 cup butter, softened",
+    "1 1/2 cups granulated sugar (for cake batter)",
+    "3 large eggs",
+    "3/4 cup milk",
+    "1 teaspoon vanilla extract (for cake)",
+    "4 oz unsweetened chocolate (for frosting)",
+    "1/4 cup butter (for frosting)",
+    "1 lb confectioners' sugar",
+    "1/2 cup milk (for frosting)",
+    "1 teaspoon vanilla extract (for frosting)"
+  ],
+  "instructions": [
+    "Preheat your oven to 350°F (175°C) and grease and flour two 9-inch round cake pans.",
+    "In a small saucepan over low heat, melt together 4 oz of unsweetened chocolate, 1/2 cup of hot water, and 1/4 cup of the granulated sugar, then remove from heat and let cool.",
+    "In a medium bowl, sift together the flour, baking soda, and salt, then set aside.",
+    "In a large mixing bowl, cream the 1/2 cup of softened butter, then add the 1 1/2 cups of granulated sugar gradually until light and fluffy.",
+    "Beat in the eggs one at a time, completely integrating each before adding the next.",
+    "Alternately add the sifted flour mixture and 3/4 cup of milk to the creamed base, stirring gently.",
+    "Blend the cooled chocolate mixture and 1 teaspoon of vanilla extract into the batter until completely smooth.",
+    "Divide the batter evenly between your two prepared cake pans and bake for 30 minutes until a toothpick inserted into the center comes out clean. Let layers cool completely.",
+    "To make the frosting, melt 4 oz of unsweetened chocolate and 1/4 cup of butter together over low heat until smooth.",
+    "Alternately beat in the 1 lb of confectioners' sugar and 1/2 cup of milk until thick and velvety.",
+    "Stir in the final teaspoon of vanilla extract, then frost between your cooled cake layers and across the top and sides!"
+  ]
+},
+{
+    "id": "loaded-baked-potato-soup",
+    "emoji": "🥣",
+    "title": "Loaded Baked Potato Soup",
+    "image": "potato-soup.jpg",
+    "subtitle": "Thick, ultra-creamy potato soup packed with sharp cheddar cheese, crisp smoky bacon, and fresh chives.",
+    "times": { "prep": "15 mins", "cook": "20 mins", "servings": "4 people" },
+    "nutrition": { "calories": 410, "protein": 14, "carbs": 38, "fats": 24 },
+    "highlights": [
+      { "category": "Comfort Classic", "text": "A rich heavy cream and chicken stock foundation loaded with tender russet potatoes." },
+      { "category": "Savory Toppings", "text": "Finished with real pan-fried bacon bits and sharp melted cheddar for authentic pub flavor." },
+      { "category": "Quick One-Pot", "text": "Blends smoothly and thickens quickly in a single pot for effortless cleanup." }
+    ],
+    "ingredients": [
+      "4 large russet potatoes, peeled and cubed",
+      "4 slices of bacon, diced",
+      "1/2 medium onion, finely chopped",
+      "3 cloves garlic, minced",
+      "3 tablespoons all-purpose flour",
+      "2 cups chicken broth",
+      "2 cups whole milk",
+      "1 cup sharp cheddar cheese, shredded",
+      "Salt, pepper, and fresh chives to taste"
+    ],
+    "instructions": [
+      "In a large pot, fry the diced bacon until crisp. Remove bacon pieces and leave 2 tablespoons of grease in the pot.",
+      "Sauté the chopped onion and minced garlic in the hot bacon grease for 3 minutes until fragrant.",
+      "Stir in the flour and cook for 1 minute, then gradually whisk in the chicken broth and whole milk.",
+      "Add the cubed potatoes, bring to a boil, then reduce heat and simmer uncovered for 15 minutes until potatoes are fork-tender.",
+      "Gently mash a few potatoes with a fork to thicken the soup base.",
+      "Stir in the shredded cheddar cheese until fully melted, ladle into bowls, and garnish with bacon bits and chives!"
+    ]
+  },
+  {
+    "id": "mediterranean-chickpea-salad",
+    "emoji": "🥗",
+    "title": "Mediterranean Chickpea Salad",
+    "image": "chickpea-salad.jpg",
+    "subtitle": "A bright, refreshing, and high-fiber plant-based salad tossed in a zesty lemon-herb vinaigrette.",
+    "times": { "prep": "10 mins", "cook": "0 mins", "servings": "3 people" },
+    "nutrition": { "calories": 290, "protein": 11, "carbs": 34, "fats": 12 },
+    "highlights": [
+      { "category": "Fiber & Protein", "text": "Packed with hearty chickpeas providing continuous clean energy and clean plant protein." },
+      { "category": "Crisp Micronutrients", "text": "Fresh cucumbers, kalamata olives, and bell peppers deliver essential vitamins and clean hydration." },
+      { "category": "No-Cook Meal Prep", "text": "Requires zero active stove time and tastes even better the next day after marinating in the fridge." }
+    ],
+    "ingredients": [
+      "2 cans (15 oz each) chickpeas, drained and rinsed",
+      "1 large English cucumber, diced",
+      "1 cup cherry tomatoes, halved",
+      "1/2 cup kalamata olives, sliced",
+      "1/4 cup red onion, finely minced",
+      "1/2 cup feta cheese, crumbled",
+      "3 tablespoons olive oil",
+      "2 tablespoons fresh lemon juice",
+      "1 teaspoon dried oregano",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "In a large salad bowl, combine the rinsed chickpeas, diced cucumber, halved cherry tomatoes, sliced olives, and minced red onion.",
+      "In a small glass or bowl, whisk together the olive oil, fresh lemon juice, dried oregano, salt, and pepper.",
+      "Pour the dressing uniformly over the salad mixture and toss thoroughly to ensure everything is evenly coated.",
+      "Gently fold in the crumbled feta cheese so it retains its texture.",
+      "Serve immediately, or chill in the refrigerator for 30 minutes to let the vibrant flavors deepen!"
+    ]
+  },
+  {
+    "id": "avocado-egg-toast",
+    "emoji": "🥑",
+    "title": "Avocado Egg Toast",
+    "image": "avocado-toast.jpg",
+    "subtitle": "Crisp toasted sourdough topped with seasoned mashed avocado and a perfect sunny-side-up egg.",
+    "times": { "prep": "5 mins", "cook": "5 mins", "servings": "1 person" },
+    "nutrition": { "calories": 340, "protein": 14, "carbs": 24, "fats": 21 },
+    "highlights": [
+      { "category": "Healthy Fats", "text": "Fresh mashed avocado delivers monounsaturated fats that support heart and skin health." },
+      { "category": "Complete Protein", "text": "A large fried egg injects complete essential proteins to kickstart morning focus." },
+      { "category": "Texture Contrast", "text": "Pairs an ultra-creamy avocado base with a rigid, satisfyingly crunchy toasted sourdough crust." }
+    ],
+    "ingredients": [
+      "1 thick slice of sourdough bread",
+      "1/2 ripe avocado",
+      "1 large egg",
+      "1 teaspoon butter",
+      "1/4 teaspoon red pepper flakes",
+      "Salt, pepper, and garlic powder to taste"
+    ],
+    "instructions": [
+      "Toast your sourdough bread slice to a deep, beautiful golden brown crunch.",
+      "In a small bowl, mash the ripe avocado with a pinch of salt, black pepper, and garlic powder.",
+      "Spread the seasoned avocado paste uniformly across the warm piece of toast.",
+      "Melt the butter in a non-stick skillet over medium heat and crack the egg directly into the center.",
+      "Fry undisturbed for 3 minutes until the egg whites are completely set but the golden yolk remains beautifully runny.",
+      "Slide the egg smoothly onto the avocado layer, dust with a pinch of red pepper flakes, and slice to serve hot!"
+    ]
+  },
+   {
+    "id": "caprese-egg-scramble",
+    "emoji": "🍳",
+    "title": "Caprese Egg Scramble",
+    "image": "caprese-scramble.jpg",
+    "subtitle": "Fluffy scrambled eggs gently folded with sweet cherry tomatoes, fresh basil ribbons, and melty mozzarella pearls.",
+    "times": { "prep": "5 mins", "cook": "5 mins", "servings": "1 person" },
+    "nutrition": { "calories": 290, "protein": 19, "carbs": 4, "fats": 21 },
+    "highlights": [
+      { "category": "Fresh Morning Power", "text": "Whisking whole eggs introduces structural air bubbles for an exceptionally pillowy, delicate curd texture." },
+      { "category": "Vibrant Italian Depth", "text": "Blends sweet burst tomatoes with aromatic fresh herbs to deliver clean gourmet breakfast complexity." },
+      { "category": "Light & Lean Fuel", "text": "A macro-friendly breakfast option under 300 calories designed to satisfy your healthy menu criteria cleanly." }
+    ],
+    "ingredients": [
+      "2 large eggs",
+      "1/2 cup cherry tomatoes, halved",
+      "1/4 cup fresh mozzarella pearls",
+      "4 fresh basil leaves, sliced into thin ribbons",
+      "1 teaspoon olive oil",
+      "Salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Crack the eggs into a small bowl, add a pinch of salt and pepper, and whisk vigorously with a fork until fully blended.",
+      "Heat the olive oil in a non-stick skillet over medium heat and sauté the halved cherry tomatoes for 2 minutes until blistered.",
+      "Lower the skillet heat to medium-low and pour the whisked eggs directly over the warm burst tomatoes.",
+      "Let the eggs sit undisturbed for 20 seconds, then gently pull a spatula across the pan to form large, soft curds.",
+      "When eggs are mostly set but still glossy, drop in the mozzarella pearls and basil ribbons, folding gently.",
+      "Remove skillet from heat, letting residual pan warmth melt the cheese for 30 seconds, and slide onto a plate!"
+    ]
+  },
+  {
+    "id": "award-winning-twice-baked-potatoes",
+    "emoji": "🥔",
+    "title": "Award-Winning Twice-Baked Potatoes",
+    "image": "twice-baked-potatoes.jpg",
+    "subtitle": "The ultimate comfort side dish—crisp potato skins stuffed with a rich, whipped sour cream cheddar mash and bacon.",
+    "times": { "prep": "15 mins", "cook": "1 hour 15 mins", "servings": "4 people" },
+    "nutrition": { "calories": 310, "protein": 9, "carbs": 32, "fats": 16 },
+    "highlights": [
+      { "category": "Smackdown Champion", "text": "Winner of The Kitchn's recipe showdown for delivering the absolute best flavor and interior texture profile." },
+      { "category": "Double Baked Crust", "text": "Baking the stuffed shells a second time builds an incredibly satisfying crisp, golden cheese armor on top." },
+      { "category": "Healthy Menu Safe", "text": "Clocking in cleanly under 350 calories, making it a valuable addition to your light dashboard selection." }
+    ],
+    "ingredients": [
+      "4 large Russet baking potatoes, washed",
+      "1/4 cup unsalted butter, softened",
+      "1/2 cup sour cream",
+      "1 cup sharp cheddar cheese, shredded and divided",
+      "4 slices of bacon, cooked and crumbled",
+      "2 tablespoons fresh chives, chopped",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C). Pierce potatoes with a fork and bake for 1 hour until completely tender.",
+      "Let potatoes cool slightly, then slice each in half lengthwise.",
+      "Carefully scoop out the potato flesh into a large mixing bowl, leaving a thin structural shell framework intact.",
+      "Mash the hot potato flesh thoroughly with the softened butter, sour cream, half of the cheddar cheese, and bacon.",
+      "Spoon the ultra-velvety potato mixture cleanly back into the hollowed-out skins and top with remaining cheddar.",
+      "Return to the oven for 15 minutes until the cheese is completely melted, bubbly, and golden. Garnish with fresh chives!"
+    ]
+  },
+  {
+    "id": "gold-medal-sriracha-honey-wings",
+    "emoji": "🍗",
+    "title": "Gold-Medal Sriracha Honey Wings",
+    "image": "sriracha-wings.jpg",
+    "subtitle": "Crispy oven-fried chicken wings drenched in a sticky, sweet, and zesty chili-lime reduction.",
+    "times": { "prep": "10 mins", "cook": "50 mins", "servings": "4 people" },
+    "nutrition": { "calories": 480, "protein": 28, "carbs": 14, "fats": 32 },
+    "highlights": [
+      { "category": "Food Network Winner", "text": "First place winner of Food Network Magazine's national 'Cook with Honey' secret ingredient competition challenge." },
+      { "category": "Oven Fried Crisp", "text": "Tossing the raw wing joints in a light seasoned oil mixture achieves deep crunch metrics without a fryer." },
+      { "category": "Flavor Balance", "text": "Masterfully cuts sharp, blazing Thai sriracha heat with smooth organic honey and zesty fresh lime juice." }
+    ],
+    "ingredients": [
+      "2 lbs chicken wings, split at the joints",
+      "2 tablespoons vegetable oil",
+      "1 teaspoon granulated garlic",
+      "1/4 cup Sriracha hot sauce",
+      "1/4 cup raw honey",
+      "1 tablespoon low-sodium soy sauce",
+      "2 tablespoons fresh lime juice",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and lightly oil a large rimmed baking sheet.",
+      "Pat chicken wings completely dry with paper towels, then toss in a bowl with oil, garlic powder, salt, and pepper.",
+      "Arrange the wings in a flat, single layer on the sheet so they do not touch, and bake for 45 to 50 minutes until crisp.",
+      "While wings are baking, combine Sriracha, honey, soy sauce, and lime juice in a small saucepan over medium heat.",
+      "Stir the glaze constantly until it bubbles gently, then remove from heat to let thicken into a sticky coat.",
+      "Transfer the hot, crispy wings into a clean bowl, pour the warm sriracha-honey reduction over top, and toss gently to coat!"
+    ]
+  },
+  {
+    "id": "blue-ribbon-chili-bake",
+    "emoji": "🍲",
+    "title": "Blue-Ribbon Baked Chili Pie",
+    "image": "chili-pie.jpg",
+    "subtitle": "A thick, savory beef chili casserole layered with pinto beans, bold spices, and a bubbling sharp cheddar crown.",
+    "times": { "prep": "15 mins", "cook": "45 mins", "servings": "6 people" },
+    "nutrition": { "calories": 390, "protein": 32, "carbs": 18, "fats": 21 },
+    "highlights": [
+      { "category": "Cookoff Champion", "text": "An award-winning recipe featured in the Trim Healthy Table Cookbook, famous for winning cook-offs nationwide." },
+      { "category": "Fork Friendly", "text": "Slow-simmered savory chopmeat structured specifically to be dense and scoopable with a fork instead of a soup spoon." },
+      { "category": "Healthy Randomizer Fit", "text": "Under 400 calories per serving, adding a high-protein heavyweight directly onto your healthy terminal menu row." }
+    ],
+    "ingredients": [
+      "2 lbs lean ground beef",
+      "1 medium yellow onion, diced",
+      "2 tablespoons premium chili powder",
+      "1 teaspoon garlic powder",
+      "8 oz tomato sauce",
+      "14.5 oz diced tomatoes",
+      "15 oz pinto beans, rinsed and drained",
+      "1 cup sharp cheddar cheese, shredded and divided",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 365°F (185°C). Brown the ground beef and diced onion in a large skillet for 6 to 8 minutes; drain excess fat.",
+      "Stir the chili powder, garlic powder, salt, pepper, and tomato sauce into the meat and simmer over medium heat for 10 minutes.",
+      "In the bottom of a 9x13-inch baking dish, combine the pinto beans, diced tomatoes, and half of the shredded cheddar.",
+      "Pour the hot simmered beef chili meat directly into the dish and mix thoroughly with the bean layer until uniform.",
+      "Blanket the top evenly with the remaining cheddar cheese.",
+      "Bake uncovered for 40 to 45 minutes until the cheese layer is completely melted, bubbling, and deeply golden brown. Serve hot!"
+    ]
+  },
+  {
+    "id": "orange-glazed-pork-loin",
+    "emoji": "🥩",
+    "title": "Orange-Glazed Pork Loin",
+    "image": "orange-pork-loin.jpg",
+    "subtitle": "A grand prize contest-winning boneless pork roast rubbed in aromatic thyme and garlic, finished with a bright, sweet orange Dijon glaze.",
+    "times": { "prep": "15 mins", "cook": "1 hour 30 mins", "servings": "16 servings" },
+    "nutrition": { "calories": 199, "protein": 28, "carbs": 6, "fats": 7 },
+    "highlights": [
+      { "category": "Contest Winner", "text": "This contest-winning pork masterpiece is packed with complex depth thanks to an artisanal spice rub and homemade citrus reduction." },
+      { "category": "Juicy Interior", "text": "Fat-side-up roasting naturally bastes the meat fibers, ensuring it stays exceptionally tender and moisture-dense." },
+      { "category": "Macro Heavyweight", "text": "Delivers 28g of high-quality protein per plate at under 200 calories, perfectly reinforcing your healthy dashboard menu slots." }
+    ],
+    "ingredients": [
+      "5 lb boneless pork loin roast",
+      "1 garlic clove, minced",
+      "2 fresh thyme sprigs",
+      "1 cup orange juice",
+      "1/4 cup packed brown sugar",
+      "1 tablespoon Dijon mustard",
+      "1 tablespoon cornstarch",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 350°F (175°C). In a small bowl, mix together the salt, minced garlic, thyme leaves, and pepper.",
+      "Rub the savory spice mixture thoroughly all over the outside layer of your pork roast.",
+      "Place the roast fat-side up on a rack in a shallow roasting pan and bake uncovered for exactly 1 hour.",
+      "While roasting, combine orange juice, brown sugar, and Dijon mustard in a saucepan over medium heat; whisk in a cornstarch slurry to bubble and thicken for 2 minutes.",
+      "Brush half of the orange glaze uniformly over the pork loin, reserving the rest for table serving later.",
+      "Bake for an additional 20 to 30 minutes until a meat thermometer reads 145°F, let rest for 10 minutes, and slice thin!"
+    ]
+  },
+  {
+    "id": "blue-ribbon-whipping-cream-pound-cake",
+    "emoji": "🎂",
+    "title": "Blue Ribbon Whipping Cream Pound Cake",
+    "image": "whipping-cream-cake.jpg",
+    "subtitle": "An legendary state fair championship cake featuring a remarkably firm, velvety fine crumb infused with premium vanilla extract.",
+    "times": { "prep": "20 mins", "cook": "1 hour 15 mins", "servings": "12 slices" },
+    "nutrition": { "calories": 396, "protein": 5, "carbs": 50, "fats": 19 },
+    "highlights": [
+      { "category": "Best of Show", "text": "The single highest-rated pound cake on the circuit, routinely taking home Best of Show ribbons at elite state fairs." },
+      { "category": "Heavy Cream Magic", "text": "Utilizing pure heavy whipping cream instead of standard milk yields a rich, dense structure that melts in your mouth." },
+      { "category": "Bakery Standard", "text": "Sifting a hint of cornstarch directly into the flour structure produces a flawless, tight crumb framework." }
+    ],
+    "ingredients": [
+      "2 2/3 cups all-purpose flour",
+      "6 tablespoons cornstarch",
+      "2 1/2 cups white granulated sugar",
+      "1 cup unsalted butter, softened",
+      "1 cup heavy whipping cream",
+      "7 large eggs",
+      "2 tablespoons premium vanilla extract"
+    ],
+    "instructions": [
+      "Preheat your oven to 350°F (175°C) and heavily grease and flour a large 10-inch tube or Bundt pan.",
+      "In a large mixing bowl, cream together the sugar and softened butter for 5 minutes until light and fluffy.",
+      "Beat in the 7 large eggs one at a time, making sure each is completely integrated before adding the next.",
+      "In a separate clean bowl, mix together your flour and cornstarch thoroughly.",
+      "Alternately add the flour mixture and heavy whipping cream into the wet base, mixing slowly until completely smooth.",
+      "Blend in the vanilla extract, pour the thick batter cleanly into the pan, and bake for 60 to 75 minutes until a toothpick comes out clean!"
+    ]
+  },
+  {
+    "id": "prize-winning-rhubarb-berry-crumble",
+    "emoji": "🥧",
+    "title": "Prize-Winning Rhubarb Berry Crumble",
+    "image": "rhubarb-berry-crumble.jpg",
+    "subtitle": "A $5,000 grand prize winner combining tangy crisp rhubarb, sweet sliced strawberries, and plump blueberries under an almond crunch.",
+    "times": { "prep": "15 mins", "cook": "40 mins", "servings": "8 servings" },
+    "nutrition": { "calories": 362, "protein": 4, "carbs": 72, "fats": 8 },
+    "highlights": [
+      { "category": "Grand Prize Hero", "text": "Took home a massive $5,000 cash prize challenge for its masterful structural balance of sweet and tangy flavors." },
+      { "category": "Almond Streusel", "text": "Topped with a buttery, hand-crumbled flour shell packed with sliced raw almonds that toast up beautifully crisp." },
+      { "category": "Healthy Mode Safe", "text": "Registers cleanly under 400 calories per serving, adding a vibrant seasonal fruit dessert to your light terminal dashboard menu rows." }
+    ],
+    "ingredients": [
+      "2 cups fresh rhubarb, cut into 1-inch pieces",
+      "2 cups fresh strawberries, sliced",
+      "1 cup fresh blueberries",
+      "2 cups granulated sugar, divided",
+      "2 tablespoons cornstarch",
+      "1 tablespoon balsamic vinegar",
+      "1 cup all-purpose flour",
+      "1/3 cup sliced raw almonds",
+      "3 tablespoons unsalted butter, melted",
+      "1 large egg"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and grease a 13x9-inch baking pan with butter or oil.",
+      "In a large bowl, combine the rhubarb pieces, sliced strawberries, and whole blueberries.",
+      "Add 1 1/2 cups of the sugar, the cornstarch, and the balsamic vinegar, tossing thoroughly until the fruit is heavily coated.",
+      "Transfer the sugared fruit base into your pan. In a separate bowl, mix flour, the remaining 1/2 cup sugar, salt, and sliced almonds.",
+      "Stir in the egg with your fingers until the mixture is beautifully coarse and crumbly, then scatter uniformly over the fruit.",
+      "Drizzle the melted butter over the top and bake for 35 to 40 minutes until the fruit filling is bubbling and the almonds are golden brown!"
+    ]
+  },
+   {
+    "id": "grand-champion-orange-delight-cookies",
+    "emoji": "🍊",
+    "title": "Grand Champion Orange Delight Cookies",
+    "image": "orange-delight-cookies.jpg",
+    "subtitle": "Light, melt-in-your-mouth frosted tea cookies dipped hot-from-the-oven into a zesty fresh-squeezed orange glaze.",
+    "times": { "prep": "15 mins", "cook": "12 mins", "servings": "3 dozen" },
+    "nutrition": { "calories": 110, "protein": 1, "carbs": 21, "fats": 3 },
+    "highlights": [
+      { "category": "Grand Champion", "text": "Winner of the historic first-ever Tanana Valley State Fair cookie bake-off for exceptional texture and citrus depth." },
+      { "category": "Citrus Infusion", "text": "Dipping the cookies while steaming hot forces the crumb matrix to drink up the fresh-squeezed orange glaze." },
+      { "category": "Dashboard Light Slot", "text": "Keeps total calories remarkably low per cookie, adding a vibrant sweet choice onto your healthy menu row selection." }
+    ],
+    "ingredients": [
+      "3 cups all-purpose flour",
+      "1 1/2 cups packed brown sugar",
+      "1 1/2 sticks butter, softened",
+      "2 large eggs",
+      "1/2 cup whole milk mixed with 1 teaspoon vinegar",
+      "1/2 teaspoon baking soda",
+      "1 cup fresh-squeezed orange juice and 2 teaspoons finely grated zest (for glaze)",
+      "3 cups granulated sugar (for glaze reduction)"
+    ],
+    "instructions": [
+      "Beat packed brown sugar and softened butter together in a large mixing bowl until completely smooth and creamy.",
+      "Add eggs one at a time, beating thoroughly after each addition, then stir in the vanilla extract.",
+      "Dissolve the baking soda directly into your milk-vinegar mixture and set aside.",
+      "Alternate adding the flour and milk mixtures into the bowl, beating slowly until a smooth dough forms.",
+      "Refrigerate the dough for 3 hours, then roll into small, even balls and arrange on a parchment-lined baking sheet.",
+      "Bake at 350°F (175°C) for 10 to 12 minutes, then immediately dip the hot cookies into your whisked orange juice and sugar glaze!"
+    ]
+  },
+  {
+    "id": "blue-ribbon-toffee-crowned-pound-cake",
+    "emoji": "🥮",
+    "title": "Blue Ribbon Toffee Crowned Pound Cake",
+    "image": "toffee-pound-cake.jpg",
+    "subtitle": "A prized Texas State Fair Best of Show heirloom cake with a dense cream crumb topped with a hard-crack homemade toffee crumble.",
+    "times": { "prep": "25 mins", "cook": "1 hour 30 mins", "servings": "1 cake" },
+    "nutrition": { "calories": 420, "protein": 6, "carbs": 58, "fats": 22 },
+    "highlights": [
+      { "category": "Best of Show", "text": "Awarded the coveted Best of Show ribbon at the State Fair of Texas, celebrating a flawless heirloom crumb architecture." },
+      { "category": "Buttermilk Base", "text": "Adding baking soda directly into real rich buttermilk triggers a tenderizing chemical reaction for an airy, dense fold." },
+      { "category": "Toffee Crown Crust", "text": "Topped with a crushed, hard-crack scratch-made butter toffee glaze layer that provides an unbelievable crunch." }
+    ],
+    "ingredients": [
+      "3 cups sifted flour",
+      "3 cups granulated sugar",
+      "1 cup butter, softened",
+      "1 cup shortening",
+      "6 large eggs, separated",
+      "1 cup rich buttermilk mixed with 1/2 teaspoon baking soda",
+      "1 teaspoon vanilla extract and 1 teaspoon butter extract",
+      "1 1/3 cups sugar, 1/2 cup butter, and 3 tablespoons water (for hard-crack toffee topping)"
+    ],
+    "instructions": [
+      "Preheat your oven to 350°F (175°C) and heavily grease and flour a large fluted tube or Bundt cake pan.",
+      "Cream the shortening and butter together on medium until fluffy, then beat in the sugar until perfectly blended.",
+      "Add your egg yolks one by one, beating thoroughly, then blend in the vanilla and butter extracts.",
+      "Gradually alternate adding your sifted flour and buttermilk mixture, beginning and ending with the flour.",
+      "In a clean bowl, whip egg whites until stiff peaks form, fold gently into the thick batter, and bake for 1.5 hours.",
+      "Stir the toffee topping ingredients over medium heat to hard-crack stage, pour onto a oiled sheet to cool, crush completely, and crown the cake!"
+    ]
+  },
+  {
+    "id": "first-place-state-fair-meatloaf",
+    "emoji": "🍞",
+    "title": "First-Place State Fair Meatloaf",
+    "image": "state-fair-meatloaf.jpg",
+    "subtitle": "A masterclass in savory balance—lean ground beef seasoned with cornbread stuffing crumbs, yellow peppers, and a zesty hot-sauce glaze.",
+    "times": { "prep": "15 mins", "cook": "1 hour", "servings": "8 servings" },
+    "nutrition": { "calories": 280, "protein": 24, "carbs": 31, "fats": 15 },
+    "highlights": [
+      { "category": "Cookoff Champion", "text": "First-place winner of the competitive State Fair Meatloaf and Meatball challenge after a decade of flavor development." },
+      { "category": "Cornbread Binder", "text": "Swaps out traditional plain breadcrumbs for a box of seasoned cornbread stuffing mix to lock in immense texture moisture." },
+      { "category": "Healthy Dashboard Fit", "text": "Supplies 24g of protein at exactly 280 calories per thick slice, locking a new savory heavyweight onto your healthy menu rows." }
+    ],
+    "ingredients": [
+      "1 lb lean ground beef chuck",
+      "1 box (6 oz) cornbread stuffing mix",
+      "1 cup yellow onion and 1/2 cup yellow bell pepper, finely diced",
+      "1/2 cup red bell pepper and 1/2 cup carrot, grated",
+      "1 large egg",
+      "1/4 cup unsweetened apple cider and 3 tablespoons steak sauce",
+      "1 cup premium French dressing and 1/2 cup sweet barbecue sauce (for glaze base)",
+      "5 tablespoons Louisiana hot sauce and 2 tablespoons tomato paste (for glaze kick)"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and lightly oil a spacious loaf pan or baking dish.",
+      "In a large mixing bowl, combine the ground beef, stuffing mix mix, diced onions, bell peppers, carrots, egg, cider, and steak sauce.",
+      "Mix the ingredients thoroughly with your hands, shape into a uniform loaf structure, and place inside the pan.",
+      "Bake uncovered for exactly 30 minutes to set the exterior meat crust.",
+      "Whisk together the French dressing, barbecue sauce, hot sauce, and tomato paste in a small bowl until smooth.",
+      "Pour the glossy chili-sauce glaze heavily and evenly over the meatloaf top, bake for another 30 minutes, slice, and serve!"
+    ]
+  },
+   {
+    "id": "grand-champion-pecan-praline-pie",
+    "emoji": "🥧",
+    "title": "Grand Champion Pecan Praline Pie",
+    "image": "praline-pie.jpg",
+    "subtitle": "An elite blue-ribbon dessert combining rich, dark brown sugar custard with a crunch of caramelized praline pecans.",
+    "times": { "prep": "20 mins", "cook": "50 mins", "servings": "8 slices" },
+    "nutrition": { "calories": 440, "protein": 5, "carbs": 52, "fats": 21 },
+    "highlights": [
+      { "category": "Grand Champion", "text": "Scored a flawless 100-point judging matrix at the Louisiana State Fair for best structural density and traditional flavor." },
+      { "category": "Praline Caramelization", "text": "Slow-roasting the pecan layers in real dark brown sugar molasses extracts an incredible, smoky depth of sweetness." },
+      { "category": "Bakery Standard", "text": "Utilizes a clean par-baked crust method to guarantee the bottom stay incredibly flaky and never gets soggy." }
+    ],
+    "ingredients": [
+      "1 unbaked 9-inch pastry pie shell",
+      "3 large eggs, beaten thoroughly",
+      "1 cup dark brown sugar, packed",
+      "3/4 cup dark corn syrup",
+      "1/4 cup unsalted butter, melted",
+      "1 1/2 cups premium pecan halves",
+      "1 teaspoon pure vanilla extract",
+      "1/4 teaspoon salt"
+    ],
+    "instructions": [
+      "Preheat your oven to 350°F (175°C). In a large mixing bowl, whisk together the beaten eggs, dark brown sugar, and corn syrup until smooth.",
+      "Stir in the melted butter, pure vanilla extract, and salt until completely integrated into the sweet base.",
+      "Fold the premium pecan halves gently into the custard mixture, ensuring they are evenly distributed.",
+      "Pour the filling cleanly into your unbaked pastry pie shell, smoothing the pecans out into a level top layer.",
+      "Bake uncovered for 45 to 50 minutes until the center is set and a toothpick inserted near the middle comes out clean.",
+      "Let the pie cool completely on a wire rack for at least 2 hours to let the praline structure firm up before slicing thin!"
+    ]
+  },
+  {
+    "id": "blue-ribbon-sweet-onion-tart",
+    "emoji": "🧅",
+    "title": "Blue Ribbon Sweet Onion Tart",
+    "image": "onion-tart.jpg",
+    "subtitle": "A prized agriculture show winner featuring deeply caramelized sweet Vidalia onions baked inside a savory thyme parmesan shell.",
+    "times": { "prep": "15 mins", "cook": "40 mins", "servings": "6 servings" },
+    "nutrition": { "calories": 290, "protein": 8, "carbs": 26, "fats": 16 },
+    "highlights": [
+      { "category": "Agriculture Winner", "text": "First-place blue-ribbon winner at the Georgia Sweet Onion Festival cook-off for supreme flavor extraction." },
+      { "category": "Slow Caramelization", "text": "Relying on the natural fructose released during a low-heat butter simmer to turn the onions sweet and jammy." },
+      { "category": "Dashboard Light Slot", "text": "Registers cleanly under 300 calories per slice, locking a gorgeous savory pastry option right onto your healthy menu rows." }
+    ],
+    "ingredients": [
+      "1 refrigerated pie crust sheet",
+      "3 large sweet Vidalia onions, thinly sliced",
+      "2 tablespoons unsalted butter",
+      "2 tablespoons olive oil",
+      "1/2 cup grated parmesan cheese",
+      "1/2 cup sour cream",
+      "1 teaspoon fresh thyme leaves",
+      "Salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Melt the butter and olive oil together in a large skillet over medium-low heat.",
+      "Add your thinly sliced sweet onions and cook undisturbed for 25 minutes, stirring occasionally, until deeply caramelized and jammy.",
+      "Preheat your oven to 375°F (190°C) and press your pie crust sheet firmly into a 9-inch tart pan.",
+      "In a small bowl, whisk together the sour cream, grated parmesan cheese, fresh thyme leaves, salt, and pepper.",
+      "Spread the sour cream mixture smoothly across the bottom of the crust, then top heavily with the caramelized onions.",
+      "Bake for 15 to 20 minutes until the edges of the pastry shell are beautifully golden brown and crisp. Serve warm!"
+    ]
+  },
+  {
+    "id": "prize-winning-citrus-herb-tilapia",
+    "emoji": "🐟",
+    "title": "Prize-Winning Citrus Tilapia",
+    "image": "citrus-tilapia.jpg",
+    "subtitle": "An ultra-clean, pan-seared seafood masterpiece glazed in a zesty reduction of fresh lime juice, orange zest, and cracked pepper.",
+    "times": { "prep": "5 mins", "cook": "8 mins", "servings": "2 people" },
+    "nutrition": { "calories": 180, "protein": 26, "carbs": 3, "fats": 7 },
+    "highlights": [
+      { "category": "National Cookoff First", "text": "Took home the gold medal at the Seafood Marketers Cook-off for best short-window preparation and macro balance." },
+      { "category": "8-Minute Flash Sear", "text": "An exceptionally quick turnaround dinner that forms a delicate outer crust while keeping the interior flaky." },
+      { "category": "Healthy Mode Titan", "text": "Delivers an impressive 26g of lean protein with only 180 calories, making it a powerful star for your light randomizer row." }
+    ],
+    "ingredients": [
+      "2 fresh tilapia fillets (approx. 6 oz each)",
+      "1 tablespoon fresh lime juice",
+      "1 teaspoon fresh orange zest",
+      "1 tablespoon olive oil",
+      "1/2 teaspoon garlic powder",
+      "1/2 teaspoon dried parsley",
+      "Salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Pat the fresh tilapia fillets completely dry on both sides with a clean paper towel.",
+      "Season the fish evenly with garlic powder, dried parsley, fresh orange zest, salt, and black pepper, pressing gently so it sticks.",
+      "Heat the olive oil in a non-stick skillet over medium-high heat until hot.",
+      "Place the seasoned fish fillets into the skillet and sear undisturbed for 3 to 4 minutes until a light golden crust forms.",
+      "Carefully flip the fillets with a flat spatula, drizzle the fresh lime juice over top, and cook for another 3 minutes until flaky.",
+      "Serve hot immediately alongside roasted vegetables or wild rice!"
+    ]
+  },
+  {
+    "id": "blue-ribbon-cornbread-stuffing-casserole",
+    "emoji": "🥘",
+    "title": "Blue-Ribbon Cornbread Casserole",
+    "image": "cornbread-casserole.jpg",
+    "subtitle": "A prized southern bake combining sweet crumbled cornbread, savory chicken sausage, and garden herbs in a rich, buttery broth gravy.",
+    "times": { "prep": "15 mins", "cook": "35 mins", "servings": "6 servings" },
+    "nutrition": { "calories": 310, "protein": 12, "carbs": 38, "fats": 14 },
+    "highlights": [
+      { "category": "Southern Champion", "text": "Took home the first-place blue ribbon at the Atlanta Heritage Cook-off for supreme moisture retention and traditional depth." },
+      { "category": "Cornbread Magic", "text": "Utilizes a clean par-baked cornbread crumbling technique to ensure the base drinks up the broth without turning mushy." },
+      { "category": "Dashboard Light Slot", "text": "Locks an incredibly hearty, savory southern comfort dish cleanly onto your healthy terminal menu rows under 350 calories." }
+    ],
+    "ingredients": [
+      "1 box (8.5 oz) cornbread mix, baked and crumbled",
+      "1/2 lb chicken sausage, casings removed and crumbled",
+      "1 medium yellow onion, finely diced",
+      "2 stalks celery, thinly sliced",
+      "1 1/2 cups low-sodium chicken broth",
+      "1/4 cup unsalted butter, melted",
+      "1 teaspoon poultry seasoning",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and lightly grease a 9x13-inch baking casserole dish.",
+      "In a large skillet over medium heat, brown the crumbled chicken sausage for 5 minutes, then remove and set aside.",
+      "Sauté the diced onion and sliced celery in the same pan with a splash of olive oil for 4 minutes until tender-crisp.",
+      "In a large mixing bowl, combine your baked cornbread crumbs, cooked sausage, sautéed onions, and celery.",
+      "Pour in the chicken broth, melted butter, and poultry seasoning, folding gently until the liquid absorbs fully.",
+      "Transfer the mixture evenly into your prepared baking dish and bake uncovered for 30 to 35 minutes until the top is crisp and golden!"
+    ]
+  },
+  {
+    "id": "grand-champion-lemon-meringue-tart",
+    "emoji": "🥧",
+    "title": "Grand Champion Lemon Meringue Tart",
+    "image": "lemon-meringue.jpg",
+    "subtitle": "An elite award-winning pastry featuring a sharp, zesty scratch-made lemon curd capped with a towering, toasted marshmallow meringue cloud.",
+    "times": { "prep": "25 mins", "cook": "20 mins", "servings": "8 slices" },
+    "nutrition": { "calories": 380, "protein": 5, "carbs": 64, "fats": 12 },
+    "highlights": [
+      { "category": "National Gold Medal", "text": "Scored a perfect technical rating at the National Pastry Championship for flawless curd set and zero weeping metrics." },
+      { "category": "Citrus Curd Focus", "text": "Slow-whisking fresh egg yolks with pure lemon juice and grated zest creates an exceptionally silky, tart custard center." },
+      { "category": "Healthy Mode Dessert", "text": "Registers cleanly under 400 calories per slice, adding a brilliant high-end citrus showstopper directly onto your light randomizer selection row." }
+    ],
+    "ingredients": [
+      "1 pre-baked 9-inch tart shell",
+      "1 1/4 cups granulated sugar, divided",
+      "1/4 cup cornstarch",
+      "1 cup cold water",
+      "1/2 cup fresh lemon juice and 1 tablespoon grated zest",
+      "3 large eggs, separated",
+      "2 tablespoons unsalted butter",
+      "1/4 teaspoon cream of tartar"
+    ],
+    "instructions": [
+      "In a medium saucepan, whisk 1 cup of sugar and cornstarch together. Gradually whisk in the water, lemon juice, and egg yolks until perfectly smooth.",
+      "Cook over medium heat, stirring constantly, until the mixture comes to a boil and thickens instantly; remove from heat and stir in butter and zest.",
+      "Pour the hot lemon curd cleanly into your pre-baked tart shell and let cool slightly.",
+      "In a clean glass bowl, whip the 3 egg whites and cream of tartar with a mixer until soft peaks form.",
+      "Gradually beat in the remaining 1/4 cup of sugar, 1 tablespoon at a time, until stiff, glossy peaks develop.",
+      "Spoon the meringue clouds heavily over the warm filling, sealing the edges completely, and bake at 375°F for 10 minutes to toast the peaks golden!"
+    ]
+  },
+  {
+    "id": "prize-winning-herb-roasted-turkey",
+    "emoji": "🍗",
+    "title": "Prize-Winning Herb Turkey Breast",
+    "image": "roasted-turkey.jpg",
+    "subtitle": "A masterclass in moisture retention—lean turkey breast rubbed down in a savory sage, garlic, and smoked paprika olive oil paste.",
+    "times": { "prep": "10 mins", "cook": "1 hour", "servings": "6 servings" },
+    "nutrition": { "calories": 240, "protein": 38, "carbs": 1, "fats": 8 },
+    "highlights": [
+      { "category": "Poultry Circuit Champ", "text": "First-place winner of the competitive Regional Autumn Roast Challenge, praised for its juicy interior flesh matrix." },
+      { "category": "Aromatic Rub Shield", "text": "An intensive paste layer of dried sage, rosemary, and garlic seals in the natural juices perfectly during high-heat baking." },
+      { "category": "Healthy Mode Titan", "text": "Delivers a massive 38g of clean muscle-building protein at just 240 calories, making it a powerhouse for your light randomizer dashboard." }
+    ],
+    "ingredients": [
+      "2.5 lbs boneless turkey breast, skin-on",
+      "2 tablespoons premium olive oil",
+      "2 cloves garlic, finely minced",
+      "1 teaspoon dried sage",
+      "1 teaspoon dried rosemary, crushed",
+      "1/2 teaspoon smoked paprika",
+      "Salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and lightly oil a baking pan or cast iron skillet.",
+      "Pat the turkey breast completely dry with paper towels to ensure optimal skin crisping.",
+      "In a small bowl, mix together the olive oil, minced garlic, dried sage, crushed rosemary, smoked paprika, salt, and pepper into a thick paste.",
+      "Rub the herb oil paste thoroughly all over the outside skin and underneath the flesh folds of the turkey breast.",
+      "Place the turkey breast skin-side up in your pan and roast uncovered for 1 hour, or until a meat thermometer reads 165°F (74°C).",
+      "Remove from the pan, tent loosely with foil, and let rest for a solid 10 minutes to lock in juices before carving thin slices!"
+    ]
+  },
+  {
+    "id": "grand-champion-pecan-crusted-catfish",
+    "emoji": "🐟",
+    "title": "Grand Champion Pecan Catfish",
+    "image": "pecan-catfish.jpg",
+    "subtitle": "Tender, flaky catfish fillets rolled in a crisp, savory toasted pecan and herb crust, pan-seared to perfection.",
+    "times": { "prep": "15 mins", "cook": "10 mins", "servings": "2 people" },
+    "nutrition": { "calories": 340, "protein": 28, "carbs": 8, "fats": 21 },
+    "highlights": [
+      { "category": "Seafood Expo King", "text": "Awarded first place at the Southern Seafood Showcase for its masterful texture contrast and nut-crust execution." },
+      { "category": "Pecan Armor Coating", "text": "Swaps generic crumbs for finely ground toasted pecans to build an exceptionally rich, nutty outer seal." },
+      { "category": "Healthy Mode Titan", "text": "Supplies 28g of high-quality lean protein at under 350 calories, locking perfectly onto your light randomizer menu row." }
+    ],
+    "ingredients": [
+      "2 fresh catfish fillets (approx. 6 oz each)",
+      "1/2 cup pecans, finely ground",
+      "1/4 cup panko breadcrumbs",
+      "1 teaspoon garlic powder",
+      "1/2 teaspoon dried thyme",
+      "1 large egg, whisked thoroughly",
+      "2 tablespoons olive oil",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "In a shallow bowl, mix together the ground pecans, panko breadcrumbs, garlic powder, dried thyme, salt, and pepper.",
+      "Pat the catfish fillets completely dry on both sides with a clean paper towel.",
+      "Dip each fillet into the whisked egg, then roll immediately in the pecan mix, pressing gently so it sticks.",
+      "Heat the olive oil in a non-stick skillet over medium-high heat until hot.",
+      "Place the crusted fish into the skillet and sear undisturbed for 4 to 5 minutes per side until the pecan crust is golden brown and the fish flakes easily.",
+      "Remove from heat and serve immediately while warm with a slice of fresh lemon!"
+    ]
+  },
+  {
+    "id": "blue-ribbon-stuffed-bell-peppers",
+    "emoji": "🫑",
+    "title": "Blue-Ribbon Stuffed Peppers",
+    "image": "stuffed-peppers.jpg",
+    "subtitle": "Vibrant bell peppers stuffed with a savory blend of seasoned lean ground beef, rice, sweet onions, and a rich tomato sauce glaze.",
+    "times": { "prep": "20 mins", "cook": "45 mins", "servings": "4 people" },
+    "nutrition": { "calories": 320, "protein": 26, "carbs": 24, "fats": 14 },
+    "highlights": [
+      { "category": "Harvest Cookoff First", "text": "Took home the blue ribbon at the Regional Harvest Festival Challenge, praised for its perfect balance of meat and herbs." },
+      { "category": "Unbroken Shell", "text": "Pre-steaming the bell pepper boats ensures they stay completely tender and structured without collapsing during the bake cycle." },
+      { "category": "Dashboard Light Slot", "text": "Locks an incredibly hearty, deep all-in-one comfort meal cleanly onto your healthy dashboard row under 350 calories." }
+    ],
+    "ingredients": [
+      "4 large green or red bell peppers, tops sliced off and cored",
+      "1 lb lean ground beef",
+      "1/2 cup cooked white rice",
+      "1 small yellow onion, finely diced",
+      "2 cloves garlic, minced",
+      "15 oz tomato sauce, divided",
+      "1 teaspoon dried Italian seasoning",
+      "1/2 cup shredded mozzarella cheese",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and place the cored bell peppers upright inside a 9x9-inch baking dish.",
+      "In a large skillet over medium-high heat, brown the ground beef and diced onion for 6 minutes; drain excess fat.",
+      "Stir the minced garlic, Italian seasoning, cooked rice, and half of the tomato sauce directly into the beef; simmer for 2 minutes.",
+      "Spoon the savory beef and rice mixture tightly and evenly into the hollowed-out bell pepper shells.",
+      "Pour the remaining tomato sauce uniformly across the top of each pepper, then cover the dish tightly with foil.",
+      "Bake for 35 minutes, remove the foil, blanket heavily with mozzarella cheese, and bake uncovered for 10 more minutes until bubbling!"
+    ]
+  },
+  {
+    "id": "prize-winning-peach-berry-cobbler",
+    "emoji": "🍑",
+    "title": "Prize-Winning Peach Cobbler",
+    "image": "peach-berry-cobbler.jpg",
+    "subtitle": "A grand prize dessert featuring layers of sweet sliced peaches and plump fresh blackberries baked under a soft buttermilk biscuit topping.",
+    "times": { "prep": "15 mins", "cook": "40 mins", "servings": "6 people" },
+    "nutrition": { "calories": 330, "protein": 4, "carbs": 56, "fats": 11 },
+    "highlights": [
+      { "category": "National Challenge Winner", "text": "Claimed the $10,000 grand prize at the National Orchard Fruit Competition for absolute juice reduction balance." },
+      { "category": "Buttermilk Sponge", "text": "Real rich buttermilk triggers a steaming reaction during the bake, producing a light, pillowy crust that holds toppings perfectly." },
+      { "category": "Healthy Mode Dessert", "text": "Registers cleanly under 350 calories per serving, adding a vibrant seasonal fruit masterpiece to your light randomizer row." }
+    ],
+    "ingredients": [
+      "4 cups fresh peaches, peeled and sliced",
+      "1 cup fresh blackberries",
+      "1 cup white granulated sugar, divided",
+      "1 cup all-purpose flour",
+      "1 1/2 teaspoons baking powder",
+      "1/4 teaspoon salt",
+      "1/2 cup rich buttermilk",
+      "1/4 cup unsalted butter, melted"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and lightly grease an 8x8 inch square baking dish.",
+      "Toss the peach slices and blackberries directly inside the dish with 1/2 cup of the sugar until glistening.",
+      "In a separate large bowl, whisk together the flour, baking powder, salt, and the remaining 1/2 cup of sugar.",
+      "Pour the buttermilk and melted butter into the dry base, stirring gently with a spatula until a thick dough forms.",
+      "Drop rounded tablespoons of the soft buttermilk biscuit dough uniformly over your fruit layer, leaving space for steam.",
+      "Bake uncovered for 35 to 40 minutes until the fruit juices are bubbling rapidly and the biscuit top is golden brown. Serve warm!"
+    ]
+  },
+  {
+    "id": "grand-champion-coconut-crusted-shrimp",
+    "emoji": "🍤",
+    "title": "Grand Champion Coconut Shrimp",
+    "image": "coconut-shrimp.jpg",
+    "subtitle": "Plump, juicy butterfly shrimp rolled in a crisp, golden shredded coconut shell coating and flash-baked to perfection.",
+    "times": { "prep": "15 mins", "cook": "12 mins", "servings": "3 people" },
+    "nutrition": { "calories": 290, "protein": 22, "carbs": 18, "fats": 12 },
+    "highlights": [
+      { "category": "Seafood Festival King", "text": "Claimed the first-place blue ribbon at the annual Coastal Seafood Challenge for absolute crispiness and zero frying grease." },
+      { "category": "Tropical Armor", "text": "Combines sweet flaked coconut with light panko crumbs to lock in a sweet, crunchy outer protective bark." },
+      { "category": "Healthy Mode Titan", "text": "Supplies 22g of lean protein at exactly 290 calories, loading a powerful new seafood option onto your healthy menu row." }
+    ],
+    "ingredients": [
+      "1 lb large raw shrimp, peeled and butterflied",
+      "1 cup sweet shredded coconut flakes",
+      "1/2 cup panko breadcrumbs",
+      "2 large eggs, beaten thoroughly",
+      "1/4 cup all-purpose flour",
+      "1 teaspoon garlic powder",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and line a large baking sheet with parchment paper.",
+      "Set up three shallow bowls: one with flour and garlic powder, one with beaten eggs, and one mixing the coconut and panko.",
+      "Pat the shrimp completely dry, dredge lightly in flour, dip into egg, and roll heavily in the coconut panko mixture.",
+      "Arrange the crusted shrimp in a single layer on your prepared sheet, spacing them so they do not touch.",
+      "Bake uncovered for 10 to 12 minutes until the shredded coconut armor is beautifully golden brown and crispy.",
+      "Remove from the pan immediately and serve hot with fresh lime wedges or a side sweet chili dip!"
+    ]
+  },
+  {
+    "id": "blue-ribbon-stuffed-mushrooms-bake",
+    "emoji": "🍄",
+    "title": "Blue-Ribbon Stuffed Mushrooms",
+    "image": "stuffed-mushrooms.jpg",
+    "subtitle": "Savory baby bella mushroom caps stuffed with a rich, bubbling mixture of garlic, cream cheese, parmesan, and herbs.",
+    "times": { "prep": "15 mins", "cook": "20 mins", "servings": "4 people" },
+    "nutrition": { "calories": 160, "protein": 6, "carbs": 8, "fats": 13 },
+    "highlights": [
+      { "category": "Holiday Cookoff First", "text": "Awarded first place at the Regional Autumn Appetizer Showcase, praised for its rich base and scoopable structural balance." },
+      { "category": "Whipped Filling", "text": "Whipping premium softened cream cheese with sharp parmesan cheese keys creates a luxurious, melting interior texture." },
+      { "category": "Dashboard Light Slot", "text": "Registers cleanly at 160 calories per plate, adding a stunning savory party finger food option directly onto your healthy dashboard row." }
+    ],
+    "ingredients": [
+      "12 large baby bella mushrooms, wiped clean and stems removed",
+      "4 oz cream cheese, softened",
+      "1/4 cup grated parmesan cheese",
+      "2 cloves garlic, finely minced",
+      "2 tablespoons fresh chives, finely chopped",
+      "1/4 teaspoon garlic powder",
+      "1 tablespoon olive oil",
+      "Salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and lightly grease a medium-sized baking dish with olive oil.",
+      "In a small mixing bowl, thoroughly whip together the softened cream cheese, minced garlic, parmesan, and chives.",
+      "Season the hollowed-out baby bella mushroom caps with a tiny pinch of garlic powder, salt, and pepper.",
+      "Spoon a rounded tablespoon of the velvety cheese filling tightly inside each seasoned mushroom cap cavity.",
+      "Arrange the stuffed mushrooms upright side-by-side inside your prepared dish, drizzling remaining oil across the tops.",
+      "Bake uncovered for 20 minutes until the mushroom hulls are tender and the cheese crowns are completely melted, bubbly, and golden. Serve warm!"
+    ]
+  },
+  {
+    "id": "prize-winning-lemon-blueberry-loaf",
+    "emoji": "🍞",
+    "title": "Prize-Winning Blueberry Loaf",
+    "image": "lemon-blueberry-loaf.jpg",
+    "subtitle": "A prized state fair sweet bread bursting with plump fresh blueberries and finished with a zesty, sweet lemon sugar glaze.",
+    "times": { "prep": "15 mins", "cook": "50 mins", "servings": "8 slices" },
+    "nutrition": { "calories": 280, "protein": 4, "carbs": 52, "fats": 6 },
+    "highlights": [
+      { "category": "Baking Circuit Champ", "text": "First-place blue-ribbon winner of the highly competitive State Fair Sweet Bread Bake-off for supreme moisture balance." },
+      { "category": "Flour Shield Tech", "text": "Tossing fresh blueberries gently in flour before folding stops them from sinking to the pan floor, keeping the fruit spread uniform." },
+      { "category": "Healthy Mode Dessert", "text": "Keeps total calories under 300 per thick slice, locking a new bakery showstopper right onto your light randomizer selection line." }
+    ],
+    "ingredients": [
+      "1 1/2 cups all-purpose flour",
+      "1 teaspoon baking powder",
+      "1/2 teaspoon salt",
+      "1 cup granulated sugar",
+      "1/2 cup whole milk",
+      "1/3 cup melted butter",
+      "2 large eggs",
+      "1 cup fresh blueberries",
+      "2 tablespoons fresh lemon juice and 1/2 cup powdered sugar (for zesty glaze reduction)"
+    ],
+    "instructions": [
+      "Preheat your oven to 350°F (175°C) and grease an 8x4 inch loaf pan thoroughly with butter or cooking spray.",
+      "In a medium bowl, whisk together the flour, baking powder, and salt. In a separate bowl, toss blueberries with 1 tablespoon of that flour mix.",
+      "In a large bowl, beat together the sugar, eggs, melted butter, and milk until completely smooth.",
+      "Gradually add the dry mixture to the wet base, folding gently with a spatula until just combined (batter should stay slightly lumpy).",
+      "Gently fold in the floured fresh blueberries, pour into the prepared pan, and bake for 50 minutes until a toothpick comes out clean.",
+      "Whisk the powdered sugar and fresh lemon juice together until glossy, and drizzle heavily over the hot loaf before cooling!"
+    ]
+  },
+  {
+    "id": "pork-chops-alla-pizzaiola",
+    "emoji": "🥩",
+    "title": "Pork Chops alla Pizzaiola",
+    "image": "pork-chops-pizzaiola.jpg",
+    "subtitle": "Thick-cut bone-in pork chops flash-seared and slow-simmered in a rustic, savory herbed tomato and garlic sauce.",
+    "times": { "prep": "10 mins", "cook": "20 mins", "servings": "2 people" },
+    "nutrition": { "calories": 446, "protein": 38, "carbs": 15, "fats": 26 },
+    "highlights": [
+      { "category": "Skillet Champion", "text": "A famous Italian comfort profile that relies on searing bone-in chops to render down delicious savory pan drippings." },
+      { "category": "Pizzaiola Glaze", "text": "Simmering diced tomatoes with garlic and Italian herbs creates an exceptionally bold sauce layer that clings to the pork." },
+      { "category": "One-Pan Ease", "text": "Browning meat and building the rustic tomato reduction happens in a single skillet for zero-fuss cleanup profiles." }
+    ],
+    "ingredients": [
+      "2 bone-in center-cut pork chops, 1-inch thick",
+      "2 tablespoons extra virgin olive oil",
+      "1 small yellow onion, thinly sliced",
+      "4 cloves garlic, minced",
+      "1 can (15 oz) diced tomatoes in juice",
+      "1 teaspoon Italian seasoning",
+      "Salt and red pepper flakes to taste"
+    ],
+    "instructions": [
+      "Pat the pork chops dry with paper towels and season both sides heavily with salt and black pepper.",
+      "Heat olive oil in a deep skillet over medium-high heat and sear the chops for 3 minutes per side until beautifully browned, then remove.",
+      "Toss the sliced onion and minced garlic directly into the hot pan pan, sautéing for 3 minutes until highly fragrant.",
+      "Pour in the diced tomatoes with their juices, adding the Italian seasoning and a pinch of red pepper flakes.",
+      "Simmer the sauce uncovered over medium heat for 5 minutes until the tomato liquid begins to bubble and thicken slightly.",
+      "Nestle the seared pork chops back into the bubbling sauce matrix, cover with a lid, and cook for 5 minutes until tender-flaky!"
+    ]
+  },
+  {
+    "id": "almond-bacon-cheese-crostini",
+    "emoji": "🥖",
+    "title": "Almond Bacon Cheese Crostini",
+    "image": "bacon-crostini.jpg",
+    "subtitle": "Crisp toasted baguette rounds topped with a savory, bubbling mixture of Monterey Jack cheese, smoky bacon, and toasted almonds.",
+    "times": { "prep": "15 mins", "cook": "15 mins", "servings": "36 pieces" },
+    "nutrition": { "calories": 120, "protein": 3, "carbs": 10, "fats": 8 },
+    "highlights": [
+      { "category": "Appetizer First", "text": "Winner of regional party food showcases for its magnificent blend of smoky, nutty, and ultra-gooey components." },
+      { "category": "Textural Fusion", "text": "Combines crisp toasted baguettes with real crumbled bacon bits and crunchy slivered almonds for an amazing bite profile." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 120 calories per crisp appetizer round, adding a versatile party finger option to your healthy rows." }
+    ],
+    "ingredients": [
+      "1 French bread baguette, sliced thin into 36 rounds",
+      "2 cups Monterey Jack cheese, shredded",
+      "2/3 cup mayonnaise",
+      "6 slices of bacon, cooked and crumbled",
+      "1/2 cup sliced almonds, toasted",
+      "1 green onion, finely chopped",
+      "A dash of salt"
+    ],
+    "instructions": [
+      "Preheat your oven to 400 degrees F (204 degrees C) and line a large baking sheet with parchment paper.",
+      "Arrange the baguette slices in a single layer on the sheet and bake for 8 minutes until lightly toasted and crisp.",
+      "In a medium mixing bowl, combine the shredded cheese, mayonnaise, crumbled bacon, toasted almonds, green onion, and salt.",
+      "Mix the topping thoroughly with a spoon until a thick, uniform paste matrix forms.",
+      "Spoon a rounded teaspoon of the savory bacon cheese mixture cleanly across the top face of each toasted bread round.",
+      "Bake for an additional 7 minutes until the cheese layer is completely melted, bubbling, and golden brown. Serve warm!"
+    ]
+  },
+  {
+    "id": "blue-ribbon-mushroom-puff-tart",
+    "emoji": "🥧",
+    "title": "Blue-Ribbon Mushroom Tart",
+    "image": "mushroom-tart.jpg",
+    "subtitle": "Flaky, buttery puff pastry layers topped with earthy thyme-sautéed baby bella mushrooms and melted gruyere.",
+    "times": { "prep": "15 mins", "cook": "20 mins", "servings": "6 servings" },
+    "nutrition": { "calories": 290, "protein": 8, "carbs": 22, "fats": 16 },
+    "highlights": [
+      { "category": "Baking Champion", "text": "Awarded first place at the Regional Autumn Pastry Showcase for its airy shell infrastructure and intense savory depth." },
+      { "category": "Earthy Glaze reduction", "text": "Sautéing mushrooms in real butter with fresh garlic and thyme keys out a rich, woodsy caramelized profile." },
+      { "category": "Dashboard Light Slot", "text": "Keeps total calories cleanly under 300 per slice, locking a high-end savory vegetable tart directly onto your healthy lines." }
+    ],
+    "ingredients": [
+      "1 sheet frozen puff pastry, thawed",
+      "2 cups baby bella mushrooms, sliced thin",
+      "2 tablespoons unsalted butter",
+      "2 cloves garlic, finely minced",
+      "1 cup Gruyere cheese, shredded",
+      "1 teaspoon fresh thyme leaves",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 400 degrees F (204 degrees C) and line a flat baking sheet with parchment paper.",
+      "Melt the butter in a pan over medium heat and sauté the mushrooms and minced garlic for 5 minutes until tender-caramelized.",
+      "Stir the fresh thyme leaves, salt, and pepper into the hot mushroom mixture, then remove from heat.",
+      "Roll out the thawed puff pastry sheet onto the baking sheet and lightly score a 1-inch border border line around the edges using a knife.",
+      "Dock the inner rectangle of the pastry sheet with a fork to prevent it from rising unevenly during the oven cycle.",
+      "Blanket the inner center heavily with Gruyere cheese, layer the thyme mushrooms over top, and bake for 20 minutes until crisp!"
+    ]
+  },
+  {
+    "id": "gordon-ramsay-beef-wellington",
+    "emoji": "🥩",
+    "title": "Ramsay's Signature Beef Wellington",
+    "image": "ramsay-wellington.jpg",
+    "subtitle": "Gordon Ramsay's legendary masterpiece—tender beef fillet coated in English mustard and savory mushroom duxelles wrapped in Parma ham and flaky puff pastry.",
+    "times": { "prep": "30 mins", "cook": "35 mins", "servings": "4 people" },
+    "nutrition": { "calories": 650, "protein": 48, "carbs": 32, "fats": 38 },
+    "highlights": [
+      { "category": "Masterclass Icon", "text": "The absolute crowning jewel of Chef Ramsay's culinary repertoire, celebrated worldwide for fine dining precision." },
+      { "category": "Mushroom Duxelles", "text": "Finely minced flat cap mushrooms are slow-cooked in a dry pan until all moisture evaporates into an intense savory paste." },
+      { "category": "Soggy Bottom Defense", "text": "Wrapping the fillet tightly in layers of Parma ham seals in the juices perfectly, protecting the outer puff pastry crisp." }
+    ],
+    "ingredients": [
+      "750g center-cut beef tenderloin fillet",
+      "400g flat cap mushrooms, finely chopped",
+      "2 tablespoons English mustard",
+      "6 slices of Parma ham",
+      "500g ready-made puff pastry sheet",
+      "2 egg yolks, beaten thoroughly",
+      "Olive oil, sea salt, and black pepper to taste"
+    ],
+    "instructions": [
+      "Season the beef fillet heavily. Sear in a smoking hot pan with olive oil for 30 seconds per side just to color it, then cool.",
+      "Brush the English mustard uniformly over the warm seared beef so it absorbs directly into the meat fibers.",
+      "Pulse the mushrooms into a paste and cook in a dry pan over high heat for 10 minutes until all moisture completely evaporates.",
+      "Lay plastic wrap down, arrange overlapping Parma ham slices, spread the cooled mushroom paste, and roll tightly around the beef into a barrel log.",
+      "Chill the beef cylinder for 20 minutes, then unwrap and encase it tightly inside a rolled rectangle of puff pastry brushed with egg wash.",
+      "Place seam-side down on a sheet, brush with egg yolk, score lightly with the back of a knife, and bake at 400°F (200°C) for 35 minutes!"
+    ]
+  },
+  {
+    "id": "gordon-ramsay-crispy-skin-salmon",
+    "emoji": "🐟",
+    "title": "Ramsay's Crispy Skin Salmon",
+    "image": "ramsay-salmon.jpg",
+    "subtitle": "Perfectly pan-fried salmon cooked skin-side down until shattering and crackly, finished with a bright lemon thyme butter baste.",
+    "times": { "prep": "5 mins", "cook": "10 mins", "servings": "2 people" },
+    "nutrition": { "calories": 330, "protein": 34, "carbs": 2, "fats": 20 },
+    "highlights": [
+      { "category": "Heat Control", "text": "Chef Ramsay's famous pan method: cooking 90% on the skin side to form a brilliant crust while keeping the core translucent." },
+      { "category": "Aromatic Basting", "text": "Finishing the pan execution with fresh thyme sprigs and minced garlic to cascade rich flavor matrices over the fish flakes." },
+      { "category": "Healthy Mode Titan", "text": "Clocking in safely at 330 calories with massive omega-3 values, making it an instant star for your light randomizer dashboard line." }
+    ],
+    "ingredients": [
+      "2 skin-on salmon fillets (6 oz each)",
+      "1 tablespoon high-heat avocado or canola oil",
+      "2 tablespoons unsalted butter",
+      "4 sprigs fresh thyme",
+      "2 cloves garlic, sliced thin",
+      "1 tablespoon fresh lemon juice",
+      "Kosher salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Pat the salmon skin completely dry with paper towels and season both sides generously with salt and pepper.",
+      "Heat oil in a heavy skillet over medium-high heat until it shimmers, then lay the salmon in skin-side down away from you.",
+      "Gently press the center of each fillet down with your fingers for 10 seconds to keep the skin flat and prevent curling.",
+      "Lower heat to medium and let it cook undisturbed for 5 minutes until the opaque color rises two-thirds up the sides.",
+      "Drop the butter, sliced garlic, and thyme sprigs into the pan. Tilt the skillet and spoon the foaming melted butter over the flesh.",
+      "Carefully flip the fillets for just 30 seconds to finish the flesh side, squeeze fresh lemon juice into the pan pan, and remove!"
+    ]
+  },
+  {
+    "id": "gordon-ramsay-scrambled-eggs",
+    "emoji": "🍳",
+    "title": "Ramsay's Perfect Scrambled Eggs",
+    "image": "ramsay-eggs.jpg",
+    "subtitle": "The viral culinary phenomenon—impossibly rich, velvety, custard-like scrambled eggs cooked softly via an on-and-off heat cycle.",
+    "times": { "prep": "2 mins", "cook": "4 mins", "servings": "2 servings" },
+    "nutrition": { "calories": 220, "protein": 14, "carbs": 4, "fats": 18 },
+    "highlights": [
+      { "category": "Viral Phenomenon", "text": "Ramsay's signature breakfast technique that completely bans pre-whisking or salting to protect the delicate structural proteins." },
+      { "category": "On-And-Off Method", "text": "Alternating the pan on and off the flame every 30 seconds stops the eggs from overcooking, keeping the curds velvety." },
+      { "category": "Velvety Enrichment", "text": "Stirring in cold crème fraîche at the final second cools down the pan instantly and locks in a luxurious cream profile." }
+    ],
+    "ingredients": [
+      "6 fresh large eggs, cold",
+      "1 tablespoon unsalted butter, cold",
+      "1 tablespoon crème fraîche or cold sour cream",
+      "2 tablespoons fresh chives, finely chopped",
+      "Kosher salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Crack your cold eggs directly into a completely cold saucepan. Do not whisk or season them beforehand.",
+      "Drop the cold pat of butter into the pan and place the skillet over medium heat.",
+      "Stir continuously with a rubber spatula, making sure to scrape the bottom and inner corners of the pan smoothly.",
+      "As soon as the eggs begin to thicken after a minute, lift the pan completely off the heat for 10 seconds while still stirring.",
+      "Return the pan to the heat for 30 seconds. Repeat this on-and-off heat cycle for 3 minutes until soft, wet curds form.",
+      "Pull the pan off the burner completely while the eggs look slightly wet. Stir in the cold crème fraîche and chives, season with salt and pepper, and serve!"
+    ]
+  },
+  {
+    "id": "pan-seared-alaskan-halibut",
+    "emoji": "🐟",
+    "title": "Pan-Seared Alaskan Halibut",
+    "image": "alaskan-halibut.jpg",
+    "subtitle": "Thick, pristine wild halibut fillets pan-seared to a pristine golden crust and bathed in a luxurious lemon caper brown butter sauce.",
+    "times": { "prep": "10 mins", "cook": "8 mins", "servings": "2 people" },
+    "nutrition": { "calories": 310, "protein": 36, "carbs": 3, "fats": 16 },
+    "highlights": [
+      { "category": "Coastal Champion", "text": "Winner of the Pacific Northwest Seafood Festival showcase for flawless moisture retention and golden crust formation." },
+      { "category": "Brown Butter Baste", "text": "Allowing the pan butter to toast into nut-brown fragments keys out a remarkably deep, nutty flavor depth." },
+      { "category": "Healthy Mode Titan", "text": "Delivers an impressive 36g of clean protein at just 310 calories, adding a stellar option to your light menu rows." }
+    ],
+    "ingredients": [
+      "2 fresh wild halibut fillets (approx. 6 oz each)",
+      "1 tablespoon high-heat avocado oil",
+      "3 tablespoons unsalted butter",
+      "2 tablespoons fresh lemon juice",
+      "1 tablespoon capers, drained",
+      "1 tablespoon fresh Italian parsley, finely chopped",
+      "Salt and white pepper to taste"
+    ],
+    "instructions": [
+      "Pat the halibut fillets completely dry with paper towels and season both sides evenly with salt and white pepper.",
+      "Heat the avocado oil in a heavy stainless steel or cast iron skillet over high heat until it begins to shimmer.",
+      "Lay the fillets into the pan away from you and sear undisturbed for 4 minutes until a beautiful deep golden crust forms.",
+      "Carefully flip the fish, lower the skillet heat to medium, and toss the unsalted butter and drained capers directly into the pan.",
+      "Tilt the pan slightly and use a large spoon to baste the foaming, browning butter continuously over the fish for 3 minutes.",
+      "Squeeze fresh lemon juice directly into the pan, garnish with chopped parsley, and slide the fillets onto plates immediately!"
+    ]
+  },
+  {
+    "id": "miso-glazed-chilean-sea-bass",
+    "emoji": "🐟",
+    "title": "Miso-Glazed Chilean Sea Bass",
+    "image": "chilean-sea-bass.jpg",
+    "subtitle": "Buttery, ultra-flaky Chilean sea bass fillets marinated in a traditional Japanese sweet white miso glaze and broiled caramelized.",
+    "times": { "prep": "10 mins", "cook": "12 mins", "servings": "2 people" },
+    "nutrition": { "calories": 390, "protein": 28, "carbs": 18, "fats": 22 },
+    "highlights": [
+      { "category": "Steakhouse Standard", "text": "Replicates the famous high-end restaurant profile where the intense fat structure of the fish melts away like butter." },
+      { "category": "Miso Caramelization", "text": "Baking under high broiler heat chars the edges of the sweet white sake miso marinade into a smoky, dark lacquer bark." },
+      { "category": "Healthy Randomizer Fit", "text": "Registers cleanly under 400 calories per serving, securing a brand-new luxury seafood anchor right onto your healthy dashboard lines." }
+    ],
+    "ingredients": [
+      "2 fresh Chilean sea bass fillets (6 oz each)",
+      "3 tablespoons white miso paste (shiro miso)",
+      "2 tablespoons mirin (Japanese sweet rice wine)",
+      "2 tablespoons sake",
+      "1 tablespoon granulated sugar",
+      "1 teaspoon toasted sesame oil",
+      "1 green onion, thinly sliced on the bias"
+    ],
+    "instructions": [
+      "In a small saucepan over medium heat, combine the sake, mirin, and sugar; bring to a brief bubble to dissolve the sugar.",
+      "Whisk in the white miso paste and sesame oil until completely smooth, then remove from heat and let the glaze cool completely.",
+      "Coat the sea bass fillets thoroughly in the cooled miso glaze and let them marinate in the refrigerator for at least 1 hour.",
+      "Preheat your oven's broiler to HIGH and line a rimmed baking sheet with aluminum foil lightly brushed with oil.",
+      "Place the marinated fish on the sheet, wiping away excess clumps of glaze so it does not scorch instantly in the center.",
+      "Broil about 6 inches from the heat element for 10 to 12 minutes until the flesh flakes easily and the top layer has deep caramelized chars!"
+    ]
+  },
+  {
+    "id": "award-winning-seafood-paella",
+    "emoji": "🥘",
+    "title": "Championship Cast-Iron Paella",
+    "image": "seafood-paella.jpg",
+    "subtitle": "The ultimate Spanish showstopper—aromatic saffron rice packed with tail-on shrimp, fresh mussels, and sweet peas baked in a cast-iron skillet.",
+    "times": { "prep": "15 mins", "cook": "25 mins", "servings": "4 people" },
+    "nutrition": { "calories": 480, "protein": 34, "carbs": 54, "fats": 12 },
+    "highlights": [
+      { "category": "Cookoff Grand Prize", "text": "First-place winner of the International Rice Festival Challenge for perfect saffron absorption and unbroken seafood shells." },
+      { "category": "The Socarrat Crust", "text": "Cooking undisturbed in cast iron builds that legendary crispy, deeply toasted rice layer across the bottom floor of the pan." },
+      { "category": "One-Pot Luxury", "text": "Browning the aromatics, simmering the stock matrix, and steaming the shellfish happens in a single beautiful presentation skillet." }
+    ],
+    "ingredients": [
+      "1 lb large shrimp, peeled and deveined",
+      "1/2 lb fresh mussels, scrubbed and debearded",
+      "1 1/2 cups Bomba or Arborio short-grain paella rice",
+      "1 medium yellow onion and 1/2 bell pepper, finely diced",
+      "3 cloves garlic, minced",
+      "3 cups hot chicken broth infused with a heavy pinch of saffron threads",
+      "1/2 cup sweet frozen peas",
+      "2 tablespoons extra virgin olive oil, salt, and lemon wedges"
+    ],
+    "instructions": [
+      "Heat olive oil in a large 12-inch cast iron skillet over medium-high heat and sear your shrimp for 2 minutes until pink; remove.",
+      "Toss the diced onion, bell pepper, and minced garlic into the same hot oil pan, sautéing for 4 minutes until highly fragrant.",
+      "Add the short-grain paella rice directly into the pan, stirring constantly for 2 minutes to toast the grains evenly.",
+      "Pour in the hot saffron-infused chicken broth, stirring once to distribute the rice grains, then reduce heat to medium-low.",
+      "Let the rice simmer uncovered and completely undisturbed for 15 minutes to let the legendary bottom crust build.",
+      "Nestle the fresh mussels and seared shrimp into the top of the wet rice, scatter the peas, cover tightly with foil for 5 minutes until mussels open, and serve!"
+    ]
+  },
+  {
+    "id": "blue-ribbon-zucchini-bread",
+    "emoji": "🍞",
+    "title": "Blue-Ribbon Zucchini Bread",
+    "image": "zucchini-bread.jpg",
+    "subtitle": "An legendary state fair champion sweet bread—impossibly moist, deeply spiced with cinnamon and nutmeg, and packed with walnuts.",
+    "times": { "prep": "15 mins", "cook": "1 hour", "servings": "8 slices" },
+    "nutrition": { "calories": 260, "protein": 4, "carbs": 38, "fats": 8 },
+    "highlights": [
+      { "category": "Grand Champion", "text": "Awarded a flawless technical score at the State Fair Baking Circuit for maximum moisture density and crisp exterior bark edge." },
+      { "category": "Moisture Secret", "text": "Utilizing fresh, hand-shredded zucchini locks a continuous hydration matrix directly into the sweet cinnamon sweet bread crumb." },
+      { "category": "Healthy Mode Dessert", "text": "Keeps total calories well under 300 per thick slice, loading a spectacular new bakery option right onto your light randomizer terminal row." }
+    ],
+    "ingredients": [
+      "1 1/2 cups all-purpose flour",
+      "1 teaspoon ground cinnamon",
+      "1/2 teaspoon ground nutmeg",
+      "1/2 teaspoon baking soda",
+      "1 cup white granulated sugar",
+      "1 cup fresh zucchini, grated unpeeled",
+      "1/3 cup vegetable oil",
+      "2 large eggs",
+      "1/2 cup walnuts, chopped"
+    ],
+    "instructions": [
+      "Preheat your oven to 350 degrees F (175 degrees C) and heavily grease a standard 8x4 inch loaf pan with cooking spray.",
+      "In a medium bowl, whisk together the flour, cinnamon, nutmeg, baking soda, and salt; set aside.",
+      "In a separate large bowl, beat the vegetable oil, sugar, eggs, and grated fresh zucchini together until completely smooth.",
+      "Gradually stir your dry ingredient base into the wet mixture using a spatula until just combined (do not overmix).",
+      "Gently fold the chopped walnuts uniformly through the thick batter, then pour cleanly into your prepared pan.",
+      "Bake uncovered for 55 to 60 minutes until a toothpick inserted into the center comes out clean. Let cool entirely before slicing thin!"
+    ]
+  },
+  {
+    "id": "food-network-black-and-tan-pork",
+    "emoji": "🥩",
+    "title": "Black-and-Tan Pork Tenderloin",
+    "image": "black-and-tan-pork.jpg",
+    "subtitle": "Food Network Magazine contest-winning pork tenderloin slow-braised in a rich, dark ale and molasses glaze.",
+    "times": { "prep": "15 mins", "cook": "25 mins", "servings": "4 people" },
+    "nutrition": { "calories": 310, "protein": 34, "carbs": 12, "fats": 11 },
+    "highlights": [
+      { "category": "Contest Champion", "text": "First-place champion winner of Food Network Magazine's national cook-off challenge for elite flavor extraction." },
+      { "category": "Dark Ale Reduction", "text": "Simmering heavy dark ale with organic molasses creates a sweet and sticky glaze coating that locks moisture inside the pork loin." },
+      { "category": "Healthy Mode Titan", "text": "Supplies a massive 34g of clean lean protein under 350 calories, locking a brand-new anchor directly onto your healthy dashboard rows." }
+    ],
+    "ingredients": [
+      "1.5 lbs pork tenderloin, trimmed cleanly",
+      "1 cup dark ale beer or stout",
+      "2 tablespoons dark molasses",
+      "2 tablespoons Dijon mustard",
+      "1 tablespoon olive oil",
+      "2 cloves garlic, finely minced",
+      "Salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Pat the pork tenderloin completely dry with paper towels and rub all sides heavily with garlic powder, salt, and pepper.",
+      "Heat the olive oil in a large skillet over high heat and sear the pork loin for 2 minutes per side until a deep crust forms.",
+      "In a small mixing bowl, whisk together the dark ale, molasses, Dijon mustard, and minced garlic until smooth.",
+      "Pour the dark ale liquid matrix directly into the hot skillet with the pork loin, reducing the stove heat down to medium-low.",
+      "Simmer uncovered for 15 to 20 minutes, flipping the meat occasionally, as the sauce bubbles into a thick, glossy glaze.",
+      "Remove the meat, let it rest for 5 minutes, slice into thick medallions, and drizzle the remaining pan glaze reduction heavily over top!"
+    ]
+  },
+  {
+    "id": "national-champion-banana-semifreddo",
+    "emoji": "🍨",
+    "title": "Peanut Butter Banana Semifreddo",
+    "image": "banana-semifreddo.jpg",
+    "subtitle": "An elite national champion frozen dessert featuring layers of peanut butter-swirled banana custard frozen inside a crisp graham crust.",
+    "times": { "prep": "20 mins", "cook": "10 mins", "servings": "8 servings" },
+    "nutrition": { "calories": 340, "protein": 6, "carbs": 42, "fats": 16 },
+    "highlights": [
+      { "category": "National Showcase First", "text": "Winner of the National Custard Challenge for creating an ice cream-like treat with a velvet structural density without an ice cream maker." },
+      { "category": "Velvet Custard Focus", "text": "Slow-cooking fresh mashed banana custard before whipping with cream ensures an incredibly silky frozen bite contour." },
+      { "category": "Dashboard Light Slot", "text": "Registers cleanly under 350 calories per frozen slice, locking a gorgeous high-end dessert choice onto your light randomizer selection line." }
+    ],
+    "ingredients": [
+      "2 large ripe bananas, mashed completely smooth",
+      "1/2 cup premium creamy peanut butter",
+      "3 large egg yolks",
+      "1/2 cup white granulated sugar",
+      "1 cup heavy whipping cream, chilled",
+      "1 cup graham cracker crumbs mixed with 2 tablespoons melted butter (for crust base)"
+    ],
+    "instructions": [
+      "Press your buttered graham cracker crumb mixture firmly across the bottom floor of a standard loaf pan lined with wrap.",
+      "In a heatproof bowl set over a pot of simmering water, whisk egg yolks and sugar constantly for 5 minutes until pale and thick.",
+      "Remove bowl from heat and fold in the mashed sweet bananas and cold creamy peanut butter swirls until uniform.",
+      "In a separate clean bowl, whip your chilled heavy cream with a mixer until stiff peaks form.",
+      "Gently fold the whipped cream matrix into the banana peanut butter custard base so it retains its light, airy structural loft.",
+      "Spoon the smooth mixture over your graham crust, cover tightly, and freeze for 6 hours until firm before slicing cold!"
+    ]
+  },
+   {
+    "id": "enchilada-wonder-casserole",
+    "emoji": "🥘",
+    "title": "Enchilada Wonder Casserole",
+    "image": "enchilada-casserole.jpg",
+    "subtitle": "A comforting, deeply layered Mexican-style lasagna featuring seasoned ground beef, warm chili spices, and a rich, bubbling cheddar coat.",
+    "times": { "prep": "20 mins", "cook": "30 mins", "servings": "6 people" },
+    "nutrition": { "calories": 540, "protein": 42, "carbs": 14, "fats": 36 },
+    "highlights": [
+      { "category": "Cookbook Feature", "text": "Sourced straight from the Oven Dishes archive of the Trim Healthy Mama Cookbook for supreme comforting depth." },
+      { "category": "Layered Gravy Matrix", "text": "Blends tomato paste, chili powder, and cumin into a thick enchilada sauce that completely saturates the beef layers." },
+      { "category": "Hearty Main Option", "text": "Provides an incredibly dense, high-protein comfort option for your main database pool without pushing carbs high." }
+    ],
+    "ingredients": [
+      "3 lbs lean ground beef",
+      "1/4 cup premium chili powder",
+      "10 oz tomato paste",
+      "2 cups chicken stock",
+      "1 teaspoon ground cumin",
+      "1 teaspoon dried oregano",
+      "8 oz sharp cheddar cheese, shredded",
+      "1/2 cup sliced black olives (for garnish)"
+    ],
+    "instructions": [
+      "Preheat your oven to 350 degrees F (175 degrees C) and grease a large 9x13 inch baking dish.",
+      "Brown your ground beef in a large skillet over high heat for 6 to 8 minutes; drain any excess fat.",
+      "In a blender, combine the chili powder, tomato paste, chicken stock, cumin, oregano, and a pinch of salt; blend until smooth.",
+      "Pour your blended enchilada gravy directly into the skillet with the beef, stirring to coat the meat uniformly.",
+      "Layer half of the savory meat sauce across the bottom of the dish, then blanket with half of the shredded cheddar.",
+      "Repeat the layer with the remaining meat and cheese, top heavily with sliced olives, and bake for 30 minutes until bubbling!"
+    ]
+  },
+  {
+    "id": "chili-relleno-chicken-bake",
+    "emoji": "🥘",
+    "title": "Chili Relleno Chicken Bake",
+    "image": "relleno-bake.jpg",
+    "subtitle": "A community-favorite casserole featuring tender diced chicken breasts baked inside a fluffy, herbed egg custard with fire-roasted green chilies and melty Monterey Jack.",
+    "times": { "prep": "15 mins", "cook": "45 mins", "servings": "6 people" },
+    "nutrition": { "calories": 420, "protein": 46, "carbs": 6, "fats": 24 },
+    "highlights": [
+      { "category": "Community Pick", "text": "Celebrated across healthy lifestyle forums as a top-tier favorite dinner bake for absolute moisture retention." },
+      { "category": "Pillowy Custard", "text": "Whipping whole eggs with fire-roasted green chilies produces a light, airy souffle-like matrix around the meat." },
+      { "category": "High Protein Anchor", "text": "Supplies a massive 46g of protein per serving, keeping users completely full and satisfied for hours." }
+    ],
+    "ingredients": [
+      "2 lbs chicken breasts, cooked and diced into bite-sized cubes",
+      "7 large eggs",
+      "14 oz fire-roasted diced green chilies, drained completely",
+      "16 oz Monterey Jack cheese, shredded and divided",
+      "Salt and black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 350 degrees F (175 degrees C) and lightly oil a spacious baking casserole dish.",
+      "In a large mixing bowl, beat your 7 large eggs vigorously with a fork until pale and foamy.",
+      "Stir the drained green chilies, diced cooked chicken, and three-quarters of the shredded Monterey Jack cheese directly into the eggs.",
+      "Season the mixture gently with a pinch of salt and black pepper, stirring to distribute the ingredients evenly.",
+      "Pour the egg and chicken matrix cleanly into your prepared dish, smoothing it out into a level top layer.",
+      "Blanket the top with the remaining cheese and bake uncovered for 45 minutes until the center is set and golden!"
+    ]
+  },
+  {
+    "id": "creamy-verde-chicken-chili",
+    "emoji": "🥣",
+    "title": "Creamy Verde Chicken Chili",
+    "image": "verde-chili.jpg",
+    "subtitle": "A vibrant, zesty green chicken chili simmered with tangy salsa verde, white beans, and riced cauliflower in a velvety herbed broth.",
+    "times": { "prep": "15 mins", "cook": "35 mins", "servings": "6 people" },
+    "nutrition": { "calories": 320, "protein": 34, "carbs": 18, "fats": 12 },
+    "highlights": [
+      { "category": "Secret Veggie Matrix", "text": "Utilizes finely riced cauliflower that completely melts into the hot broth to thicken the body invisibly." },
+      { "category": "Salsa Verde Infusion", "text": "Simmering real chicken breast tenders in tangy tomatillo salsa keeps the profile vibrant, bright, and clean." },
+      { "category": "Healthy Mode Master", "text": "Registers at just 320 calories while packing 34g of protein, loading a high-variety seafood/poultry anchor onto your light dashboard row." }
+    ],
+    "ingredients": [
+      "2.5 lbs chicken breasts, whole",
+      "16 oz tangy salsa verde (tomatillo green salsa)",
+      "15 oz white cannellini beans, rinsed and drained",
+      "10 oz frozen riced cauliflower",
+      "3 cups low-sodium chicken broth, divided",
+      "4 oz low-fat cream cheese, softened",
+      "1 teaspoon ground cumin",
+      "1 teaspoon onion powder",
+      "1 teaspoon garlic powder"
+    ],
+    "instructions": [
+      "Place the whole chicken breasts, salsa verde, white beans, and frozen cauliflower rice into the bottom of a large deep pot.",
+      "In a blender, combine the low-fat cream cheese, 2 cups of the chicken broth, cumin, onion powder, and garlic powder; blend until smooth.",
+      "Pour your blended cream mixture into the pot along with the remaining 1 cup of chicken broth, stirring to merge the fluids.",
+      "Bring the soup to a bubble over medium-high heat, then lower heat to medium-low, cover with a lid, and simmer for 25 minutes.",
+      "Remove the chicken breasts briefly, place them on a clean board, and shred into thick shreds using two forks.",
+      "Return your shredded chicken right back into the velvety green broth, simmer uncovered for 5 minutes, and serve hot!"
+    ]
+  }
+]
