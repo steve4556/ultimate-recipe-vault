@@ -11,6 +11,7 @@ const loadMoreContainer = document.getElementById("load-more-container");
 let showFavoritesOnly = false;
 let myRecipes = []; 
 let visibleCount = 12; // 🧠 Change this number to control how many cards show up first!
+let healthyModalMaxCalories = 500; // Tracks the interactive slider inside the healthy modal
 
 // --- LOCAL STORAGE HELPERS FOR FAVORITES ---
 function getFavorites() {
@@ -146,6 +147,7 @@ function initApp() {
         }
     }
 }
+
 function openDetailedView(recipeId) {
     const targetRecipe = myRecipes.find(r => r.id === recipeId);
     if (!targetRecipe) return;
@@ -156,6 +158,18 @@ function openDetailedView(recipeId) {
     // Injects raw text parameters safely
     document.getElementById("overlay-title").textContent = `${targetRecipe.emoji} ${targetRecipe.title}`;
     document.getElementById("overlay-subtitle").textContent = targetRecipe.subtitle;
+    
+    const subtitleEl = document.getElementById("overlay-subtitle");
+    const multiplierContainer = document.createElement("div");
+    multiplierContainer.className = "multiplier-controls";
+    multiplierContainer.style.cssText = "display: flex; gap: 10px; margin: 20px 0 10px 0; justify-content: center; align-items: center;";
+    multiplierContainer.innerHTML = `
+        <span style="color: #848d9e; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Scale Portions:</span>
+        <button class="scale-btn active-scale" data-factor="1" style="background: #d4af37; color: #1c212a; border: 2px solid #d4af37; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">1x</button>
+        <button class="scale-btn" data-factor="2" style="background: #2d3238; color: #fff; border: 2px solid #848d9e; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">2x</button>
+        <button class="scale-btn" data-factor="4" style="background: #2d3238; color: #fff; border: 2px solid #848d9e; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">4x</button>
+    `;
+    subtitleEl.parentNode.insertBefore(multiplierContainer, subtitleEl.nextSibling);
 
     // Dynamically sets the large photo inside your full-screen overlay view panel layout
     const oldOverlayImg = document.getElementById("overlay-photo");
@@ -169,7 +183,6 @@ function openDetailedView(recipeId) {
         imgDiv.innerHTML = `<img id="overlay-photo" src="images/${targetRecipe.image}" alt="${targetRecipe.title}" class="recipe-photo">`;
         
         // Sticks the photo framework right beneath your subtitle text element frame
-        const subtitleEl = document.getElementById("overlay-subtitle");
         subtitleEl.parentNode.insertBefore(imgDiv, subtitleEl.nextSibling);
     }
 
@@ -180,7 +193,8 @@ function openDetailedView(recipeId) {
     const allHeaders = overlay.querySelectorAll("h2");
     allHeaders.forEach(h => h.style.display = "");
 
-    document.getElementById("overlay-ingredients").style.display = "";
+    const ingredientsElement = document.getElementById("overlay-ingredients");
+    ingredientsElement.style.display = "";
     document.getElementById("overlay-instructions").style.display = "";
 
     // Injects core structural metrics into table cells
@@ -200,8 +214,70 @@ function openDetailedView(recipeId) {
         <dd>${h.text}</dd>
     `).join("");
 
-    const ingredientsElement = document.getElementById("overlay-ingredients");
-    ingredientsElement.innerHTML = targetRecipe.ingredients.map(ing => `<li>${ing}</li>`).join("");
+    function multiplyIngredientQuantity(ingredientString, factor) {
+        return ingredientString.replace(/^(\d+\s+\d+\/\d+|\d+\/\d+|\d+(\.\d+)?)/, match => {
+            let parts = match.trim().split(/\s+/);
+            let num = 0;
+            parts.forEach(p => {
+                if (p.includes('/')) {
+                    let frags = p.split('/');
+                    num += parseFloat(frags[0]) / parseFloat(frags[1]);
+                } else {
+                    num += parseFloat(p);
+                }
+            });
+            let calculated = num * factor;
+            return parseFloat(calculated.toFixed(2)); // Keeps decimals capped tightly to 2 spaces maximum
+        });
+    }
+
+    // Helper engine to draw your ingredient checkmarks with the multiplied fractions
+    function renderIngredients(factor) {
+        ingredientsElement.innerHTML = targetRecipe.ingredients.map(ing => {
+            const scaledText = multiplyIngredientQuantity(ing, factor);
+            return `
+                <li class="checklist-item" style="cursor: pointer; list-style-type: '⬜ '; margin-bottom: 12px; transition: all 0.2s ease; user-select: none;">
+                    <span class="ing-text" style="padding-left: 5px;">${scaledText}</span>
+                </li>
+            `;
+        }).join("");
+    }
+
+    // Draw baseline initial portions immediately
+    renderIngredients(1);
+
+    // Maintain your crisp green checkmark toggles seamlessly via structural event delegation
+    ingredientsElement.onclick = (e) => {
+        const listItem = e.target.closest(".checklist-item");
+        if (!listItem) return;
+        listItem.classList.toggle("checked");
+        listItem.style.listStyleType = listItem.classList.contains("checked") ? "'✅ '" : "'⬜ '";
+        listItem.style.textDecoration = listItem.classList.contains("checked") ? "line-through" : "none";
+        listItem.style.opacity = listItem.classList.contains("checked") ? "0.45" : "1";
+        listItem.style.color = listItem.classList.contains("checked") ? "#848d9e" : "#eeeeee";
+    };
+
+    // Listen to your portion multiplier button row interactions seamlessly
+    const scaleButtons = multiplierContainer.querySelectorAll(".scale-btn");
+    scaleButtons.forEach(btn => {
+        btn.onclick = (e) => {
+            e.stopPropagation();
+            
+            // Re-map active button classes and switch visual styles seamlessly
+            scaleButtons.forEach(b => {
+                b.style.background = "#2d3238";
+                b.style.color = "#fff";
+                b.style.borderColor = "#848d9e";
+            });
+            btn.style.background = "#d4af37";
+            btn.style.color = "#1c212a";
+            btn.style.borderColor = "#d4af37";
+            
+            // Fetch multiplier factor and recalculate ingredient arrays instantly
+            const currentFactor = parseInt(btn.getAttribute("data-factor"));
+            renderIngredients(currentFactor);
+        };
+    });
 
     const instructionsElement = document.getElementById("overlay-instructions");
     instructionsElement.innerHTML = targetRecipe.instructions.map(step => `<li>${step}</li>`).join("");
@@ -237,6 +313,12 @@ function clearOverlayLayout() {
     document.getElementById("table-protein").textContent = "";
     document.getElementById("table-carbs").textContent = "";
     document.getElementById("table-fats").textContent = "";
+
+    // 🚀 FIXED: Find and remove any existing multiplier control panels to stop stacking copies!
+    const existingMultiplier = overlay.querySelector(".multiplier-controls");
+    if (existingMultiplier) {
+        existingMultiplier.remove();
+    }
 
     const overlayImg = document.getElementById("overlay-photo");
     if (overlayImg) overlayImg.style.display = "";
@@ -385,31 +467,88 @@ const healthyMenuBtn = document.getElementById("healthy-menu-btn");
 function generateHealthyMealPlan() {
     if (myRecipes.length === 0) return;
 
-    // Reset layout view completely using your existing engine cleaner
+    // 1. CLEAR THE MODAL FIRST so we have a clean slate to work on
     clearOverlayLayout();
 
-    // 1. Filter the global master pool into a "Healthy" subset (under 400 calories)
-    const healthyPool = myRecipes.filter(r => r.nutrition.calories < 400);
+    // 2. Setup the Header Title Parameters
+    document.getElementById("overlay-title").textContent = "🥗 Your Custom Vault Menu";
 
-    // 2. Classify the healthy subset exactly like your standard layout
-    const breakfasts = healthyPool.filter(r => r.id.includes("egg") || r.id.includes("pancake") || r.id.includes("biscuit") || r.id.includes("scramble"));
-    const desserts = healthyPool.filter(r => r.id.includes("muffin") || r.id.includes("cookie") || r.id.includes("brownie") || r.id.includes("bread") || r.id.includes("sorbet") || r.id.includes("cake") || r.id.includes("toast"));
-    const appetizers = healthyPool.filter(r => r.id.includes("canape") || r.id.includes("date") || r.id.includes("spread") || r.id.includes("appetizer") || r.id.includes("fries") || r.id.includes("dip") || r.id.includes("cheese"));
-    const mains = healthyPool.filter(r => !breakfasts.includes(r) && !desserts.includes(r) && !appetizers.includes(r));
+    // 3. Inject the Interactive Slider Component right into the sub-header element slot
+    const subtitleElement = document.getElementById("overlay-subtitle");
+    subtitleElement.innerHTML = `
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin: 15px auto; max-width: 400px; padding: 10px; background: rgba(0,0,0,0.2); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+            <span style="font-size: 0.95rem; color: #dce0e9;">Fort Knox automated selections (&lt; <strong id="modal-cal-val" style="color: #d4af37;">${healthyModalMaxCalories}</strong> kcal)</span>
+            <input type="range" id="modal-calorie-slider" min="150" max="800" step="25" value="${healthyModalMaxCalories}" style="width: 100%; accent-color: #d4af37; cursor: pointer; margin-top: 5px;">
+        </div>
+    `;
 
-    const pickRandom = (array) => array[Math.floor(Math.random() * array.length)];
+    // 4. Core rendering engine: This builds the menu rows dynamically based on the current calorie limit
+    function renderHealthyMenuRows(maxCals) {
+        // Filter master pool dynamically based on the moving slider scale value
+        const healthyPool = myRecipes.filter(r => r.nutrition.calories <= maxCals);
 
-    // Fallback safely to a generic text marker if a specific macro branch is empty
-    const bfastChoice = pickRandom(breakfasts) || { title: "Roll a new dish!", emoji: "🍳" };
-    const lunchChoice = pickRandom(mains) || { title: "Roll a new dish!", emoji: "🥢" };
-    const dinnerChoice = pickRandom(mains) || { title: "Roll a new dish!", emoji: "🥢" };
-    const appChoice = pickRandom(appetizers) || { title: "Roll a new dish!", emoji: "🧅" };
-    const dessertChoice = pickRandom(desserts) || { title: "Roll a new dish!", emoji: "🍪" };
+        // Classify the current active calorie subset exactly like your standard layout template rules
+        const breakfasts = healthyPool.filter(r => r.id.includes("egg") || r.id.includes("pancake") || r.id.includes("biscuit") || r.id.includes("scramble"));
+        const desserts = healthyPool.filter(r => r.id.includes("muffin") || r.id.includes("cookie") || r.id.includes("brownie") || r.id.includes("bread") || r.id.includes("sorbet") || r.id.includes("cake") || r.id.includes("toast"));
+        const appetizers = healthyPool.filter(r => r.id.includes("canape") || r.id.includes("date") || r.id.includes("spread") || r.id.includes("appetizer") || r.id.includes("fries") || r.id.includes("dip") || r.id.includes("cheese"));
+        const mains = healthyPool.filter(r => !breakfasts.includes(r) && !desserts.includes(r) && !appetizers.includes(r));
 
-    // 3. Set Up the Header Parameters using your exact naming strings
-    document.getElementById("overlay-title").textContent = "🥗 Your Healthy Vault Menu";
-    document.getElementById("overlay-subtitle").textContent = "Fort Knox automated light selections (< 400 kcal).";
-    
+        const pickRandom = (array) => array[Math.floor(Math.random() * array.length)];
+
+        // Fallback safely if a specific calorie branch contains zero results under low slider settings
+        const bfastChoice = pickRandom(breakfasts) || { title: "No dishes found under limit", emoji: "⚠️", nutrition: { calories: 0 } };
+        const appChoice = pickRandom(appetizers) || { title: "No dishes found under limit", emoji: "⚠️", nutrition: { calories: 0 } };
+        const lunchChoice = pickRandom(mains) || { title: "No dishes found under limit", emoji: "⚠️", nutrition: { calories: 0 } };
+        const dinnerChoice = pickRandom(mains) || { title: "No dishes found under limit", emoji: "⚠️", nutrition: { calories: 0 } };
+        const dessertChoice = pickRandom(desserts) || { title: "No dishes found under limit", emoji: "⚠️", nutrition: { calories: 0 } };
+
+        // Inject the updated content grid segment into your target container framework frame
+        const highlightsElement = document.getElementById("overlay-highlights");
+        if (highlightsElement) {
+            highlightsElement.innerHTML = `
+                <div style="display: flex; flex-direction: column; gap: 20px; background: rgba(45, 50, 56, 0.95); padding: 25px; border-radius: 12px; border: 2px solid #848d9e; margin: 20px 0; box-shadow: 0 8px 16px rgba(0,0,0,0.4);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #d4af37; padding-bottom: 12px; margin-bottom: 10px;">
+                        <span style="font-size: 1.2rem; color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Custom Vault Specials</span>
+                        <button id="reroll-healthy-btn" style="background: #d4af37; color: #1c212a; border: none; padding: 6px 14px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: all 0.2s ease;">🔄 Re-Roll Menu</button>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                            <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🌅 Breakfast</span>
+                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${bfastChoice.emoji} ${bfastChoice.title} (${bfastChoice.nutrition?.calories || 0} kcal)</span>
+                        </div>
+                        <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                            <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🧅 Appetizer Snack</span>
+                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${appChoice.emoji} ${appChoice.title} (${appChoice.nutrition?.calories || 0} kcal)</span>
+                        </div>
+                        <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                            <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">☀️ Lunch</span>
+                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${lunchChoice.emoji} ${lunchChoice.title} (${lunchChoice.nutrition?.calories || 0} kcal)</span>
+                        </div>
+                        <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                            <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🌙 Dinner</span>
+                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${dinnerChoice.emoji} ${dinnerChoice.title} (${dinnerChoice.nutrition?.calories || 0} kcal)</span>
+                        </div>
+                        <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                            <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🍪 Dessert</span>
+                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${dessertChoice.emoji} ${dessertChoice.title} (${dessertChoice.nutrition?.calories || 0} kcal)</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Re-bind click loops to the inside re-roll option box element node point
+        const rerollHealthyBtn = document.getElementById("reroll-healthy-btn");
+        if (rerollHealthyBtn) {
+            rerollHealthyBtn.onclick = (e) => {
+                e.stopPropagation();
+                renderHealthyMenuRows(healthyModalMaxCalories);
+            };
+        }
+    }
+
+    // Turn off static features that belong explicitly to standard card detail view renders
     const overlayImg = document.getElementById("overlay-photo");
     if (overlayImg) overlayImg.style.display = "none";
     
@@ -422,50 +561,24 @@ function generateHealthyMealPlan() {
     document.getElementById("overlay-ingredients").style.display = "none";
     document.getElementById("overlay-instructions").style.display = "none";
 
-    // 4. Inject the Custom Grid Template containing an internal Re-Roll binder
-    const highlightsElement = document.getElementById("overlay-highlights");
-    highlightsElement.innerHTML = `
-        <div style="display: flex; flex-direction: column; gap: 20px; background: rgba(45, 50, 56, 0.95); padding: 25px; border-radius: 12px; border: 2px solid #848d9e; margin: 20px 0; box-shadow: 0 8px 16px rgba(0,0,0,0.4);">
-            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #d4af37; padding-bottom: 12px; margin-bottom: 10px;">
-                <span style="font-size: 1.2rem; color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Today's Light Specials</span>
-                <button id="reroll-healthy-btn" style="background: #d4af37; color: #1c212a; border: none; padding: 6px 14px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: all 0.2s ease;">🔄 Re-Roll Menu</button>
-            </div>
-            
-            <div style="display: flex; flex-direction: column; gap: 15px;">
-                <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
-                    <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🌅 Breakfast</span>
-                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${bfastChoice.emoji} ${bfastChoice.title} (${bfastChoice.nutrition?.calories || 0} kcal)</span>
-                </div>
-                <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
-                    <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🧅 Appetizer Snack</span>
-                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${appChoice.emoji} ${appChoice.title} (${appChoice.nutrition?.calories || 0} kcal)</span>
-                </div>
-                <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
-                    <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">☀️ Lunch</span>
-                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${lunchChoice.emoji} ${lunchChoice.title} (${lunchChoice.nutrition?.calories || 0} kcal)</span>
-                </div>
-                <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
-                    <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🌙 Dinner</span>
-                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${dinnerChoice.emoji} ${dinnerChoice.title} (${dinnerChoice.nutrition?.calories || 0} kcal)</span>
-                </div>
-                <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
-                    <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🍪 Dessert</span>
-                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${dessertChoice.emoji} ${dessertChoice.title} (${dessertChoice.nutrition?.calories || 0} kcal)</span>
-                </div>
-            </div>
-        </div>
-    `;
+    // 5. Generate the initial menu cards now that layout structures are prepped
+    renderHealthyMenuRows(healthyModalMaxCalories);
 
-    // Instantly bind the internal re-roll trigger
-    const rerollHealthyBtn = document.getElementById("reroll-healthy-btn");
-    if (rerollHealthyBtn) {
-        rerollHealthyBtn.addEventListener("click", (e) => {
-            e.stopPropagation();
-            generateHealthyMealPlan();
-        });
+    // 6. Connect input listeners right inside the slider container logic thread frame mapping safely
+    const modalSlider = document.getElementById("modal-calorie-slider");
+    const modalValueDisplay = document.getElementById("modal-cal-val");
+
+    if (modalSlider && modalValueDisplay) {
+        modalSlider.oninput = (e) => {
+            healthyModalMaxCalories = parseInt(e.target.value);
+            modalValueDisplay.textContent = healthyModalMaxCalories;
+            
+            // Instantly trigger our internal display mapping layer without toggling or popping layout windows!
+            renderHealthyMenuRows(healthyModalMaxCalories);
+        };
     }
 
-    // Toggle Modal Panels exactly like original function lines
+    // Toggle Modal View Panels matching your original app workflow exactly
     overlay.classList.add("is-active");
     document.body.classList.add("modal-open");
 }
@@ -473,6 +586,7 @@ function generateHealthyMealPlan() {
 if (healthyMenuBtn) {
     healthyMenuBtn.addEventListener("click", generateHealthyMealPlan);
 }
+
 if (loadMoreBtn && loadMoreContainer) {
     const infiniteScrollObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
