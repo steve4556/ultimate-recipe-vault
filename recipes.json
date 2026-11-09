@@ -3262,5 +3262,103 @@
       "Spoon the garlic citrus crumb mixture heavily and tightly across the top face of each fillet, pressing gently so it sticks.",
       "Bake uncovered for 10 to 12 minutes until the interior flesh flakes effortlessly with a fork and the top armor is golden brown. Serve hot!"
     ]
+  },
+  {
+    "id": "braised-korean-short-ribs",
+    "emoji": "🍖",
+    "title": "Braised Korean Beef Short Ribs",
+    "image": "korean-short-ribs.jpg",
+    "subtitle": "Fall-off-the-bone beef short ribs slow-braised in a rich, glossy reduction of soy, Asian pear, garlic, and toasted sesame.",
+    "times": { "prep": "20 mins", "cook": "2 hours 30 mins", "servings": "4 people" },
+    "nutrition": { "calories": 580, "protein": 44, "carbs": 18, "fats": 36 },
+    "highlights": [
+      { "category": "Melt-In-Your-Mouth", "text": "Low-and-slow braising breaks down rich marbling into ultra-tender, pull-apart beef." },
+      { "category": "Natural Tenderizer", "text": "Grated sweet Asian pear infuses the braising liquid with natural enzymes and subtle fruit sweetness." },
+      { "category": "Glossy Umami Glaze", "text": "Reducing the pan juices at the end builds a deep, savory lacquer that coats every bite." }
+    ],
+    "ingredients": [
+      "3 lbs bone-in English-cut beef short ribs",
+      "1/2 cup low-sodium soy sauce",
+      "1/2 Asian pear, peeled and finely grated",
+      "1/4 cup packed dark brown sugar",
+      "1 cup low-sodium beef broth",
+      "5 cloves garlic, minced",
+      "1 tablespoon fresh ginger, grated",
+      "1 tablespoon toasted sesame oil",
+      "2 green onions, sliced for garnish"
+    ],
+    "instructions": [
+      "Preheat your oven to 325°F (165°C) and pat the short ribs completely dry with paper towels.",
+      "Sear the ribs in a hot Dutch oven over medium-high heat for 3 minutes per side until deeply browned, then remove.",
+      "Whisk together the soy sauce, grated Asian pear, brown sugar, beef broth, garlic, ginger, and sesame oil in a bowl.",
+      "Return the browned short ribs to the pot bone-side up and pour the marinade liquid evenly over the meat.",
+      "Cover tightly with a heavy lid and braise in the oven for 2 hours and 30 minutes until fork-tender.",
+      "Transfer the ribs to a platter, skim excess fat from the pot, and simmer the sauce on the stove for 5 minutes until glossy. Spoon over the ribs and garnish with green onions!"
+    ]
+  },
+  {
+    "id": "lemon-ricotta-cloud-pancakes",
+    "emoji": "🥞",
+    "title": "Lemon Ricotta Cloud Pancakes",
+    "image": "lemon-ricotta-pancakes.jpg",
+    "subtitle": "Ultra-light, soufflé-like brunch pancakes infused with creamy whole-milk ricotta and bright, fresh lemon zest.",
+    "times": { "prep": "15 mins", "cook": "12 mins", "servings": "4 people" },
+    "nutrition": { "calories": 340, "protein": 14, "carbs": 36, "fats": 15 },
+    "highlights": [
+      { "category": "Soufflé Lift", "text": "Folding whipped egg whites into the batter creates an airy, cloud-like interior that melts on your tongue." },
+      { "category": "Creamy Ricotta Crumb", "text": "Whole-milk ricotta keeps the inside rich and custardy while the outside griddles to a golden crisp." },
+      { "category": "Dashboard Light Slot", "text": "Checks in cleanly under 350 calories per serving with 14g of protein for your healthy menu rotation." }
+    ],
+    "ingredients": [
+      "1 cup whole-milk ricotta cheese",
+      "3/4 cup all-purpose flour",
+      "3 large eggs, separated",
+      "1/2 cup whole milk",
+      "2 tablespoons granulated sugar",
+      "1 tablespoon fresh lemon zest",
+      "2 tablespoons fresh lemon juice",
+      "1 teaspoon baking powder",
+      "1/4 teaspoon salt",
+      "2 tablespoons unsalted butter (for the griddle)"
+    ],
+    "instructions": [
+      "In a large bowl, whisk together the ricotta cheese, egg yolks, milk, lemon zest, and lemon juice until smooth.",
+      "Add the flour, sugar, baking powder, and salt to the ricotta mixture and stir gently until just combined.",
+      "In a separate clean bowl, beat the 3 egg whites with a mixer until stiff, glossy peaks form.",
+      "Gently fold one-third of the whipped egg whites into the batter to lighten it, then carefully fold in the remaining whites without deflating them.",
+      "Melt a pat of butter on a non-stick skillet over medium-low heat and spoon 1/4 cup of batter per pancake onto the pan.",
+      "Cook for 2 to 3 minutes until golden brown on the bottom, flip gently, and cook for 2 more minutes until puffed and set. Serve warm with fresh berries!"
+    ]
+  },
+  {
+    "id": "classic-espresso-tiramisu-cups",
+    "emoji": "🍨",
+    "title": "Classic Espresso Tiramisu Cups",
+    "image": "tiramisu-cups.jpg",
+    "subtitle": "Layers of espresso-soaked ladyfingers and velvety whipped mascarpone cream dusted heavily with rich Dutch-process cocoa.",
+    "times": { "prep": "20 mins", "cook": "0 mins", "servings": "6 cups" },
+    "nutrition": { "calories": 370, "protein": 7, "carbs": 34, "fats": 23 },
+    "highlights": [
+      { "category": "No-Bake Elegance", "text": "Requires zero oven time and sets into a restaurant-grade chilled dessert right inside individual glasses." },
+      { "category": "Velvety Mascarpone", "text": "Whipping imported Italian mascarpone with chilled heavy cream creates a lush, cloud-soft custard layer." },
+      { "category": "Bold Espresso Balance", "text": "Dark-roast espresso and unsweetened cocoa cut right through the sweet cream for authentic Italian depth." }
+    ],
+    "ingredients": [
+      "8 oz mascarpone cheese, softened slightly",
+      "1 cup heavy whipping cream, cold",
+      "1/3 cup granulated sugar",
+      "1 teaspoon pure vanilla extract",
+      "1 cup freshly brewed espresso, cooled to room temperature",
+      "18 crisp ladyfinger biscuits (Savoiardi)",
+      "2 tablespoons unsweetened cocoa powder (for dusting)"
+    ],
+    "instructions": [
+      "In a chilled mixing bowl, whip the cold heavy cream, sugar, and vanilla extract until medium-stiff peaks form.",
+      "Gently fold the softened mascarpone cheese into the whipped cream until the mixture is completely smooth and velvety.",
+      "Pour the cooled espresso into a shallow dish and quickly dip each ladyfinger for 1 second per side (do not oversoak).",
+      "Break the dipped ladyfingers to fit the bottom of 6 serving glasses, then spoon a generous layer of mascarpone cream over top.",
+      "Repeat with a second layer of dipped ladyfingers and finish with a smooth crown of mascarpone cream.",
+      "Cover and chill in the refrigerator for at least 4 hours, then dust heavily with cocoa powder through a fine sieve right before serving!"
+    ]
   }
 ]
