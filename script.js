@@ -50,7 +50,16 @@ async function loadRecipeVaultData() {
         </p>`;
     }
 }
-
+function handleImageFallback(imgElement, fileName, folderNum = 1) {
+    const maxFolders = 12; // Increase this number as you add more folders (images13, images14, etc.)
+    if (folderNum > maxFolders) {
+        imgElement.onerror = null; // Stop searching if file doesn't exist anywhere
+        return;
+    }
+    const folderName = folderNum === 1 ? "images" : `images${folderNum}`;
+    imgElement.onerror = () => handleImageFallback(imgElement, fileName, folderNum + 1);
+    imgElement.src = `${folderName}/${fileName}`;
+}
 function initApp() {
     gridContainer.innerHTML = "";
     
@@ -96,7 +105,10 @@ function initApp() {
                 <h2>${recipe.emoji} ${recipe.title}</h2>
                 <p>${recipe.subtitle}</p>
                 <div>
-                    <img src="images/${recipe.image}" alt="${recipe.title}" class="recipe-photo">
+                    <img src="images/${recipe.image}" 
+     onerror="handleImageFallback(this, '${recipe.image}', 2)" 
+     alt="${recipe.title}" 
+     class="recipe-photo">
                 </div>
                 <table>
                     <thead>
@@ -172,19 +184,18 @@ function openDetailedView(recipeId) {
     subtitleEl.parentNode.insertBefore(multiplierContainer, subtitleEl.nextSibling);
 
     // Dynamically sets the large photo inside your full-screen overlay view panel layout
-    const oldOverlayImg = document.getElementById("overlay-photo");
-    if (oldOverlayImg) {
-        oldOverlayImg.src = `images/${targetRecipe.image}`;
-        oldOverlayImg.alt = targetRecipe.title;
-    } else {
-        const imgDiv = document.createElement("div");
-        imgDiv.style.textAlign = "center";
-        imgDiv.style.marginBottom = "30px";
-        imgDiv.innerHTML = `<img id="overlay-photo" src="images/${targetRecipe.image}" alt="${targetRecipe.title}" class="recipe-photo">`;
-        
-        // Sticks the photo framework right beneath your subtitle text element frame
-        subtitleEl.parentNode.insertBefore(imgDiv, subtitleEl.nextSibling);
-    }
+    let overlayImg = document.getElementById("overlay-photo");
+if (!overlayImg) {
+    const imgDiv = document.createElement("div");
+    imgDiv.style.textAlign = "center";
+    imgDiv.style.marginBottom = "30px";
+    imgDiv.innerHTML = `<img id="overlay-photo" class="recipe-photo">`;
+    subtitleEl.parentNode.insertBefore(imgDiv, subtitleEl.nextSibling);
+    overlayImg = document.getElementById("overlay-photo");
+}
+overlayImg.alt = targetRecipe.title;
+overlayImg.onerror = () => handleImageFallback(overlayImg, targetRecipe.image, 2);
+overlayImg.src = `images/${targetRecipe.image}`;
 
     // Bring back tables, list text nodes, and layout headers safely for normal card viewing
     const overlayTables = overlay.querySelectorAll("table");
