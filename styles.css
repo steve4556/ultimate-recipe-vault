@@ -464,3 +464,11 @@ dd {
     color: #d4af37; /* Glow gold slightly on mouse hover to indicate clickability */
     transition: color 0.2s ease;
 }
+.meal-plan-item {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.meal-plan-item:hover {
+    background-color: rgba(212, 175, 55, 0.15) !important;
+    transform: translateX(4px);
+}
