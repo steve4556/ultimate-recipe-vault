@@ -81,8 +81,11 @@ function initApp() {
     
     // Filter the array based on text search and favorites BEFORE building anything
     const filteredRecipes = myRecipes.filter(recipe => {
-        const matchesSearch = recipe.title.toLowerCase().includes(query) || 
-                              recipe.subtitle.toLowerCase().includes(query);
+        const matchesTitle = recipe.title.toLowerCase().includes(query);
+        const matchesSubtitle = recipe.subtitle.toLowerCase().includes(query);
+        const matchesIngredients = recipe.ingredients.some(ing => ing.toLowerCase().includes(query));
+        
+        const matchesSearch = matchesTitle || matchesSubtitle || matchesIngredients;
         const matchesFavorites = !showFavoritesOnly || currentFavorites.includes(recipe.id);
         return matchesSearch && matchesFavorites;
     });
@@ -174,12 +177,15 @@ function openDetailedView(recipeId) {
     const subtitleEl = document.getElementById("overlay-subtitle");
     const multiplierContainer = document.createElement("div");
     multiplierContainer.className = "multiplier-controls";
-    multiplierContainer.style.cssText = "display: flex; gap: 10px; margin: 20px 0 10px 0; justify-content: center; align-items: center;";
+   multiplierContainer.style.cssText = "display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 10px 0; justify-content: center; align-items: center;";
     multiplierContainer.innerHTML = `
         <span style="color: #848d9e; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Scale Portions:</span>
         <button class="scale-btn active-scale" data-factor="1" style="background: #d4af37; color: #1c212a; border: 2px solid #d4af37; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">1x</button>
         <button class="scale-btn" data-factor="2" style="background: #2d3238; color: #fff; border: 2px solid #848d9e; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">2x</button>
         <button class="scale-btn" data-factor="4" style="background: #2d3238; color: #fff; border: 2px solid #848d9e; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">4x</button>
+        <button class="scale-btn" data-factor="6" style="background: #2d3238; color: #fff; border: 2px solid #848d9e; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">6x</button>
+        <button class="scale-btn" data-factor="8" style="background: #2d3238; color: #fff; border: 2px solid #848d9e; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">8x</button>
+        <button id="copy-recipe-list-btn" style="background: #2d3238; color: #d4af37; border: 2px solid #d4af37; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; margin-left: 10px; transition: all 0.2s ease;">📋 Copy List</button>
     `;
     subtitleEl.parentNode.insertBefore(multiplierContainer, subtitleEl.nextSibling);
 
@@ -225,6 +231,26 @@ overlayImg.src = `images/${targetRecipe.image}`;
         <dd>${h.text}</dd>
     `).join("");
 
+     // Helper to convert decimals back to readable kitchen fractions
+    function formatKitchenFraction(num) {
+        const whole = Math.floor(num);
+        const remainder = num - whole;
+        const fractions = [
+            { val: 0.25, str: "1/4" },
+            { val: 0.33, str: "1/3" },
+            { val: 0.5,  str: "1/2" },
+            { val: 0.67, str: "2/3" },
+            { val: 0.75, str: "3/4" }
+        ];
+
+        for (let f of fractions) {
+            if (Math.abs(remainder - f.val) < 0.04) {
+                return whole > 0 ? `${whole} ${f.str}` : f.str;
+            }
+        }
+        return parseFloat(num.toFixed(2));
+    }
+
     function multiplyIngredientQuantity(ingredientString, factor) {
         return ingredientString.replace(/^(\d+\s+\d+\/\d+|\d+\/\d+|\d+(\.\d+)?)/, match => {
             let parts = match.trim().split(/\s+/);
@@ -237,8 +263,15 @@ overlayImg.src = `images/${targetRecipe.image}`;
                     num += parseFloat(p);
                 }
             });
-            let calculated = num * factor;
-            return parseFloat(calculated.toFixed(2)); // Keeps decimals capped tightly to 2 spaces maximum
+            return formatKitchenFraction(num * factor);
+        });
+    }
+
+    // Scale servings text cleanly alongside ingredients
+    function updateScaledServings(factor) {
+        const baseServings = targetRecipe.times.servings;
+        document.getElementById("table-servings").textContent = baseServings.replace(/^(\d+)/, match => {
+            return parseInt(match) * factor;
         });
     }
 
@@ -284,12 +317,29 @@ overlayImg.src = `images/${targetRecipe.image}`;
             btn.style.color = "#1c212a";
             btn.style.borderColor = "#d4af37";
             
-            // Fetch multiplier factor and recalculate ingredient arrays instantly
+            // Fetch multiplier factor and recalculate ingredient arrays & servings instantly
             const currentFactor = parseInt(btn.getAttribute("data-factor"));
             renderIngredients(currentFactor);
+            updateScaledServings(currentFactor);
         };
     });
+   // Copy un-checked, scaled ingredients to clipboard
+    const copyListBtn = document.getElementById("copy-recipe-list-btn");
+    if (copyListBtn) {
+        copyListBtn.onclick = (e) => {
+            e.stopPropagation();
+            const uncheckedItems = Array.from(ingredientsElement.querySelectorAll(".checklist-item:not(.checked) .ing-text"))
+                .map(span => `• ${span.textContent.trim()}`);
 
+            const exportText = `🛒 Shopping List: ${targetRecipe.title}\n\n` + 
+                (uncheckedItems.length > 0 ? uncheckedItems.join("\n") : "All items checked off!");
+
+            navigator.clipboard.writeText(exportText).then(() => {
+                copyListBtn.textContent = "✅ Copied!";
+                setTimeout(() => { copyListBtn.textContent = "📋 Copy List"; }, 2000);
+            });
+        };
+    }
     const instructionsElement = document.getElementById("overlay-instructions");
     instructionsElement.innerHTML = targetRecipe.instructions.map(step => `<li>${step}</li>`).join("");
 
@@ -417,7 +467,7 @@ function generateRandomMealPlan() {
     document.getElementById("overlay-ingredients").style.display = "none";
     document.getElementById("overlay-instructions").style.display = "none";
 
-    // 3. Inject a Gorgeous Custom Menu Grid with an Interactive Inside Re-Roll Button
+    // 3. Inject a Gorgeous Custom Menu Grid with Clickable Meal Cards
     const highlightsElement = document.getElementById("overlay-highlights");
     highlightsElement.innerHTML = `
         <div style="display: flex; flex-direction: column; gap: 20px; background: rgba(45, 50, 56, 0.95); padding: 25px; border-radius: 12px; border: 2px solid #848d9e; margin: 20px 0; box-shadow: 0 8px 16px rgba(0,0,0,0.4);">
@@ -427,29 +477,29 @@ function generateRandomMealPlan() {
             </div>
             
             <div style="display: flex; flex-direction: column; gap: 15px;">
-                <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                <div class="meal-plan-item" data-recipe-id="${bfastChoice.id}" style="cursor: pointer; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                     <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🌅 Breakfast</span>
                     <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${bfastChoice.emoji} ${bfastChoice.title}</span>
                 </div>
-                <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                <div class="meal-plan-item" data-recipe-id="${appChoice.id}" style="cursor: pointer; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                     <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🧅 Appetizer Snack</span>
                     <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${appChoice.emoji} ${appChoice.title}</span>
                 </div>
-                <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                <div class="meal-plan-item" data-recipe-id="${lunchChoice.id}" style="cursor: pointer; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                     <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">☀️ Lunch</span>
                     <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${lunchChoice.emoji} ${lunchChoice.title}</span>
                 </div>
-                <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                <div class="meal-plan-item" data-recipe-id="${dinnerChoice.id}" style="cursor: pointer; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                     <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🌙 Dinner</span>
                     <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${dinnerChoice.emoji} ${dinnerChoice.title}</span>
                 </div>
-                <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                <div class="meal-plan-item" data-recipe-id="${dessertChoice.id}" style="cursor: pointer; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                     <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🍪 Dessert</span>
                     <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${dessertChoice.emoji} ${dessertChoice.title}</span>
                 </div>
             </div>
             <p style="text-align: center; margin: 10px 0 0 0; font-size: 0.85rem; color: #848d9e;">
-                Tip: Search any of these dishes on the main page to see full ingredients and instructions!
+                Tip: Click any dish above to open its full ingredients and instructions!
             </p>
         </div>
     `;
@@ -463,6 +513,16 @@ function generateRandomMealPlan() {
         });
     }
 
+    // Make each rolled meal card clickable to open its full recipe
+    highlightsElement.querySelectorAll(".meal-plan-item").forEach(card => {
+        card.addEventListener("click", () => {
+            const recipeId = card.getAttribute("data-recipe-id");
+            if (recipeId && recipeId !== "undefined") {
+                openDetailedView(recipeId);
+            }
+        });
+    });
+
     // 4. Fire the modal screen overlay trigger layout states smoothly
     overlay.classList.add("is-active");
     document.body.classList.add("modal-open");
@@ -473,18 +533,27 @@ if (randomMenuBtn) {
     randomMenuBtn.addEventListener("click", generateRandomMealPlan);
 }
 
+// Close modal when pressing Escape or clicking the dark background
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && overlay.classList.contains("is-active")) {
+        closeDetailedView();
+    }
+});
+
+overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) {
+        closeDetailedView();
+    }
+});
+
 const healthyMenuBtn = document.getElementById("healthy-menu-btn");
 
 function generateHealthyMealPlan() {
     if (myRecipes.length === 0) return;
 
-    // 1. CLEAR THE MODAL FIRST so we have a clean slate to work on
     clearOverlayLayout();
-
-    // 2. Setup the Header Title Parameters
     document.getElementById("overlay-title").textContent = "🥗 Your Custom Vault Menu";
 
-    // 3. Inject the Interactive Slider Component right into the sub-header element slot
     const subtitleElement = document.getElementById("overlay-subtitle");
     subtitleElement.innerHTML = `
         <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin: 15px auto; max-width: 400px; padding: 10px; background: rgba(0,0,0,0.2); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
@@ -493,12 +562,9 @@ function generateHealthyMealPlan() {
         </div>
     `;
 
-    // 4. Core rendering engine: This builds the menu rows dynamically based on the current calorie limit
     function renderHealthyMenuRows(maxCals) {
-        // Filter master pool dynamically based on the moving slider scale value
         const healthyPool = myRecipes.filter(r => r.nutrition.calories <= maxCals);
 
-        // Classify the current active calorie subset exactly like your standard layout template rules
         const breakfasts = healthyPool.filter(r => r.id.includes("egg") || r.id.includes("pancake") || r.id.includes("biscuit") || r.id.includes("scramble"));
         const desserts = healthyPool.filter(r => r.id.includes("muffin") || r.id.includes("cookie") || r.id.includes("brownie") || r.id.includes("bread") || r.id.includes("sorbet") || r.id.includes("cake") || r.id.includes("toast"));
         const appetizers = healthyPool.filter(r => r.id.includes("canape") || r.id.includes("date") || r.id.includes("spread") || r.id.includes("appetizer") || r.id.includes("fries") || r.id.includes("dip") || r.id.includes("cheese"));
@@ -506,14 +572,12 @@ function generateHealthyMealPlan() {
 
         const pickRandom = (array) => array[Math.floor(Math.random() * array.length)];
 
-        // Fallback safely if a specific calorie branch contains zero results under low slider settings
         const bfastChoice = pickRandom(breakfasts) || { title: "No dishes found under limit", emoji: "⚠️", nutrition: { calories: 0 } };
         const appChoice = pickRandom(appetizers) || { title: "No dishes found under limit", emoji: "⚠️", nutrition: { calories: 0 } };
         const lunchChoice = pickRandom(mains) || { title: "No dishes found under limit", emoji: "⚠️", nutrition: { calories: 0 } };
         const dinnerChoice = pickRandom(mains) || { title: "No dishes found under limit", emoji: "⚠️", nutrition: { calories: 0 } };
         const dessertChoice = pickRandom(desserts) || { title: "No dishes found under limit", emoji: "⚠️", nutrition: { calories: 0 } };
 
-        // Inject the updated content grid segment into your target container framework frame
         const highlightsElement = document.getElementById("overlay-highlights");
         if (highlightsElement) {
             highlightsElement.innerHTML = `
@@ -524,33 +588,43 @@ function generateHealthyMealPlan() {
                     </div>
                     
                     <div style="display: flex; flex-direction: column; gap: 15px;">
-                        <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                        <div class="meal-plan-item" data-recipe-id="${bfastChoice.id}" style="cursor: ${bfastChoice.id ? 'pointer' : 'default'}; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                             <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🌅 Breakfast</span>
                             <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${bfastChoice.emoji} ${bfastChoice.title} (${bfastChoice.nutrition?.calories || 0} kcal)</span>
                         </div>
-                        <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                        <div class="meal-plan-item" data-recipe-id="${appChoice.id}" style="cursor: ${appChoice.id ? 'pointer' : 'default'}; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                             <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🧅 Appetizer Snack</span>
                             <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${appChoice.emoji} ${appChoice.title} (${appChoice.nutrition?.calories || 0} kcal)</span>
                         </div>
-                        <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                        <div class="meal-plan-item" data-recipe-id="${lunchChoice.id}" style="cursor: ${lunchChoice.id ? 'pointer' : 'default'}; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                             <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">☀️ Lunch</span>
                             <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${lunchChoice.emoji} ${lunchChoice.title} (${lunchChoice.nutrition?.calories || 0} kcal)</span>
                         </div>
-                        <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                        <div class="meal-plan-item" data-recipe-id="${dinnerChoice.id}" style="cursor: ${dinnerChoice.id ? 'pointer' : 'default'}; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                             <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🌙 Dinner</span>
                             <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${dinnerChoice.emoji} ${dinnerChoice.title} (${dinnerChoice.nutrition?.calories || 0} kcal)</span>
                         </div>
-                        <div style="background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                        <div class="meal-plan-item" data-recipe-id="${dessertChoice.id}" style="cursor: ${dessertChoice.id ? 'pointer' : 'default'}; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                             <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🍪 Dessert</span>
                             <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${dessertChoice.emoji} ${dessertChoice.title} (${dessertChoice.nutrition?.calories || 0} kcal)</span>
                         </div>
                     </div>
+                    <p style="text-align: center; margin: 10px 0 0 0; font-size: 0.85rem; color: #848d9e;">
+                        Tip: Click any dish above to open its full ingredients and instructions!
+                    </p>
                 </div>
             `;
-        }
 
-        // Re-bind click loops to the inside re-roll option box element node point
-        const rerollHealthyBtn = document.getElementById("reroll-healthy-btn");
+            highlightsElement.querySelectorAll(".meal-plan-item").forEach(card => {
+                card.addEventListener("click", () => {
+                    const recipeId = card.getAttribute("data-recipe-id");
+                    if (recipeId && recipeId !== "undefined") {
+                        openDetailedView(recipeId);
+                    }
+                });
+            });
+        }
+const rerollHealthyBtn = document.getElementById("reroll-healthy-btn");
         if (rerollHealthyBtn) {
             rerollHealthyBtn.onclick = (e) => {
                 e.stopPropagation();
@@ -559,7 +633,6 @@ function generateHealthyMealPlan() {
         }
     }
 
-    // Turn off static features that belong explicitly to standard card detail view renders
     const overlayImg = document.getElementById("overlay-photo");
     if (overlayImg) overlayImg.style.display = "none";
     
@@ -572,10 +645,8 @@ function generateHealthyMealPlan() {
     document.getElementById("overlay-ingredients").style.display = "none";
     document.getElementById("overlay-instructions").style.display = "none";
 
-    // 5. Generate the initial menu cards now that layout structures are prepped
     renderHealthyMenuRows(healthyModalMaxCalories);
 
-    // 6. Connect input listeners right inside the slider container logic thread frame mapping safely
     const modalSlider = document.getElementById("modal-calorie-slider");
     const modalValueDisplay = document.getElementById("modal-cal-val");
 
@@ -583,13 +654,10 @@ function generateHealthyMealPlan() {
         modalSlider.oninput = (e) => {
             healthyModalMaxCalories = parseInt(e.target.value);
             modalValueDisplay.textContent = healthyModalMaxCalories;
-            
-            // Instantly trigger our internal display mapping layer without toggling or popping layout windows!
             renderHealthyMenuRows(healthyModalMaxCalories);
         };
     }
 
-    // Toggle Modal View Panels matching your original app workflow exactly
     overlay.classList.add("is-active");
     document.body.classList.add("modal-open");
 }
@@ -601,18 +669,16 @@ if (healthyMenuBtn) {
 if (loadMoreBtn && loadMoreContainer) {
     const infiniteScrollObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            // Check if the container element enters the viewing boundaries
             if (entry.isIntersecting && loadMoreContainer.style.display !== "none") {
-                visibleCount += 12; // Append next batch threshold exactly like original button logic
-                filterRecipes();    // Re-run your application's native paint cycles
+                visibleCount += 12;
+                filterRecipes();
             }
         });
     }, {
-        root: null,       // Track screen viewport directly
-        rootMargin: "150px", // Pre-trigger loading 150px before screen bottom for slick rendering
+        root: null,
+        rootMargin: "150px",
         threshold: 0.1
     });
 
-    // Start watching your existing button framework element
     infiniteScrollObserver.observe(loadMoreContainer);
 }
