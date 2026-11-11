@@ -460,6 +460,13 @@ dd {
     }
 }
 /* Checklist item hover animations */
+/* Checklist item configurations */
+.checklist-item {
+    /* Change or delete the old user-select line to allow highlighting */
+    user-select: text !important; 
+}
+
+/* Checklist item hover animations */
 .checklist-item:hover .ing-text {
     color: #d4af37; /* Glow gold slightly on mouse hover to indicate clickability */
     transition: color 0.2s ease;
