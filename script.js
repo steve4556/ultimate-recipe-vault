@@ -682,6 +682,26 @@ if (loadMoreBtn && loadMoreContainer) {
 
     infiniteScrollObserver.observe(loadMoreContainer);
 }
+function getCheckedIngredients() {
+    const checked = localStorage.getItem("vault_checked_ingredients");
+    return checked ? JSON.parse(checked) : [];
+}
+
+function toggleCheckedIngredient(ingredientText) {
+    let checked = getCheckedIngredients();
+    if (checked.includes(ingredientText)) {
+        checked = checked.filter(text => text !== ingredientText);
+    } else {
+        checked.push(ingredientText);
+    }
+    localStorage.setItem("vault_checked_ingredients", JSON.stringify(checked));
+}
+
+function clearAllCheckedIngredients() {
+    localStorage.removeItem("vault_checked_ingredients");
+}
+
+// --- UPDATED MASTER GROCERY LIST LOGIC ENGINE ---
 function generateMasterShoppingList() {
     const currentFavorites = getFavorites();
 
@@ -695,15 +715,21 @@ function generateMasterShoppingList() {
     document.getElementById("overlay-title").textContent = "🛒 Your Master Grocery List";
     document.getElementById("overlay-subtitle").textContent = `Compiled ingredients for ${currentFavorites.length} favorited dishes.`;
 
+    // Fetch permanently stored checked items array immediately
+    const storedChecks = getCheckedIngredients();
+
+    // --- INJECT ACTION PANEL BARS WITH NEW REFRESH UNCHECK BUTTON ---
     const subtitleEl = document.getElementById("overlay-subtitle");
     const actionPanel = document.createElement("div");
     actionPanel.className = "multiplier-controls";
     actionPanel.style.cssText = "display: flex; gap: 10px; margin: 20px 0 10px 0; justify-content: center; align-items: center;";
     actionPanel.innerHTML = `
         <button id="copy-master-list-btn" style="background: #2d3238; color: #d4af37; border: 2px solid #d4af37; padding: 6px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">📋 Copy Grocery List</button>
+        <button id="clear-checks-btn" style="background: #2d3238; color: #ff4d4d; border: 2px solid #ff4d4d; padding: 6px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">🔄 Clear Checks</button>
     `;
     subtitleEl.parentNode.insertBefore(actionPanel, subtitleEl.nextSibling);
 
+    // Hide default interface blocks
     const overlayImg = document.getElementById("overlay-photo");
     if (overlayImg) overlayImg.style.display = "none";
     
@@ -735,20 +761,37 @@ function generateMasterShoppingList() {
                 </h3>
             `;
 
-            const itemsHTML = recipe.ingredients.map(ing => `
-                <li class="checklist-item" style="cursor: pointer; list-style-type: '⬜ '; margin-bottom: 12px; transition: all 0.2s ease; text-align: left;">
-                    <span class="ing-text" style="padding-left: 5px;">${ing}</span>
-                </li>
-            `).join("");
+            // 🚀 SMART HYDRATION: Checks if item text exists in localStorage to render it checked initially
+            const itemsHTML = recipe.ingredients.map(ing => {
+                const isChecked = storedChecks.includes(ing);
+                const liClass = isChecked ? "checklist-item checked" : "checklist-item";
+                const liEmoji = isChecked ? "'✅ '" : "'⬜ '";
+                const textDec = isChecked ? "line-through" : "none";
+                const opac = isChecked ? "0.45" : "1";
+                const col = isChecked ? "#848d9e" : "#eeeeee";
+
+                return `
+                    <li class="${liClass}" style="cursor: pointer; list-style-type: ${liEmoji}; margin-bottom: 12px; transition: all 0.2s ease; text-align: left; text-decoration: ${textDec}; opacity: ${opac}; color: ${col};">
+                        <span class="ing-text" style="padding-left: 5px;">${ing}</span>
+                    </li>
+                `;
+            }).join("");
 
             recipeSection.innerHTML = headerHTML + `<ul style="list-style: none; padding-left: 0; margin: 0;">${itemsHTML}</ul>`;
             ingredientsElement.appendChild(recipeSection);
         }
     });
 
+    // --- INTERACTIVE EVENT CLICK STATE ROUTER ---
     ingredientsElement.onclick = (e) => {
         const listItem = e.target.closest(".checklist-item");
         if (!listItem) return;
+        
+        const textSpan = listItem.querySelector(".ing-text");
+        const ingredientText = textSpan.textContent.trim();
+
+        // 🚀 Sync state update directly to browser local storage array
+        toggleCheckedIngredient(ingredientText);
         
         listItem.classList.toggle("checked");
         listItem.style.listStyleType = listItem.classList.contains("checked") ? "'✅ '" : "'⬜ '";
@@ -757,7 +800,19 @@ function generateMasterShoppingList() {
         listItem.style.color = listItem.classList.contains("checked") ? "#848d9e" : "#eeeeee";
     };
 
-    // --- 🚀 SMART FILTERED CLIPBOARD EXTRACTION ENGINE ---
+    // --- REFRESH RESET BUTTON ROUTER ---
+    const clearChecksBtn = document.getElementById("clear-checks-btn");
+    if (clearChecksBtn) {
+        clearChecksBtn.onclick = (e) => {
+            e.stopPropagation();
+            // Wipe data from local storage memory completely
+            clearAllCheckedIngredients();
+            // Recursively refresh the layout grid on screen instantly
+            generateMasterShoppingList();
+        };
+    }
+
+    // --- SMART FILTERED COPY ENGINE ---
     const copyMasterBtn = document.getElementById("copy-master-list-btn");
     if (copyMasterBtn) {
         copyMasterBtn.onclick = (e) => {
@@ -768,8 +823,6 @@ function generateMasterShoppingList() {
             groups.forEach(group => {
                 const title = group.getAttribute("data-title");
                 const emoji = group.getAttribute("data-emoji");
-                
-                // 🔍 FIX: Select only list items that do NOT have the 'checked' class
                 const uncheckedSpans = Array.from(group.querySelectorAll(".checklist-item:not(.checked) .ing-text"));
                 
                 if (uncheckedSpans.length > 0) {
@@ -781,9 +834,8 @@ function generateMasterShoppingList() {
                 }
             });
 
-            // Fallback text if the user checked off absolutely everything
             if (exportString.trim() === "🛒 THE ULTIMATE RECIPE VAULT - GROCERY LIST") {
-                exportString += "All items checked off! Ready to cook! ✨";
+                exportString += "All items checked off! Happy cooking! ✨";
             }
 
             navigator.clipboard.writeText(exportString).then(() => {
