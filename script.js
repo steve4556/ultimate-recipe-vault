@@ -682,3 +682,127 @@ if (loadMoreBtn && loadMoreContainer) {
 
     infiniteScrollObserver.observe(loadMoreContainer);
 }
+function generateMasterShoppingList() {
+    const currentFavorites = getFavorites();
+
+    if (currentFavorites.length === 0) {
+        alert("Your vault is empty! Favorite a few recipes first by clicking their hearts. ❤️");
+        return;
+    }
+
+    clearOverlayLayout();
+
+    document.getElementById("overlay-title").textContent = "🛒 Your Master Grocery List";
+    document.getElementById("overlay-subtitle").textContent = `Compiled ingredients for ${currentFavorites.length} favorited dishes.`;
+
+    const subtitleEl = document.getElementById("overlay-subtitle");
+    const actionPanel = document.createElement("div");
+    actionPanel.className = "multiplier-controls";
+    actionPanel.style.cssText = "display: flex; gap: 10px; margin: 20px 0 10px 0; justify-content: center; align-items: center;";
+    actionPanel.innerHTML = `
+        <button id="copy-master-list-btn" style="background: #2d3238; color: #d4af37; border: 2px solid #d4af37; padding: 6px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">📋 Copy Grocery List</button>
+    `;
+    subtitleEl.parentNode.insertBefore(actionPanel, subtitleEl.nextSibling);
+
+    const overlayImg = document.getElementById("overlay-photo");
+    if (overlayImg) overlayImg.style.display = "none";
+    
+    const overlayTables = overlay.querySelectorAll("table");
+    overlayTables.forEach(t => t.style.display = "none");
+
+    const allHeaders = overlay.querySelectorAll("h2");
+    allHeaders.forEach(h => h.style.display = "none");
+    
+    document.getElementById("overlay-instructions").style.display = "none";
+
+    const ingredientsElement = document.getElementById("overlay-ingredients");
+    ingredientsElement.style.display = ""; 
+    ingredientsElement.innerHTML = "";    
+
+    currentFavorites.forEach(favId => {
+        const recipe = myRecipes.find(r => r.id === favId);
+        if (recipe) {
+            const recipeSection = document.createElement("div");
+            recipeSection.className = "shopping-list-group";
+            recipeSection.style.marginBottom = "25px";
+
+            recipeSection.setAttribute("data-title", recipe.title);
+            recipeSection.setAttribute("data-emoji", recipe.emoji);
+
+            const headerHTML = `
+                <h3 style="color: #d4af37; margin-bottom: 10px; font-size: 1.15rem; border-bottom: 1px solid rgba(132, 141, 158, 0.3); padding-bottom: 5px; text-align: left;">
+                    ${recipe.emoji} ${recipe.title}
+                </h3>
+            `;
+
+            const itemsHTML = recipe.ingredients.map(ing => `
+                <li class="checklist-item" style="cursor: pointer; list-style-type: '⬜ '; margin-bottom: 12px; transition: all 0.2s ease; text-align: left;">
+                    <span class="ing-text" style="padding-left: 5px;">${ing}</span>
+                </li>
+            `).join("");
+
+            recipeSection.innerHTML = headerHTML + `<ul style="list-style: none; padding-left: 0; margin: 0;">${itemsHTML}</ul>`;
+            ingredientsElement.appendChild(recipeSection);
+        }
+    });
+
+    ingredientsElement.onclick = (e) => {
+        const listItem = e.target.closest(".checklist-item");
+        if (!listItem) return;
+        
+        listItem.classList.toggle("checked");
+        listItem.style.listStyleType = listItem.classList.contains("checked") ? "'✅ '" : "'⬜ '";
+        listItem.style.textDecoration = listItem.classList.contains("checked") ? "line-through" : "none";
+        listItem.style.opacity = listItem.classList.contains("checked") ? "0.45" : "1";
+        listItem.style.color = listItem.classList.contains("checked") ? "#848d9e" : "#eeeeee";
+    };
+
+    // --- 🚀 SMART FILTERED CLIPBOARD EXTRACTION ENGINE ---
+    const copyMasterBtn = document.getElementById("copy-master-list-btn");
+    if (copyMasterBtn) {
+        copyMasterBtn.onclick = (e) => {
+            e.stopPropagation();
+            let exportString = "🛒 THE ULTIMATE RECIPE VAULT - GROCERY LIST\n\n";
+
+            const groups = ingredientsElement.querySelectorAll(".shopping-list-group");
+            groups.forEach(group => {
+                const title = group.getAttribute("data-title");
+                const emoji = group.getAttribute("data-emoji");
+                
+                // 🔍 FIX: Select only list items that do NOT have the 'checked' class
+                const uncheckedSpans = Array.from(group.querySelectorAll(".checklist-item:not(.checked) .ing-text"));
+                
+                if (uncheckedSpans.length > 0) {
+                    exportString += `${emoji} ${title.toUpperCase()}\n`;
+                    uncheckedSpans.forEach(span => {
+                        exportString += `  • ${span.textContent.trim()}\n`;
+                    });
+                    exportString += "\n";
+                }
+            });
+
+            // Fallback text if the user checked off absolutely everything
+            if (exportString.trim() === "🛒 THE ULTIMATE RECIPE VAULT - GROCERY LIST") {
+                exportString += "All items checked off! Ready to cook! ✨";
+            }
+
+            navigator.clipboard.writeText(exportString).then(() => {
+                copyMasterBtn.textContent = "✅ Copied to Clipboard!";
+                copyMasterBtn.style.borderColor = "#4eae51";
+                copyMasterBtn.style.color = "#4eae51";
+                setTimeout(() => { 
+                    copyMasterBtn.textContent = "📋 Copy Grocery List"; 
+                    copyMasterBtn.style.borderColor = "#d4af37";
+                    copyMasterBtn.style.color = "#d4af37";
+                }, 2000);
+            });
+        };
+    }
+
+    overlay.classList.add("is-active");
+    document.body.classList.add("modal-open");
+}
+const masterGroceryBtn = document.getElementById("master-grocery-btn");
+if (masterGroceryBtn) {
+    masterGroceryBtn.addEventListener("click", generateMasterShoppingList);
+}
