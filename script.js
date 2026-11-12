@@ -1793,7 +1793,7 @@ function openAddRecipeModal() {
                 <textarea id="new-instructions" class="vault-textarea" placeholder="Preheat oven to 375°F.&#10;Whisk dry ingredients together in a large bowl.&#10;Bake for 25 minutes until golden." required></textarea>
             </div>
 
-            <button type="submit" id="save-new-recipe-btn" class="auth-submit-btn">💾 Save Recipe to Vault</button>
+            <button type="submit" id="save-new-recipe-btn" class="auth-submit-btn">👍 Save Recipe to Vault</button>
             <p id="new-recipe-status" class="auth-status-msg"></p>
         </form>
     `;
