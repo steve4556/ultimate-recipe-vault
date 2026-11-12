@@ -639,8 +639,6 @@ function openDetailedView(recipeId, sourceView = null) {
     // Reset layout view content slots cleanly before rendering text parameters
     clearOverlayLayout();
 
-    
-   
     // Add interactive Heart button to the top-right of the recipe modal card
     const closeBtnContainer = overlay.querySelector(".close-btn-container");
     if (closeBtnContainer) {
@@ -652,9 +650,9 @@ function openDetailedView(recipeId, sourceView = null) {
         modalHeartBtn.setAttribute("aria-label", isFav ? "Remove from favorites" : "Add to favorites");
         modalHeartBtn.textContent = isFav ? "❤️" : "🖤";
 
-        modalHeartBtn.onclick = (e) => {
+        modalHeartBtn.onclick = async (e) => {
             e.stopPropagation();
-            toggleFavorite(targetRecipe.id);
+            await toggleFavorite(targetRecipe.id);
             const nowFav = getFavorites().includes(targetRecipe.id);
             modalHeartBtn.textContent = nowFav ? "❤️" : "🖤";
             modalHeartBtn.setAttribute("aria-label", nowFav ? "Remove from favorites" : "Add to favorites");
@@ -670,7 +668,7 @@ function openDetailedView(recipeId, sourceView = null) {
     document.getElementById("overlay-title").textContent = `${targetRecipe.emoji} ${targetRecipe.title}`;
     document.getElementById("overlay-subtitle").textContent = targetRecipe.subtitle;
     
-     const subtitleEl = document.getElementById("overlay-subtitle");
+    const subtitleEl = document.getElementById("overlay-subtitle");
     const multiplierContainer = document.createElement("div");
     multiplierContainer.className = "multiplier-controls";
     multiplierContainer.innerHTML = `
@@ -731,8 +729,6 @@ function openDetailedView(recipeId, sourceView = null) {
         <dd>${h.text}</dd>
     `).join("");
 
-    
-
     // Scale servings text cleanly alongside ingredients
     function updateScaledServings(factor) {
         const baseServings = targetRecipe.times.servings;
@@ -742,7 +738,7 @@ function openDetailedView(recipeId, sourceView = null) {
     }
 
     // Helper engine to draw your ingredient checkmarks with the multiplied fractions
-     function renderIngredients(factor) {
+    function renderIngredients(factor) {
         ingredientsElement.innerHTML = targetRecipe.ingredients.map(ing => {
             const scaledText = multiplyIngredientQuantity(ing, factor);
             return `
@@ -760,7 +756,6 @@ function openDetailedView(recipeId, sourceView = null) {
         b.classList.toggle("active-scale", btnFactor === savedFactor);
     });
 
-    
     // Draw portions using the saved multiplier immediately
     renderIngredients(savedFactor);
     updateScaledServings(savedFactor);
@@ -815,6 +810,48 @@ function openDetailedView(recipeId, sourceView = null) {
                 setTimeout(() => { copyListBtn.textContent = "📋 Copy List"; }, 2000);
             });
         };
+    }
+
+    // Admin-only Delete button for cloud-added recipes
+    if (isVaultAdmin() && targetRecipe.user_id) {
+        const deleteRecipeBtn = document.createElement("button");
+        deleteRecipeBtn.type = "button";
+        deleteRecipeBtn.className = "modal-action-btn danger";
+        deleteRecipeBtn.textContent = "🗑️ Delete Recipe";
+
+        deleteRecipeBtn.onclick = async (e) => {
+            e.stopPropagation();
+            const confirmed = confirm(`Are you sure you want to permanently delete "${targetRecipe.title}"?`);
+            if (!confirmed) return;
+
+            deleteRecipeBtn.disabled = true;
+            deleteRecipeBtn.textContent = "Deleting...";
+
+            // 1. Delete uploaded photo from Supabase Storage if it is a cloud image
+            if (targetRecipe.image && targetRecipe.image.includes("/recipe-photos/")) {
+                const fileName = targetRecipe.image.split("/recipe-photos/").pop();
+                if (fileName) {
+                    await supabaseClient.storage.from("recipe-photos").remove([fileName]);
+                }
+            }
+
+            // 2. Delete recipe row from user_recipes table
+            const { error } = await supabaseClient
+                .from("user_recipes")
+                .delete()
+                .eq("id", targetRecipe.id);
+
+            if (error) {
+                alert(`Error deleting recipe: ${error.message}`);
+                deleteRecipeBtn.disabled = false;
+                deleteRecipeBtn.textContent = "🗑️ Delete Recipe";
+            } else {
+                await loadRecipeVaultData();
+                closeDetailedView();
+            }
+        };
+
+        multiplierContainer.appendChild(deleteRecipeBtn);
     }
 
     const instructionsElement = document.getElementById("overlay-instructions");
@@ -1356,9 +1393,19 @@ function generateMasterShoppingList() {
     // --- RESET PORTION SCALES BUTTON ROUTER ---
     const resetScalesBtn = document.getElementById("reset-scales-btn");
     if (resetScalesBtn) {
-        resetScalesBtn.onclick = (e) => {
+        resetScalesBtn.onclick = async (e) => {
             e.stopPropagation();
-            localStorage.removeItem("vault_multipliers");
+
+            if (currentUser && supabaseClient) {
+                cloudMultipliersCache = {};
+                await supabaseClient
+                    .from("user_favorites")
+                    .update({ multiplier: 1 })
+                    .eq("user_id", currentUser.id);
+            } else {
+                localStorage.removeItem("vault_multipliers");
+            }
+
             generateMasterShoppingList();
         };
     }
