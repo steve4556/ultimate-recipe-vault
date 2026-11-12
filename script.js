@@ -383,6 +383,14 @@ async function loadRecipeVaultData() {
     }
 }
 
+function getRecipeImageSrc(imageField) {
+    if (!imageField) return "images/vault-bg.jpg";
+    if (imageField.startsWith("http://") || imageField.startsWith("https://")) {
+        return imageField;
+    }
+    return `images/${imageField}`;
+}
+
 function handleImageFallback(imgElement, fileName, folderNum = 1) {
     const maxFolders = 12; // Increase this number as you add more folders (images13, images14, etc.)
     if (folderNum > maxFolders) {
@@ -497,9 +505,9 @@ function initApp() {
                 <button class="heart-btn" aria-label="${heartLabel}" data-recipe-id="${recipe.id}">${heartEmoji}</button>
                 <h2>${recipe.emoji} ${recipe.title}</h2>
                 <p>${recipe.subtitle}</p>
-                <div>
-                    <img src="images/${recipe.image}" 
-                         onerror="handleImageFallback(this, '${recipe.image}', 2)" 
+                 <div>
+                    <img src="${getRecipeImageSrc(recipe.image)}" 
+                         ${recipe.image && recipe.image.startsWith("http") ? "" : `onerror="handleImageFallback(this, '${recipe.image}', 2)"`} 
                          alt="${recipe.title}" 
                          class="recipe-photo">
                 </div>
@@ -681,8 +689,13 @@ function openDetailedView(recipeId, sourceView = null) {
         overlayImg = document.getElementById("overlay-photo");
     }
     overlayImg.alt = targetRecipe.title;
-    overlayImg.onerror = () => handleImageFallback(overlayImg, targetRecipe.image, 2);
-    overlayImg.src = `images/${targetRecipe.image}`;
+    if (targetRecipe.image && targetRecipe.image.startsWith("http")) {
+        overlayImg.onerror = null;
+        overlayImg.src = targetRecipe.image;
+    } else {
+        overlayImg.onerror = () => handleImageFallback(overlayImg, targetRecipe.image, 2);
+        overlayImg.src = `images/${targetRecipe.image}`;
+    }
 
     // Bring back tables, list text nodes, and layout headers safely for normal card viewing
     const overlayTables = overlay.querySelectorAll("table");
@@ -1726,8 +1739,8 @@ function openAddRecipeModal() {
                     </select>
                 </div>
                 <div class="form-field-group">
-                    <label for="new-image">Image Filename (Optional)</label>
-                    <input type="text" id="new-image" class="auth-input" placeholder="e.g., lasagna.jpg">
+                    <label for="new-image-file">Upload Photo (Optional)</label>
+                    <input type="file" id="new-image-file" class="auth-input" accept="image/*" style="padding-top: 8px;">
                 </div>
             </div>
 
@@ -1787,14 +1800,53 @@ function openAddRecipeModal() {
 
     const form = document.getElementById("new-recipe-form");
     const statusEl = document.getElementById("new-recipe-status");
+    const saveBtn = document.getElementById("save-new-recipe-btn");
 
     form.onsubmit = async (e) => {
         e.preventDefault();
+        saveBtn.disabled = true;
         statusEl.style.color = "#d4af37";
-        statusEl.textContent = "Saving recipe to cloud database...";
 
         const title = document.getElementById("new-title").value.trim();
         const slugId = title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") + "-" + Date.now().toString().slice(-4);
+
+        let finalImageUrl = "vault-bg.jpg";
+        const fileInput = document.getElementById("new-image-file");
+        const photoFile = fileInput && fileInput.files && fileInput.files[0];
+
+        if (photoFile) {
+            try {
+                statusEl.textContent = "Compressing & optimizing photo...";
+                const compressedBlob = await compressRecipeImage(photoFile, 800, 0.8);
+
+                statusEl.textContent = "Uploading photo to cloud storage...";
+                const fileName = `${slugId}.jpg`;
+
+                const { error: uploadError } = await supabaseClient.storage
+                    .from("recipe-photos")
+                    .upload(fileName, compressedBlob, {
+                        contentType: "image/jpeg",
+                        upsert: true
+                    });
+
+                if (uploadError) {
+                    throw uploadError;
+                }
+
+                const { data: urlData } = supabaseClient.storage
+                    .from("recipe-photos")
+                    .getPublicUrl(fileName);
+
+                finalImageUrl = urlData.publicUrl;
+            } catch (imgErr) {
+                saveBtn.disabled = false;
+                statusEl.style.color = "#ff4d4d";
+                statusEl.textContent = `Photo Error: ${imgErr.message}`;
+                return;
+            }
+        }
+
+        statusEl.textContent = "Saving recipe to cloud database...";
 
         const ingredientsArray = document.getElementById("new-ingredients").value
             .split("\n")
@@ -1811,7 +1863,7 @@ function openAddRecipeModal() {
             user_id: currentUser.id,
             emoji: document.getElementById("new-emoji").value.trim() || "🍽️",
             title: title,
-            image: document.getElementById("new-image").value.trim() || "vault-bg.jpg",
+            image: finalImageUrl,
             subtitle: document.getElementById("new-subtitle").value.trim(),
             category: document.getElementById("new-category").value,
             times: {
@@ -1837,6 +1889,7 @@ function openAddRecipeModal() {
             .insert(newRecipeRecord);
 
         if (error) {
+            saveBtn.disabled = false;
             statusEl.style.color = "#ff4d4d";
             statusEl.textContent = `Error: ${error.message}`;
         } else {
@@ -1850,7 +1903,6 @@ function openAddRecipeModal() {
     overlay.classList.add("is-active");
     document.body.classList.add("modal-open");
 }
-
 document.addEventListener("click", (e) => {
     if (e.target.closest("#open-add-recipe-btn")) {
         openAddRecipeModal();
