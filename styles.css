@@ -1,3 +1,6 @@
+/* =========================================================
+   1. BASE & TYPOGRAPHY
+   ========================================================= */
 html {
     scroll-behavior: smooth;
 }
@@ -5,238 +8,69 @@ html {
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #1c212a; 
-    color: #eeeeee; 
+    background-color: #1c212a;
+    color: #eeeeee;
     margin: 0;
     padding: 0;
 }
 
-h1, h2 {
-    color: #d4af37; /* Fort Knox Gold for your master headers */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a heavy vault shadow for depth */
-    text-align: center; /* CENTERS both your h1 and h2 headers */
-}
-
-h1 {
-    font-size: 2.5rem; /* Makes your main title nice, big, and commanding */
-    margin-bottom: 5px; /* Keeps it closely stacked with the subtitle below it */
-}
-
-/* Centers the welcome paragraph text below the headers */
 body.home-page {
-    /* FIXED LOGIC PATH: Points directly inside your images folder */
-    background: linear-gradient(rgba(28, 33, 42, 0.9), rgba(212, 175, 55, 0.15)), 
+    background: linear-gradient(rgba(28, 33, 42, 0.9), rgba(212, 175, 55, 0.15)),
                 url('images/vault-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     padding: 20px;
 }
 
-p {
-    color: #dce0e9; 
-}
-
-/* --- Homepage Link Fixes & Card Grid --- */
-.card-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-.recipe-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.recipe-card {
-    background: rgba(45, 50, 56, 0.95); 
-    border: 2px solid #848d9e; 
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.recipe-card:hover {
-    transform: translateY(-5px); 
-    border-color: #d4af37; 
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6), 0 0 15px rgba(212, 175, 55, 0.4); 
-    cursor: pointer;
-}
-
-/* --- Individual Recipe Page Container --- */
-.recipe-container {
-    max-width: 800px;
-    margin: 40px auto;
-    background: #2d3238; 
-    border: 3px solid #d4af37; 
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-}
-
-/* --- Unified Recipe Images --- */
-.recipe-photo {
-    width: 100%;
-    max-width: 450px; 
-    height: 400px; 
-    object-fit: cover; 
-    display: block;
-    margin: 15px auto;
-    border-radius: 8px;
-    border: 2px solid #848d9e;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-/* --- Top Dropdown Navigation Bar --- */
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #1c212a;
-    border: 1px solid #848d9e;
-    padding: 15px 20px;
-    border-radius: 8px;
-    margin-bottom: 25px;
-}
-
-select {
-    padding: 8px 12px;
-    font-size: 0.95rem;
-    border-radius: 6px;
-    border: 2px solid #d4af37; 
-    background-color: #2d3238;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-select:hover, select:focus {
-    border-color: #ffffff;
-    box-shadow: 0 0 12px rgba(212, 175, 55, 0.8);
-    outline: none;
-}
-
-/* --- Secure Data Tables --- */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background: #1c212a;
-}
-
-th, td {
-    border: none; 
-    padding: 12px;
+h1, h2 {
+    color: #d4af37;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-align: center;
 }
 
-th {
-    background: #22272e;
-    color: #d4af37;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+
+
+h1, #overlay-title {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
 }
 
-/* Slightly shades every other data row so it's super easy to read */
-tr:nth-child(even) td {
-    background: rgba(255, 255, 255, 0.02);
-}
-
-td {
-    color: #ffffff;
-}
-
-/* --- Lists --- */
-ul, ol {
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-    color: #eeeeee;
-}
-
-dt {
-    color: #d4af37; 
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-dd {
+p {
     color: #dce0e9;
-    margin-left: 20px;
-    margin-bottom: 8px;
 }
 
-/* --- Navigation Link Buttons --- */
-.action-links {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    border-top: 2px solid #1c212a;
-    padding-top: 20px;
-}
-
-.back-link {
-    color: #d4af37; 
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-}
-
-.back-link:hover {
-    color: #fff !important;
-    text-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37; 
-    text-decoration: none;
-}
-@media (max-width: 600px) {
-  .recipe-card table tr {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 10px;
-  }
-
-  .recipe-card th, 
-  .recipe-card td {
-    display: inline-block;
-    flex: 1 1 calc(50% - 8px);
-    padding: 8px;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    box-sizing: border-box;
-  }
-
-  .recipe-card th {
-    background: #22272e;
-    color: #d4af37;
-  }
-
-  .recipe-card td {
-    background: rgba(255, 255, 255, 0.05);
-  }
-}
-.vault-control-panel {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; /* Aligns the bottoms of the search input and buttons perfectly */
-    gap: 15px; /* Tighter gap keeps them cleanly unified on one horizontal line */
-    margin: 25px auto;
-    max-width: 900px;
+/* =========================================================
+   2. DASHBOARD CONTROL PANEL
+   ========================================================= */
+.dashboard-wrapper {
+    background: rgba(45, 50, 56, 0.95);
+    border: 2px solid #d4af37;
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin: 30px 0;
     width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
-.vault-control-panel .control-item {
+.dashboard-wrapper .vault-control-panel {
+    display: grid;
+    grid-template-columns: 25% 25% 1fr 1fr 1fr;
+    align-items: flex-end;
+    justify-content: stretch;
+    gap: 15px;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.dashboard-wrapper .vault-control-panel .control-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .vault-control-panel label {
@@ -245,241 +79,79 @@ dd {
     font-weight: 500;
 }
 
-#recipe-search {
-    padding: 8px 12px;
-    font-size: 0.95rem;
-    border-radius: 6px;
-    border: 2px solid #848d9e; 
-    background-color: #2d3238;
-    color: #fff;
-    width: 250px;
+.dashboard-wrapper #recipe-search,
+.dashboard-wrapper #recipe-selector,
+.dashboard-wrapper .vault-control-panel .dashboard-btn {
+    height: 44px;
     box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
+    margin: 0;
 }
 
-#recipe-search:hover, #recipe-search:focus {
-    border-color: #d4af37; /* Matches your premium Fort Knox Gold header accent */
-    box-shadow: 0 0 12px rgba(212, 175, 55, 0.8);
-    outline: none;
-}
-
-/* Mobile responsive alignment override */
-@media (max-width: 600px) {
-    .vault-control-panel {
-        flex-direction: row; /* Forces them to stay left-to-right */
-        flex-wrap: wrap; /* Allows safe wrapping only on ultra-tiny screens so nothing breaks */
-        justify-content: center;
-        gap: 10px;
-    }
-    #recipe-search {
-        width: 100%; /* Keeps search prominent on phone viewports */
-        max-width: 280px;
-    }
-}
-.recipe-card {
-    position: relative; /* Allows positioning the heart inside the card boundaries */
-}
-
-.heart-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    z-index: 10; /* Ensures it sits above other card layers */
-    transition: transform 0.2s ease;
-    padding: 0;
-}
-
-.heart-btn:hover {
-    transform: scale(1.2);
-}
-
-.heart-btn:focus {
-    outline: 2px solid #d4af37;
-    border-radius: 4px;
-}
-
-/* Control Class for a Filter Button to view only favorites */
-.favorites-toggle-btn, #healthy-menu-btn {
-    padding: 8px 16px;
-    font-size: 0.95rem;
+.dashboard-wrapper #recipe-search,
+.dashboard-wrapper #recipe-selector {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px 12px;
     border-radius: 6px;
     border: 2px solid #848d9e;
     background-color: #2d3238;
     color: #fff;
-    cursor: pointer;
+    font-size: 0.95rem;
     transition: all 0.3s ease-in-out;
 }
 
-/* Do the same for the hover and focus states right below it */
-.favorites-toggle-btn:hover, .favorites-toggle-btn:focus,
-#healthy-menu-btn:hover, #healthy-menu-btn:focus {
+.dashboard-wrapper #recipe-selector {
+    cursor: pointer;
+}
+
+.dashboard-wrapper #recipe-search:hover,
+.dashboard-wrapper #recipe-search:focus,
+.dashboard-wrapper #recipe-selector:hover,
+.dashboard-wrapper #recipe-selector:focus {
     border-color: #d4af37;
     box-shadow: 0 0 12px rgba(212, 175, 55, 0.8);
     outline: none;
 }
 
-.favorites-toggle-btn.active-filter {
+.dashboard-wrapper .vault-control-panel .dashboard-btn {
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 2px solid #848d9e;
+    background-color: #2d3238;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.dashboard-wrapper .vault-control-panel .dashboard-btn:hover,
+.dashboard-wrapper .vault-control-panel .dashboard-btn:focus,
+#healthy-menu-btn:hover,
+#healthy-menu-btn:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.8);
+    background-color: #2d3238;
+    color: #fff;
+    outline: none;
+}
+
+.dashboard-wrapper .vault-control-panel .dashboard-btn.active-filter {
     background-color: #d4af37;
     color: #1c212a;
     border-color: #ffffff;
     font-weight: bold;
 }
-.top-link-container {
-    text-align: center;
-    margin: 40px auto 20px auto;
-    padding-top: 20px;
-    border-top: 2px solid #2d3238; /* Matches the clean separation aesthetic of your design */
-    max-width: 300px;
-}
-.dashboard-wrapper {
-    background: rgba(45, 50, 56, 0.95); /* Matches your recipe card depth background */
-    border: 2px solid #d4af37 !important; /* Continuous solid gold border frame on all 4 sides */
-    border-radius: 16px !important;       /* Softer capsule corner finish style */
-    padding: 25px 30px;
-    margin: 30px 0;                     
-    width: 100% !important;                        
-    box-sizing: border-box !important;             
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Heavy vault depth drop shadow */
-}
 
-/* Master 5-Column Autofitting Dashboard Matrix */
-.dashboard-wrapper .vault-control-panel {
-    display: grid !important;
-    /* Allocates 25% width to search, 25% to dropdown select, and splits the remaining 50% evenly among the 3 buttons */
-    grid-template-columns: 25% 25% 1fr 1fr 1fr !important;
-    align-items: flex-end !important;
-    justify-content: stretch !important;
-    gap: 15px !important; /* Clean, perfectly level padding gaps across the control ribbon */
-    margin: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-/* Individual input container boxes stretching cleanly inside grid columns */
-.dashboard-wrapper .vault-control-panel .control-item {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important; /* Aligns text labels neatly above fields */
-    gap: 8px !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-/* Base Height Matrix to ensure a level horizontal row axis */
-.dashboard-wrapper #recipe-search, 
-.dashboard-wrapper #recipe-selector,
-.dashboard-wrapper .vault-control-panel .dashboard-btn {
-    height: 44px !important; 
-    box-sizing: border-box !important;
-    margin: 0 !important;
-}
-
-/* Input Fields Style Restoration (Restores your nice original borders!) */
-.dashboard-wrapper #recipe-search, 
-.dashboard-wrapper #recipe-selector {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 8px 12px !important;
-    border-radius: 6px !important;
-    border: 2px solid #848d9e !important; /* Restores the search and dropdown borders completely! */
-    background-color: #2d3238 !important;
-    color: #fff !important;
-    font-size: 0.95rem !important;
-    transition: all 0.3s ease-in-out !important;
-}
-
-/* Adds beautiful gold hover glow rings to your text fields & drop-down menus on focus */
-.dashboard-wrapper #recipe-search:hover, .dashboard-wrapper #recipe-search:focus,
-.dashboard-wrapper #recipe-selector:hover, .dashboard-wrapper #recipe-selector:focus {
-    border-color: #d4af37 !important;
-    box-shadow: 0 0 12px rgba(212, 175, 55, 0.8) !important;
-    outline: none !important;
-}
-
-/* Button Sizing Security Configurations */
-.dashboard-wrapper .vault-control-panel .dashboard-btn {
-    padding: 10px 10px !important; /* Slightly slimmer side padding allows long text to fit with room to spare! */
-    width: 100% !important;  
-    max-width: 100% !important;
-    font-size: 0.85rem !important;  /* Perfectly sizes text strings to live within cell limits */
-    font-weight: 600 !important;         
-    border: 2px solid #848d9e !important;
-    background-color: #2d3238 !important;
-    color: #fff !important;
-    cursor: pointer !important;
-    border-radius: 6px !important;
-    transition: all 0.3s ease-in-out !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    white-space: nowrap !important; /* Traps emojis and strings onto an unbroken single line row */
-}
-
-/* Gold Dashboard Hover Animations for All 3 Buttons */
-.dashboard-wrapper .vault-control-panel .dashboard-btn:hover,
-.dashboard-wrapper .vault-control-panel .dashboard-btn:focus,
-#healthy-menu-btn:hover,
-#healthy-menu-btn:focus {
-    border-color: #d4af37 !important; /* Animates the outer border line to gold on mouseover! */
-    box-shadow: 0 0 12px rgba(212, 175, 55, 0.8) !important;
-    background-color: #2d3238 !important;
-    color: #fff !important;
-    outline: none !important;
-}
-
-/* Active Filter state mapping for your JavaScript toggle actions */
-.dashboard-wrapper .vault-control-panel .dashboard-btn.active-filter {
-    background-color: #d4af37 !important; /* Changes the button to gold when active */
-    color: #1c212a !important;            /* Flips the text dark so it stays highly readable */
-    border-color: #ffffff !important;
-    font-weight: bold !important;
-}
-
-/* Fluid responsive collapse settings for tablet displays */
-@media (max-width: 1150px) {
-    .dashboard-wrapper .vault-control-panel {
-        grid-template-columns: 1fr 1fr !important; /* Fields split top layer, buttons collapse beneath */
-    }
-    .dashboard-wrapper .vault-control-panel .dashboard-btn {
-        grid-column: span 2 !important; /* Stretches buttons evenly over tablet widths */
-    }
-}
-
-/* Fluid responsive collapse settings for mobile phone viewports */
-@media (max-width: 650px) {
-    .dashboard-wrapper .vault-control-panel {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: stretch !important;
-        gap: 15px !important;
-    }
-}
-/* Checklist item hover animations */
-/* Checklist item configurations */
-.checklist-item {
-    /* Change or delete the old user-select line to allow highlighting */
-    user-select: text !important; 
-}
-
-/* Checklist item hover animations */
-.checklist-item:hover .ing-text {
-    color: #d4af37; /* Glow gold slightly on mouse hover to indicate clickability */
-    transition: color 0.2s ease;
-}
-.meal-plan-item {
-    transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.meal-plan-item:hover {
-    background-color: rgba(212, 175, 55, 0.15) !important;
-    transform: translateX(4px);
-}
-
+/* =========================================================
+   3. CATEGORY FILTER RIBBON
+   ========================================================= */
 .category-filter-bar {
     display: flex;
     flex-wrap: wrap;
@@ -516,4 +188,380 @@ dd {
     border-color: #ffffff;
     font-weight: bold;
     box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+}
+
+/* =========================================================
+   4. RECIPE GRID, CARDS & TABLES
+   ========================================================= */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.recipe-card {
+    position: relative;
+    background: rgba(45, 50, 56, 0.95);
+    border: 2px solid #848d9e;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6), 0 0 15px rgba(212, 175, 55, 0.4);
+    cursor: pointer;
+}
+
+.heart-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.2s ease;
+    padding: 0;
+}
+
+.heart-btn:hover {
+    transform: scale(1.2);
+}
+
+.heart-btn:focus {
+    outline: 2px solid #d4af37;
+    border-radius: 4px;
+}
+.recipe-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #2d3238;
+    border: 3px solid #d4af37;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.recipe-photo {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    border: 2px solid #848d9e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #1c212a;
+}
+
+th, td {
+    border: none;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #22272e;
+    color: #d4af37;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+td {
+    color: #ffffff;
+}
+
+/* =========================================================
+   5. LISTS, CHECKLISTS & MEAL PLAN ITEMS
+   ========================================================= */
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #eeeeee;
+}
+
+dt {
+    color: #d4af37;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+dd {
+    color: #dce0e9;
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+/* --- Modal Portion & Action Controls --- */
+.multiplier-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.multiplier-label {
+    color: #848d9e;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.scale-btn {
+    background: #2d3238;
+    color: #ffffff;
+    border: 2px solid #848d9e;
+    padding: 4px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.scale-btn.active-scale {
+    background: #d4af37;
+    color: #1c212a;
+    border-color: #d4af37;
+}
+
+.modal-action-btn {
+    background: #2d3238;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    padding: 6px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.modal-action-btn.active-toggle {
+    background: #d4af37;
+    color: #1c212a;
+}
+
+.modal-action-btn.danger {
+    color: #ff4d4d;
+    border-color: #ff4d4d;
+}
+
+.modal-action-btn.neutral {
+    color: #dce0e9;
+    border-color: #848d9e;
+}
+
+.modal-action-btn.copied {
+    color: #4eae51;
+    border-color: #4eae51;
+}
+
+/* --- Checklist Items (No !important needed!) --- */
+.checklist-item {
+    cursor: pointer;
+    list-style-type: '⬜ ';
+    margin-bottom: 12px;
+    transition: all 0.2s ease;
+    user-select: text;
+    text-align: left;
+    color: #eeeeee;
+}
+
+.checklist-item.checked {
+    list-style-type: '✅ ';
+    text-decoration: line-through;
+    opacity: 0.45;
+    color: #848d9e;
+}
+
+.checklist-item:hover .ing-text {
+    color: #d4af37;
+    transition: color 0.2s ease;
+}
+
+.ing-text {
+    padding-left: 5px;
+}
+
+/* --- Meal Plan & Shopping List Cards --- */
+.meal-plan-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(45, 50, 56, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #848d9e;
+    margin: 20px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.meal-plan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+}
+
+.meal-plan-title {
+    font-size: 1.2rem;
+    color: #d4af37;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.meal-plan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.meal-plan-item {
+    cursor: pointer;
+    background: rgba(28, 33, 42, 0.6);
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #d4af37;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.meal-plan-item:hover {
+    background-color: rgba(212, 175, 55, 0.15);
+    transform: translateX(4px);
+}
+
+.meal-slot-label {
+    color: #848d9e;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.meal-slot-dish {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.shopping-list-group {
+    margin-bottom: 25px;
+}
+
+.shopping-list-heading {
+    color: #d4af37;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+    border-bottom: 1px solid rgba(132, 141, 158, 0.3);
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.top-link-container {
+    text-align: center;
+    margin: 40px auto 20px auto;
+    padding-top: 20px;
+    border-top: 2px solid #2d3238;
+    max-width: 300px;
+}
+
+.back-link {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37;
+    text-decoration: none;
+}
+
+/* =========================================================
+   6. RESPONSIVE BREAKPOINTS
+   ========================================================= */
+@media (max-width: 1150px) {
+    .dashboard-wrapper .vault-control-panel {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dashboard-wrapper .vault-control-panel .dashboard-btn {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 650px) {
+    .dashboard-wrapper .vault-control-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .recipe-card table tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .recipe-card th,
+    .recipe-card td {
+        display: inline-block;
+        flex: 1 1 calc(50% - 8px);
+        padding: 8px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        box-sizing: border-box;
+    }
+
+    .recipe-card th {
+        background: #22272e;
+        color: #d4af37;
+    }
+
+    .recipe-card td {
+        background: rgba(255, 255, 255, 0.05);
+    }
 }
