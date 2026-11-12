@@ -561,18 +561,17 @@ function openDetailedView(recipeId, sourceView = null) {
     document.getElementById("overlay-title").textContent = `${targetRecipe.emoji} ${targetRecipe.title}`;
     document.getElementById("overlay-subtitle").textContent = targetRecipe.subtitle;
     
-    const subtitleEl = document.getElementById("overlay-subtitle");
+     const subtitleEl = document.getElementById("overlay-subtitle");
     const multiplierContainer = document.createElement("div");
     multiplierContainer.className = "multiplier-controls";
-    multiplierContainer.style.cssText = "display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 10px 0; justify-content: center; align-items: center;";
     multiplierContainer.innerHTML = `
-        <span style="color: #848d9e; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Scale Portions:</span>
-        <button class="scale-btn active-scale" data-factor="1" style="background: #d4af37; color: #1c212a; border: 2px solid #d4af37; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">1x</button>
-        <button class="scale-btn" data-factor="2" style="background: #2d3238; color: #fff; border: 2px solid #848d9e; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">2x</button>
-        <button class="scale-btn" data-factor="4" style="background: #2d3238; color: #fff; border: 2px solid #848d9e; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">4x</button>
-        <button class="scale-btn" data-factor="6" style="background: #2d3238; color: #fff; border: 2px solid #848d9e; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">6x</button>
-        <button class="scale-btn" data-factor="8" style="background: #2d3238; color: #fff; border: 2px solid #848d9e; padding: 4px 14px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">8x</button>
-        <button id="copy-recipe-list-btn" style="background: #2d3238; color: #d4af37; border: 2px solid #d4af37; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; margin-left: 10px; transition: all 0.2s ease;">📋 Copy List</button>
+        <span class="multiplier-label">Scale Portions:</span>
+        <button class="scale-btn active-scale" data-factor="1">1x</button>
+        <button class="scale-btn" data-factor="2">2x</button>
+        <button class="scale-btn" data-factor="4">4x</button>
+        <button class="scale-btn" data-factor="6">6x</button>
+        <button class="scale-btn" data-factor="8">8x</button>
+        <button id="copy-recipe-list-btn" class="modal-action-btn" style="margin-left: 10px;">📋 Copy List</button>
     `;
     subtitleEl.parentNode.insertBefore(multiplierContainer, subtitleEl.nextSibling);
 
@@ -629,35 +628,25 @@ function openDetailedView(recipeId, sourceView = null) {
     }
 
     // Helper engine to draw your ingredient checkmarks with the multiplied fractions
-    function renderIngredients(factor) {
+     function renderIngredients(factor) {
         ingredientsElement.innerHTML = targetRecipe.ingredients.map(ing => {
             const scaledText = multiplyIngredientQuantity(ing, factor);
             return `
-                <li class="checklist-item" style="cursor: pointer; list-style-type: '⬜ '; margin-bottom: 12px; transition: all 0.2s ease; user-select: none;">
-                    <span class="ing-text" style="padding-left: 5px;">${scaledText}</span>
+                <li class="checklist-item">
+                    <span class="ing-text">${scaledText}</span>
                 </li>
             `;
         }).join("");
     }
 
-     // Load any saved multiplier for this recipe (defaults to 1)
     const savedFactor = getSavedMultipliers()[targetRecipe.id] || 1;
-
-    // Highlight the matching scale button on open
     const scaleButtons = multiplierContainer.querySelectorAll(".scale-btn");
     scaleButtons.forEach(b => {
         const btnFactor = parseInt(b.getAttribute("data-factor"));
-        if (btnFactor === savedFactor) {
-            b.style.background = "#d4af37";
-            b.style.color = "#1c212a";
-            b.style.borderColor = "#d4af37";
-        } else {
-            b.style.background = "#2d3238";
-            b.style.color = "#fff";
-            b.style.borderColor = "#848d9e";
-        }
+        b.classList.toggle("active-scale", btnFactor === savedFactor);
     });
 
+    
     // Draw portions using the saved multiplier immediately
     renderIngredients(savedFactor);
     updateScaledServings(savedFactor);
@@ -1166,15 +1155,9 @@ function generateMasterShoppingList() {
 
         const itemsHTML = combinedItems.map(itemText => {
             const isChecked = storedChecks.includes(itemText);
-            const liClass = isChecked ? "checklist-item checked" : "checklist-item";
-            const liEmoji = isChecked ? "'✅ '" : "'⬜ '";
-            const textDec = isChecked ? "line-through" : "none";
-            const opac = isChecked ? "0.45" : "1";
-            const col = isChecked ? "#848d9e" : "#eeeeee";
-
             return `
-                <li class="${liClass}" style="cursor: pointer; list-style-type: ${liEmoji}; margin-bottom: 12px; transition: all 0.2s ease; text-align: left; text-decoration: ${textDec}; opacity: ${opac}; color: ${col};">
-                    <span class="ing-text" style="padding-left: 5px;">${itemText}</span>
+                <li class="${isChecked ? "checklist-item checked" : "checklist-item"}">
+                    <span class="ing-text">${itemText}</span>
                 </li>
             `;
         }).join("");
@@ -1209,16 +1192,9 @@ function generateMasterShoppingList() {
                 const itemsHTML = recipe.ingredients.map(ing => {
                     const scaledIng = multiplyIngredientQuantity(ing, factor);
                     const isChecked = storedChecks.includes(scaledIng);
-                    const liClass = isChecked ? "checklist-item checked" : "checklist-item";
-                    const liEmoji = isChecked ? "'✅ '" : "'⬜ '";
-                    const textDec = isChecked ? "line-through" : "none";
-                    const opac = isChecked ? "0.45" : "1";
-                    const col = isChecked ? "#848d9e" : "#eeeeee";
-
+                   
                     return `
-                        <li class="${liClass}" style="cursor: pointer; list-style-type: ${liEmoji}; margin-bottom: 12px; transition: all 0.2s ease; text-align: left; text-decoration: ${textDec}; opacity: ${opac}; color: ${col};">
-                            <span class="ing-text" style="padding-left: 5px;">${scaledIng}</span>
-                        </li>
+                       <li class="${isChecked ? "checklist-item checked" : "checklist-item"}"><span class="ing-text">${scaledIng}</span></li>
                     `;
                 }).join("");
 
@@ -1232,17 +1208,10 @@ function generateMasterShoppingList() {
     ingredientsElement.onclick = (e) => {
         const listItem = e.target.closest(".checklist-item");
         if (!listItem) return;
-        
-        const textSpan = listItem.querySelector(".ing-text");
-        const ingredientText = textSpan.textContent.trim();
 
-        toggleCheckedIngredient(ingredientText);
-        
+        const textSpan = listItem.querySelector(".ing-text");
+        toggleCheckedIngredient(textSpan.textContent.trim());
         listItem.classList.toggle("checked");
-        listItem.style.listStyleType = listItem.classList.contains("checked") ? "'✅ '" : "'⬜ '";
-        listItem.style.textDecoration = listItem.classList.contains("checked") ? "line-through" : "none";
-        listItem.style.opacity = listItem.classList.contains("checked") ? "0.45" : "1";
-        listItem.style.color = listItem.classList.contains("checked") ? "#848d9e" : "#eeeeee";
     };
 
     // --- TOGGLE COMBINE DUPLICATES BUTTON ROUTER ---
