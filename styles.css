@@ -515,6 +515,33 @@ dd {
     text-decoration: none;
 }
 
+/* --- Modal Top Bar & Heart Button --- */
+.close-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-heart-btn {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.modal-heart-btn:hover {
+    transform: scale(1.2);
+}
+
+.modal-heart-btn:focus {
+    outline: 2px solid #d4af37;
+    border-radius: 4px;
+}
+
 /* =========================================================
    6. RESPONSIVE BREAKPOINTS
    ========================================================= */
