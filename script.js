@@ -29,6 +29,11 @@ let currentUser = null;
 let cloudFavoritesCache = [];
 let cloudMultipliersCache = {};
 
+const ADMIN_EMAIL = "steve4556@gmail.com";
+function isVaultAdmin() {
+    return currentUser && currentUser.email === ADMIN_EMAIL;
+}
+
 /// --- HYBRID STORAGE HELPERS (CLOUD WHEN LOGGED IN, LOCALSTORAGE FOR GUESTS) ---
 function getFavorites() {
     if (currentUser) return cloudFavoritesCache;
@@ -419,7 +424,7 @@ function setupCategoryFilterBar() {
         <button type="button" id="vault-auth-btn" class="category-btn auth-dashboard-btn">
             🔐 Log In / Sign Up
         </button>
-        <button type="button" id="open-add-recipe-btn" class="category-btn auth-dashboard-btn">
+       <button type="button" id="open-add-recipe-btn" class="category-btn auth-dashboard-btn" style="display: none;">
             ➕ Add Recipe
         </button>
     `;
@@ -1415,14 +1420,20 @@ async function syncUserCloudData() {
 
 function updateAuthButtonUI() {
     const authBtn = document.getElementById("vault-auth-btn");
-    if (!authBtn) return;
+    const addRecipeBtn = document.getElementById("open-add-recipe-btn");
 
-    if (currentUser) {
-        authBtn.textContent = `👤 ${currentUser.email} (Log Out)`;
-        authBtn.classList.add("logged-in");
-    } else {
-        authBtn.textContent = "🔐 Log In / Sign Up";
-        authBtn.classList.remove("logged-in");
+    if (authBtn) {
+        if (currentUser) {
+            authBtn.textContent = `👤 ${currentUser.email} (Log Out)`;
+            authBtn.classList.add("logged-in");
+        } else {
+            authBtn.textContent = "🔐 Log In / Sign Up";
+            authBtn.classList.remove("logged-in");
+        }
+    }
+
+    if (addRecipeBtn) {
+        addRecipeBtn.style.display = isVaultAdmin() ? "inline-flex" : "none";
     }
 }
 
@@ -1519,10 +1530,52 @@ document.addEventListener("click", async (e) => {
     }
 });
 
+// --- AUTOMATIC BROWSER PHOTO COMPRESSOR ---
+function compressRecipeImage(file, maxWidth = 800, quality = 0.8) {
+    return new Promise((resolve, reject) => {
+        if (file.size > 10 * 1024 * 1024) {
+            reject(new Error("Please choose an image smaller than 10 MB."));
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            const img = new Image();
+            img.onload = () => {
+                const canvas = document.createElement("canvas");
+                let width = img.width;
+                let height = img.height;
+
+                if (width > maxWidth) {
+                    height = Math.round((height * maxWidth) / width);
+                    width = maxWidth;
+                }
+
+                canvas.width = width;
+                canvas.height = height;
+
+                const ctx = canvas.getContext("2d");
+                ctx.drawImage(img, 0, 0, width, height);
+
+                canvas.toBlob(
+                    (blob) => {
+                        if (blob) resolve(blob);
+                        else reject(new Error("Image compression failed."));
+                    },
+                    "image/jpeg",
+                    quality
+                );
+            };
+            img.onerror = () => reject(new Error("Could not read image file."));
+            img.src = event.target.result;
+        };
+        reader.readAsDataURL(file);
+    });
+}
+
 function openAddRecipeModal() {
-    if (!currentUser) {
-        alert("Please log in first to save new recipes to your cloud vault! 🔐");
-        openAuthModal();
+    if (!isVaultAdmin()) {
+        alert("🔒 Admin access only.");
         return;
     }
 
