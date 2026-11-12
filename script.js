@@ -600,6 +600,12 @@ window.addEventListener("popstate", (e) => {
         generateHealthyMealPlan(true);
     } else if (state.view === "grocery-list") {
         generateMasterShoppingList();
+    } else if (state.view === "add-recipe") {
+        openAddRecipeModal();
+    } else if (state.view === "auth") {
+        openAuthModal();
+    } else if (state.view === "change-password") {
+        openChangePasswordModal(false);
     } else if (state.view === "recipe" && state.recipeId) {
         openDetailedView(state.recipeId, state.returnTo || null);
     }
@@ -1701,6 +1707,11 @@ function openAddRecipeModal() {
 
     returnToView = null;
     if (closeOverlayBtn) closeOverlayBtn.textContent = "← Back to Main Menu";
+
+    if (!isHandlingPopState) {
+        history.pushState({ view: "add-recipe" }, "", "#add-recipe");
+    }
+
     clearOverlayLayout();
 
     document.getElementById("overlay-title").textContent = "➕ Add New Vault Recipe";
@@ -1896,7 +1907,7 @@ function openAddRecipeModal() {
             statusEl.style.color = "#4eae51";
             statusEl.textContent = "✅ Recipe saved! Reloading vault...";
             await loadRecipeVaultData();
-            setTimeout(() => hideModalOnly(), 800);
+            setTimeout(() => closeDetailedView(), 800);
         }
     };
 
