@@ -356,14 +356,19 @@ async function loadRecipeVaultData() {
     try {
         const response = await fetch('recipes.json');
         if (!response.ok) throw new Error("Could not find or read recipes.json");
-        
-        // 1. Download the raw data array
-        const rawData = await response.json();
-        
-        // 2. 🚀 ALPHABETIZE ENTIRE VAULT AUTOMATICALLY BEFORE BUILDING CARDS
-        myRecipes = rawData.sort((a, b) => a.title.localeCompare(b.title));
-        
-        // 3. Launch your vault layout engine with sorted records
+        const staticRecipes = await response.json();
+
+        let cloudRecipes = [];
+        if (supabaseClient) {
+            const { data, error } = await supabaseClient
+                .from("user_recipes")
+                .select("*");
+            if (!error && data) {
+                cloudRecipes = data;
+            }
+        }
+
+        myRecipes = [...staticRecipes, ...cloudRecipes].sort((a, b) => a.title.localeCompare(b.title));
         initApp();
     } catch (error) {
         console.error("Vault critical error loading data array:", error);
@@ -408,11 +413,14 @@ function setupCategoryFilterBar() {
             ${cat.label}
         </button>
     `).join("") + `
-        <a href="https://ko-fi.com" target="_blank" rel="noopener noreferrer" class="category-btn kofi-dashboard-btn">
+        <a href="https://ko-fi.com/stephenstinson" target="_blank" rel="noopener noreferrer" class="category-btn kofi-dashboard-btn">
             ☕ Support the Vault
         </a>
         <button type="button" id="vault-auth-btn" class="category-btn auth-dashboard-btn">
             🔐 Log In / Sign Up
+        </button>
+        <button type="button" id="open-add-recipe-btn" class="category-btn auth-dashboard-btn">
+            ➕ Add Recipe
         </button>
     `;
 
@@ -1508,5 +1516,183 @@ document.addEventListener("click", async (e) => {
         await supabaseClient.auth.signOut();
     } else {
         openAuthModal();
+    }
+});
+
+function openAddRecipeModal() {
+    if (!currentUser) {
+        alert("Please log in first to save new recipes to your cloud vault! 🔐");
+        openAuthModal();
+        return;
+    }
+
+    returnToView = null;
+    if (closeOverlayBtn) closeOverlayBtn.textContent = "← Back to Main Menu";
+    clearOverlayLayout();
+
+    document.getElementById("overlay-title").textContent = "➕ Add New Vault Recipe";
+    document.getElementById("overlay-subtitle").textContent = "Fill in the details below to save a new dish directly to your cloud database.";
+
+    const overlayImg = document.getElementById("overlay-photo");
+    if (overlayImg) overlayImg.style.display = "none";
+    overlay.querySelectorAll("table").forEach(t => t.style.display = "none");
+    overlay.querySelectorAll("h2").forEach(h => { if (h.id !== "overlay-title") h.style.display = "none"; });
+    document.getElementById("overlay-ingredients").style.display = "none";
+    document.getElementById("overlay-instructions").style.display = "none";
+
+    const highlightsElement = document.getElementById("overlay-highlights");
+    highlightsElement.innerHTML = `
+        <form id="new-recipe-form" class="add-recipe-form">
+            <div class="form-row-grid">
+                <div class="form-field-group" style="max-width: 90px;">
+                    <label for="new-emoji">Emoji</label>
+                    <input type="text" id="new-emoji" class="auth-input" value="🍽️" maxlength="4" required>
+                </div>
+                <div class="form-field-group">
+                    <label for="new-title">Recipe Title *</label>
+                    <input type="text" id="new-title" class="auth-input" placeholder="e.g., Grandma's Lasagna" required>
+                </div>
+            </div>
+
+            <div class="form-row-grid">
+                <div class="form-field-group">
+                    <label for="new-category">Category *</label>
+                    <select id="new-category" class="auth-input">
+                        <option value="breakfast">🍳 Breakfast</option>
+                        <option value="appetizer">🧅 Appetizer</option>
+                        <option value="lunch">🥗 Lunch</option>
+                        <option value="dinner" selected>🍽️ Dinner</option>
+                        <option value="dessert">🍪 Dessert</option>
+                    </select>
+                </div>
+                <div class="form-field-group">
+                    <label for="new-image">Image Filename (Optional)</label>
+                    <input type="text" id="new-image" class="auth-input" placeholder="e.g., lasagna.jpg">
+                </div>
+            </div>
+
+            <div class="form-field-group">
+                <label for="new-subtitle">Short Description *</label>
+                <input type="text" id="new-subtitle" class="auth-input" placeholder="A brief mouth-watering summary..." required>
+            </div>
+
+            <div class="form-row-grid">
+                <div class="form-field-group">
+                    <label for="new-prep">Prep Time</label>
+                    <input type="text" id="new-prep" class="auth-input" placeholder="15 mins" value="15 mins">
+                </div>
+                <div class="form-field-group">
+                    <label for="new-cook">Cook Time</label>
+                    <input type="text" id="new-cook" class="auth-input" placeholder="30 mins" value="30 mins">
+                </div>
+                <div class="form-field-group">
+                    <label for="new-servings">Servings</label>
+                    <input type="text" id="new-servings" class="auth-input" placeholder="4 people" value="4 people">
+                </div>
+            </div>
+
+            <div class="form-row-grid">
+                <div class="form-field-group">
+                    <label for="new-calories">Calories (kcal)</label>
+                    <input type="number" id="new-calories" class="auth-input" placeholder="400" value="400" required>
+                </div>
+                <div class="form-field-group">
+                    <label for="new-protein">Protein (g)</label>
+                    <input type="number" id="new-protein" class="auth-input" placeholder="25" value="25">
+                </div>
+                <div class="form-field-group">
+                    <label for="new-carbs">Carbs (g)</label>
+                    <input type="number" id="new-carbs" class="auth-input" placeholder="30" value="30">
+                </div>
+                <div class="form-field-group">
+                    <label for="new-fats">Fats (g)</label>
+                    <input type="number" id="new-fats" class="auth-input" placeholder="15" value="15">
+                </div>
+            </div>
+
+            <div class="form-field-group">
+                <label for="new-ingredients">Ingredients (One per line) *</label>
+                <textarea id="new-ingredients" class="vault-textarea" placeholder="2 cups all-purpose flour&#10;1/2 teaspoon salt&#10;3 large eggs" required></textarea>
+            </div>
+
+            <div class="form-field-group">
+                <label for="new-instructions">Instructions (One step per line) *</label>
+                <textarea id="new-instructions" class="vault-textarea" placeholder="Preheat oven to 375°F.&#10;Whisk dry ingredients together in a large bowl.&#10;Bake for 25 minutes until golden." required></textarea>
+            </div>
+
+            <button type="submit" id="save-new-recipe-btn" class="auth-submit-btn">💾 Save Recipe to Vault</button>
+            <p id="new-recipe-status" class="auth-status-msg"></p>
+        </form>
+    `;
+
+    const form = document.getElementById("new-recipe-form");
+    const statusEl = document.getElementById("new-recipe-status");
+
+    form.onsubmit = async (e) => {
+        e.preventDefault();
+        statusEl.style.color = "#d4af37";
+        statusEl.textContent = "Saving recipe to cloud database...";
+
+        const title = document.getElementById("new-title").value.trim();
+        const slugId = title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") + "-" + Date.now().toString().slice(-4);
+
+        const ingredientsArray = document.getElementById("new-ingredients").value
+            .split("\n")
+            .map(line => line.trim())
+            .filter(line => line.length > 0);
+
+        const instructionsArray = document.getElementById("new-instructions").value
+            .split("\n")
+            .map(line => line.trim())
+            .filter(line => line.length > 0);
+
+        const newRecipeRecord = {
+            id: slugId,
+            user_id: currentUser.id,
+            emoji: document.getElementById("new-emoji").value.trim() || "🍽️",
+            title: title,
+            image: document.getElementById("new-image").value.trim() || "vault-bg.jpg",
+            subtitle: document.getElementById("new-subtitle").value.trim(),
+            category: document.getElementById("new-category").value,
+            times: {
+                prep: document.getElementById("new-prep").value.trim() || "15 mins",
+                cook: document.getElementById("new-cook").value.trim() || "30 mins",
+                servings: document.getElementById("new-servings").value.trim() || "4 people"
+            },
+            nutrition: {
+                calories: parseInt(document.getElementById("new-calories").value) || 0,
+                protein: parseInt(document.getElementById("new-protein").value) || 0,
+                carbs: parseInt(document.getElementById("new-carbs").value) || 0,
+                fats: parseInt(document.getElementById("new-fats").value) || 0
+            },
+            highlights: [
+                { category: "Vault Original", text: "Custom recipe added directly from the Ultimate Recipe Vault." }
+            ],
+            ingredients: ingredientsArray,
+            instructions: instructionsArray
+        };
+
+        const { error } = await supabaseClient
+            .from("user_recipes")
+            .insert(newRecipeRecord);
+
+        if (error) {
+            statusEl.style.color = "#ff4d4d";
+            statusEl.textContent = `Error: ${error.message}`;
+        } else {
+            statusEl.style.color = "#4eae51";
+            statusEl.textContent = "✅ Recipe saved! Reloading vault...";
+            await loadRecipeVaultData();
+            setTimeout(() => hideModalOnly(), 800);
+        }
+    };
+
+    overlay.classList.add("is-active");
+    document.body.classList.add("modal-open");
+}
+
+document.addEventListener("click", (e) => {
+    if (e.target.closest("#open-add-recipe-btn")) {
+        openAddRecipeModal();
     }
 });
