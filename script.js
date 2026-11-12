@@ -424,7 +424,10 @@ function setupCategoryFilterBar() {
         <button type="button" id="vault-auth-btn" class="category-btn auth-dashboard-btn">
             🔐 Log In / Sign Up
         </button>
-       <button type="button" id="open-add-recipe-btn" class="category-btn auth-dashboard-btn" style="display: none;">
+        <button type="button" id="change-password-pill" class="category-btn auth-dashboard-btn" style="display: none;">
+            🔑 Change Password
+        </button>
+        <button type="button" id="open-add-recipe-btn" class="category-btn auth-dashboard-btn" style="display: none;">
             ➕ Add Recipe
         </button>
     `;
@@ -1421,6 +1424,7 @@ async function syncUserCloudData() {
 function updateAuthButtonUI() {
     const authBtn = document.getElementById("vault-auth-btn");
     const addRecipeBtn = document.getElementById("open-add-recipe-btn");
+    const changePassBtn = document.getElementById("change-password-pill");
 
     if (authBtn) {
         if (currentUser) {
@@ -1435,6 +1439,91 @@ function updateAuthButtonUI() {
     if (addRecipeBtn) {
         addRecipeBtn.style.display = isVaultAdmin() ? "inline-flex" : "none";
     }
+
+    if (changePassBtn) {
+        changePassBtn.style.display = currentUser ? "inline-flex" : "none";
+    }
+}
+
+document.addEventListener("click", async (e) => {
+    const authBtn = e.target.closest("#vault-auth-btn");
+    if (authBtn) {
+        if (currentUser && supabaseClient) {
+            await supabaseClient.auth.signOut();
+        } else {
+            openAuthModal();
+        }
+        return;
+    }
+
+    if (e.target.closest("#change-password-pill")) {
+        openChangePasswordModal(false);
+    }
+});
+
+function openChangePasswordModal(isRecovery = false) {
+    if (!supabaseClient) return;
+
+    returnToView = null;
+    if (closeOverlayBtn) closeOverlayBtn.textContent = "← Back to Main Menu";
+    clearOverlayLayout();
+
+    document.getElementById("overlay-title").textContent = isRecovery ? "🔑 Reset Your Password" : "🔑 Change Your Password";
+    document.getElementById("overlay-subtitle").textContent = "Enter a new password (minimum 6 characters) for your Vault account.";
+
+    const overlayImg = document.getElementById("overlay-photo");
+    if (overlayImg) overlayImg.style.display = "none";
+    overlay.querySelectorAll("table").forEach(t => t.style.display = "none");
+    overlay.querySelectorAll("h2").forEach(h => { if (h.id !== "overlay-title") h.style.display = "none"; });
+    document.getElementById("overlay-ingredients").style.display = "none";
+    document.getElementById("overlay-instructions").style.display = "none";
+
+    const highlightsElement = document.getElementById("overlay-highlights");
+    highlightsElement.innerHTML = `
+        <div class="auth-form-box">
+            <input type="password" id="new-vault-password" class="auth-input" placeholder="New password (min 6 characters)..." required>
+            <input type="password" id="confirm-vault-password" class="auth-input" placeholder="Confirm new password..." required>
+            <button type="button" id="save-new-password-btn" class="auth-submit-btn">💾 Update Password</button>
+            <p id="change-pass-status" class="auth-status-msg"></p>
+        </div>
+    `;
+
+    const newPassInput = document.getElementById("new-vault-password");
+    const confirmPassInput = document.getElementById("confirm-vault-password");
+    const statusMsg = document.getElementById("change-pass-status");
+
+    document.getElementById("save-new-password-btn").onclick = async () => {
+        const newPass = newPassInput.value;
+        const confirmPass = confirmPassInput.value;
+
+        if (newPass.length < 6) {
+            statusMsg.style.color = "#ff4d4d";
+            statusMsg.textContent = "Password must be at least 6 characters.";
+            return;
+        }
+        if (newPass !== confirmPass) {
+            statusMsg.style.color = "#ff4d4d";
+            statusMsg.textContent = "Passwords do not match.";
+            return;
+        }
+
+        statusMsg.style.color = "#d4af37";
+        statusMsg.textContent = "Updating password...";
+
+        const { error } = await supabaseClient.auth.updateUser({ password: newPass });
+
+        if (error) {
+            statusMsg.style.color = "#ff4d4d";
+            statusMsg.textContent = error.message;
+        } else {
+            statusMsg.style.color = "#4eae51";
+            statusMsg.textContent = "✅ Password updated successfully!";
+            setTimeout(() => hideModalOnly(), 1200);
+        }
+    };
+
+    overlay.classList.add("is-active");
+    document.body.classList.add("modal-open");
 }
 
 function openAuthModal() {
@@ -1466,6 +1555,7 @@ function openAuthModal() {
                 <button type="button" id="auth-signin-submit" class="auth-submit-btn">Log In</button>
                 <button type="button" id="auth-signup-submit" class="auth-submit-btn secondary">Create Account</button>
             </div>
+            <button type="button" id="forgot-password-btn" class="auth-text-link">Forgot Password?</button>
             <p id="auth-status-msg" class="auth-status-msg"></p>
         </div>
     `;
@@ -1506,29 +1596,46 @@ function openAuthModal() {
         }
     };
 
+    document.getElementById("forgot-password-btn").onclick = async () => {
+        const email = emailInput.value.trim();
+        if (!email) {
+            statusMsg.style.color = "#ff4d4d";
+            statusMsg.textContent = "Enter your email address above first, then click Forgot Password.";
+            return;
+        }
+
+        statusMsg.style.color = "#d4af37";
+        statusMsg.textContent = "Sending password reset email...";
+
+        const redirectUrl = "https://" + "steve4556.github.io" + "/ultimate-recipe-vault/";
+        const { error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+            redirectTo: redirectUrl
+        });
+
+        if (error) {
+            statusMsg.style.color = "#ff4d4d";
+            statusMsg.textContent = error.message;
+        } else {
+            statusMsg.style.color = "#4eae51";
+            statusMsg.textContent = "✅ Password reset link sent! Check your email inbox.";
+        }
+    };
+
     overlay.classList.add("is-active");
     document.body.classList.add("modal-open");
 }
 
-// Listen for auth state changes (login, logout, or returning session)
+// Listen for auth state changes (login, logout, or password recovery link)
 if (supabaseClient) {
-    supabaseClient.auth.onAuthStateChange((_event, session) => {
+    supabaseClient.auth.onAuthStateChange((event, session) => {
         currentUser = session ? session.user : null;
         syncUserCloudData();
+
+        if (event === "PASSWORD_RECOVERY") {
+            openChangePasswordModal(true);
+        }
     });
 }
-
-// Delegate click on the dashboard Auth button
-document.addEventListener("click", async (e) => {
-    const authBtn = e.target.closest("#vault-auth-btn");
-    if (!authBtn) return;
-
-    if (currentUser && supabaseClient) {
-        await supabaseClient.auth.signOut();
-    } else {
-        openAuthModal();
-    }
-});
 
 // --- AUTOMATIC BROWSER PHOTO COMPRESSOR ---
 function compressRecipeImage(file, maxWidth = 800, quality = 0.8) {
