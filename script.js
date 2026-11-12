@@ -359,20 +359,24 @@ function setupCategoryFilterBar() {
     filterBar.className = "category-filter-bar";
 
     filterBar.innerHTML = categories.map(cat => `
-        <button class="category-btn ${cat.id === activeCategory ? "active-category" : ""}" data-category="${cat.id}">
+        <button type="button" class="category-btn ${cat.id === activeCategory ? "active-category" : ""}" data-category="${cat.id}">
             ${cat.label}
         </button>
-    `).join("");
+    `).join("") + `
+        <a href="https://ko-fi.com/stephenstinson" target="_blank" rel="noopener noreferrer" class="category-btn kofi-dashboard-btn">
+            ☕ Support the Vault
+        </a>
+    `;
 
     filterBar.addEventListener("click", (e) => {
-        const btn = e.target.closest(".category-btn");
+        const btn = e.target.closest("button.category-btn");
         if (!btn) return;
 
         activeCategory = btn.getAttribute("data-category");
         visibleCount = 12; // Reset pagination limit when switching categories
 
         // Update active button highlight
-        filterBar.querySelectorAll(".category-btn").forEach(b => b.classList.remove("active-category"));
+        filterBar.querySelectorAll("button.category-btn").forEach(b => b.classList.remove("active-category"));
         btn.classList.add("active-category");
 
         filterRecipes();
