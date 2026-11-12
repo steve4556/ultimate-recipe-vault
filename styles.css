@@ -190,6 +190,15 @@ p {
     box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
 }
 
+.kofi-dashboard-btn {
+    text-decoration: none;
+    border-color: #d4af37;
+    color: #d4af37;
+    background-color: rgba(212, 175, 55, 0.12);
+    display: inline-flex;
+    align-items: center;
+}
+
 /* =========================================================
    4. RECIPE GRID, CARDS & TABLES
    ========================================================= */
