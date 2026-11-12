@@ -398,6 +398,20 @@ dd {
     border-color: #4eae51;
 }
 
+/* --- Master Grocery List Action Button Hover Effects --- */
+#toggle-combine-btn:hover,
+#copy-master-list-btn:hover,
+#clear-checks-btn:hover,
+#reset-scales-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.7);
+    filter: brightness(1.15);
+}
+
+#clear-checks-btn:hover {
+    box-shadow: 0 0 12px rgba(255, 77, 77, 0.7);
+}
+
 /* --- Checklist Items (No !important needed!) --- */
 .checklist-item {
     cursor: pointer;
