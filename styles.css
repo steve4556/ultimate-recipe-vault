@@ -682,6 +682,22 @@ dd {
     outline: none;
 }
 
+.auth-text-link {
+    background: none;
+    border: none;
+    color: #848d9e;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    align-self: center;
+    transition: color 0.2s ease;
+}
+
+.auth-text-link:hover {
+    color: #d4af37;
+}
+
 /* =========================================================
    6. RESPONSIVE BREAKPOINTS
    ========================================================= */
