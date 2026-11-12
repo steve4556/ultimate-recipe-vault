@@ -629,6 +629,59 @@ dd {
     min-height: 20px;
 }
 
+/* --- Add New Recipe Modal Form --- */
+.add-recipe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 600px;
+    margin: 20px auto;
+    background: rgba(28, 33, 42, 0.85);
+    border: 2px solid #d4af37;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: left;
+}
+
+.form-row-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+}
+
+.form-field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-field-group label {
+    color: #d4af37;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.vault-textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 2px solid #848d9e;
+    background-color: #2d3238;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.vault-textarea:focus {
+    border-color: #d4af37;
+    outline: none;
+}
+
 /* =========================================================
    6. RESPONSIVE BREAKPOINTS
    ========================================================= */
