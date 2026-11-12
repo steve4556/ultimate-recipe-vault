@@ -21,13 +21,41 @@ let lastRandomMenuPicks = null; // Saves the rolled dishes so going "Back" keeps
 let lastHealthyMenuPicks = null;
 let isHandlingPopState = false; // Prevents duplicate history entries when pressing browser Back
 
-// --- LOCAL STORAGE HELPERS FOR FAVORITES ---
+const SUPABASE_URL = "https://" + "ygvnxeeehvgqpsaiajhx" + ".supabase.co";
+const SUPABASE_KEY = "sb_publishable_EnAl79eRY-lzaacQuVpggA_IDiDvK-R";
+const supabaseClient = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY) : null;
+
+let currentUser = null;
+let cloudFavoritesCache = [];
+let cloudMultipliersCache = {};
+
+/// --- HYBRID STORAGE HELPERS (CLOUD WHEN LOGGED IN, LOCALSTORAGE FOR GUESTS) ---
 function getFavorites() {
+    if (currentUser) return cloudFavoritesCache;
     const favs = localStorage.getItem("vault_favorites");
     return favs ? JSON.parse(favs) : [];
 }
 
-function toggleFavorite(recipeId) {
+async function toggleFavorite(recipeId) {
+    if (currentUser && supabaseClient) {
+        if (cloudFavoritesCache.includes(recipeId)) {
+            cloudFavoritesCache = cloudFavoritesCache.filter(id => id !== recipeId);
+            delete cloudMultipliersCache[recipeId];
+            await supabaseClient
+                .from("user_favorites")
+                .delete()
+                .eq("user_id", currentUser.id)
+                .eq("recipe_id", recipeId);
+        } else {
+            cloudFavoritesCache.push(recipeId);
+            const factor = cloudMultipliersCache[recipeId] || 1;
+            await supabaseClient
+                .from("user_favorites")
+                .upsert({ user_id: currentUser.id, recipe_id: recipeId, multiplier: factor });
+        }
+        return;
+    }
+
     let favs = getFavorites();
     if (favs.includes(recipeId)) {
         favs = favs.filter(id => id !== recipeId);
@@ -190,16 +218,33 @@ function buildCombinedIngredients(favoriteIds, savedMultipliers) {
     });
 }
 
-// --- LOCAL STORAGE HELPERS FOR PORTION MULTIPLIERS ---
 function getSavedMultipliers() {
+    if (currentUser) return cloudMultipliersCache;
     const saved = localStorage.getItem("vault_multipliers");
     return saved ? JSON.parse(saved) : {};
 }
 
-function saveRecipeMultiplier(recipeId, factor) {
+async function saveRecipeMultiplier(recipeId, factor) {
+    if (currentUser && supabaseClient) {
+        if (factor === 1) {
+            delete cloudMultipliersCache[recipeId];
+        } else {
+            cloudMultipliersCache[recipeId] = factor;
+        }
+        // Only update database row if the recipe is already favorited
+        if (cloudFavoritesCache.includes(recipeId)) {
+            await supabaseClient
+                .from("user_favorites")
+                .update({ multiplier: factor })
+                .eq("user_id", currentUser.id)
+                .eq("recipe_id", recipeId);
+        }
+        return;
+    }
+
     const multipliers = getSavedMultipliers();
     if (factor === 1) {
-        delete multipliers[recipeId]; // Keep storage clean when reset to 1x
+        delete multipliers[recipeId];
     } else {
         multipliers[recipeId] = factor;
     }
@@ -363,9 +408,12 @@ function setupCategoryFilterBar() {
             ${cat.label}
         </button>
     `).join("") + `
-        <a href="https://ko-fi.com/stephenstinson" target="_blank" rel="noopener noreferrer" class="category-btn kofi-dashboard-btn">
+        <a href="https://ko-fi.com" target="_blank" rel="noopener noreferrer" class="category-btn kofi-dashboard-btn">
             ☕ Support the Vault
         </a>
+        <button type="button" id="vault-auth-btn" class="category-btn auth-dashboard-btn">
+            🔐 Log In / Sign Up
+        </button>
     `;
 
     filterBar.addEventListener("click", (e) => {
@@ -1328,3 +1376,137 @@ if (masterGroceryBtn) {
     masterGroceryBtn.addEventListener("click", generateMasterShoppingList);
 }
 
+// --- SUPABASE AUTH MODAL & CLOUD SYNC ENGINE ---
+async function syncUserCloudData() {
+    if (!supabaseClient || !currentUser) {
+        cloudFavoritesCache = [];
+        cloudMultipliersCache = {};
+        updateAuthButtonUI();
+        if (myRecipes.length > 0) initApp();
+        return;
+    }
+
+    const { data, error } = await supabaseClient
+        .from("user_favorites")
+        .select("recipe_id, multiplier")
+        .eq("user_id", currentUser.id);
+
+    if (!error && data) {
+        cloudFavoritesCache = data.map(row => row.recipe_id);
+        cloudMultipliersCache = {};
+        data.forEach(row => {
+            if (row.multiplier && row.multiplier > 1) {
+                cloudMultipliersCache[row.recipe_id] = row.multiplier;
+            }
+        });
+    }
+
+    updateAuthButtonUI();
+    if (myRecipes.length > 0) initApp();
+}
+
+function updateAuthButtonUI() {
+    const authBtn = document.getElementById("vault-auth-btn");
+    if (!authBtn) return;
+
+    if (currentUser) {
+        authBtn.textContent = `👤 ${currentUser.email} (Log Out)`;
+        authBtn.classList.add("logged-in");
+    } else {
+        authBtn.textContent = "🔐 Log In / Sign Up";
+        authBtn.classList.remove("logged-in");
+    }
+}
+
+function openAuthModal() {
+    if (!supabaseClient) {
+        alert("Supabase library failed to load. Check your index.html script tag.");
+        return;
+    }
+
+    returnToView = null;
+    if (closeOverlayBtn) closeOverlayBtn.textContent = "← Back to Main Menu";
+    clearOverlayLayout();
+
+    document.getElementById("overlay-title").textContent = "🔐 Vault Member Access";
+    document.getElementById("overlay-subtitle").textContent = "Sign in to sync your favorited recipes & portion scales across all your devices.";
+
+    const overlayImg = document.getElementById("overlay-photo");
+    if (overlayImg) overlayImg.style.display = "none";
+    overlay.querySelectorAll("table").forEach(t => t.style.display = "none");
+    overlay.querySelectorAll("h2").forEach(h => { if (h.id !== "overlay-title") h.style.display = "none"; });
+    document.getElementById("overlay-ingredients").style.display = "none";
+    document.getElementById("overlay-instructions").style.display = "none";
+
+    const highlightsElement = document.getElementById("overlay-highlights");
+    highlightsElement.innerHTML = `
+        <div class="auth-form-box">
+            <input type="email" id="auth-email" class="auth-input" placeholder="Email address..." required>
+            <input type="password" id="auth-password" class="auth-input" placeholder="Password (min 6 characters)..." required>
+            <div class="auth-btn-row">
+                <button type="button" id="auth-signin-submit" class="auth-submit-btn">Log In</button>
+                <button type="button" id="auth-signup-submit" class="auth-submit-btn secondary">Create Account</button>
+            </div>
+            <p id="auth-status-msg" class="auth-status-msg"></p>
+        </div>
+    `;
+
+    const statusMsg = document.getElementById("auth-status-msg");
+    const emailInput = document.getElementById("auth-email");
+    const passInput = document.getElementById("auth-password");
+
+    document.getElementById("auth-signin-submit").onclick = async () => {
+        statusMsg.style.color = "#d4af37";
+        statusMsg.textContent = "Signing in...";
+        const { error } = await supabaseClient.auth.signInWithPassword({
+            email: emailInput.value.trim(),
+            password: passInput.value
+        });
+        if (error) {
+            statusMsg.style.color = "#ff4d4d";
+            statusMsg.textContent = error.message;
+        } else {
+            hideModalOnly();
+        }
+    };
+
+    document.getElementById("auth-signup-submit").onclick = async () => {
+        statusMsg.style.color = "#d4af37";
+        statusMsg.textContent = "Creating account...";
+        const { error } = await supabaseClient.auth.signUp({
+            email: emailInput.value.trim(),
+            password: passInput.value
+        });
+        if (error) {
+            statusMsg.style.color = "#ff4d4d";
+            statusMsg.textContent = error.message;
+        } else {
+            statusMsg.style.color = "#4eae51";
+            statusMsg.textContent = "Account created! You are now signed in.";
+            setTimeout(() => hideModalOnly(), 1000);
+        }
+    };
+
+    overlay.classList.add("is-active");
+    document.body.classList.add("modal-open");
+}
+
+// Listen for auth state changes (login, logout, or returning session)
+if (supabaseClient) {
+    supabaseClient.auth.onAuthStateChange((_event, session) => {
+        currentUser = session ? session.user : null;
+        syncUserCloudData();
+    });
+}
+
+// Delegate click on the dashboard Auth button
+document.addEventListener("click", async (e) => {
+    const authBtn = e.target.closest("#vault-auth-btn");
+    if (!authBtn) return;
+
+    if (currentUser && supabaseClient) {
+        await supabaseClient.auth.signOut();
+    } else {
+        openAuthModal();
+    }
+});
