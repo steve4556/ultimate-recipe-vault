@@ -57,53 +57,56 @@
 </head>
 <body class="home-page" id="top">
 
-    <section>
+    <header>
         <h1>The Ultimate Recipe Vault</h1>
         <h2>Featured Recipes</h2> 
         <p>Welcome to The Ultimate Recipe Vault! Here you'll find the most delicious recipes available online! Browse through the finest selection of recipes and start cooking now!</p>   
 
-        <!-- Isolate your interactive controls into an independent flex-row layout -->
-           <!-- Unified Full-Width Dashboard Console -->
-     <div class="dashboard-wrapper">
-        <div class="vault-control-panel">
-            <div class="control-item">
-                <label for="recipe-search">Search the vault:</label>
-                <input type="text" id="recipe-search" placeholder="Type a keyword..." aria-label="Search recipes">
+        <!-- Unified Full-Width Dashboard Console -->
+        <nav class="dashboard-wrapper" aria-label="Recipe search, filters, and meal planners">
+            <div class="vault-control-panel">
+                <div class="control-item">
+                    <label for="recipe-search">Search the vault:</label>
+                    <input type="text" id="recipe-search" placeholder="Type a keyword..." aria-label="Search recipes">
+                </div>
+
+                <div class="control-item">
+                    <label for="recipe-selector">Choose a recipe:</label>
+                    <select id="recipe-selector">
+                        <option value="">-- Select a Dish --</option>
+                        <!-- JavaScript data loops will print options here dynamically -->
+                    </select>
+                </div>
+
+                <button type="button" id="toggle-favorites" class="favorites-toggle-btn dashboard-btn" aria-label="Toggle favorites filtering">Show Favorites ❤️</button>
+                <button type="button" id="random-menu-btn" class="favorites-toggle-btn dashboard-btn">🎲 Random Meal Plan</button>
+                <button type="button" id="healthy-menu-btn" class="dashboard-btn">🥗 Healthy Meal Plan</button>
+                <button type="button" id="master-grocery-btn" class="dashboard-btn">🛒 Master Grocery List</button>
             </div>
+        </nav>
+    </header>
 
-            <div class="control-item">
-                <label for="recipe-selector">Choose a recipe:</label>
-                <select id="recipe-selector">
-                    <option value="">-- Select a Dish --</option>
-                    <!-- JavaScript data loops will print options here dynamically -->
-                </select>
-            </div>
+    <main>
+        <!-- The Fort Knox Card Container (JavaScript handles printing the cards into here) -->
+        <div id="recipe-grid-container" class="recipe-grid" aria-live="polite"></div>
+        
+        <div id="load-more-container" style="text-align: center; margin: 30px auto 10px auto;">
+            <button type="button" id="load-more-btn" class="favorites-toggle-btn" aria-label="Load more recipes from the vault">Load More Recipes ⏳</button>
+        </div> 
+    </main>
 
-            <button id="toggle-favorites" class="favorites-toggle-btn dashboard-btn" aria-label="Toggle favorites filtering">Show Favorites ❤️</button>
-            <button id="random-menu-btn" class="favorites-toggle-btn dashboard-btn">🎲 Random Meal Plan</button>
-            <button id="healthy-menu-btn" class="dashboard-btn">🥗 Healthy Meal Plan</button>
-            <button id="master-grocery-btn" class="dashboard-btn">🛒 Master Grocery List</button>
-        </div>
-    </div>
-    </section>
-
-    <!-- The Fort Knox Card Container (JavaScript handles printing the cards into here) -->
-    <div id="recipe-grid-container" class="recipe-grid"></div>
-     <div id="load-more-container" style="text-align: center; margin: 30px auto 10px auto;">
-        <button id="load-more-btn" class="favorites-toggle-btn" aria-label="Load more recipes from the vault">Load More Recipes ⏳</button>
-    </div> 
-    <div class="top-link-container">
+    <footer class="top-link-container">
         <a href="#top" class="back-link">↑ Return to Top</a>
-    </div>
+    </footer>
 
-    <!-- Immersive Immersive Full-Screen View Overlay Component -->
-    <div id="fullscreen-overlay">
+    <!-- Immersive Full-Screen View Overlay Component -->
+    <div id="fullscreen-overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title">
         <div class="recipe-container">
             <div class="close-btn-container">
-                <button id="close-overlay" class="close-vault-btn">← Back to Main Menu</button>
+                <button type="button" id="close-overlay" class="close-vault-btn">← Back to Main Menu</button>
             </div>
             
-            <h1 id="overlay-title"></h1>
+            <h2 id="overlay-title"></h2>
             <p id="overlay-subtitle" style="text-align: center; font-style: italic; margin-bottom: 30px;"></p>
             
             <!-- Secure Data Table for Cooking Times -->
@@ -156,7 +159,7 @@
         </div>
     </div>
 
-    <!-- Connecting the script files sequentially -->
-    
+    <!-- Connecting the script file -->
     <script src="script.js"></script>
-</body> 
+</body>
+</html>
