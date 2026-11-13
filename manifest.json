@@ -1,0 +1,22 @@
+{
+  "name": "The Ultimate Recipe Vault",
+  "short_name": "Recipe Vault",
+  "description": "Fort Knox automated recipe vault, meal planner, and smart grocery list.",
+  "start_url": "/ultimate-recipe-vault/index.html",
+  "scope": "/ultimate-recipe-vault/",
+  "display": "standalone",
+  "background_color": "#1c212a",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "/ultimate-recipe-vault/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/ultimate-recipe-vault/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
