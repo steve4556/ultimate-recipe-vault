@@ -40,14 +40,29 @@ p {
    2. DASHBOARD CONTROL PANEL
    ========================================================= */
 .dashboard-wrapper {
+    position: relative;
     background: rgba(45, 50, 56, 0.95);
     border: 2px solid #d4af37;
     border-radius: 16px;
-    padding: 25px 30px;
+    padding: 18px 30px 25px 30px;
     margin: 30px 0;
     width: 100%;
     box-sizing: border-box;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.dashboard-wrapper::before {
+    content: "Control Panel";
+    display: block;
+    text-align: center;
+    color: #d4af37;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 1.35rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin: 0 auto 14px auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 .dashboard-wrapper .vault-control-panel {
@@ -68,6 +83,7 @@ p {
     align-items: flex-start;
     gap: 8px;
     width: 100%;
+    min-width: 0;
     box-sizing: border-box;
 }
 
@@ -290,6 +306,7 @@ p {
     border-radius: 8px;
     border: 2px solid #848d9e;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
 #overlay-photo {
@@ -337,8 +354,8 @@ td {
     padding: 6px 2px;
     font-size: 0.72rem;
     letter-spacing: 0;
-    overflow-wrap: break-word;
     word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* =========================================================
@@ -749,11 +766,11 @@ dd {
 }
 
 /* =========================================================
-   6. RESPONSIVE BREAKPOINTS
+   6. RESPONSIVE BREAKPOINTS (MOBILE & TABLET)
    ========================================================= */
 
 /* Medium Laptops / Tablets: 3 cards across */
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
     .recipe-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
     }
@@ -767,8 +784,22 @@ dd {
     }
 }
 
-/* Mobile Landscape & Small Tablets: Compact Dashboard + 2 Cards Across */
-@media screen and (max-width: 950px) {
+/* Mobile Landscape & Small Tablets (phones tilted sideways) */
+@media screen and (max-width: 920px) {
+    .recipe-card th {
+        font-size: 0.62rem !important;
+        padding: 4px 1px !important;
+        letter-spacing: 0 !important;
+    }
+
+    .recipe-card td {
+        font-size: 0.68rem !important;
+        padding: 4px 1px !important;
+    }
+}
+
+/* Mobile Phones Portrait & Landscape: Compact App Dashboard + 2 Cards Across */
+@media screen and (max-width: 768px) {
     body.home-page {
         padding: 10px !important;
     }
@@ -780,9 +811,15 @@ dd {
 
     /* Compact App-Style Control Dashboard */
     .dashboard-wrapper {
-        padding: 12px !important;
+        padding: 10px 12px 12px 12px !important;
         margin: 12px 0 !important;
         border-radius: 12px !important;
+    }
+
+    .dashboard-wrapper::before {
+        font-size: 1.05rem !important;
+        margin-bottom: 10px !important;
+        padding-bottom: 6px !important;
     }
 
     .dashboard-wrapper .vault-control-panel {
@@ -818,11 +855,11 @@ dd {
         white-space: normal !important;
         line-height: 1.15 !important;
         text-align: center !important;
-        grid-column: span 1 !important;
     }
 
     /* Horizontal swipeable category ribbon */
     .category-filter-bar {
+        display: flex !important;
         flex-wrap: nowrap !important;
         overflow-x: auto !important;
         justify-content: flex-start !important;
@@ -830,12 +867,12 @@ dd {
         margin-top: 10px !important;
         padding-top: 10px !important;
         padding-bottom: 4px !important;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch !important;
+        scrollbar-width: none !important;
     }
 
     .category-filter-bar::-webkit-scrollbar {
-        display: none;
+        display: none !important;
     }
 
     .category-btn {
@@ -844,55 +881,58 @@ dd {
         font-size: 0.78rem !important;
     }
 
-    /* 2-Column Mobile Recipe Grid (Portrait & Landscape) */
+    /* 2-Column Mobile Recipe Grid */
     .recipe-grid {
+        display: grid !important;
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         gap: 10px !important;
         margin-top: 12px !important;
     }
 
     .recipe-card {
-        padding: 10px !important;
+        padding: 8px !important;
         border-radius: 10px !important;
     }
 
     .heart-btn {
-        top: 8px !important;
-        right: 8px !important;
-        font-size: 1.15rem !important;
+        top: 6px !important;
+        right: 6px !important;
+        font-size: 1.1rem !important;
     }
 
     .recipe-card h2 {
-        font-size: 0.92rem !important;
-        margin: 18px 0 4px 0 !important;
+        font-size: 0.9rem !important;
+        margin: 16px 0 4px 0 !important;
     }
 
-    /* Hide subtitle on mobile grid cards so both tables fit cleanly */
+    /* Hide subtitle & bottom prompt so both tables fit cleanly on mobile cards */
     .recipe-card > p {
         display: none !important;
     }
 
     .recipe-photo {
-        height: 110px !important;
-        margin: 6px 0 !important;
+        height: 105px !important;
+        margin: 5px 0 !important;
     }
 
-    /* Show BOTH Time & Nutrition tables cleanly inside 2-column mobile cards */
+    /* Keep BOTH Time and Nutrition tables visible and fitted inside the 2-column card */
     .recipe-card table {
         display: table !important;
         width: 100% !important;
         table-layout: fixed !important;
-        margin: 4px 0 !important;
+        margin: 4px 0 0 0 !important;
     }
 
-    .recipe-card th,
-    .recipe-card td {
-        display: table-cell !important;
-        padding: 4px 1px !important;
-        font-size: 0.62rem !important;
+    .recipe-card th {
+        padding: 3px 1px !important;
+        font-size: 0.56rem !important;
         letter-spacing: 0 !important;
-        text-align: center !important;
-        overflow-wrap: break-word !important;
-        word-wrap: break-word !important;
+        line-height: 1.1 !important;
+    }
+
+    .recipe-card td {
+        padding: 3px 1px !important;
+        font-size: 0.62rem !important;
+        line-height: 1.1 !important;
     }
 }
