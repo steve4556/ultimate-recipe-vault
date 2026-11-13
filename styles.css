@@ -225,9 +225,9 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
     min-width: 0;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .recipe-card:hover {
@@ -298,7 +298,6 @@ p {
 
 table {
     width: 100%;
-    table-layout: fixed;
     border-collapse: collapse;
     margin: 20px 0;
     background: #1c212a;
@@ -306,10 +305,8 @@ table {
 
 th, td {
     border: none;
-    padding: 10px 4px;
+    padding: 12px;
     text-align: center;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
 }
 
 th {
@@ -317,8 +314,8 @@ th {
     color: #d4af37;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
 }
 
 tr:nth-child(even) td {
@@ -330,13 +327,18 @@ td {
 }
 
 .recipe-card table {
+    width: 100%;
+    table-layout: fixed;
     margin: 8px 0;
 }
 
 .recipe-card th,
 .recipe-card td {
-    padding: 5px 2px;
+    padding: 6px 2px;
     font-size: 0.72rem;
+    letter-spacing: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 /* =========================================================
@@ -750,11 +752,10 @@ dd {
    6. RESPONSIVE BREAKPOINTS
    ========================================================= */
 
-/* Medium Laptops / Tablets / Landscape Phones: 3 cards across */
-@media screen and (max-width: 1300px) {
+/* Medium Laptops / Tablets: 3 cards across */
+@media (max-width: 1300px) {
     .recipe-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-        gap: 14px !important;
     }
 
     .dashboard-wrapper .vault-control-panel {
@@ -766,31 +767,8 @@ dd {
     }
 }
 
-/* Landscape Phones & Small Tablets: Prevent 4-column table overflow */
-@media screen and (max-width: 920px) {
-    .recipe-card table {
-        display: table !important;
-        width: 100% !important;
-        table-layout: fixed !important;
-        margin: 6px 0 !important;
-    }
-
-    .recipe-card table tr {
-        display: table-row !important;
-    }
-
-    .recipe-card th,
-    .recipe-card td {
-        display: table-cell !important;
-        padding: 4px 1px !important;
-        font-size: 0.62rem !important;
-        letter-spacing: 0 !important;
-        word-break: break-word !important;
-    }
-}
-
-/* Portrait Mobile Phones: Compact App Dashboard + 2 Cards Across */
-@media screen and (max-width: 768px) {
+/* Mobile Landscape & Small Tablets: Compact Dashboard + 2 Cards Across */
+@media screen and (max-width: 950px) {
     body.home-page {
         padding: 10px !important;
     }
@@ -816,6 +794,7 @@ dd {
 
     .dashboard-wrapper .vault-control-panel .control-item {
         gap: 4px !important;
+        min-width: 0 !important;
     }
 
     .vault-control-panel label {
@@ -839,6 +818,7 @@ dd {
         white-space: normal !important;
         line-height: 1.15 !important;
         text-align: center !important;
+        grid-column: span 1 !important;
     }
 
     /* Horizontal swipeable category ribbon */
@@ -850,12 +830,12 @@ dd {
         margin-top: 10px !important;
         padding-top: 10px !important;
         padding-bottom: 4px !important;
-        -webkit-overflow-scrolling: touch !important;
-        scrollbar-width: none !important;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
     }
 
     .category-filter-bar::-webkit-scrollbar {
-        display: none !important;
+        display: none;
     }
 
     .category-btn {
@@ -864,7 +844,7 @@ dd {
         font-size: 0.78rem !important;
     }
 
-    /* 2-Column Mobile Recipe Grid */
+    /* 2-Column Mobile Recipe Grid (Portrait & Landscape) */
     .recipe-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         gap: 10px !important;
@@ -887,7 +867,7 @@ dd {
         margin: 18px 0 4px 0 !important;
     }
 
-    /* Hide subtitle & macro table on narrow portrait grid cards */
+    /* Hide subtitle on mobile grid cards so both tables fit cleanly */
     .recipe-card > p {
         display: none !important;
     }
@@ -897,17 +877,22 @@ dd {
         margin: 6px 0 !important;
     }
 
-    .recipe-card table:nth-of-type(2) {
-        display: none !important;
-    }
-
+    /* Show BOTH Time & Nutrition tables cleanly inside 2-column mobile cards */
     .recipe-card table {
-        margin: 4px 0 0 0 !important;
+        display: table !important;
+        width: 100% !important;
+        table-layout: fixed !important;
+        margin: 4px 0 !important;
     }
 
     .recipe-card th,
     .recipe-card td {
-        padding: 4px 2px !important;
+        display: table-cell !important;
+        padding: 4px 1px !important;
         font-size: 0.62rem !important;
+        letter-spacing: 0 !important;
+        text-align: center !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
     }
 }
