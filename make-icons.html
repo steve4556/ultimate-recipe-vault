@@ -1,5 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
 <script>
-[192, 512].forEach(size => {
+const sizes = [192, 512];
+sizes.forEach(size => {
   const c = document.createElement('canvas');
   c.width = c.height = size;
   const ctx = c.getContext('2d');
@@ -18,3 +22,5 @@
   a.click();
 });
 </script>
+</body>
+</html>
