@@ -740,11 +740,11 @@ dd {
 }
 
 /* =========================================================
-   6. RESPONSIVE BREAKPOINTS
+   6. RESPONSIVE BREAKPOINTS (MOBILE-FIRST OVERRIDES)
    ========================================================= */
 
 /* Medium Laptops / Tablets: 3 cards across */
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
     .recipe-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -758,67 +758,82 @@ dd {
     }
 }
 
-/* Mobile Phones: Compact App Dashboard + 2 Cards Across */
-@media (max-width: 650px) {
+/* Mobile Phones & iPhones (up to 768px): Compact App Dashboard + 2 Cards Across */
+@media screen and (max-width: 768px) {
     body.home-page {
-        padding: 10px;
+        padding: 10px !important;
     }
 
     h1 {
-        font-size: 1.65rem;
-        margin-bottom: 4px;
+        font-size: 1.55rem !important;
+        margin-bottom: 4px !important;
+    }
+
+    header p,
+    body.home-page > p {
+        font-size: 0.82rem !important;
+        margin-bottom: 10px !important;
+        line-height: 1.35 !important;
     }
 
     /* Compact App-Style Control Dashboard */
     .dashboard-wrapper {
-        padding: 12px;
-        margin: 12px 0;
-        border-radius: 12px;
+        padding: 12px !important;
+        margin: 10px 0 14px 0 !important;
+        border-radius: 12px !important;
+        border-width: 1.5px !important;
     }
 
     .dashboard-wrapper .vault-control-panel {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        align-items: stretch;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 8px !important;
+        align-items: stretch !important;
     }
 
     .dashboard-wrapper .vault-control-panel .control-item {
-        gap: 4px;
+        gap: 3px !important;
+        margin: 0 !important;
+        width: 100% !important;
     }
 
     .vault-control-panel label {
-        font-size: 0.72rem;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        color: #d4af37;
+        font-size: 0.68rem !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+        color: #d4af37 !important;
+        margin: 0 !important;
     }
 
     .dashboard-wrapper #recipe-search,
     .dashboard-wrapper #recipe-selector {
-        height: 36px;
-        font-size: 0.82rem;
-        padding: 4px 8px;
+        height: 36px !important;
+        font-size: 0.8rem !important;
+        padding: 4px 8px !important;
+        border-width: 1.5px !important;
     }
 
     .dashboard-wrapper .vault-control-panel .dashboard-btn {
-        height: 36px;
-        font-size: 0.75rem;
-        padding: 4px 6px;
-        white-space: normal;
-        line-height: 1.15;
-        text-align: center;
+        height: 36px !important;
+        font-size: 0.72rem !important;
+        padding: 4px 6px !important;
+        white-space: normal !important;
+        line-height: 1.1 !important;
+        text-align: center !important;
+        border-width: 1.5px !important;
+        grid-column: span 1 !important;
     }
 
-    /* Horizontal swipeable category ribbon */
+    /* Horizontal swipeable category & account ribbon */
     .category-filter-bar {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        justify-content: flex-start;
-        gap: 6px;
-        margin-top: 10px;
-        padding-top: 10px;
-        padding-bottom: 4px;
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        justify-content: flex-start !important;
+        gap: 6px !important;
+        margin-top: 10px !important;
+        padding-top: 10px !important;
+        padding-bottom: 4px !important;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
     }
@@ -828,55 +843,64 @@ dd {
     }
 
     .category-btn {
-        flex: 0 0 auto;
-        padding: 5px 11px;
-        font-size: 0.78rem;
+        flex: 0 0 auto !important;
+        padding: 5px 10px !important;
+        font-size: 0.75rem !important;
+        border-width: 1.5px !important;
     }
 
     /* 2-Column Mobile Recipe Grid */
     .recipe-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-        margin-top: 12px;
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+        margin-top: 12px !important;
     }
 
     .recipe-card {
-        padding: 10px;
-        border-radius: 10px;
+        padding: 10px !important;
+        border-radius: 10px !important;
+        border-width: 1.5px !important;
     }
 
     .heart-btn {
-        top: 8px;
-        right: 8px;
-        font-size: 1.15rem;
+        top: 8px !important;
+        right: 8px !important;
+        font-size: 1.1rem !important;
     }
 
     .recipe-card h2 {
-        font-size: 0.92rem;
-        margin: 18px 0 4px 0;
+        font-size: 0.88rem !important;
+        margin: 18px 0 4px 0 !important;
+        line-height: 1.25 !important;
     }
 
-    /* Hide subtitle & macro table on mobile grid cards */
+    /* Hide subtitle & macro table on mobile grid cards so multiple cards fit on screen */
     .recipe-card > p {
-        display: none;
+        display: none !important;
     }
 
     .recipe-photo {
-        height: 110px;
-        margin: 6px 0;
+        height: 105px !important;
+        margin: 6px 0 !important;
+        border-width: 1.5px !important;
+    }
+
+    #overlay-photo {
+        height: 220px !important;
     }
 
     .recipe-card table:nth-of-type(2) {
-        display: none;
+        display: none !important;
     }
 
     .recipe-card table {
-        margin: 4px 0 0 0;
+        margin: 4px 0 0 0 !important;
     }
 
     .recipe-card th,
     .recipe-card td {
-        padding: 4px 2px;
-        font-size: 0.65rem;
+        padding: 4px 2px !important;
+        font-size: 0.62rem !important;
     }
 }
