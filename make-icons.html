@@ -1,0 +1,20 @@
+<script>
+[192, 512].forEach(size => {
+  const c = document.createElement('canvas');
+  c.width = c.height = size;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#1c212a';
+  ctx.fillRect(0, 0, size, size);
+  ctx.strokeStyle = '#d4af37';
+  ctx.lineWidth = size * 0.06;
+  ctx.strokeRect(size * 0.08, size * 0.08, size * 0.84, size * 0.84);
+  ctx.font = `${size * 0.5}px serif`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('🔐', size / 2, size * 0.53);
+  const a = document.createElement('a');
+  a.download = `icon-${size}.png`;
+  a.href = c.toDataURL('image/png');
+  a.click();
+});
+</script>
