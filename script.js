@@ -1966,3 +1966,13 @@ document.addEventListener("click", (e) => {
         openAddRecipeModal();
     }
 });
+
+// --- REGISTER OFFLINE PWA SERVICE WORKER ---
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker
+            .register("/ultimate-recipe-vault/sw.js")
+            .then(() => console.log("Vault Service Worker registered for offline use!"))
+            .catch((err) => console.error("Service Worker registration failed:", err));
+    });
+}
