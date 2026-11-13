@@ -1,11 +1,11 @@
-const CACHE_NAME = "recipe-vault-v1";
+const CACHE_NAME = "recipe-vault-v2";
 const CORE_ASSETS = [
   "/ultimate-recipe-vault/",
   "/ultimate-recipe-vault/index.html",
-  "/ultimate-recipe-vault/style.css",
+  "/ultimate-recipe-vault/styles.css",
   "/ultimate-recipe-vault/script.js",
   "/ultimate-recipe-vault/recipes.json",
-  "/ultimate-recipe-vault/images/vault-bg.jpg"
+  "/ultimate-recipe-vault/manifest.json"
 ];
 
 // 1. Install: Cache core app files immediately
@@ -43,7 +43,7 @@ self.addEventListener("fetch", (event) => {
 
       return fetch(event.request)
         .then((networkResponse) => {
-          // Dynamically cache recipe photos as the user views them
+          // Dynamically cache recipe photos and assets as the user views them
           if (networkResponse && networkResponse.status === 200) {
             const responseClone = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
