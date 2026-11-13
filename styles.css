@@ -44,7 +44,7 @@ p {
     background: rgba(45, 50, 56, 0.95);
     border: 2px solid #d4af37;
     border-radius: 16px;
-    padding: 18px 30px 25px 30px;
+    padding: 20px 30px 25px 30px;
     margin: 30px 0;
     width: 100%;
     box-sizing: border-box;
@@ -56,13 +56,13 @@ p {
     display: block;
     text-align: center;
     color: #d4af37;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-size: 1.35rem;
+    font-size: 1.45rem;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     letter-spacing: 0.5px;
-    margin: 0 auto 14px auto;
+    margin: 0 0 18px 0;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.35);
 }
 
 .dashboard-wrapper .vault-control-panel {
@@ -83,14 +83,16 @@ p {
     align-items: flex-start;
     gap: 8px;
     width: 100%;
-    min-width: 0;
     box-sizing: border-box;
 }
 
 .vault-control-panel label {
-    font-size: 0.95rem;
-    color: #dce0e9;
-    font-weight: 500;
+    font-size: 0.9rem;
+    color: #d4af37;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .dashboard-wrapper #recipe-search,
@@ -232,6 +234,8 @@ p {
 
 .recipe-card {
     position: relative;
+    min-width: 0;
+    overflow: hidden;
     background: rgba(45, 50, 56, 0.95);
     border: 2px solid #848d9e;
     border-radius: 12px;
@@ -241,9 +245,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 0;
-    overflow: hidden;
-    box-sizing: border-box;
 }
 
 .recipe-card:hover {
@@ -306,7 +307,6 @@ p {
     border-radius: 8px;
     border: 2px solid #848d9e;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
 }
 
 #overlay-photo {
@@ -354,8 +354,9 @@ td {
     padding: 6px 2px;
     font-size: 0.72rem;
     letter-spacing: 0;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* =========================================================
@@ -766,40 +767,45 @@ dd {
 }
 
 /* =========================================================
-   6. RESPONSIVE BREAKPOINTS (MOBILE & TABLET)
+   6. RESPONSIVE BREAKPOINTS (MOBILE & TABLET APP VIEW)
    ========================================================= */
 
 /* Medium Laptops / Tablets: 3 cards across */
 @media screen and (max-width: 1300px) {
     .recipe-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .dashboard-wrapper .vault-control-panel {
-        grid-template-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr;
     }
 
     .dashboard-wrapper .vault-control-panel .dashboard-btn {
-        grid-column: span 1 !important;
+        grid-column: span 1;
     }
 }
 
-/* Mobile Landscape & Small Tablets (phones tilted sideways) */
+/* Mobile Landscape & Small Tablets: Prevent table overflow when tilted sideways */
 @media screen and (max-width: 920px) {
-    .recipe-card th {
-        font-size: 0.62rem !important;
+    .recipe-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+
+    .recipe-card {
+        padding: 10px !important;
+    }
+
+    .recipe-card th,
+    .recipe-card td {
         padding: 4px 1px !important;
+        font-size: 0.62rem !important;
         letter-spacing: 0 !important;
     }
-
-    .recipe-card td {
-        font-size: 0.68rem !important;
-        padding: 4px 1px !important;
-    }
 }
 
-/* Mobile Phones Portrait & Landscape: Compact App Dashboard + 2 Cards Across */
-@media screen and (max-width: 768px) {
+/* Mobile Phones (Portrait): Compact App Dashboard + 2 Cards Across */
+@media screen and (max-width: 650px) {
     body.home-page {
         padding: 10px !important;
     }
@@ -811,7 +817,7 @@ dd {
 
     /* Compact App-Style Control Dashboard */
     .dashboard-wrapper {
-        padding: 10px 12px 12px 12px !important;
+        padding: 12px !important;
         margin: 12px 0 !important;
         border-radius: 12px !important;
     }
@@ -831,7 +837,7 @@ dd {
 
     .dashboard-wrapper .vault-control-panel .control-item {
         gap: 4px !important;
-        min-width: 0 !important;
+        width: 100% !important;
     }
 
     .vault-control-panel label {
@@ -855,6 +861,7 @@ dd {
         white-space: normal !important;
         line-height: 1.15 !important;
         text-align: center !important;
+        grid-column: span 1 !important;
     }
 
     /* Horizontal swipeable category ribbon */
@@ -895,27 +902,26 @@ dd {
     }
 
     .heart-btn {
-        top: 6px !important;
-        right: 6px !important;
-        font-size: 1.1rem !important;
+        top: 8px !important;
+        right: 8px !important;
+        font-size: 1.15rem !important;
     }
 
     .recipe-card h2 {
         font-size: 0.9rem !important;
-        margin: 16px 0 4px 0 !important;
+        margin: 18px 0 4px 0 !important;
     }
 
-    /* Hide subtitle & bottom prompt so both tables fit cleanly on mobile cards */
+    /* Hide subtitle & bottom helper text so both tables fit cleanly on mobile cards */
     .recipe-card > p {
         display: none !important;
     }
 
     .recipe-photo {
-        height: 105px !important;
-        margin: 5px 0 !important;
+        height: 100px !important;
+        margin: 6px 0 !important;
     }
 
-    /* Keep BOTH Time and Nutrition tables visible and fitted inside the 2-column card */
     .recipe-card table {
         display: table !important;
         width: 100% !important;
@@ -923,16 +929,18 @@ dd {
         margin: 4px 0 0 0 !important;
     }
 
-    .recipe-card th {
+    .recipe-card table tr {
+        display: table-row !important;
+    }
+
+    .recipe-card th,
+    .recipe-card td {
+        display: table-cell !important;
         padding: 3px 1px !important;
         font-size: 0.56rem !important;
         letter-spacing: 0 !important;
-        line-height: 1.1 !important;
-    }
-
-    .recipe-card td {
-        padding: 3px 1px !important;
-        font-size: 0.62rem !important;
-        line-height: 1.1 !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
     }
 }
