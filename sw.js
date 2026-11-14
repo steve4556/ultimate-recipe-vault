@@ -1,4 +1,4 @@
-const CACHE_NAME = "recipe-vault-v10";
+const CACHE_NAME = "recipe-vault-v11";
 const CORE_ASSETS = [
   "/ultimate-recipe-vault/",
   "/ultimate-recipe-vault/index.html",
