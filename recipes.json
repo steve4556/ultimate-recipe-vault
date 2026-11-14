@@ -4663,5 +4663,1871 @@
       "Spoon the mousse into 4 small glasses or ramekins and chill for at least 2 hours until set.",
       "Top with a pinch of flaky sea salt right before serving cold!"
     ]
+  },
+  {
+    "id": "bistecca-alla-fiorentina-herb-butter",
+    "emoji": "🥩",
+    "title": "Tuscan Herb-Crusted Ribeye Steak",
+    "image": "tuscan-ribeye.jpg",
+    "subtitle": "Thick-cut prime ribeye steak seared over high heat with crushed garlic, fresh rosemary, and a rich roasted bone-marrow herb butter.",
+    "times": { "prep": "10 mins", "cook": "12 mins", "servings": "2 people" },
+    "nutrition": { "calories": 590, "protein": 48, "carbs": 2, "fats": 42 },
+    "highlights": [
+      { "category": "Steakhouse Crust", "text": "Air-drying the salted ribeye in the refrigerator creates a deeply caramelized, mahogany crust in a cast-iron skillet." },
+      { "category": "Aromatic Basting", "text": "Basting the steak with foaming butter, smashed garlic cloves, and fresh rosemary infuses every fiber with Tuscan flavor." },
+      { "category": "High-Protein Titan", "text": "Delivers 48g of pure muscle-building protein per plate with virtually zero carbohydrates." }
+    ],
+    "ingredients": [
+      "1 1/2 lbs bone-in ribeye steak (about 1.5 inches thick)",
+      "1 tablespoon high-heat avocado oil",
+      "3 tablespoons unsalted butter",
+      "4 cloves garlic, lightly smashed",
+      "3 sprigs fresh rosemary",
+      "1 teaspoon flaky sea salt",
+      "1 teaspoon freshly cracked black pepper"
+    ],
+    "instructions": [
+      "Pat the ribeye steak completely dry with paper towels and season heavily on all sides with flaky sea salt and cracked black pepper.",
+      "Heat the avocado oil in a large cast-iron skillet over high heat until lightly smoking.",
+      "Lay the steak into the skillet away from you and sear undisturbed for 4 minutes to build a deep golden crust.",
+      "Flip the steak, lower heat to medium, and toss the unsalted butter, smashed garlic cloves, and rosemary sprigs into the pan.",
+      "Tilt the skillet slightly and spoon the foaming herb butter continuously over the steak for 3 to 4 minutes until an instant-read thermometer reads 130°F (54°C) for medium-rare.",
+      "Transfer the steak to a warm cutting board, pour the pan butter over top, let rest for 10 minutes, and slice against the grain to serve!"
+    ]
+  },
+  {
+    "id": "crispy-thai-sweet-chili-salmon-bowls",
+    "emoji": "🍚",
+    "title": "Crispy Glazed Salmon & Avocado Rice Bowls",
+    "image": "salmon-rice-bowl.jpg",
+    "subtitle": "Pan-seared salmon cubes glazed in sticky sweet chili and soy reduction, served over jasmine rice with creamy avocado, crisp cucumber, and spicy mayo.",
+    "times": { "prep": "15 mins", "cook": "10 mins", "servings": "2 people" },
+    "nutrition": { "calories": 390, "protein": 32, "carbs": 34, "fats": 14 },
+    "highlights": [
+      { "category": "10-Minute Flash Sear", "text": "Cubing the salmon fillets maximizes crispy caramelized surface area while keeping the centers tender and flaky." },
+      { "category": "Sweet & Savory Glaze", "text": "A quick reduction of low-sodium soy sauce, honey, and sriracha coats every bite in a glossy umami lacquer." },
+      { "category": "Dashboard Light Slot", "text": "Checks in cleanly under 400 calories per bowl with 32g of protein, qualifying automatically for your healthy lunch and dinner menus." }
+    ],
+    "ingredients": [
+      "12 oz skinless salmon fillets, cut into 1-inch cubes",
+      "1 tablespoon olive oil",
+      "2 tablespoons low-sodium soy sauce",
+      "1 tablespoon raw honey",
+      "1 teaspoon sriracha hot sauce",
+      "1 cup cooked jasmine rice",
+      "1/2 ripe avocado, diced",
+      "1/2 English cucumber, thinly sliced",
+      "1 green onion, thinly sliced",
+      "1 teaspoon toasted sesame seeds"
+    ],
+    "instructions": [
+      "Pat the salmon cubes completely dry with paper towels and season lightly with a pinch of salt and pepper.",
+      "In a small cup, whisk together the low-sodium soy sauce, raw honey, and sriracha hot sauce until smooth.",
+      "Heat the olive oil in a large non-stick skillet over medium-high heat until hot, then add the salmon cubes in a single layer.",
+      "Sear undisturbed for 3 minutes until golden brown on the bottom, then gently toss and cook for 2 more minutes.",
+      "Pour the honey-soy glaze directly into the skillet and toss gently for 1 minute until the sauce bubbles into a sticky coating.",
+      "Divide the warm jasmine rice into two bowls, top with the glazed salmon cubes, diced avocado, and sliced cucumber, and garnish with green onions and sesame seeds!"
+    ]
+  },
+  {
+    "id": "sicilian-pistachio-ricotta-cannoli-tart",
+    "emoji": "🥧",
+    "title": "Sicilian Pistachio & Ricotta Cannoli Tart",
+    "image": "pistachio-cannoli-tart.jpg",
+    "subtitle": "A crisp cinnamon-spiced shortbread tart shell filled with whipped sweet ricotta, dark chocolate morsels, orange zest, and crushed roasted pistachios.",
+    "times": { "prep": "20 mins", "cook": "15 mins", "servings": "8 slices" },
+    "nutrition": { "calories": 340, "protein": 8, "carbs": 36, "fats": 18 },
+    "highlights": [
+      { "category": "No-Fry Cannoli Magic", "text": "Captures all the authentic flavor of a classic Palermo pastry shop cannoli in an easy-to-slice tart without deep-frying shells." },
+      { "category": "Velvety Ricotta Center", "text": "Draining whole-milk ricotta before whipping with powdered sugar and fresh orange zest creates a thick, cloud-like cream." },
+      { "category": "Dashboard Light Slot", "text": "Registers at 340 calories per slice, qualifying automatically for your healthy dessert menu rotation." }
+    ],
+    "ingredients": [
+      "1 pre-baked 9-inch sweet shortbread tart shell",
+      "2 cups whole-milk ricotta cheese, drained",
+      "1/2 cup powdered sugar",
+      "1 teaspoon pure vanilla extract",
+      "1/2 teaspoon ground cinnamon",
+      "1 teaspoon fresh orange zest",
+      "1/3 cup mini semi-sweet chocolate chips",
+      "1/3 cup shelled roasted pistachios, finely chopped"
+    ],
+    "instructions": [
+      "Line a fine-mesh strainer with paper towels, spoon in the ricotta cheese, and let drain in the refrigerator for at least 30 minutes to remove excess moisture.",
+      "In a medium mixing bowl, beat the drained ricotta, powdered sugar, vanilla extract, ground cinnamon, and fresh orange zest with a mixer for 2 minutes until ultra-smooth and creamy.",
+      "Gently fold the mini semi-sweet chocolate chips into the whipped ricotta filling using a spatula.",
+      "Spoon the cannoli cream evenly into your cooled pre-baked tart shell, smoothing the top with an offset spatula.",
+      "Scatter the finely chopped roasted pistachios heavily around the border and center, chill for at least 1 hour, and slice cleanly to serve!"
+    ]
+  },
+  {
+    "id": "brioche-cinnamon-roll-french-toast-bake",
+    "emoji": "🥞",
+    "title": "Cinnamon Roll Brioche French Toast Bake",
+    "image": "cinnamon-roll-french-toast.jpg",
+    "subtitle": "Thick-cut brioche cubes baked in a rich vanilla-cinnamon egg custard with ribbons of brown sugar butter and a velvety cream cheese glaze.",
+    "times": { "prep": "15 mins", "cook": "35 mins", "servings": "6 people" },
+    "nutrition": { "calories": 390, "protein": 11, "carbs": 48, "fats": 17 },
+    "highlights": [
+      { "category": "Bakery Brunch Fusion", "text": "Combines golden custard-soaked brioche with swirled cinnamon-sugar ribbons and tangy vanilla cream cheese icing." },
+      { "category": "35-Minute Oven Bake", "text": "Bakes up crisp and golden on the edges while staying soft and custardy in the center without standing over a griddle." },
+      { "category": "Dashboard Light Slot", "text": "Checks in cleanly under 400 calories per serving, qualifying automatically for your healthy breakfast menu rotation." }
+    ],
+    "ingredients": [
+      "1 loaf brioche bread, cut into 1-inch cubes",
+      "5 large eggs",
+      "1 1/2 cups whole milk",
+      "2 teaspoons pure vanilla extract",
+      "2 teaspoons ground cinnamon, divided",
+      "1/3 cup packed light brown sugar",
+      "3 tablespoons unsalted butter, melted",
+      "3 oz cream cheese, softened",
+      "1/2 cup powdered sugar",
+      "2 tablespoons whole milk (for icing)"
+    ],
+    "instructions": [
+      "Preheat your oven to 350°F (175°C) and lightly grease a 9x13-inch baking dish.",
+      "Arrange the cubed brioche bread in an even layer across the bottom of the prepared dish.",
+      "In a large bowl, whisk together the eggs, 1 1/2 cups whole milk, 1 teaspoon vanilla extract, and 1 teaspoon ground cinnamon until smooth, then pour evenly over the bread.",
+      "In a small bowl, mix the brown sugar, melted butter, and remaining 1 teaspoon cinnamon into a paste and dollop evenly over the soaked bread.",
+      "Bake uncovered for 32 to 35 minutes until puffed and deeply golden brown.",
+      "Whisk the softened cream cheese, powdered sugar, 2 tablespoons milk, and remaining 1 teaspoon vanilla until smooth, drizzle over the warm bake, and serve!"
+    ]
+  },
+  {
+    "id": "whipped-ricotta-hot-honey-crostini",
+    "emoji": "🥖",
+    "title": "Whipped Ricotta & Hot Honey Bacon Crostini",
+    "image": "ricotta-hot-honey-crostini.jpg",
+    "subtitle": "Crisp toasted sourdough baguette rounds topped with lemon-zested whipped ricotta, smoky bacon crumbles, fresh thyme, and a warm hot honey drizzle.",
+    "times": { "prep": "15 mins", "cook": "10 mins", "servings": "16 pieces" },
+    "nutrition": { "calories": 145, "protein": 6, "carbs": 14, "fats": 7 },
+    "highlights": [
+      { "category": "5-Minute Whipped Base", "text": "Blending whole-milk ricotta with olive oil and lemon zest transforms it into an airy, ultra-creamy spread." },
+      { "category": "Sweet Heat Crunch", "text": "Salty crispy bacon and chili-infused hot honey cut straight through the cool, velvety cheese." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 145 calories per piece, qualifying automatically for your healthy appetizer rotation." }
+    ],
+    "ingredients": [
+      "1 French baguette, sliced into 16 diagonal rounds",
+      "2 tablespoons extra virgin olive oil, divided",
+      "1 cup whole-milk ricotta cheese",
+      "1 teaspoon fresh lemon zest",
+      "4 slices thick-cut bacon, cooked crisp and crumbled",
+      "2 tablespoons hot honey",
+      "1 teaspoon fresh thyme leaves",
+      "Kosher salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C), brush the baguette slices with 1 tablespoon olive oil, and bake on a sheet pan for 8 to 10 minutes until golden and crisp.",
+      "In a food processor or mixing bowl, whip the ricotta cheese, remaining 1 tablespoon olive oil, fresh lemon zest, and a pinch of kosher salt for 1 minute until smooth and airy.",
+      "Spread a generous spoonful of the whipped ricotta onto each warm toasted baguette slice.",
+      "Scatter the crumbled crispy bacon and fresh thyme leaves evenly over the tops.",
+      "Drizzle lightly with warm hot honey, finish with freshly cracked black pepper, and serve immediately!"
+    ]
+  },
+  {
+    "id": "mediterranean-chicken-souvlaki-tzatziki",
+    "emoji": "🍢",
+    "title": "Greek Lemon Herb Chicken Souvlaki w/ Tzatziki",
+    "image": "chicken-souvlaki.jpg",
+    "subtitle": "Juicy garlic, oregano, and lemon-marinated chicken breast skewers grilled golden and served with cool cucumber-dill Greek yogurt tzatziki.",
+    "times": { "prep": "20 mins", "cook": "12 mins", "servings": "4 people" },
+    "nutrition": { "calories": 320, "protein": 41, "carbs": 7, "fats": 13 },
+    "highlights": [
+      { "category": "Ultra-Lean Protein", "text": "Delivers a massive 41g of clean grilled chicken protein per serving at just 320 calories." },
+      { "category": "Cooling Tzatziki Sauce", "text": "Grated cucumber, fresh dill, garlic, and strained Greek yogurt create a bright, creamy dipping sauce." },
+      { "category": "Dashboard Light Slot", "text": "Checks in cleanly under 350 calories per plate, locking a high-protein Mediterranean dinner onto your healthy menu slider." }
+    ],
+    "ingredients": [
+      "2 lbs boneless, skinless chicken breasts, cut into 1.5-inch cubes",
+      "3 tablespoons extra virgin olive oil",
+      "3 tablespoons fresh lemon juice",
+      "4 cloves garlic, minced and divided",
+      "2 teaspoons dried oregano",
+      "1 cup plain Greek yogurt",
+      "1/2 English cucumber, finely grated and squeezed dry",
+      "2 tablespoons fresh dill, finely chopped",
+      "Kosher salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "In a large bowl, whisk together the olive oil, 2 tablespoons lemon juice, 3 cloves minced garlic, dried oregano, kosher salt, and black pepper.",
+      "Add the cubed chicken breasts to the marinade, toss thoroughly to coat, and let marinate in the refrigerator for at least 20 minutes.",
+      "While marinating, stir together the Greek yogurt, squeezed grated cucumber, remaining 1 tablespoon lemon juice, remaining 1 clove minced garlic, fresh dill, and a pinch of salt to make the tzatziki.",
+      "Thread the marinated chicken cubes tightly onto skewers (if using wooden skewers, soak them in water for 15 minutes first).",
+      "Heat a grill pan or outdoor grill over medium-high heat and cook the skewers for 5 to 6 minutes per side until charred on the edges and cooked through to 165°F (74°C).",
+      "Serve the hot chicken skewers immediately alongside the chilled cucumber tzatziki!"
+    ]
+  },
+  {
+    "id": "tuscan-tortellini-spinach-soup",
+    "emoji": "🥣",
+    "title": "Creamy Tuscan Cheese Tortellini Soup",
+    "image": "tuscan-tortellini-soup.jpg",
+    "subtitle": "Tender three-cheese tortellini simmered in a velvety garlic, sun-dried tomato, and basil broth with fresh wilted spinach and parmesan.",
+    "times": { "prep": "10 mins", "cook": "15 mins", "servings": "4 people" },
+    "nutrition": { "calories": 380, "protein": 17, "carbs": 42, "fats": 16 },
+    "highlights": [
+      { "category": "25-Minute Comfort", "text": "Simmering refrigerated cheese tortellini directly in the seasoned broth cooks the pasta while thickening the soup naturally." },
+      { "category": "Sun-Dried Tomato Depth", "text": "Sweet oil-packed sun-dried tomatoes and fresh garlic infuse the light cream broth with rich Italian flavor." },
+      { "category": "Dashboard Light Slot", "text": "Checks in cleanly at 380 calories per bowl, qualifying automatically for your healthy lunch and dinner menus." }
+    ],
+    "ingredients": [
+      "1 package (19 oz) refrigerated three-cheese tortellini",
+      "2 tablespoons unsalted butter",
+      "1 medium yellow onion, finely diced",
+      "4 cloves garlic, minced",
+      "1/3 cup sun-dried tomatoes in oil, finely chopped",
+      "4 cups low-sodium vegetable or chicken broth",
+      "1/2 cup heavy whipping cream",
+      "3 cups fresh baby spinach, roughly chopped",
+      "1/2 cup grated parmesan cheese",
+      "1 teaspoon Italian seasoning"
+    ],
+    "instructions": [
+      "Melt the unsalted butter in a large Dutch oven or soup pot over medium heat and sauté the diced onion for 4 minutes until translucent.",
+      "Add the minced garlic, chopped sun-dried tomatoes, and Italian seasoning, stirring for 1 minute until highly fragrant.",
+      "Pour in the broth and bring to a gentle boil over medium-high heat.",
+      "Add the refrigerated cheese tortellini and cook for 5 to 6 minutes until tender and floating.",
+      "Lower the heat to low, stir in the heavy cream, grated parmesan cheese, and chopped baby spinach until the cheese melts and the spinach wilts.",
+      "Ladle into warm bowls, top with freshly cracked black pepper, and serve immediately!"
+    ]
+  },
+  {
+    "id": "balsamic-glazed-pork-tenderloin-rosemary",
+    "emoji": "🥩",
+    "title": "Balsamic & Rosemary Glazed Pork Tenderloin",
+    "image": "balsamic-pork-tenderloin.jpg",
+    "subtitle": "Juicy pan-seared pork tenderloin roasted with fresh rosemary and garlic, finished in a glossy aged balsamic, honey, and Dijon pan reduction.",
+    "times": { "prep": "10 mins", "cook": "20 mins", "servings": "4 people" },
+    "nutrition": { "calories": 310, "protein": 36, "carbs": 11, "fats": 12 },
+    "highlights": [
+      { "category": "30-Minute Bistro Roast", "text": "Searing in a cast-iron skillet before finishing in a hot oven locks in natural juices while building a golden crust." },
+      { "category": "Velvety Balsamic Glaze", "text": "Simmering aged balsamic vinegar with raw honey and Dijon mustard creates a sweet-and-tangy lacquer." },
+      { "category": "Dashboard Light Slot", "text": "Delivers 36g of lean protein at just 310 calories per plate, qualifying automatically for your healthy dinner rotation." }
+    ],
+    "ingredients": [
+      "1 1/2 lbs pork tenderloin, silver skin trimmed",
+      "1 tablespoon extra virgin olive oil",
+      "1 teaspoon garlic powder",
+      "1 teaspoon dried rosemary, crushed",
+      "1/3 cup aged balsamic vinegar",
+      "1/2 cup low-sodium chicken broth",
+      "2 tablespoons raw honey",
+      "1 tablespoon Dijon mustard",
+      "1 tablespoon cold unsalted butter",
+      "Kosher salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C), pat the pork tenderloin completely dry, and season all sides with garlic powder, crushed rosemary, kosher salt, and black pepper.",
+      "Heat the olive oil in a large oven-safe skillet over medium-high heat and sear the pork for 2 minutes per side until deeply browned.",
+      "Transfer the skillet directly into the oven and roast for 12 to 15 minutes until an instant-read thermometer inserted into the thickest part reads 145°F (63°C).",
+      "Move the pork to a cutting board to rest for 5 minutes, then place the skillet back on the stove over medium heat.",
+      "Whisk the balsamic vinegar, chicken broth, raw honey, and Dijon mustard into the pan drippings and simmer for 3 minutes until reduced by half.",
+      "Remove from heat, swirl in the cold unsalted butter until glossy, slice the pork into medallions, and spoon the warm balsamic glaze over top!"
+    ]
+  },
+  {
+    "id": "salted-brownie-pecan-skillet-cookie",
+    "emoji": "🍪",
+    "title": "Skillet Dark Chocolate & Toasted Pecan Pizookie",
+    "image": "skillet-pecan-cookie.jpg",
+    "subtitle": "Warm, gooey cast-iron chocolate chip cookie loaded with bittersweet dark chocolate chunks, roasted pecans, and a pinch of flaky sea salt.",
+    "times": { "prep": "15 mins", "cook": "18 mins", "servings": "8 wedges" },
+    "nutrition": { "calories": 350, "protein": 4, "carbs": 42, "fats": 19 },
+    "highlights": [
+      { "category": "Crispy Edge, Gooey Core", "text": "Baking in a cast-iron skillet caramelizes the outer rim into a buttery crunch while keeping the center soft and molten." },
+      { "category": "Sweet & Salty Crunch", "text": "Toasted pecans and bittersweet chocolate chunks topped with flaky sea salt elevate classic cookie dough." },
+      { "category": "Dashboard Light Slot", "text": "Registers at 350 calories per wedge, qualifying automatically for your healthy dessert menu rotation." }
+    ],
+    "ingredients": [
+      "1/2 cup unsalted butter, softened",
+      "1/2 cup packed dark brown sugar",
+      "1/3 cup granulated sugar",
+      "1 large egg, room temperature",
+      "1 1/2 teaspoons pure vanilla extract",
+      "1 1/4 cups all-purpose flour",
+      "1/2 teaspoon baking soda",
+      "1/4 teaspoon kosher salt",
+      "3/4 cup bittersweet dark chocolate chips",
+      "1/2 cup pecan halves, toasted and roughly chopped",
+      "1/2 teaspoon flaky sea salt (for finishing)"
+    ],
+    "instructions": [
+      "Preheat your oven to 350°F (175°C) and lightly butter an 8-inch or 9-inch cast-iron skillet.",
+      "In a medium mixing bowl, beat the softened butter, dark brown sugar, and granulated sugar together for 2 minutes until creamy.",
+      "Beat in the egg and pure vanilla extract until smooth.",
+      "Stir in the all-purpose flour, baking soda, and kosher salt until just combined, then fold in the dark chocolate chips and toasted chopped pecans.",
+      "Press the dough evenly into your prepared cast-iron skillet and bake for 16 to 18 minutes until the edges are golden brown and the center is softly set.",
+      "Sprinkle immediately with flaky sea salt, let cool for 5 minutes, and slice into warm wedges to serve!"
+    ]
+  },
+   {
+    "id": "chorizo-sweet-potato-breakfast-hash-skillet",
+    "emoji": "🍳",
+    "title": "Crispy Chorizo & Sweet Potato Egg Skillet",
+    "image": "chorizo-sweet-potato-hash.jpg",
+    "subtitle": "Golden pan-roasted sweet potato cubes and smoky Mexican chorizo topped with runny fried eggs, creamy avocado, and crumbled cotija.",
+    "times": { "prep": "15 mins", "cook": "18 mins", "servings": "4 people" },
+    "nutrition": { "calories": 380, "protein": 22, "carbs": 24, "fats": 21 },
+    "highlights": [
+      { "category": "One-Skillet Brunch", "text": "Roasting diced sweet potatoes directly in seasoned chorizo drippings builds crispy caramelized edges without extra oil." },
+      { "category": "Sweet & Smoky Balance", "text": "Naturally sweet roasted potatoes cut straight through the bold paprika and garlic spices of traditional chorizo." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in cleanly at 380 calories per serving, qualifying automatically for your healthy breakfast menu rotation." }
+    ],
+    "ingredients": [
+      "12 oz fresh Mexican pork or chicken chorizo, casings removed",
+      "2 medium sweet potatoes, peeled and diced into 1/2-inch cubes",
+      "1/2 medium red bell pepper, diced",
+      "1/2 medium yellow onion, diced",
+      "4 large eggs",
+      "1/2 ripe avocado, diced",
+      "1/4 cup crumbled cotija or feta cheese",
+      "1 tablespoon olive oil",
+      "2 tablespoons fresh cilantro, chopped"
+    ],
+    "instructions": [
+      "Heat the olive oil in a large cast-iron or non-stick skillet over medium-high heat, add the diced sweet potatoes, and cook for 8 to 10 minutes until tender and browned on the edges.",
+      "Push the sweet potatoes to one side, add the chorizo, diced onion, and red bell pepper, and cook for 6 minutes while breaking the meat apart until browned.",
+      "Stir the sweet potatoes and chorizo mixture together evenly across the skillet.",
+      "Make 4 shallow wells in the hash, crack one egg gently into each well, cover with a lid, and cook on low for 3 to 4 minutes until the egg whites are set and yolks remain runny.",
+      "Remove from heat, scatter diced avocado, crumbled cotija cheese, and fresh cilantro over top, and serve hot!"
+    ]
+  },
+  {
+    "id": "crispy-prosciutto-wrapped-asparagus-bundles",
+    "emoji": "🥓",
+    "title": "Crispy Prosciutto & Parmesan Asparagus Bundles",
+    "image": "prosciutto-asparagus-bundles.jpg",
+    "subtitle": "Tender-crisp roasted asparagus spears wrapped in salty ribbons of Italian prosciutto with shaved aged parmesan and a balsamic drizzle.",
+    "times": { "prep": "10 mins", "cook": "12 mins", "servings": "6 bundles" },
+    "nutrition": { "calories": 140, "protein": 11, "carbs": 4, "fats": 9 },
+    "highlights": [
+      { "category": "20-Minute Entertainer", "text": "Requires only five core ingredients and roasts into crisp, restaurant-grade appetizer bundles in 12 minutes." },
+      { "category": "Shattering Prosciutto Crisp", "text": "High-heat baking renders the thin prosciutto ribbons into a salty, lacy crunch around the tender asparagus." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 140 calories per bundle, qualifying automatically for your healthy appetizer rotation." }
+    ],
+    "ingredients": [
+      "1 lb fresh asparagus spears, tough woody ends trimmed",
+      "6 slices thinly sliced prosciutto",
+      "1 tablespoon extra virgin olive oil",
+      "1/3 cup shaved parmesan cheese",
+      "1 tablespoon balsamic glaze (for drizzling)",
+      "1/4 teaspoon freshly cracked black pepper"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and line a large rimmed baking sheet with parchment paper.",
+      "Toss the trimmed asparagus spears with the olive oil and freshly cracked black pepper until lightly coated.",
+      "Gather 4 to 5 asparagus spears together and wrap one slice of prosciutto snugly around the middle of the bundle; repeat to form 6 bundles.",
+      "Arrange the bundles seam-side down on your prepared baking sheet and scatter the shaved parmesan cheese over top.",
+      "Bake for 10 to 12 minutes until the asparagus is tender-crisp and the prosciutto turns golden and crispy.",
+      "Transfer to a serving platter, drizzle lightly with balsamic glaze, and serve warm!"
+    ]
+  },
+  {
+    "id": "pan-seared-chicken-saltimbocca-sage-butter",
+    "emoji": "🍗",
+    "title": "Roman Chicken Saltimbocca w/ Crispy Sage & Prosciutto",
+    "image": "chicken-saltimbocca.jpg",
+    "subtitle": "Golden pan-seared chicken cutlets layered with savory Italian prosciutto and fresh sage leaves in a bright white wine lemon butter pan sauce.",
+    "times": { "prep": "10 mins", "cook": "12 mins", "servings": "4 people" },
+    "nutrition": { "calories": 350, "protein": 39, "carbs": 5, "fats": 18 },
+    "highlights": [
+      { "category": "22-Minute Roman Classic", "text": "Searing prosciutto and fresh sage directly onto thin chicken cutlets builds deep savory flavor in minutes." },
+      { "category": "Velvety Pan Reduction", "text": "Deglazing the skillet with dry white wine, broth, and cold butter creates a glossy, restaurant-style sauce." },
+      { "category": "Dashboard Light Slot", "text": "Delivers 39g of lean protein at just 350 calories per plate, qualifying automatically for your healthy dinner rotation." }
+    ],
+    "ingredients": [
+      "2 large boneless, skinless chicken breasts, halved horizontally into 4 thin cutlets",
+      "4 slices thinly sliced prosciutto",
+      "8 fresh sage leaves",
+      "1/4 cup all-purpose flour (for dusting)",
+      "2 tablespoons extra virgin olive oil",
+      "1/2 cup dry white wine (such as Pinot Grigio)",
+      "1/2 cup low-sodium chicken broth",
+      "1 tablespoon fresh lemon juice",
+      "2 tablespoons cold unsalted butter",
+      "1/2 teaspoon freshly cracked black pepper"
+    ],
+    "instructions": [
+      "Season the thin chicken cutlets lightly with black pepper (skip salt since prosciutto is salty), press 2 sage leaves onto each cutlet, and lay a slice of prosciutto flat on top.",
+      "Lightly dust the plain bottom side of each cutlet with flour, shaking off any excess.",
+      "Heat the olive oil in a large skillet over medium-high heat until shimmering, then lay the cutlets prosciutto-side down and sear for 2 minutes until crisp.",
+      "Flip the cutlets carefully and cook for 3 more minutes until the chicken is cooked through, then transfer to a warm plate.",
+      "Pour the white wine and chicken broth into the skillet, scraping up the browned bits, and simmer for 3 minutes until reduced by half.",
+      "Lower heat to low, swirl in the fresh lemon juice and cold unsalted butter until glossy, spoon the warm sauce over the chicken, and serve hot!"
+    ]
+  },
+   {
+    "id": "thai-crunch-chicken-peanut-salad",
+    "emoji": "🥗",
+    "title": "Thai Crunch Chicken & Sesame Peanut Salad",
+    "image": "thai-peanut-chicken-salad.jpg",
+    "subtitle": "Shredded chicken breast, crisp napa cabbage, red bell pepper, shredded carrots, and toasted almonds tossed in a creamy ginger-lime peanut dressing.",
+    "times": { "prep": "15 mins", "cook": "0 mins", "servings": "4 people" },
+    "nutrition": { "calories": 370, "protein": 34, "carbs": 18, "fats": 18 },
+    "highlights": [
+      { "category": "15-Minute No-Cook Prep", "text": "Using pre-cooked rotisserie or poached chicken breast builds a crisp, satisfying lunch salad in minutes." },
+      { "category": "Creamy Ginger Peanut Glaze", "text": "Whisking natural peanut butter with fresh lime juice, soy sauce, grated ginger, and toasted sesame oil delivers bold Thai flavor." },
+      { "category": "Dashboard Light Slot", "text": "Packs 34g of lean protein at just 370 calories per bowl, qualifying automatically for your healthy lunch rotation." }
+    ],
+    "ingredients": [
+      "3 cups cooked chicken breast, shredded",
+      "4 cups napa or green cabbage, finely shredded",
+      "1 large red bell pepper, thinly sliced",
+      "1 cup shredded carrots",
+      "1/3 cup sliced almonds, toasted",
+      "3 green onions, thinly sliced",
+      "1/4 cup fresh cilantro, chopped",
+      "3 tablespoons creamy peanut butter",
+      "2 tablespoons fresh lime juice",
+      "2 tablespoons low-sodium soy sauce",
+      "1 tablespoon raw honey",
+      "1 teaspoon toasted sesame oil",
+      "1 teaspoon fresh ginger, finely grated"
+    ],
+    "instructions": [
+      "In a small bowl, whisk together the creamy peanut butter, fresh lime juice, low-sodium soy sauce, raw honey, toasted sesame oil, grated ginger, and 2 tablespoons of warm water until smooth.",
+      "In a large mixing bowl, combine the shredded chicken breast, shredded cabbage, sliced red bell pepper, shredded carrots, green onions, and fresh cilantro.",
+      "Pour the ginger-peanut dressing evenly over the salad and toss thoroughly until every ribbon is coated.",
+      "Divide into four bowls, scatter the toasted sliced almonds over top for crunch, and serve immediately!"
+    ]
+  },
+  {
+    "id": "braised-beef-ragu-pappardelle",
+    "emoji": "🍝",
+    "title": "Slow-Simmered Tuscan Beef Ragu",
+    "image": "tuscan-beef-ragu.jpg",
+    "subtitle": "Fall-apart tender braised beef chuck simmered low and slow in crushed San Marzano tomatoes, red wine, garlic, and rosemary with aged parmesan.",
+    "times": { "prep": "20 mins", "cook": "2 hours 30 mins", "servings": "6 people" },
+    "nutrition": { "calories": 440, "protein": 38, "carbs": 16, "fats": 24 },
+    "highlights": [
+      { "category": "Melt-In-Your-Mouth Shred", "text": "Low-and-slow simmering transforms beef chuck into silky, pull-apart ribbons that coat every bite." },
+      { "category": "Deep Italian Simmer", "text": "Deglazing caramelized aromatics with dry red wine and crushed tomatoes builds authentic trattoria richness." },
+      { "category": "High-Protein Heavyweight", "text": "Delivers 38g of rich protein per serving and reheats even better the next day." }
+    ],
+    "ingredients": [
+      "2 1/2 lbs boneless beef chuck roast, cut into 3-inch chunks",
+      "2 tablespoons extra virgin olive oil",
+      "1 medium yellow onion, finely diced",
+      "2 medium carrots, finely diced",
+      "2 stalks celery, finely diced",
+      "4 cloves garlic, minced",
+      "2 tablespoons tomato paste",
+      "1/2 cup dry red wine (such as Chianti or Cabernet)",
+      "1 can (28 oz) crushed tomatoes",
+      "1 cup low-sodium beef broth",
+      "2 sprigs fresh rosemary",
+      "1/2 cup grated parmesan cheese (for serving)"
+    ],
+    "instructions": [
+      "Pat the beef chunks completely dry and season heavily on all sides with kosher salt and freshly cracked black pepper.",
+      "Heat the olive oil in a large Dutch oven over medium-high heat and sear the beef for 4 minutes per side until deeply browned, then transfer to a plate.",
+      "Lower heat to medium, add the diced onion, carrots, and celery, and sauté for 6 minutes until softened.",
+      "Stir in the minced garlic and tomato paste for 1 minute, then pour in the red wine to scrape up the browned bits from the bottom of the pot.",
+      "Add the crushed tomatoes, beef broth, fresh rosemary sprigs, and seared beef, bring to a simmer, cover tightly, and cook on low heat for 2 hours and 15 minutes until fork-tender.",
+      "Discard the rosemary stems, shred the tender beef directly into the rich tomato sauce using two forks, and serve hot topped with grated parmesan cheese!"
+    ]
+  },
+  {
+    "id": "salted-espresso-chocolate-posset-cups",
+    "emoji": "🍫",
+    "title": "Silky Dark Chocolate & Espresso Pots de Crème",
+    "image": "chocolate-pots-de-creme.jpg",
+    "subtitle": "Velvety, spoon-coating French dark chocolate custard infused with espresso and topped with softly whipped vanilla cream and flaky sea salt.",
+    "times": { "prep": "10 mins", "cook": "5 mins", "servings": "6 ramekins" },
+    "nutrition": { "calories": 340, "protein": 5, "carbs": 24, "fats": 25 },
+    "highlights": [
+      { "category": "No-Bake Blender Magic", "text": "Pouring steaming cream over bittersweet chocolate, egg yolks, and espresso creates a restaurant-grade custard in 5 minutes." },
+      { "category": "Bold Mocha Depth", "text": "A hint of espresso powder intensifies the 70% dark chocolate without overpowering the silky vanilla cream." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in at 340 calories per cup, qualifying automatically for your healthy dessert menu rotation." }
+    ],
+    "ingredients": [
+      "6 oz bittersweet dark chocolate (70% cacao), finely chopped",
+      "1 1/2 cups heavy whipping cream",
+      "1/2 cup whole milk",
+      "3 large egg yolks, room temperature",
+      "3 tablespoons granulated sugar",
+      "1 teaspoon instant espresso powder",
+      "1 teaspoon pure vanilla extract",
+      "1/4 teaspoon flaky sea salt (for garnish)"
+    ],
+    "instructions": [
+      "Place the finely chopped dark chocolate, egg yolks, granulated sugar, instant espresso powder, and vanilla extract into a blender.",
+      "In a medium saucepan over medium heat, bring the heavy whipping cream and whole milk just to a simmer around the edges (do not boil).",
+      "Pour the hot cream mixture directly into the blender over the chocolate and egg yolks, let sit for 1 minute to melt the chocolate, then blend on high for 45 seconds until completely smooth and glossy.",
+      "Divide the warm chocolate custard evenly among 6 small ramekins or espresso cups.",
+      "Chill in the refrigerator for at least 3 hours until firmly set, sprinkle lightly with flaky sea salt, and serve cold!"
+    ]
+  },
+   {
+    "id": "smoked-gouda-spinach-baked-egg-cups",
+    "emoji": "🍳",
+    "title": "Smoked Gouda & Spinach Prosciutto Egg Cups",
+    "image": "prosciutto-egg-cups.jpg",
+    "subtitle": "Crispy baked prosciutto nests filled with wilted baby spinach, sweet cherry tomatoes, smoky Gouda cheese, and farm-fresh eggs.",
+    "times": { "prep": "10 mins", "cook": "16 mins", "servings": "6 cups" },
+    "nutrition": { "calories": 240, "protein": 18, "carbs": 3, "fats": 17 },
+    "highlights": [
+      { "category": "Zero-Crust Keto Brunch", "text": "Lining a muffin tin with thin Italian prosciutto creates a salty, crispy edible cup with virtually zero carbohydrates." },
+      { "category": "Meal Prep Ready", "text": "Bakes 6 individual protein-packed breakfast cups in one pan that reheat effortlessly all week." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 240 calories per serving with 18g of protein, qualifying automatically for your healthy breakfast rotation." }
+    ],
+    "ingredients": [
+      "6 slices thinly sliced prosciutto",
+      "6 large eggs",
+      "1 cup fresh baby spinach, finely chopped",
+      "1/2 cup cherry tomatoes, quartered",
+      "1/2 cup smoked Gouda cheese, shredded",
+      "1 tablespoon fresh chives, finely chopped",
+      "1/4 teaspoon freshly cracked black pepper"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and lightly grease 6 cups of a standard 12-cup muffin tin.",
+      "Press one slice of prosciutto gently into each of the 6 greased muffin cups to form a little nest.",
+      "Divide the chopped baby spinach, quartered cherry tomatoes, and shredded smoked Gouda evenly among the prosciutto cups.",
+      "Crack one large egg directly into the center of each cup and season lightly with freshly cracked black pepper.",
+      "Bake for 14 to 16 minutes until the egg whites are completely set and the yolks reach your preferred firmness.",
+      "Run a butter knife around the edges to lift the crispy cups out, garnish with fresh chives, and serve hot!"
+    ]
+  },
+  {
+    "id": "crispy-garlic-parmesan-zucchini-fries",
+    "emoji": "🍟",
+    "title": "Crispy Oven-Baked Garlic Parmesan Zucchini Fries",
+    "image": "zucchini-fries.jpg",
+    "subtitle": "Tender zucchini spears coated in a shattering panko, aged parmesan, and Italian herb crust, oven-baked golden with warm marinara dip.",
+    "times": { "prep": "15 mins", "cook": "18 mins", "servings": "4 servings" },
+    "nutrition": { "calories": 195, "protein": 9, "carbs": 21, "fats": 8 },
+    "highlights": [
+      { "category": "Oven-Baked Crunch", "text": "Toasting panko breadcrumbs with grated parmesan and olive oil yields a crispy golden crust without deep-frying." },
+      { "category": "Veggie Crowd Pleaser", "text": "High-heat roasting keeps the zucchini spears tender-crisp instead of soggy." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in at just 195 calories per serving, qualifying automatically for your healthy appetizer rotation." }
+    ],
+    "ingredients": [
+      "3 medium zucchinis, cut into 3-inch fry spears",
+      "3/4 cup panko breadcrumbs",
+      "1/2 cup grated parmesan cheese",
+      "1 teaspoon Italian seasoning",
+      "1/2 teaspoon garlic powder",
+      "2 large eggs, beaten",
+      "1 tablespoon olive oil",
+      "1/2 cup warm marinara sauce (for dipping)",
+      "Kosher salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 425°F (218°C) and line a large rimmed baking sheet with parchment paper lightly brushed with olive oil.",
+      "Pat the zucchini spears completely dry with paper towels and season lightly with kosher salt and black pepper.",
+      "In a shallow dish, mix together the panko breadcrumbs, grated parmesan cheese, Italian seasoning, and garlic powder.",
+      "Dip each zucchini spear into the beaten eggs, let excess drip off, and press firmly into the parmesan panko mixture until coated on all sides.",
+      "Arrange the spears in a single layer on your prepared baking sheet so they do not touch.",
+      "Bake for 16 to 18 minutes until deeply golden brown and crisp, and serve hot alongside warm marinara sauce!"
+    ]
+  },
+  {
+    "id": "pan-seared-duck-breast-orange-grand-marnier",
+    "emoji": "🍊",
+    "title": "French Duck Breast a l'Orange (Canard à l'Orange)",
+    "image": "duck-a-lorange.jpg",
+    "subtitle": "Crispy-skinned cold-seared duck breast served sliced over a glossy, sweet-and-tangy caramelized fresh orange and thyme pan glaze.",
+    "times": { "prep": "10 mins", "cook": "18 mins", "servings": "2 people" },
+    "nutrition": { "calories": 430, "protein": 34, "carbs": 13, "fats": 26 },
+    "highlights": [
+      { "category": "Parisian Bistro Classic", "text": "Cold-pan searing renders the scored duck fat slowly for a shattering, golden-brown crust while keeping the meat rosy and tender." },
+      { "category": "Bright Citrus Reduction", "text": "Simmering fresh-squeezed orange juice, zest, honey, and chicken stock builds a jewel-toned glaze that cuts right through the rich duck." },
+      { "category": "High-Protein Showstopper", "text": "Delivers 34g of rich protein per plate with steakhouse-level presentation." }
+    ],
+    "ingredients": [
+      "2 boneless duck breasts (about 7 oz each), skin scored in a crosshatch pattern",
+      "1/2 cup fresh-squeezed orange juice",
+      "1 teaspoon finely grated orange zest",
+      "1/2 cup low-sodium chicken stock",
+      "1 tablespoon raw honey",
+      "1 tablespoon apple cider vinegar",
+      "2 sprigs fresh thyme",
+      "1 tablespoon cold unsalted butter",
+      "Kosher salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Pat the duck breasts completely dry with paper towels and season both sides generously with kosher salt and cracked black pepper.",
+      "Place the duck breasts skin-side down into a cold heavy skillet, then turn the heat to medium.",
+      "Cook undisturbed for 10 to 12 minutes, spooning off excess rendered fat as it collects, until the skin is deep golden brown and crisp.",
+      "Flip the breasts and sear flesh-side down for 3 to 4 minutes until internal temperature reaches 135°F (57°C) for medium-rare, then transfer to a board to rest.",
+      "Pour off all but 1 teaspoon of fat from the skillet, add the orange juice, orange zest, chicken stock, honey, apple cider vinegar, and thyme sprigs, and simmer for 4 minutes until reduced by half.",
+      "Discard the thyme stems, swirl in the cold unsalted butter until glossy, slice the rested duck on the bias, and spoon the warm orange glaze over top!"
+    ]
+  },
+   {
+    "id": "mediterranean-grilled-steak-tzatziki-bowl",
+    "emoji": "🥩",
+    "title": "Mediterranean Grilled Steak & Tzatziki Power Bowl",
+    "image": "mediterranean-steak-bowl.jpg",
+    "subtitle": "Juicy oregano-garlic flank steak slices over herbed quinoa with crisp English cucumbers, cherry tomatoes, kalamata olives, feta, and cool tzatziki.",
+    "times": { "prep": "15 mins", "cook": "10 mins", "servings": "4 people" },
+    "nutrition": { "calories": 390, "protein": 35, "carbs": 24, "fats": 17 },
+    "highlights": [
+      { "category": "25-Minute Power Lunch", "text": "Flash-searing marinated flank steak in a hot skillet builds a savory crust while keeping the center tender." },
+      { "category": "Vibrant Mezze Crunch", "text": "Crisp cucumbers, briny olives, tangy feta, and creamy cucumber-dill yogurt balance the rich steak." },
+      { "category": "Dashboard Light Slot", "text": "Packs 35g of lean protein at just 390 calories per bowl, qualifying automatically for your healthy lunch rotation." }
+    ],
+    "ingredients": [
+      "1 lb flank steak, trimmed",
+      "2 tablespoons extra virgin olive oil",
+      "2 tablespoons fresh lemon juice",
+      "3 cloves garlic, minced",
+      "1 teaspoon dried oregano",
+      "2 cups cooked quinoa or brown rice",
+      "1 English cucumber, diced",
+      "1 cup cherry tomatoes, halved",
+      "1/3 cup kalamata olives, sliced",
+      "1/3 cup crumbled feta cheese",
+      "1/2 cup prepared tzatziki sauce",
+      "Kosher salt and cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Whisk together the olive oil, fresh lemon juice, minced garlic, dried oregano, kosher salt, and black pepper, and rub all over the flank steak.",
+      "Heat a cast-iron skillet or grill pan over high heat until smoking, then sear the steak for 4 to 5 minutes per side until internal temperature reaches 135°F (57°C) for medium-rare.",
+      "Transfer the steak to a cutting board to rest for 8 minutes, then slice thinly against the grain.",
+      "Divide the cooked quinoa among four bowls and arrange the diced cucumber, halved cherry tomatoes, sliced olives, and sliced steak on top.",
+      "Finish each bowl with crumbled feta cheese and a generous spoonful of cool tzatziki sauce, and serve immediately!"
+    ]
+  },
+  {
+    "id": "miso-maple-glazed-black-cod-bok-choy",
+    "emoji": "🐟",
+    "title": "Caramelized Miso & Maple Glazed Cod w/ Baby Bok Choy",
+    "image": "miso-maple-cod.jpg",
+    "subtitle": "Flaky wild cod fillets broiled under a sweet-and-savory white miso, pure maple, and ginger glaze alongside crisp sesame-garlic baby bok choy.",
+    "times": { "prep": "10 mins", "cook": "12 mins", "servings": "2 people" },
+    "nutrition": { "calories": 310, "protein": 33, "carbs": 16, "fats": 12 },
+    "highlights": [
+      { "category": "Umami Broiler Lacquer", "text": "Broiling sweet white miso and pure maple syrup creates a bubbly, caramelized glaze in just 8 minutes." },
+      { "category": "One-Pan Dinner", "text": "Roasting tender baby bok choy right alongside the fish keeps prep simple and cleanup effortless." },
+      { "category": "Dashboard Light Slot", "text": "Delivers 33g of lean protein at just 310 calories per plate, qualifying automatically for your healthy dinner rotation." }
+    ],
+    "ingredients": [
+      "2 thick wild cod fillets (6 oz each)",
+      "2 tablespoons white miso paste (shiro miso)",
+      "1 tablespoon pure maple syrup",
+      "1 tablespoon mirin or rice vinegar",
+      "1 teaspoon fresh ginger, finely grated",
+      "1 teaspoon toasted sesame oil",
+      "3 heads baby bok choy, halved lengthwise",
+      "1 tablespoon olive oil",
+      "1 clove garlic, minced",
+      "1 teaspoon toasted sesame seeds"
+    ],
+    "instructions": [
+      "Preheat your oven broiler to HIGH with the rack positioned 6 inches from the heat element, and line a rimmed baking sheet with foil.",
+      "In a small bowl, whisk together the white miso paste, pure maple syrup, mirin, grated ginger, and toasted sesame oil until smooth.",
+      "Toss the halved baby bok choy with olive oil, minced garlic, and a pinch of salt, and arrange on one side of the baking sheet.",
+      "Pat the cod fillets dry, place them on the other side of the sheet, and spread the miso-maple glaze generously over the tops.",
+      "Broil for 8 to 10 minutes until the glaze is deeply caramelized, the fish flakes easily with a fork, and the bok choy edges are crisp-tender. Scatter with sesame seeds and serve hot!"
+    ]
+  },
+  {
+    "id": "lemon-blueberry-mascarpone-tart",
+    "emoji": "🍋",
+    "title": "Lemon Mascarpone & Fresh Blueberry Shortbread Tart",
+    "image": "lemon-blueberry-mascarpone-tart.jpg",
+    "subtitle": "Crisp golden butter shortbread crust filled with airy lemon-zested mascarpone cream and crowned with glossy fresh blueberries.",
+    "times": { "prep": "15 mins", "cook": "15 mins", "servings": "8 slices" },
+    "nutrition": { "calories": 340, "protein": 5, "carbs": 35, "fats": 20 },
+    "highlights": [
+      { "category": "Bright Citrus & Cream", "text": "Whipping Italian mascarpone with heavy cream, powdered sugar, and fresh lemon zest creates a light, velvety filling." },
+      { "category": "Bakery Showstopper", "text": "Juicy fresh blueberries glossed with a touch of warm lemon-honey glaze turn a simple tart into a centerpiece dessert." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in at 340 calories per slice, qualifying automatically for your healthy dessert menu rotation." }
+    ],
+    "ingredients": [
+      "1 pre-baked 9-inch sweet shortbread tart shell",
+      "8 oz mascarpone cheese, softened slightly",
+      "1/2 cup cold heavy whipping cream",
+      "1/3 cup powdered sugar",
+      "1 tablespoon fresh lemon zest",
+      "2 tablespoons fresh lemon juice, divided",
+      "1 teaspoon pure vanilla extract",
+      "2 cups fresh blueberries",
+      "1 tablespoon raw honey (for berry glaze)"
+    ],
+    "instructions": [
+      "In a chilled mixing bowl, beat the mascarpone cheese, heavy whipping cream, powdered sugar, fresh lemon zest, 1 tablespoon lemon juice, and vanilla extract with a mixer for 2 minutes until thick and fluffy.",
+      "Spread the whipped lemon mascarpone cream evenly into your cooled pre-baked shortbread tart shell.",
+      "In a small bowl, gently toss the fresh blueberries with the warm raw honey and remaining 1 tablespoon lemon juice until glossy.",
+      "Arrange the glazed blueberries heavily across the top of the mascarpone filling.",
+      "Chill in the refrigerator for at least 1 hour to set cleanly, then slice into 8 wedges and serve cold!"
+    ]
+  },
+   {
+    "id": "smoked-salmon-dill-cream-cheese-omelette",
+    "emoji": "🍳",
+    "title": "Nordic Smoked Salmon & Dill Cream Cheese Omelette",
+    "image": "smoked-salmon-omelette.jpg",
+    "subtitle": "Silky French-style folded omelette filled with tangy whipped chive cream cheese, cold-smoked salmon ribbons, briny capers, and fresh dill.",
+    "times": { "prep": "5 mins", "cook": "5 mins", "servings": "1 person" },
+    "nutrition": { "calories": 370, "protein": 29, "carbs": 3, "fats": 27 },
+    "highlights": [
+      { "category": "10-Minute Bistro Brunch", "text": "Delivers upscale café flavor in a single non-stick skillet with minimal prep." },
+      { "category": "High-Protein Start", "text": "Combines pasture-raised eggs and wild smoked salmon for 29g of clean morning protein." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in cleanly at 370 calories per plate, qualifying automatically for your healthy breakfast rotation." }
+    ],
+    "ingredients": [
+      "3 large eggs",
+      "1 tablespoon unsalted butter",
+      "2 tablespoons whipped cream cheese",
+      "2 oz cold-smoked salmon, torn into ribbons",
+      "1 teaspoon capers, drained",
+      "1 tablespoon fresh dill, finely chopped",
+      "1 tablespoon fresh chives, finely chopped",
+      "1/4 teaspoon freshly cracked black pepper"
+    ],
+    "instructions": [
+      "Crack the eggs into a bowl, add the chopped chives and black pepper, and whisk vigorously with a fork until completely smooth.",
+      "Melt the unsalted butter in a non-stick skillet over medium-low heat until foaming.",
+      "Pour in the whisked eggs and stir gently with a rubber spatula for 30 seconds while shaking the pan until small, soft curds form.",
+      "Let the eggs set undisturbed for 30 seconds until the bottom is pale golden and the top remains slightly glossy.",
+      "Dollop the whipped cream cheese down the center, layer the smoked salmon ribbons, capers, and fresh dill over top, fold gently into thirds, and slide onto a warm plate!"
+    ]
+  },
+  {
+    "id": "crispy-buffalo-cauliflower-bites-appetizer",
+    "emoji": "🥦",
+    "title": "Crispy Oven-Baked Buffalo Cauliflower Wings",
+    "image": "buffalo-cauliflower-wings.jpg",
+    "subtitle": "Golden, panko-crusted cauliflower florets baked crisp and tossed in tangy buffalo butter sauce with cool blue cheese or ranch dip.",
+    "times": { "prep": "15 mins", "cook": "25 mins", "servings": "4 servings" },
+    "nutrition": { "calories": 220, "protein": 6, "carbs": 26, "fats": 10 },
+    "highlights": [
+      { "category": "Oven-Baked Crunch", "text": "Coating florets in seasoned batter and crispy panko crumbs locks in crunch without deep-frying." },
+      { "category": "Game-Day Crowd Pleaser", "text": "Tangy cayenne buffalo butter glaze satisfies wing cravings in a lighter plant-forward bite." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 220 calories per serving, qualifying automatically for your healthy appetizer rotation." }
+    ],
+    "ingredients": [
+      "1 medium head cauliflower, cut into bite-sized florets",
+      "1/2 cup all-purpose flour",
+      "1/2 cup unsweetened almond milk or whole milk",
+      "1 teaspoon garlic powder",
+      "1/2 teaspoon smoked paprika",
+      "3/4 cup panko breadcrumbs",
+      "1/3 cup buffalo hot sauce",
+      "2 tablespoons unsalted butter, melted",
+      "1/4 cup crumbled blue cheese and sliced green onions (for garnish)"
+    ],
+    "instructions": [
+      "Preheat your oven to 425°F (218°C) and line a large rimmed baking sheet with parchment paper.",
+      "In a large bowl, whisk together the flour, milk, garlic powder, smoked paprika, and a pinch of salt until a smooth batter forms.",
+      "Toss the cauliflower florets in the batter until coated, then dredge each piece in the panko breadcrumbs and arrange in a single layer on the baking sheet.",
+      "Bake for 20 minutes until golden brown and crisp on the edges.",
+      "Whisk the buffalo hot sauce and melted butter together, toss the baked florets gently in the warm glaze, return to the oven for 5 minutes to set, and garnish with blue cheese and green onions!"
+    ]
+  },
+  {
+    "id": "seared-halibut-lemon-herb-butter-asparagus",
+    "emoji": "🐟",
+    "title": "Pan-Roasted Chilean Sea Bass w/ Garlic Herb Butter",
+    "image": "pan-roasted-sea-bass.jpg",
+    "subtitle": "Thick, velvety sea bass fillets seared to a crisp golden crust and basted with nutty brown butter, shallots, capers, and fresh lemon.",
+    "times": { "prep": "10 mins", "cook": "10 mins", "servings": "2 people" },
+    "nutrition": { "calories": 380, "protein": 31, "carbs": 3, "fats": 27 },
+    "highlights": [
+      { "category": "5-Star Steakhouse Crust", "text": "High-heat searing builds a golden crust while the fish's rich marbling stays buttery and tender." },
+      { "category": "Bright Caper Brown Butter", "text": "Toasting butter with shallots, briny capers, and fresh lemon juice creates an instant pan sauce." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in cleanly at 380 calories per plate with 31g of protein, qualifying automatically for your healthy dinner rotation." }
+    ],
+    "ingredients": [
+      "2 fresh Chilean sea bass or halibut fillets (6 oz each)",
+      "1 tablespoon high-heat avocado oil",
+      "3 tablespoons unsalted butter",
+      "1 small shallot, finely minced",
+      "1 tablespoon capers, drained",
+      "2 tablespoons fresh lemon juice",
+      "2 tablespoons fresh flat-leaf parsley, finely chopped",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Pat the fish fillets completely dry with paper towels and season generously on both sides with kosher salt and black pepper.",
+      "Heat the avocado oil in a heavy stainless steel or cast-iron skillet over medium-high heat until shimmering hot.",
+      "Lay the fillets into the pan away from you and sear undisturbed for 4 to 5 minutes until a deep golden crust forms.",
+      "Flip the fillets, lower the heat to medium, and add the unsalted butter, minced shallot, and drained capers to the pan.",
+      "Tilt the skillet slightly and spoon the foaming brown butter continuously over the fish for 3 to 4 minutes until flaky and opaque.",
+      "Squeeze fresh lemon juice over top, scatter with chopped parsley, and serve immediately!"
+    ]
+  },
+  {
+    "id": "spicy-ahi-tuna-poke-bowl",
+    "emoji": "🐟",
+    "title": "Hawaiian Spicy Ahi Tuna & Mango Poke Bowl",
+    "image": "ahi-tuna-poke-bowl.jpg",
+    "subtitle": "Sushi-grade ahi tuna cubes tossed in a savory sesame-soy ginger marinade over seasoned jasmine rice with sweet mango, creamy avocado, and edamame.",
+    "times": { "prep": "15 mins", "cook": "0 mins", "servings": "2 people" },
+    "nutrition": { "calories": 420, "protein": 34, "carbs": 44, "fats": 12 },
+    "highlights": [
+      { "category": "15-Minute No-Cook Bowl", "text": "Requires zero stove time when paired with pre-cooked rice, delivering fresh coastal flavor fast." },
+      { "category": "Ultra-Lean Marine Protein", "text": "Delivers 34g of clean protein per bowl with heart-healthy avocado fats and bright tropical mango." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in cleanly at 420 calories per bowl, qualifying automatically for your healthy lunch rotation." }
+    ],
+    "ingredients": [
+      "10 oz sushi-grade ahi tuna steak, cut into 3/4-inch cubes",
+      "2 tablespoons low-sodium soy sauce",
+      "1 teaspoon toasted sesame oil",
+      "1 teaspoon rice vinegar",
+      "1 teaspoon fresh ginger, finely grated",
+      "1 teaspoon sriracha hot sauce",
+      "1 1/2 cups cooked jasmine or sushi rice",
+      "1/2 ripe mango, diced",
+      "1/2 ripe avocado, sliced",
+      "1/2 cup shelled edamame, thawed",
+      "2 green onions, thinly sliced",
+      "1 teaspoon toasted sesame seeds"
+    ],
+    "instructions": [
+      "In a medium bowl, whisk together the low-sodium soy sauce, toasted sesame oil, rice vinegar, grated ginger, and sriracha hot sauce until smooth.",
+      "Add the cubed ahi tuna and sliced green onions to the marinade, tossing gently to coat, and let chill for 10 minutes.",
+      "Divide the cooked rice evenly between two serving bowls.",
+      "Arrange the marinated ahi tuna, diced sweet mango, sliced avocado, and shelled edamame neatly over the rice.",
+      "Sprinkle heavily with toasted sesame seeds and serve immediately!"
+    ]
+  },
+  {
+    "id": "argentinian-grilled-skirt-steak-chimichurri",
+    "emoji": "🥩",
+    "title": "Argentinian Skirt Steak w/ Fresh Herb Chimichurri",
+    "image": "skirt-steak-chimichurri.jpg",
+    "subtitle": "Juicy, high-heat seared beef skirt steak sliced thin against the grain and spooned generously with vibrant garlic, parsley, oregano, and red wine vinegar chimichurri.",
+    "times": { "prep": "15 mins", "cook": "8 mins", "servings": "4 people" },
+    "nutrition": { "calories": 390, "protein": 36, "carbs": 3, "fats": 26 },
+    "highlights": [
+      { "category": "8-Minute Cast-Iron Sear", "text": "Thin-cut skirt steak cooks rapidly over high heat, forming a deep savory crust while staying tender inside." },
+      { "category": "Vibrant Herb Sauce", "text": "Hand-chopped flat-leaf parsley, fresh oregano, garlic, and tangy red wine vinegar cut straight through the rich beef." },
+      { "category": "Dashboard Light Slot", "text": "Supplies 36g of pure protein at 390 calories per plate with virtually zero carbs, qualifying automatically for your healthy dinner rotation." }
+    ],
+    "ingredients": [
+      "1 1/2 lbs beef skirt steak, trimmed and cut into 2 equal sections",
+      "1 tablespoon high-heat avocado oil",
+      "1 cup fresh flat-leaf parsley, finely chopped",
+      "2 tablespoons fresh oregano leaves, finely chopped",
+      "4 cloves garlic, finely minced",
+      "1/3 cup extra virgin olive oil",
+      "3 tablespoons red wine vinegar",
+      "1/2 teaspoon crushed red pepper flakes",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "In a medium bowl, stir together the chopped parsley, fresh oregano, minced garlic, extra virgin olive oil, red wine vinegar, crushed red pepper flakes, 1/2 teaspoon kosher salt, and black pepper; let sit for 15 minutes so the flavors meld.",
+      "Pat the skirt steak sections completely dry with paper towels and season generously on both sides with kosher salt and freshly cracked black pepper.",
+      "Heat the avocado oil in a large cast-iron skillet or grill pan over high heat until smoking.",
+      "Lay the steak in the skillet and sear undisturbed for 3 to 4 minutes per side until deeply browned and internal temperature reaches 135°F (57°C) for medium-rare.",
+      "Transfer the steak to a cutting board to rest for 8 minutes, slice thinly against the grain, and spoon the vibrant herb chimichurri generously over top!"
+    ]
+  },
+  {
+    "id": "roasted-peach-vanilla-honey-mascarpone-tart",
+    "emoji": "🍑",
+    "title": "Honey-Roasted Peach & Vanilla Bean Tart",
+    "image": "honey-peach-tart.jpg",
+    "subtitle": "Crisp golden puff pastry layered with whipped vanilla bean mascarpone cream and topped with caramelized honey-roasted ripe peach wedges.",
+    "times": { "prep": "15 mins", "cook": "20 mins", "servings": "8 slices" },
+    "nutrition": { "calories": 310, "protein": 4, "carbs": 34, "fats": 18 },
+    "highlights": [
+      { "category": "Bakery Showstopper", "text": "Roasting fresh peach wedges in butter and raw honey concentrates their natural sweetness into a glossy, jammy topping." },
+      { "category": "Airy Vanilla Cream", "text": "Whipping Italian mascarpone with heavy cream and vanilla bean paste builds a lush, cloud-soft cushion over the crisp pastry." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in at just 310 calories per slice, qualifying automatically for your healthy dessert menu rotation." }
+    ],
+    "ingredients": [
+      "1 sheet frozen puff pastry, thawed",
+      "3 large ripe peaches, pitted and sliced into 1/2-inch wedges",
+      "2 tablespoons raw honey, divided",
+      "1 tablespoon unsalted butter, melted",
+      "6 oz mascarpone cheese, softened slightly",
+      "1/3 cup cold heavy whipping cream",
+      "3 tablespoons powdered sugar",
+      "1 teaspoon pure vanilla bean paste or vanilla extract"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and line two baking sheets with parchment paper.",
+      "Unroll the puff pastry onto one baking sheet, score a 1-inch border around the edges, prick the center with a fork, and bake for 15 minutes until puffed and golden; let cool completely.",
+      "On the second baking sheet, toss the sliced peaches with the melted butter and 1 tablespoon raw honey, arrange in a single layer, and roast for 12 to 15 minutes until tender and caramelized; let cool.",
+      "In a chilled bowl, whip the mascarpone cheese, cold heavy cream, powdered sugar, and vanilla bean paste for 2 minutes until thick and fluffy.",
+      "Spread the whipped vanilla cream inside the cooled pastry border, arrange the roasted peach wedges over top, drizzle with the remaining 1 tablespoon honey, and slice into 8 squares!"
+    ]
+  },
+  {
+    "id": "caramelized-banana-macadamia-pancakes",
+    "emoji": "🥞",
+    "title": "Hawaiian Caramelized Banana & Macadamia Pancakes",
+    "image": "banana-macadamia-pancakes.jpg",
+    "subtitle": "Fluffy buttermilk pancakes topped with warm brown-butter caramelized banana slices, toasted macadamia nuts, and pure maple syrup.",
+    "times": { "prep": "10 mins", "cook": "15 mins", "servings": "4 people" },
+    "nutrition": { "calories": 380, "protein": 9, "carbs": 52, "fats": 15 },
+    "highlights": [
+      { "category": "Island Brunch Classic", "text": "Pan-searing ripe banana coins in butter and brown sugar builds a golden, toffee-like topping in 3 minutes." },
+      { "category": "Toasted Nut Crunch", "text": "Buttery roasted macadamia nuts add rich coastal crunch to every fluffy forkful." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in cleanly at 380 calories per serving, qualifying automatically for your healthy breakfast rotation." }
+    ],
+    "ingredients": [
+      "1 1/2 cups all-purpose flour",
+      "2 tablespoons granulated sugar",
+      "2 teaspoons baking powder",
+      "1/2 teaspoon baking soda",
+      "1/4 teaspoon salt",
+      "1 1/4 cups buttermilk",
+      "1 large egg",
+      "3 tablespoons unsalted butter, melted and divided",
+      "2 ripe bananas, sliced into 1/2-inch coins",
+      "2 tablespoons packed light brown sugar",
+      "1/3 cup roasted macadamia nuts, roughly chopped"
+    ],
+    "instructions": [
+      "In a large bowl, whisk together the flour, granulated sugar, baking powder, baking soda, and salt.",
+      "In a separate bowl, whisk the buttermilk, egg, and 2 tablespoons of the melted butter until smooth, then fold gently into the dry ingredients until just combined.",
+      "Heat a lightly greased griddle over medium heat, pour 1/3 cup of batter per pancake, and cook for 2 minutes until bubbles form on top; flip and cook 1 to 2 minutes until golden.",
+      "In a small skillet over medium heat, melt the remaining 1 tablespoon butter with the brown sugar, add the banana coins, and cook for 2 minutes until caramelized.",
+      "Stack the warm pancakes onto plates, spoon the caramelized bananas over top, scatter with chopped macadamia nuts, and serve warm!"
+    ]
+  },
+  {
+    "id": "crispy-prosciutto-fig-ricotta-bruschetta",
+    "emoji": "🥖",
+    "title": "Charred Sourdough Bruschetta w/ Ricotta, Fig & Prosciutto",
+    "image": "fig-ricotta-bruschetta.jpg",
+    "subtitle": "Garlic-rubbed grilled sourdough toasts layered with creamy lemon ricotta, black mission fig jam, crisp prosciutto ribbons, and fresh basil.",
+    "times": { "prep": "10 mins", "cook": "8 mins", "servings": "8 pieces" },
+    "nutrition": { "calories": 185, "protein": 8, "carbs": 21, "fats": 7 },
+    "highlights": [
+      { "category": "18-Minute Entertainer", "text": "Brushing rustic sourdough slices with olive oil and broiling builds an authentic wood-fired crunch." },
+      { "category": "Sweet & Salty Harmony", "text": "Rich fig preserves and salty prosciutto balance cool, lemon-zested whole-milk ricotta." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 185 calories per bruschetta, qualifying automatically for your healthy appetizer rotation." }
+    ],
+    "ingredients": [
+      "8 slices rustic sourdough baguette, cut 1/2-inch thick",
+      "2 tablespoons extra virgin olive oil",
+      "1 clove garlic, peeled and halved",
+      "3/4 cup whole-milk ricotta cheese",
+      "1 teaspoon fresh lemon zest",
+      "3 tablespoons black mission fig jam",
+      "3 slices thinly sliced prosciutto, torn into ribbons",
+      "6 fresh basil leaves, thinly sliced",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven broiler to HIGH, brush both sides of the sourdough slices with olive oil, and broil on a baking sheet for 2 minutes per side until golden and crisp.",
+      "Rub the cut side of the raw garlic clove lightly over the warm toasted bread.",
+      "In a small bowl, stir the ricotta cheese with the fresh lemon zest, a pinch of kosher salt, and cracked black pepper until creamy.",
+      "Spread a generous layer of lemon ricotta onto each toast, dollop lightly with black mission fig jam, and drape the prosciutto ribbons over top.",
+      "Scatter with fresh basil ribbons and serve immediately!"
+    ]
+  },
+  {
+    "id": "tuscan-grilled-chicken-pesto-caprese-bowl",
+    "emoji": "🥗",
+    "title": "Tuscan Grilled Chicken, Pesto & Burrata Caprese Bowl",
+    "image": "pesto-caprese-bowl.jpg",
+    "subtitle": "Juicy herb-grilled chicken breast sliced over warm farro or baby greens with sweet burst cherry tomatoes, creamy burrata, basil pesto, and aged balsamic glaze.",
+    "times": { "prep": "15 mins", "cook": "12 mins", "servings": "2 people" },
+    "nutrition": { "calories": 430, "protein": 39, "carbs": 21, "fats": 21 },
+    "highlights": [
+      { "category": "25-Minute Trattoria Lunch", "text": "Blistering cherry tomatoes in a hot skillet releases sweet juices that mingle with basil pesto and creamy burrata." },
+      { "category": "High-Protein Freshness", "text": "Delivers 39g of lean grilled chicken protein per bowl with bright Italian herbs." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in cleanly at 430 calories per bowl, qualifying automatically for your healthy lunch menu rotation." }
+    ],
+    "ingredients": [
+      "1 lb boneless, skinless chicken breasts",
+      "2 tablespoons extra virgin olive oil, divided",
+      "1 teaspoon Italian seasoning",
+      "1 cup cherry tomatoes, halved",
+      "3 cups baby arugula or mixed salad greens",
+      "1 cup cooked farro or quinoa",
+      "4 oz fresh burrata cheese, torn into pieces",
+      "2 tablespoons basil pesto",
+      "1 tablespoon balsamic glaze",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Season the chicken breasts evenly with Italian seasoning, kosher salt, and black pepper.",
+      "Heat 1 tablespoon of olive oil in a grill pan or heavy skillet over medium-high heat and cook the chicken for 5 to 6 minutes per side until golden and cooked through to 165°F (74°C); transfer to a board to rest.",
+      "Add the remaining 1 tablespoon olive oil and halved cherry tomatoes to the hot pan, cooking for 2 minutes until blistered and juicy.",
+      "Divide the baby arugula and cooked farro between two bowls, slice the rested chicken breast, and arrange over top with the blistered tomatoes and torn burrata.",
+      "Spoon the basil pesto over the chicken and cheese, drizzle lightly with balsamic glaze, and serve immediately!"
+    ]
+  },
+  {
+    "id": "pan-seared-venison-or-beef-tenderloin-blackberry-glaze",
+    "emoji": "🥩",
+    "title": "Seared Beef Tenderloin Medallions w/ Blackberry Balsamic Glaze",
+    "image": "beef-tenderloin-blackberry.jpg",
+    "subtitle": "Thick-cut center-cut filet mignon medallions seared in cast iron with fresh thyme and finished in a rich, jewel-toned blackberry and red wine pan reduction.",
+    "times": { "prep": "10 mins", "cook": "14 mins", "servings": "2 people" },
+    "nutrition": { "calories": 460, "protein": 42, "carbs": 12, "fats": 26 },
+    "highlights": [
+      { "category": "Steakhouse Elegance", "text": "Searing center-cut tenderloin medallions over high heat builds a deep savory crust while keeping the interior melt-in-your-mouth tender." },
+      { "category": "Jewel-Toned Pan Sauce", "text": "Simmering fresh blackberries with aged balsamic vinegar, beef stock, and cold butter creates a velvety, sweet-tart reduction." },
+      { "category": "High-Protein Titan", "text": "Supplies 42g of pure lean protein per plate with restaurant-grade presentation." }
+    ],
+    "ingredients": [
+      "2 center-cut beef tenderloin steaks (filet mignon, 6 oz each, 1.5 inches thick)",
+      "1 tablespoon high-heat avocado oil",
+      "2 tablespoons unsalted butter, divided",
+      "3 sprigs fresh thyme",
+      "1/2 cup fresh blackberries",
+      "1/2 cup low-sodium beef stock",
+      "2 tablespoons aged balsamic vinegar",
+      "1 teaspoon raw honey",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Pat the tenderloin steaks completely dry with paper towels and season generously on all sides with kosher salt and freshly cracked black pepper.",
+      "Heat the avocado oil in a cast-iron skillet over high heat until lightly smoking, then sear the steaks undisturbed for 3 to 4 minutes per side until deeply browned.",
+      "Lower the heat to medium, add 1 tablespoon of butter and the fresh thyme sprigs, and baste the steaks for 1 to 2 minutes until internal temperature reaches 130°F (54°C) for medium-rare; transfer to a plate to rest.",
+      "Discard the thyme stems, add the beef stock, balsamic vinegar, raw honey, and fresh blackberries to the skillet, and simmer for 3 minutes while gently mashing half the berries.",
+      "Remove from heat, swirl in the remaining 1 tablespoon cold butter until glossy, and spoon the warm blackberry reduction over the rested steaks to serve!"
+    ]
+  },
+  {
+    "id": "salted-honey-lavender-creme-brulee-tart",
+    "emoji": "🍮",
+    "title": "Salted Honey & Vanilla Bean Crème Brûlée Tart",
+    "image": "honey-creme-brulee-tart.jpg",
+    "subtitle": "Crisp golden butter shortbread tart shell filled with silky vanilla bean honey custard and crowned with a shattering caramelized sugar crust.",
+    "times": { "prep": "20 mins", "cook": "35 mins", "servings": "8 slices" },
+    "nutrition": { "calories": 350, "protein": 5, "carbs": 37, "fats": 20 },
+    "highlights": [
+      { "category": "Shattering Sugar Crust", "text": "Caramelizing raw turbinado sugar under a broiler or kitchen torch creates that signature crisp glass-like top." },
+      { "category": "Velvety Honey Custard", "text": "Infusing heavy cream with pure vanilla bean paste and wildflower honey yields a rich, sliceable custard center." },
+      { "category": "Dashboard Light Slot", "text": "Registers at 350 calories per slice, qualifying automatically for your healthy dessert menu rotation." }
+    ],
+    "ingredients": [
+      "1 pre-baked 9-inch sweet shortbread tart shell",
+      "1 1/2 cups heavy whipping cream",
+      "1/2 cup whole milk",
+      "4 large egg yolks, room temperature",
+      "3 tablespoons raw wildflower honey",
+      "2 tablespoons granulated sugar",
+      "1 1/2 teaspoons pure vanilla bean paste or vanilla extract",
+      "1/8 teaspoon kosher salt",
+      "3 tablespoons turbinado or granulated sugar (for caramelized top)"
+    ],
+    "instructions": [
+      "Preheat your oven to 325°F (165°C) and place your pre-baked tart shell on a sturdy baking sheet.",
+      "In a medium saucepan over medium heat, warm the heavy whipping cream, whole milk, and raw honey until steaming around the edges (do not boil).",
+      "In a mixing bowl, whisk the egg yolks, 2 tablespoons granulated sugar, vanilla bean paste, and kosher salt until smooth, then slowly ladle in the warm cream mixture while whisking constantly.",
+      "Pour the silky custard cleanly into the tart shell and bake for 30 to 35 minutes until the edges are set and the center still has a gentle wobble; cool to room temperature, then chill for 3 hours.",
+      "Right before serving, sprinkle the turbinado sugar evenly over the chilled custard and caramelize with a kitchen torch (or under a high broiler for 1 to 2 minutes) until golden and crisp!"
+    ]
+  },
+   {
+    "id": "smoked-salmon-avocado-eggs-benedict",
+    "emoji": "🍳",
+    "title": "Avocado & Crispy Bacon California Eggs Benedict",
+    "image": "california-eggs-benedict.jpg",
+    "subtitle": "Toasted English muffins layered with creamy sliced avocado, thick-cut applewood bacon, runny poached eggs, and warm lemon hollandaise.",
+    "times": { "prep": "15 mins", "cook": "12 mins", "servings": "2 people" },
+    "nutrition": { "calories": 460, "protein": 24, "carbs": 26, "fats": 29 },
+    "highlights": [
+      { "category": "Weekend Brunch Icon", "text": "Combines smoky crisp bacon and buttery avocado under velvety poached eggs for a café-worthy breakfast." },
+      { "category": "60-Second Blender Sauce", "text": "Drizzling hot melted butter into egg yolks and fresh lemon juice creates a glossy hollandaise without a double boiler." },
+      { "category": "Dashboard Light Slot", "text": "Checks in cleanly under 500 calories per plate, qualifying automatically for your healthy breakfast rotation." }
+    ],
+    "ingredients": [
+      "2 English muffins, split and toasted",
+      "4 slices thick-cut bacon, cooked crisp",
+      "1/2 ripe avocado, thinly sliced",
+      "4 large eggs (for poaching)",
+      "3 large egg yolks (for hollandaise)",
+      "1/2 cup unsalted butter, melted and hot",
+      "1 tablespoon fresh lemon juice",
+      "1 tablespoon white vinegar (for poaching water)",
+      "1 tablespoon fresh chives, finely chopped"
+    ],
+    "instructions": [
+      "Blend the 3 egg yolks, fresh lemon juice, and a pinch of salt in a blender for 5 seconds, then slowly drizzle in the hot melted butter while blending until thick and creamy.",
+      "Bring a deep saucepan of water to a gentle simmer with the white vinegar, crack each of the 4 eggs into a small cup, and slide them gently into the water.",
+      "Poach for 3 to 4 minutes until the whites are completely set and the yolks remain soft, then lift out with a slotted spoon.",
+      "Layer the toasted English muffin halves with sliced avocado, crispy bacon strips, and a hot poached egg.",
+      "Spoon the warm lemon hollandaise generously over top, garnish with chopped chives, and serve immediately!"
+    ]
+  },
+  {
+    "id": "crispy-parmesan-artichoke-spinach-dip-baked",
+    "emoji": "🧀",
+    "title": "Bubbling Three-Cheese Spinach & Artichoke Dip",
+    "image": "spinach-artichoke-dip.jpg",
+    "subtitle": "Warm, ultra-creamy baked appetizer loaded with tender artichoke hearts, sautéed garlic spinach, cream cheese, mozzarella, and aged parmesan.",
+    "times": { "prep": "10 mins", "cook": "20 mins", "servings": "6 servings" },
+    "nutrition": { "calories": 240, "protein": 11, "carbs": 8, "fats": 18 },
+    "highlights": [
+      { "category": "30-Minute Crowd Pleaser", "text": "Bakes into a golden, molten party dip that stays warm and scoopable right in the dish." },
+      { "category": "Triple Cheese Pull", "text": "Combines velvety cream cheese, stretchy mozzarella, and sharp parmesan for rich bistro depth." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 240 calories per serving, qualifying automatically for your healthy appetizer rotation." }
+    ],
+    "ingredients": [
+      "1 can (14 oz) quartered artichoke hearts, drained and roughly chopped",
+      "2 cups fresh baby spinach, finely chopped",
+      "8 oz cream cheese, softened",
+      "1/2 cup sour cream or plain Greek yogurt",
+      "1 cup shredded mozzarella cheese, divided",
+      "1/2 cup grated parmesan cheese",
+      "3 cloves garlic, finely minced",
+      "1/4 teaspoon crushed red pepper flakes",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and lightly grease a small 8-inch baking dish or cast-iron skillet.",
+      "In a medium bowl, mix together the softened cream cheese, sour cream, minced garlic, crushed red pepper flakes, half of the mozzarella, and the parmesan until smooth.",
+      "Fold in the chopped artichoke hearts and fresh baby spinach until evenly distributed.",
+      "Spread the mixture evenly into your prepared baking dish and top with the remaining shredded mozzarella cheese.",
+      "Bake uncovered for 18 to 20 minutes until bubbling around the edges and golden brown on top. Serve hot with toasted baguette slices or tortilla chips!"
+    ]
+  },
+  {
+    "id": "pan-seared-herb-crusted-pork-chops-apple-cider",
+    "emoji": "🥩",
+    "title": "Skillet Pork Chops w/ Caramelized Apple & Sage Glaze",
+    "image": "pork-chops-apple-sage.jpg",
+    "subtitle": "Thick-cut bone-in pork chops seared golden and simmered with tender Honeycrisp apple slices, fresh sage, Dijon, and crisp apple cider.",
+    "times": { "prep": "10 mins", "cook": "18 mins", "servings": "4 people" },
+    "nutrition": { "calories": 410, "protein": 38, "carbs": 16, "fats": 21 },
+    "highlights": [
+      { "category": "28-Minute Autumn Skillet", "text": "Browning bone-in pork chops before deglazing with real apple cider builds a deeply savory pan sauce." },
+      { "category": "Sweet & Savory Harmony", "text": "Caramelized Honeycrisp apple wedges and earthy fresh sage balance the rich pork juices." },
+      { "category": "Dashboard Light Slot", "text": "Delivers 38g of lean protein at 410 calories per plate, qualifying automatically for your healthy dinner rotation." }
+    ],
+    "ingredients": [
+      "4 bone-in center-cut pork chops (about 1 inch thick)",
+      "1 tablespoon olive oil",
+      "2 tablespoons unsalted butter, divided",
+      "1 large Honeycrisp apple, cored and sliced into 1/2-inch wedges",
+      "1 small shallot, thinly sliced",
+      "6 fresh sage leaves",
+      "3/4 cup unsweetened apple cider",
+      "1 tablespoon Dijon mustard",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Pat the pork chops completely dry with paper towels and season generously on both sides with kosher salt and black pepper.",
+      "Heat the olive oil and 1 tablespoon butter in a large skillet over medium-high heat and sear the pork chops for 3 to 4 minutes per side until golden brown; transfer to a plate.",
+      "Add the sliced apples, sliced shallot, and fresh sage leaves to the hot pan, cooking for 3 minutes until the apples turn golden on the edges.",
+      "Pour in the apple cider and whisk in the Dijon mustard, scraping up any browned bits from the bottom of the skillet.",
+      "Return the pork chops and any resting juices to the pan, simmer for 4 to 5 minutes until the sauce reduces into a glossy glaze and the pork reaches 145°F (63°C), swirl in the remaining 1 tablespoon butter, and serve hot!"
+    ]
+  },
+   {
+    "id": "french-bistro-steak-frites-salad-bowl",
+    "emoji": "🥗",
+    "title": "Bistro Seared Sirloin & Roasted Beet Goat Cheese Salad",
+    "image": "sirloin-beet-goat-cheese-salad.jpg",
+    "subtitle": "Juicy sliced sirloin steak served over peppery baby arugula with sweet roasted red beets, tangy goat cheese, toasted walnuts, and Dijon vinaigrette.",
+    "times": { "prep": "15 mins", "cook": "10 mins", "servings": "2 people" },
+    "nutrition": { "calories": 420, "protein": 36, "carbs": 14, "fats": 24 },
+    "highlights": [
+      { "category": "25-Minute Bistro Plate", "text": "Flash-searing lean sirloin steak and pairing it with pre-cooked roasted beets delivers upscale café flavor fast." },
+      { "category": "Sweet & Tangy Contrast", "text": "Creamy goat cheese and sweet ruby beets balance peppery arugula and sharp Dijon vinaigrette." },
+      { "category": "Dashboard Light Slot", "text": "Supplies 36g of protein at 420 calories per plate, qualifying automatically for your healthy lunch rotation." }
+    ],
+    "ingredients": [
+      "12 oz top sirloin steak, trimmed",
+      "1 tablespoon olive oil",
+      "4 cups fresh baby arugula",
+      "1 cup cooked red beets, diced",
+      "2 oz tangy goat cheese, crumbled",
+      "1/4 cup walnut halves, toasted",
+      "2 tablespoons extra virgin olive oil (for dressing)",
+      "1 tablespoon balsamic vinegar",
+      "1 teaspoon Dijon mustard",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Pat the sirloin steak completely dry with paper towels and season generously on both sides with kosher salt and black pepper.",
+      "Heat 1 tablespoon of olive oil in a cast-iron skillet over high heat until smoking, then sear the steak for 4 minutes per side until internal temperature reaches 135°F (57°C) for medium-rare; let rest for 6 minutes.",
+      "In a small bowl, whisk together the extra virgin olive oil, balsamic vinegar, Dijon mustard, and a pinch of salt and pepper.",
+      "Toss the baby arugula with half of the dressing and divide onto two large plates.",
+      "Slice the rested sirloin thinly against the grain, arrange over the greens alongside the diced beets, goat cheese, and toasted walnuts, and drizzle with the remaining vinaigrette!"
+    ]
+  },
+  {
+    "id": "spanish-seafood-zarzuela-saffron-stew",
+    "emoji": "🥘",
+    "title": "Catalan Saffron Seafood & Garlic Tomato Stew",
+    "image": "catalan-seafood-stew.jpg",
+    "subtitle": "Wild cod, plump tail-on shrimp, and tender sea scallops simmered in a rich roasted garlic, smoky paprika, white wine, and saffron tomato broth.",
+    "times": { "prep": "15 mins", "cook": "20 mins", "servings": "4 people" },
+    "nutrition": { "calories": 340, "protein": 38, "carbs": 11, "fats": 14 },
+    "highlights": [
+      { "category": "35-Minute Coastal Luxury", "text": "Simmering delicate shellfish directly in saffron-infused tomato broth keeps every bite tender and sweet." },
+      { "category": "Ultra-Lean Marine Protein", "text": "Delivers 38g of clean protein per bowl with minimal carbohydrates." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in at just 340 calories per serving, qualifying automatically for your healthy dinner rotation." }
+    ],
+    "ingredients": [
+      "12 oz wild cod fillet, cut into 2-inch chunks",
+      "1/2 lb large raw shrimp, peeled and deveined",
+      "1/2 lb sea scallops, side muscles removed",
+      "2 tablespoons extra virgin olive oil",
+      "1 small yellow onion, finely diced",
+      "4 cloves garlic, minced",
+      "1 teaspoon sweet smoked paprika",
+      "1/2 cup dry white wine",
+      "1 can (14.5 oz) crushed tomatoes",
+      "1 cup fish or chicken broth infused with a pinch of saffron threads",
+      "2 tablespoons fresh flat-leaf parsley, finely chopped"
+    ],
+    "instructions": [
+      "Heat the olive oil in a large deep skillet or Dutch oven over medium heat and sauté the diced onion for 4 minutes until soft.",
+      "Stir in the minced garlic and smoked paprika for 1 minute until fragrant, then pour in the white wine and simmer for 2 minutes.",
+      "Add the crushed tomatoes, saffron broth, and a pinch of kosher salt, bringing the sauce to a gentle simmer for 8 minutes.",
+      "Nestle the cod chunks, shrimp, and sea scallops into the simmering broth in a single layer.",
+      "Cover with a lid and cook gently for 4 to 5 minutes until the cod flakes easily and the shrimp turn pink; scatter with fresh parsley and serve hot!"
+    ]
+  },
+  {
+    "id": "roasted-fig-mascarpone-honey-almond-cake",
+    "emoji": "🎂",
+    "title": "Italian Olive Oil, Almond & Honey Mascarpone Cake",
+    "image": "italian-almond-olive-oil-cake.jpg",
+    "subtitle": "Tender, golden Mediterranean lemon-almond sponge cake baked with fruity extra virgin olive oil and crowned with honey-whipped mascarpone.",
+    "times": { "prep": "15 mins", "cook": "35 mins", "servings": "10 slices" },
+    "nutrition": { "calories": 330, "protein": 6, "carbs": 31, "fats": 20 },
+    "highlights": [
+      { "category": "Velvety Tender Crumb", "text": "Baking with extra virgin olive oil and almond flour keeps the cake moist for days with delicate citrus aroma." },
+      { "category": "Whipped Honey Topping", "text": "Swirling cold mascarpone with wildflower honey and fresh lemon zest creates an effortless café finish." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in at 330 calories per slice, qualifying automatically for your healthy dessert menu rotation." }
+    ],
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "3/4 cup fine almond flour",
+      "1 1/2 teaspoons baking powder",
+      "1/4 teaspoon kosher salt",
+      "3 large eggs, room temperature",
+      "2/3 cup granulated sugar",
+      "1/2 cup extra virgin olive oil",
+      "1/3 cup whole milk",
+      "1 tablespoon fresh lemon zest and 2 tablespoons fresh lemon juice",
+      "4 oz mascarpone cheese whipped with 1 tablespoon raw honey (for serving)"
+    ],
+    "instructions": [
+      "Preheat your oven to 350°F (175°C) and line an 8-inch round springform or cake pan with parchment paper.",
+      "In a medium bowl, whisk together the all-purpose flour, almond flour, baking powder, and kosher salt.",
+      "In a large bowl, beat the eggs and granulated sugar with a mixer for 2 minutes until pale and thick, then slowly drizzle in the extra virgin olive oil while mixing.",
+      "Stir in the whole milk, fresh lemon zest, and fresh lemon juice, then gently fold in the dry flour mixture until smooth.",
+      "Pour the batter into the prepared pan and bake for 32 to 35 minutes until golden brown and a toothpick inserted into the center comes out clean; cool completely and serve sliced with honey mascarpone!"
+    ]
+  },
+   {
+    "id": "crispy-prosciutto-asparagus-gruyere-frittata",
+    "emoji": "🍳",
+    "title": "Baked Prosciutto, Asparagus & Gruyère Frittata",
+    "image": "asparagus-gruyere-frittata.jpg",
+    "subtitle": "Fluffy, golden oven-baked egg frittata loaded with tender roasted asparagus spears, nutty aged Gruyère cheese, and crisp Italian prosciutto.",
+    "times": { "prep": "10 mins", "cook": "18 mins", "servings": "4 people" },
+    "nutrition": { "calories": 290, "protein": 22, "carbs": 5, "fats": 20 },
+    "highlights": [
+      { "category": "One-Skillet Brunch", "text": "Starting on the stovetop and finishing in the oven sets a delicate, custardy texture without flipping." },
+      { "category": "High-Protein Start", "text": "Packs 22g of clean protein per wedge with virtually zero carbohydrates." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 290 calories per serving, qualifying automatically for your healthy breakfast rotation." }
+    ],
+    "ingredients": [
+      "8 large eggs",
+      "1/3 cup whole milk or heavy cream",
+      "1 cup shredded Gruyère cheese, divided",
+      "1/2 lb fresh asparagus spears, trimmed and cut into 1-inch pieces",
+      "3 slices thinly sliced prosciutto, torn into bite-sized ribbons",
+      "1 tablespoon unsalted butter",
+      "2 tablespoons fresh chives, finely chopped",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and whisk the eggs, whole milk, half of the shredded Gruyère cheese, kosher salt, and black pepper in a bowl until smooth.",
+      "Melt the unsalted butter in a 10-inch oven-safe skillet over medium heat and sauté the asparagus pieces and prosciutto ribbons for 4 minutes until tender-crisp.",
+      "Pour the whisked egg mixture evenly over the asparagus and prosciutto, cooking undisturbed for 2 minutes until the edges begin to set.",
+      "Scatter the remaining Gruyère cheese over the top and transfer the skillet directly into the oven.",
+      "Bake for 12 to 14 minutes until puffed and golden brown, garnish with fresh chives, and slice into wedges to serve hot!"
+    ]
+  },
+  {
+    "id": "spicy-tuna-crispy-rice-bites-appetizer",
+    "emoji": "🍣",
+    "title": "Crispy Pan-Seared Rice Bites w/ Spicy Ahi Tuna",
+    "image": "crispy-rice-spicy-tuna.jpg",
+    "subtitle": "Golden, shattering pan-fried sushi rice cakes topped with creamy sriracha-sesame sushi-grade ahi tuna, sliced jalapeño, and green onions.",
+    "times": { "prep": "20 mins", "cook": "10 mins", "servings": "12 pieces" },
+    "nutrition": { "calories": 210, "protein": 14, "carbs": 24, "fats": 6 },
+    "highlights": [
+      { "category": "Nobu-Style Showstopper", "text": "Pan-searing chilled seasoned sushi rice creates a crunchy, golden crust beneath cool, velvety spicy tuna." },
+      { "category": "Textural Contrast", "text": "Pairs crisp warm rice, rich sriracha-mayo tuna, and sharp fresh jalapeño slices in every bite." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 210 calories per serving, qualifying automatically for your healthy appetizer rotation." }
+    ],
+    "ingredients": [
+      "2 cups cooked sushi rice, cooled and firm",
+      "1 tablespoon rice vinegar",
+      "1 teaspoon granulated sugar",
+      "2 tablespoons high-heat avocado oil (for pan-frying)",
+      "8 oz sushi-grade ahi tuna, finely diced",
+      "1 tablespoon mayonnaise",
+      "1 teaspoon sriracha hot sauce",
+      "1 teaspoon toasted sesame oil",
+      "1 green onion, thinly sliced, and 1/2 jalapeño, thinly sliced (for garnish)"
+    ],
+    "instructions": [
+      "Fold the rice vinegar and granulated sugar into the cooled sushi rice, press firmly into a parchment-lined square dish into a 3/4-inch thick slab, and chill for 20 minutes; slice into 12 neat rectangles.",
+      "In a small bowl, gently mix the finely diced ahi tuna, mayonnaise, sriracha hot sauce, and toasted sesame oil until creamy.",
+      "Heat the avocado oil in a non-stick skillet over medium-high heat and pan-fry the rice rectangles for 3 to 4 minutes per side until deeply golden and crispy.",
+      "Transfer the crispy rice cakes to a paper towel-lined plate to cool for 1 minute.",
+      "Spoon a generous mound of spicy tuna onto each crispy rice cake, crown with a slice of jalapeño and green onions, and serve immediately!"
+    ]
+  },
+  {
+    "id": "moroccan-harissa-honey-glazed-salmon",
+    "emoji": "🐟",
+    "title": "Moroccan Harissa & Honey Glazed Salmon",
+    "image": "harissa-honey-salmon.jpg",
+    "subtitle": "Flaky pan-roasted salmon fillets glazed in smoky North African harissa chili paste, wildflower honey, fresh lemon juice, and toasted cumin.",
+    "times": { "prep": "10 mins", "cook": "12 mins", "servings": "2 people" },
+    "nutrition": { "calories": 370, "protein": 34, "carbs": 12, "fats": 21 },
+    "highlights": [
+      { "category": "22-Minute Gourmet", "text": "Smoky roasted pepper harissa paste and sweet honey caramelize into a vibrant glaze in minutes." },
+      { "category": "Omega-3 Heavyweight", "text": "Delivers 34g of clean marine protein per plate with bright citrus balance." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in cleanly at 370 calories per serving, qualifying automatically for your healthy dinner rotation." }
+    ],
+    "ingredients": [
+      "2 skin-on salmon fillets (6 oz each)",
+      "1 tablespoon olive oil",
+      "1 tablespoon rose harissa paste",
+      "1 tablespoon raw honey",
+      "1 tablespoon fresh lemon juice",
+      "1/2 teaspoon ground cumin",
+      "1 clove garlic, finely minced",
+      "2 tablespoons fresh cilantro, chopped",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and whisk together the harissa paste, raw honey, fresh lemon juice, ground cumin, and minced garlic in a small bowl.",
+      "Pat the salmon fillets completely dry with paper towels and season both sides with kosher salt and black pepper.",
+      "Heat the olive oil in an oven-safe skillet over medium-high heat and sear the salmon skin-side down for 3 minutes until crisp.",
+      "Brush the harissa-honey glaze generously over the top of the fillets and transfer the skillet into the oven.",
+      "Roast for 6 to 8 minutes until the glaze is bubbly and the salmon flakes easily with a fork; scatter with fresh cilantro and serve hot!"
+    ]
+  },
+  {
+    "id": "mediterranean-grilled-shrimp-avocado-quinoa-bowl",
+    "emoji": "🍤",
+    "title": "Grilled Lemon-Garlic Shrimp & Avocado Quinoa Bowl",
+    "image": "shrimp-avocado-quinoa-bowl.jpg",
+    "subtitle": "Juicy char-grilled garlic-herb shrimp served over fluffy quinoa with creamy avocado, burst cherry tomatoes, crisp cucumber, and lemon-tahini drizzle.",
+    "times": { "prep": "15 mins", "cook": "8 mins", "servings": "2 people" },
+    "nutrition": { "calories": 410, "protein": 34, "carbs": 32, "fats": 16 },
+    "highlights": [
+      { "category": "23-Minute Coastal Bowl", "text": "Flash-searing marinated jumbo shrimp takes just 4 minutes while keeping every bite sweet and snappy." },
+      { "category": "Creamy Lemon-Tahini Dressing", "text": "Whisking sesame tahini with fresh lemon juice and garlic creates a rich, dairy-free dressing." },
+      { "category": "Dashboard Light Slot", "text": "Packs 34g of lean protein at 410 calories per bowl, qualifying automatically for your healthy lunch rotation." }
+    ],
+    "ingredients": [
+      "1 lb large raw shrimp, peeled and deveined",
+      "2 tablespoons extra virgin olive oil, divided",
+      "3 cloves garlic, minced and divided",
+      "1 teaspoon dried oregano",
+      "1/2 teaspoon smoked paprika",
+      "1 1/2 cups cooked quinoa",
+      "1/2 ripe avocado, sliced",
+      "1 cup cherry tomatoes, halved",
+      "1/2 English cucumber, diced",
+      "2 tablespoons tahini paste",
+      "2 tablespoons fresh lemon juice",
+      "2 tablespoons fresh flat-leaf parsley, finely chopped"
+    ],
+    "instructions": [
+      "Toss the shrimp with 1 tablespoon olive oil, 2 cloves minced garlic, dried oregano, smoked paprika, kosher salt, and black pepper.",
+      "In a small bowl, whisk together the tahini paste, fresh lemon juice, remaining 1 clove minced garlic, and 2 tablespoons warm water until smooth and creamy.",
+      "Heat a grill pan or large skillet over high heat and sear the shrimp for 2 minutes per side until pink and lightly charred.",
+      "Divide the cooked quinoa into two bowls, arrange the grilled shrimp, sliced avocado, cherry tomatoes, and diced cucumber over top, drizzle with lemon-tahini sauce, and garnish with fresh parsley!"
+    ]
+  },
+  {
+    "id": "french-braised-chicken-chasseur-mushroom-wine",
+    "emoji": "🍗",
+    "title": "French Bistro Chicken Chasseur (Hunter's Chicken)",
+    "image": "french-chicken-chasseur.jpg",
+    "subtitle": "Golden pan-seared chicken thighs simmered in a velvety white wine, brandy, cremini mushroom, shallot, crushed tomato, and fresh tarragon pan sauce.",
+    "times": { "prep": "15 mins", "cook": "25 mins", "servings": "4 people" },
+    "nutrition": { "calories": 430, "protein": 36, "carbs": 9, "fats": 26 },
+    "highlights": [
+      { "category": "Classic Parisian Bistro", "text": "Browning bone-in or boneless chicken thighs with wild mushrooms and shallots builds deep, savory French comfort flavor." },
+      { "category": "Tarragon & Tomato Reduction", "text": "Fresh tarragon leaves and rich chicken stock transform white wine and tomatoes into a glossy restaurant sauce." },
+      { "category": "Dashboard Light Slot", "text": "Delivers 36g of protein at 430 calories per serving, qualifying automatically for your healthy dinner rotation." }
+    ],
+    "ingredients": [
+      "2 lbs boneless, skinless chicken thighs, trimmed",
+      "2 tablespoons extra virgin olive oil",
+      "2 tablespoons unsalted butter, divided",
+      "8 oz cremini mushrooms, sliced",
+      "2 shallots, finely diced",
+      "3 cloves garlic, minced",
+      "1/2 cup dry white wine",
+      "3/4 cup low-sodium chicken stock",
+      "1 can (14.5 oz) crushed tomatoes",
+      "1 tablespoon fresh tarragon leaves, finely chopped",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Pat the chicken thighs completely dry and season generously on both sides with kosher salt and freshly cracked black pepper.",
+      "Heat the olive oil and 1 tablespoon butter in a large deep skillet over medium-high heat and sear the chicken for 4 minutes per side until deeply golden; transfer to a plate.",
+      "Add the sliced mushrooms and diced shallots to the hot skillet and sauté for 5 minutes until browned, then stir in the minced garlic for 1 minute.",
+      "Pour in the dry white wine to deglaze the browned bits and simmer for 2 minutes, then stir in the chicken stock and crushed tomatoes.",
+      "Nestle the seared chicken thighs back into the simmering sauce, cover partially, and cook over medium-low heat for 12 minutes until tender; swirl in the remaining 1 tablespoon butter and chopped tarragon to serve!"
+    ]
+  },
+  {
+    "id": "roasted-strawberry-balsamic-mascarpone-galette",
+    "emoji": "🍓",
+    "title": "Roasted Strawberry & Vanilla Mascarpone Galette",
+    "image": "strawberry-mascarpone-galette.jpg",
+    "subtitle": "Flaky, golden-baked butter pastry tart filled with sweet vanilla bean mascarpone cream and jammy balsamic-roasted fresh strawberries.",
+    "times": { "prep": "15 mins", "cook": "30 mins", "servings": "8 slices" },
+    "nutrition": { "calories": 310, "protein": 4, "carbs": 35, "fats": 17 },
+    "highlights": [
+      { "category": "Effortless Free-Form Pastry", "text": "Bakes into a rustic, crisp golden crust on a flat sheet pan with zero pie-tin crimping required." },
+      { "category": "Jammy Roasted Berries", "text": "Tossing fresh strawberries with sugar, cornstarch, and a splash of balsamic vinegar concentrates their sweet berry flavor." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 310 calories per slice, qualifying automatically for your healthy dessert menu rotation." }
+    ],
+    "ingredients": [
+      "1 refrigerated unbaked pie crust sheet, brought to room temperature",
+      "2 cups fresh strawberries, hulled and quartered",
+      "3 tablespoons granulated sugar",
+      "1 tablespoon cornstarch",
+      "1 teaspoon aged balsamic vinegar",
+      "1/2 teaspoon pure vanilla extract",
+      "1 large egg, beaten (for crust wash)",
+      "1 tablespoon coarse sanding sugar (for crust rim)",
+      "4 oz mascarpone cheese whipped with 1 tablespoon powdered sugar (for serving)"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C) and unroll the pie crust sheet onto a parchment-lined baking sheet.",
+      "In a medium bowl, toss the quartered strawberries with the granulated sugar, cornstarch, balsamic vinegar, and vanilla extract until evenly coated.",
+      "Mound the strawberry mixture in the center of the pastry dough, leaving a 2-inch border around the edges.",
+      "Fold the outer 2-inch dough border up and over the edges of the berries, pleating gently every few inches, then brush the crust rim with beaten egg and sprinkle with coarse sanding sugar.",
+      "Bake for 28 to 30 minutes until the crust is deeply golden brown and the berry juices are bubbling; let cool for 10 minutes and serve sliced with whipped vanilla mascarpone!"
+    ]
+  },
+    {
+    "id": "smoked-salmon-brioche-baked-eggs-cocotte",
+    "emoji": "🍳",
+    "title": "French Baked Eggs en Cocotte w/ Smoked Salmon & Dill",
+    "image": "eggs-en-cocotte-salmon.jpg",
+    "subtitle": "Pasture-raised eggs baked gently in garlic-herb cream ramekins with silky cold-smoked salmon ribbons, fresh dill, and toasted brioche soldiers.",
+    "times": { "prep": "10 mins", "cook": "14 mins", "servings": "2 people" },
+    "nutrition": { "calories": 360, "protein": 26, "carbs": 18, "fats": 21 },
+    "highlights": [
+      { "category": "Parisian Café Elegance", "text": "Baking eggs in a gentle water bath yields velvety whites and rich, runny yolks every single time." },
+      { "category": "High-Protein Brunch", "text": "Delivers 26g of clean marine and egg protein per serving with minimal hands-on time." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in cleanly at 360 calories per plate, qualifying automatically for your healthy breakfast rotation." }
+    ],
+    "ingredients": [
+      "4 large eggs",
+      "1/4 cup heavy whipping cream",
+      "3 oz cold-smoked salmon, torn into ribbons",
+      "2 tablespoons fresh dill, finely chopped",
+      "1 tablespoon fresh chives, finely chopped",
+      "1 tablespoon unsalted butter (for greasing ramekins)",
+      "2 slices brioche bread, toasted and cut into strips",
+      "1/4 teaspoon freshly cracked black pepper"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and butter two 8-oz oven-safe ramekins, placing them inside a deep baking pan.",
+      "Divide the smoked salmon ribbons, half of the fresh dill, and 2 tablespoons of heavy cream into the bottom of each ramekin.",
+      "Crack 2 eggs gently into each ramekin, spoon the remaining cream around the yolks, and season with freshly cracked black pepper.",
+      "Pour hot tap water into the outer baking pan until it reaches halfway up the sides of the ramekins.",
+      "Bake for 12 to 14 minutes until the egg whites are set and the yolks remain soft; garnish with remaining dill and chives and serve with toasted brioche strips!"
+    ]
+  },
+  {
+    "id": "crispy-jalapeno-popper-stuffed-mushrooms",
+    "emoji": "🍄",
+    "title": "Crispy Bacon & Jalapeño Popper Stuffed Mushrooms",
+    "image": "jalapeno-popper-mushrooms.jpg",
+    "subtitle": "Savory baby bella mushroom caps stuffed with whipped cheddar cream cheese, diced jalapeño, smoky bacon bits, and golden buttered panko.",
+    "times": { "prep": "15 mins", "cook": "20 mins", "servings": "4 servings" },
+    "nutrition": { "calories": 210, "protein": 10, "carbs": 9, "fats": 15 },
+    "highlights": [
+      { "category": "Game-Day Crowd Pleaser", "text": "Packs all the smoky, creamy, spicy kick of jalapeño poppers into bite-sized roasted mushroom caps." },
+      { "category": "Crunchy Panko Armor", "text": "Topping the molten cheese filling with buttered panko crumbs adds a golden, shattering crunch." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 210 calories per serving, qualifying automatically for your healthy appetizer rotation." }
+    ],
+    "ingredients": [
+      "12 large baby bella mushrooms, wiped clean and stems removed",
+      "4 oz cream cheese, softened",
+      "1/2 cup sharp cheddar cheese, shredded",
+      "4 slices thick-cut bacon, cooked crisp and crumbled",
+      "1 fresh jalapeño pepper, seeded and finely diced",
+      "1/4 cup panko breadcrumbs",
+      "1 tablespoon unsalted butter, melted",
+      "1/4 teaspoon garlic powder",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Preheat your oven to 375°F (190°C) and lightly grease a baking sheet or medium casserole dish.",
+      "In a medium bowl, whip together the softened cream cheese, shredded cheddar, crumbled bacon, diced jalapeño, garlic powder, kosher salt, and black pepper until smooth.",
+      "Spoon a generous mound of the creamy bacon-jalapeño mixture tightly into each hollowed mushroom cap.",
+      "Toss the panko breadcrumbs with the melted butter and press lightly onto the top of each stuffed mushroom.",
+      "Bake uncovered for 18 to 20 minutes until the mushrooms are tender and the panko crowns are golden brown. Serve warm!"
+    ]
+  },
+  {
+    "id": "tuscan-garlic-herb-butter-lamb-shank-or-sirloin",
+    "emoji": "🥩",
+    "title": "Tuscan Rosemary & Roasted Garlic Herb Pork Chop",
+    "image": "tuscan-rosemary-pork-chop.jpg",
+    "subtitle": "Thick-cut bone-in rib pork chops pan-seared golden and basted with roasted garlic, fresh rosemary, lemon zest, and white wine pan jus.",
+    "times": { "prep": "10 mins", "cook": "16 mins", "servings": "2 people" },
+    "nutrition": { "calories": 420, "protein": 41, "carbs": 4, "fats": 26 },
+    "highlights": [
+      { "category": "26-Minute Bistro Skillet", "text": "Searing thick bone-in chops over high heat locks in moisture while building a deep mahogany crust." },
+      { "category": "Aromatic Pan Baste", "text": "Foaming butter with smashed garlic cloves, fresh rosemary, and lemon zest infuses every bite with Tuscan flavor." },
+      { "category": "Dashboard Light Slot", "text": "Delivers 41g of lean protein at 420 calories per plate, qualifying automatically for your healthy dinner rotation." }
+    ],
+    "ingredients": [
+      "2 thick-cut bone-in rib pork chops (about 1.25 inches thick)",
+      "1 tablespoon high-heat avocado oil",
+      "2 tablespoons unsalted butter",
+      "4 cloves garlic, lightly smashed",
+      "3 sprigs fresh rosemary",
+      "1/3 cup dry white wine or chicken broth",
+      "1 teaspoon fresh lemon zest",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Pat the pork chops completely dry with paper towels and season generously on both sides with kosher salt and freshly cracked black pepper.",
+      "Heat the avocado oil in a cast-iron skillet over medium-high heat until shimmering, then sear the chops undisturbed for 4 minutes until deeply golden.",
+      "Flip the chops, lower the heat to medium, and add the unsalted butter, smashed garlic cloves, and fresh rosemary sprigs to the pan.",
+      "Tilt the skillet slightly and spoon the foaming herb butter continuously over the chops for 4 to 5 minutes until an instant-read thermometer reads 145°F (63°C); transfer to a warm plate to rest.",
+      "Splash the white wine and lemon zest into the pan drippings, simmer for 1 minute while scraping up browned bits, and spoon the warm pan jus over the chops to serve!"
+    ]
+  },
+  {
+    "id": "mediterranean-crispy-halloumi-avocado-grain-bowl",
+    "emoji": "🥗",
+    "title": "Seared Halloumi, Roasted Chickpea & Avocado Grain Bowl",
+    "image": "halloumi-avocado-grain-bowl.jpg",
+    "subtitle": "Golden pan-seared Cypriot halloumi cheese served over herbed farro with spiced crispy chickpeas, creamy avocado, cherry tomatoes, and lemon-herb dressing.",
+    "times": { "prep": "15 mins", "cook": "12 mins", "servings": "2 people" },
+    "nutrition": { "calories": 440, "protein": 22, "carbs": 36, "fats": 24 },
+    "highlights": [
+      { "category": "27-Minute Bistro Bowl", "text": "Pan-searing halloumi slices creates a crisp, salty golden crust while keeping the inside soft and chewy." },
+      { "category": "Vibrant Texture Contrast", "text": "Crunchy roasted chickpeas, juicy burst cherry tomatoes, and buttery avocado balance the rich grilled cheese." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in cleanly at 440 calories per bowl, qualifying automatically for your healthy lunch menu rotation." }
+    ],
+    "ingredients": [
+      "6 oz halloumi cheese, sliced into 1/4-inch slabs",
+      "1 can (15 oz) chickpeas, drained, rinsed, and patted dry",
+      "2 tablespoons extra virgin olive oil, divided",
+      "1/2 teaspoon smoked paprika",
+      "1 1/2 cups cooked farro or quinoa",
+      "1/2 ripe avocado, sliced",
+      "1 cup cherry tomatoes, halved",
+      "2 cups baby spinach or arugula",
+      "2 tablespoons fresh lemon juice",
+      "1 tablespoon fresh flat-leaf parsley, finely chopped"
+    ],
+    "instructions": [
+      "Heat 1 tablespoon of olive oil in a large skillet over medium-high heat, add the chickpeas, smoked paprika, and a pinch of kosher salt, and cook for 6 to 7 minutes until crispy; transfer to a plate.",
+      "Wipe the skillet clean, heat 1 teaspoon olive oil over medium-high heat, and sear the halloumi slices for 2 minutes per side until deeply golden brown.",
+      "In a small bowl, whisk together the remaining olive oil, fresh lemon juice, chopped parsley, and freshly cracked black pepper.",
+      "Divide the baby greens and cooked farro into two bowls, top with the seared halloumi, crispy chickpeas, sliced avocado, and cherry tomatoes, and drizzle with the lemon-herb dressing!"
+    ]
+  },
+  {
+    "id": "pan-seared-scallops-brown-butter-cauliflower-puree",
+    "emoji": "🐚",
+    "title": "Seared Sea Scallops w/ Garlic Cauliflower Purée & Bacon",
+    "image": "scallops-cauliflower-puree.jpg",
+    "subtitle": "Caramelized jumbo sea scallops served over silky roasted garlic cauliflower purée with crispy applewood bacon crumbles and nutty sage brown butter.",
+    "times": { "prep": "15 mins", "cook": "18 mins", "servings": "2 people" },
+    "nutrition": { "calories": 380, "protein": 34, "carbs": 14, "fats": 21 },
+    "highlights": [
+      { "category": "Fine-Dining Low-Carb Swap", "text": "Velvety garlic-parmesan cauliflower purée delivers classic risotto richness at a fraction of the calories." },
+      { "category": "Shattering Caramel Crust", "text": "Flash-searing bone-dry sea scallops in smoking oil builds a sweet golden crust in 90 seconds per side." },
+      { "category": "Dashboard Light Slot", "text": "Delivers 34g of clean protein at 380 calories per plate, qualifying automatically for your healthy dinner rotation." }
+    ],
+    "ingredients": [
+      "8 large dry-packed sea scallops, side muscles removed",
+      "3 cups cauliflower florets",
+      "2 cloves garlic, peeled",
+      "1 cup low-sodium chicken or vegetable broth",
+      "2 tablespoons grated parmesan cheese",
+      "3 tablespoons unsalted butter, divided",
+      "2 slices thick-cut bacon, cooked crisp and crumbled",
+      "1 tablespoon high-heat avocado oil",
+      "1 tablespoon fresh chives, finely chopped"
+    ],
+    "instructions": [
+      "In a medium saucepan over medium-high heat, simmer the cauliflower florets and peeled garlic cloves in the chicken broth for 10 minutes until completely fork-tender.",
+      "Drain well, transfer to a blender with 1 tablespoon butter, grated parmesan, kosher salt, and black pepper, and blend until velvety smooth; keep warm.",
+      "Pat the sea scallops completely bone-dry with paper towels and season both sides with kosher salt and black pepper.",
+      "Heat the avocado oil in a cast-iron skillet over high heat until lightly smoking, sear the scallops undisturbed for 90 seconds per side until deeply golden brown, and transfer to plates.",
+      "Drop the remaining 2 tablespoons butter into the warm skillet until foaming and nutty brown, spoon the cauliflower purée onto plates, top with scallops, drizzle with brown butter, and garnish with crispy bacon and chives!"
+    ]
+  },
+  {
+    "id": "dark-chocolate-salted-caramel-pecan-tart",
+    "emoji": "🍫",
+    "title": "Dark Chocolate, Salted Caramel & Toasted Pecan Tart",
+    "image": "chocolate-caramel-pecan-tart.jpg",
+    "subtitle": "Crisp chocolate shortbread tart shell layered with gooey salted caramel, toasted pecan halves, silky 70% dark chocolate ganache, and flaky sea salt.",
+    "times": { "prep": "20 mins", "cook": "10 mins", "servings": "10 slices" },
+    "nutrition": { "calories": 370, "protein": 4, "carbs": 34, "fats": 25 },
+    "highlights": [
+      { "category": "No-Bake Ganache Center", "text": "Pouring warm heavy cream over finely chopped bittersweet chocolate creates a glossy, truffle-like filling." },
+      { "category": "Turtle Candy Crunch", "text": "Layering roasted pecans and salted caramel beneath dark chocolate delivers decadent bakery contrast." },
+      { "category": "Dashboard Light Slot", "text": "Registers at 370 calories per slice, qualifying automatically for your healthy dessert menu rotation." }
+    ],
+    "ingredients": [
+      "1 pre-baked 9-inch chocolate or shortbread tart shell",
+      "1/2 cup thick salted caramel sauce, warmed slightly",
+      "1 cup pecan halves, toasted",
+      "6 oz bittersweet dark chocolate (70% cacao), finely chopped",
+      "2/3 cup heavy whipping cream",
+      "1 tablespoon unsalted butter, room temperature",
+      "1 teaspoon pure vanilla extract",
+      "1/2 teaspoon flaky sea salt (for finishing)"
+    ],
+    "instructions": [
+      "Spread the warm salted caramel sauce evenly across the bottom of your cooled pre-baked tart shell, then scatter the toasted pecan halves over the caramel.",
+      "Place the finely chopped dark chocolate and room-temperature butter into a heatproof bowl.",
+      "In a small saucepan over medium heat, bring the heavy whipping cream just to a simmer around the edges (do not boil).",
+      "Pour the hot cream over the chocolate and butter, let sit undisturbed for 2 minutes, then stir gently with a spatula alongside the vanilla extract until glossy and smooth.",
+      "Pour the dark chocolate ganache evenly over the pecans and caramel, chill in the refrigerator for at least 2 hours until firmly set, sprinkle with flaky sea salt, and slice cleanly to serve!"
+    ]
+  },
+   {
+    "id": "crispy-cheddar-jalapeno-cornmeal-waffles-eggs",
+    "emoji": "🧇",
+    "title": "Savory Cheddar, Jalapeño & Bacon Cornmeal Pancakes",
+    "image": "cheddar-jalapeno-cornmeal-pancakes.jpg",
+    "subtitle": "Golden, crispy-edged buttermilk cornmeal griddle cakes studded with sharp cheddar cheese, smoky bacon bits, and diced jalapeño, topped with a fried egg.",
+    "times": { "prep": "10 mins", "cook": "12 mins", "servings": "4 people" },
+    "nutrition": { "calories": 390, "protein": 19, "carbs": 31, "fats": 21 },
+    "highlights": [
+      { "category": "22-Minute Savory Brunch", "text": "Fine yellow cornmeal adds a delicate golden crunch to fluffy buttermilk griddle cakes." },
+      { "category": "Bold Tex-Mex Kick", "text": "Sharp cheddar, crispy bacon, and fresh jalapeño pair seamlessly with a runny sunny-side-up egg." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in cleanly at 390 calories per serving, qualifying automatically for your healthy breakfast rotation." }
+    ],
+    "ingredients": [
+      "1 cup all-purpose flour",
+      "1/2 cup fine yellow cornmeal",
+      "1 tablespoon granulated sugar",
+      "1 1/2 teaspoons baking powder",
+      "1/2 teaspoon baking soda",
+      "1/4 teaspoon kosher salt",
+      "1 1/4 cups buttermilk",
+      "5 large eggs (1 for batter, 4 for frying)",
+      "2 tablespoons unsalted butter, melted",
+      "3/4 cup sharp cheddar cheese, shredded",
+      "4 slices thick-cut bacon, cooked crisp and crumbled",
+      "1 fresh jalapeño pepper, seeded and finely diced"
+    ],
+    "instructions": [
+      "In a large bowl, whisk together the all-purpose flour, yellow cornmeal, sugar, baking powder, baking soda, and kosher salt.",
+      "In a separate bowl, whisk the buttermilk, 1 egg, and melted butter until smooth, then fold gently into the dry ingredients alongside the shredded cheddar, crumbled bacon, and diced jalapeño.",
+      "Heat a lightly greased griddle over medium heat, pour 1/3 cup of batter per pancake, and cook for 2 to 3 minutes until bubbles form and the edges turn crisp; flip and cook 2 more minutes until golden.",
+      "Fry the remaining 4 eggs sunny-side up in a non-stick skillet for 3 minutes until whites are set and yolks remain runny.",
+      "Stack the warm savory cornmeal pancakes onto plates, crown each stack with a fried egg, and serve immediately!"
+    ]
+  },
+  {
+    "id": "whipped-goat-cheese-cranberry-pistachio-crostini",
+    "emoji": "🥖",
+    "title": "Whipped Goat Cheese, Cranberry & Pistachio Holiday Crostini",
+    "image": "cranberry-pistachio-crostini.jpg",
+    "subtitle": "Crisp toasted baguette rounds spread with honey-whipped creamy goat cheese and topped with ruby cranberry compote, crushed pistachios, and fresh rosemary.",
+    "times": { "prep": "15 mins", "cook": "10 mins", "servings": "16 pieces" },
+    "nutrition": { "calories": 140, "protein": 5, "carbs": 16, "fats": 6 },
+    "highlights": [
+      { "category": "Festive Party Showstopper", "text": "Ruby-red cranberries, emerald pistachios, and snowy whipped goat cheese make an effortless centerpiece platter." },
+      { "category": "Sweet & Tart Harmony", "text": "Warm wildflower honey softens tangy chèvre while bright orange-spiced cranberries cut through the richness." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 140 calories per piece, qualifying automatically for your healthy appetizer rotation." }
+    ],
+    "ingredients": [
+      "1 French baguette, sliced into 16 diagonal rounds",
+      "1 tablespoon extra virgin olive oil",
+      "6 oz creamy goat cheese, softened",
+      "2 oz cream cheese, softened",
+      "2 tablespoons raw wildflower honey, divided",
+      "1 cup fresh or frozen cranberries",
+      "2 tablespoons orange juice",
+      "1/3 cup shelled roasted pistachios, finely chopped",
+      "1 teaspoon fresh rosemary, finely chopped"
+    ],
+    "instructions": [
+      "Preheat your oven to 400°F (204°C), brush the baguette rounds with olive oil, and bake on a sheet pan for 8 to 10 minutes until golden and crisp.",
+      "In a small saucepan over medium heat, simmer the cranberries, orange juice, and 1 tablespoon honey for 6 minutes until the berries burst into a thick compote; let cool.",
+      "In a food processor or mixing bowl, whip the goat cheese, cream cheese, and remaining 1 tablespoon honey for 1 minute until light and airy.",
+      "Spread a generous spoonful of whipped goat cheese onto each warm toasted baguette slice, dollop with cooled cranberry compote, and scatter with chopped pistachios and fresh rosemary!"
+    ]
+  },
+  {
+    "id": "braised-short-rib-or-beef-bourguignon-mushrooms",
+    "emoji": "🍲",
+    "title": "Classic French Beef Bourguignon w/ Pearl Onions & Bacon",
+    "image": "french-beef-bourguignon.jpg",
+    "subtitle": "Fork-tender beef chuck slow-braised in full-bodied Burgundy red wine with smoky lardons, caramelized pearl onions, cremini mushrooms, and fresh thyme.",
+    "times": { "prep": "25 mins", "cook": "2 hours 30 mins", "servings": "6 people" },
+    "nutrition": { "calories": 460, "protein": 41, "carbs": 14, "fats": 24 },
+    "highlights": [
+      { "category": "Julia Child Inspired", "text": "Searing beef in rendered bacon fat and braising slowly in red wine builds deep, glossy Parisian bistro gravy." },
+      { "category": "Melt-In-Your-Mouth Beef", "text": "Low-and-slow oven braising transforms chuck roast into tender chunks that cut with a fork." },
+      { "category": "High-Protein Crowd Pleaser", "text": "Supplies 41g of rich protein per serving and tastes even better the following day." }
+    ],
+    "ingredients": [
+      "2 1/2 lbs boneless beef chuck roast, cut into 2-inch cubes",
+      "4 slices thick-cut bacon, diced",
+      "1 large carrot, peeled and sliced into rounds",
+      "1 medium yellow onion, diced",
+      "3 cloves garlic, minced",
+      "2 tablespoons all-purpose flour",
+      "2 cups dry red wine (such as Pinot Noir or Burgundy)",
+      "1 1/2 cups low-sodium beef broth",
+      "1 tablespoon tomato paste",
+      "4 sprigs fresh thyme",
+      "8 oz cremini mushrooms, quartered",
+      "1 cup frozen pearl onions, thawed",
+      "2 tablespoons unsalted butter"
+    ],
+    "instructions": [
+      "Preheat your oven to 325°F (165°C). In a large Dutch oven over medium-high heat, fry the diced bacon until crisp, then transfer with a slotted spoon to a plate.",
+      "Pat the beef cubes dry, season generously with kosher salt and black pepper, and sear in the hot bacon fat for 4 minutes per side until deeply browned; transfer to the plate with the bacon.",
+      "Sauté the sliced carrot and diced onion in the pot for 5 minutes until softened, stir in the minced garlic and flour for 1 minute, then whisk in the red wine, beef broth, and tomato paste.",
+      "Return the beef, bacon, and fresh thyme sprigs to the pot, cover tightly, and braise in the oven for 2 hours until tender.",
+      "Sauté the quartered mushrooms and pearl onions in the butter over medium-high heat for 6 minutes until golden brown, stir them into the stew during the final 15 minutes of braising, discard thyme stems, and serve hot!"
+    ]
+  },
+   {
+    "id": "crispy-sesame-ginger-chicken-cabbage-salad",
+    "emoji": "🥗",
+    "title": "Crispy Sesame-Ginger Chicken & Mandarin Crunch Salad",
+    "image": "sesame-ginger-chicken-salad.jpg",
+    "subtitle": "Tender shredded chicken breast, crisp napa cabbage, shredded carrots, sweet mandarin oranges, and crunchy wonton strips tossed in a toasted sesame-ginger vinaigrette.",
+    "times": { "prep": "15 mins", "cook": "0 mins", "servings": "4 people" },
+    "nutrition": { "calories": 360, "protein": 33, "carbs": 24, "fats": 14 },
+    "highlights": [
+      { "category": "15-Minute No-Cook Prep", "text": "Combining pre-cooked chicken with crisp cabbage and juicy mandarin segments creates a refreshing lunch in minutes." },
+      { "category": "Toasted Sesame Vinaigrette", "text": "Whisking fresh grated ginger, rice vinegar, low-sodium soy sauce, and toasted sesame oil delivers bright restaurant flavor." },
+      { "category": "Dashboard Light Slot", "text": "Packs 33g of lean protein at just 360 calories per bowl, qualifying automatically for your healthy lunch rotation." }
+    ],
+    "ingredients": [
+      "3 cups cooked chicken breast, shredded",
+      "4 cups napa or green cabbage, finely shredded",
+      "1 cup shredded carrots",
+      "1 can (11 oz) mandarin orange segments, drained",
+      "3 green onions, thinly sliced",
+      "1/3 cup sliced almonds, toasted",
+      "1/3 cup crispy wonton strips",
+      "3 tablespoons rice vinegar",
+      "2 tablespoons low-sodium soy sauce",
+      "1 tablespoon toasted sesame oil",
+      "1 tablespoon extra virgin olive oil",
+      "1 tablespoon raw honey",
+      "1 teaspoon fresh ginger, finely grated"
+    ],
+    "instructions": [
+      "In a small bowl, whisk together the rice vinegar, low-sodium soy sauce, toasted sesame oil, extra virgin olive oil, raw honey, and grated ginger until smooth.",
+      "In a large salad bowl, toss together the shredded chicken breast, shredded cabbage, shredded carrots, and sliced green onions.",
+      "Pour the sesame-ginger dressing evenly over the salad and toss thoroughly until every strand is coated.",
+      "Gently fold in the drained mandarin orange segments, divide into four bowls, top with toasted almonds and crispy wonton strips, and serve immediately!"
+    ]
+  },
+  {
+    "id": "tuscan-pan-seared-salmon-sun-dried-tomato-cream",
+    "emoji": "🐟",
+    "title": "Creamy Tuscan Sun-Dried Tomato & Spinach Salmon",
+    "image": "tuscan-creamy-salmon.jpg",
+    "subtitle": "Crisp pan-seared salmon fillets simmered in a velvety garlic, sun-dried tomato, aged parmesan, and baby spinach cream sauce.",
+    "times": { "prep": "10 mins", "cook": "15 mins", "servings": "2 people" },
+    "nutrition": { "calories": 460, "protein": 37, "carbs": 7, "fats": 31 },
+    "highlights": [
+      { "category": "25-Minute One-Skillet Dinner", "text": "Searing the salmon first builds a golden crust before building the rich Tuscan cream sauce in the same pan." },
+      { "category": "Omega-3 Heavyweight", "text": "Delivers 37g of high-quality protein per plate with vibrant sun-dried tomato umami." },
+      { "category": "Dashboard Light Slot", "text": "Clocks in cleanly under 500 calories per serving, qualifying automatically for your healthy dinner rotation." }
+    ],
+    "ingredients": [
+      "2 skin-on salmon fillets (6 oz each)",
+      "1 tablespoon olive oil",
+      "1 tablespoon unsalted butter",
+      "3 cloves garlic, finely minced",
+      "1/3 cup sun-dried tomatoes in oil, drained and chopped",
+      "1/2 cup low-sodium chicken or vegetable broth",
+      "1/2 cup heavy whipping cream",
+      "1/3 cup grated parmesan cheese",
+      "2 cups fresh baby spinach",
+      "1/2 teaspoon Italian seasoning",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Pat the salmon fillets completely dry with paper towels and season both sides with kosher salt and freshly cracked black pepper.",
+      "Heat the olive oil in a large skillet over medium-high heat and sear the salmon skin-side down for 4 minutes until crisp, then flip and cook 2 more minutes; transfer to a plate.",
+      "Lower the heat to medium, melt the butter in the skillet, and sauté the minced garlic, chopped sun-dried tomatoes, and Italian seasoning for 1 minute until fragrant.",
+      "Pour in the chicken broth and simmer for 2 minutes, then stir in the heavy cream, grated parmesan cheese, and baby spinach until the cheese melts and the spinach wilts.",
+      "Nestle the salmon fillets back into the creamy Tuscan sauce for 2 minutes to warm through and serve hot!"
+    ]
+  },
+  {
+    "id": "salted-brown-butter-chocolate-chunk-cookies",
+    "emoji": "🍪",
+    "title": "Bakery Brown Butter & Flaky Sea Salt Chocolate Chunk Cookies",
+    "image": "brown-butter-chocolate-cookies.jpg",
+    "subtitle": "Chewy-centered, crisp-edged gourmet cookies made with nutty caramelized brown butter, dark brown sugar, pools of bittersweet chocolate, and flaky sea salt.",
+    "times": { "prep": "20 mins", "cook": "11 mins", "servings": "18 cookies" },
+    "nutrition": { "calories": 210, "protein": 3, "carbs": 26, "fats": 11 },
+    "highlights": [
+      { "category": "Nutty Brown Butter Depth", "text": "Toasting the butter until golden milk solids form infuses the dough with rich butterscotch aroma." },
+      { "category": "Pools of Melted Chocolate", "text": "Chopping a solid bittersweet chocolate bar creates thin shards and thick chunks that melt into glossy layers." },
+      { "category": "Dashboard Light Slot", "text": "Registers at just 210 calories per cookie, qualifying automatically for your healthy dessert menu rotation." }
+    ],
+    "ingredients": [
+      "1 cup unsalted butter",
+      "1 cup packed dark brown sugar",
+      "1/2 cup granulated sugar",
+      "2 large eggs, room temperature",
+      "2 teaspoons pure vanilla extract",
+      "2 1/4 cups all-purpose flour",
+      "1 teaspoon baking soda",
+      "1/2 teaspoon kosher salt",
+      "8 oz bittersweet dark chocolate bar (60-70% cacao), roughly chopped",
+      "1/2 teaspoon flaky sea salt (for topping)"
+    ],
+    "instructions": [
+      "Melt the butter in a light-colored saucepan over medium heat, swirling constantly for 5 minutes until it foams and turns amber brown with a nutty aroma; pour into a large mixing bowl and let cool for 10 minutes.",
+      "Whisk the dark brown sugar and granulated sugar into the cooled brown butter until smooth, then beat in the eggs and pure vanilla extract for 1 minute until glossy.",
+      "Fold in the all-purpose flour, baking soda, and kosher salt until just combined, then stir in the roughly chopped dark chocolate chunks.",
+      "Preheat your oven to 375°F (190°C), line two baking sheets with parchment paper, and scoop 2-tablespoon mounds of dough 2 inches apart.",
+      "Bake for 9 to 11 minutes until the edges are golden brown and the centers still look slightly soft; sprinkle immediately with flaky sea salt and cool on the pan for 5 minutes!"
+    ]
+  },
+   {
+    "id": "ultimate-steakhouse-surf-and-turf-truffle-butter",
+    "emoji": "👑",
+    "title": "The Ultimate Vault Surf & Turf: Filet Mignon & Butter-Poached Lobster",
+    "image": "ultimate-surf-and-turf.jpg",
+    "subtitle": "Center-cut prime filet mignon seared in cast iron with roasted garlic and rosemary alongside sweet cold-water lobster tail bathed in warm lemon-herb truffle butter.",
+    "times": { "prep": "15 mins", "cook": "16 mins", "servings": "2 people" },
+    "nutrition": { "calories": 640, "protein": 58, "carbs": 4, "fats": 42 },
+    "highlights": [
+      { "category": "The Crown Jewel", "text": "Combines two iconic steakhouse luxuries—melt-in-your-mouth center-cut beef tenderloin and sweet butter-poached cold-water lobster—in a single 30-minute execution." },
+      { "category": "Truffle & Herb Butter Baste", "text": "Infusing foaming sweet cream butter with smashed garlic, fresh rosemary, bright lemon juice, and black truffle oil creates an unforgettable finishing glaze for both steak and shellfish." },
+      { "category": "Protein Heavyweight", "text": "Delivers a massive 58g of pure prime protein per plate with virtually zero carbohydrates." }
+    ],
+    "ingredients": [
+      "2 center-cut prime filet mignon steaks (6 oz each, 1.5 inches thick)",
+      "2 cold-water lobster tails (6 oz each)",
+      "1 tablespoon high-heat avocado oil",
+      "4 tablespoons unsalted butter, divided",
+      "3 cloves garlic, lightly smashed",
+      "2 sprigs fresh rosemary",
+      "1 tablespoon fresh lemon juice",
+      "1 teaspoon black truffle oil",
+      "1 tablespoon fresh chives, finely chopped",
+      "Kosher salt and freshly cracked black pepper to taste"
+    ],
+    "instructions": [
+      "Using sharp kitchen shears, cut down the center of each top lobster shell lengthwise, gently lift the meat to rest on top of the shell, and season lightly with kosher salt.",
+      "Pat the filet mignon steaks completely dry with paper towels and season generously on all sides with kosher salt and freshly cracked black pepper.",
+      "Heat the avocado oil in a large cast-iron skillet over high heat until lightly smoking, then sear the steaks undisturbed for 4 minutes per side until a deep mahogany crust forms.",
+      "Lower the skillet heat to medium-low, add 3 tablespoons of butter, smashed garlic cloves, and rosemary sprigs, and baste the steaks continuously for 2 minutes until internal temperature reaches 130°F (54°C) for medium-rare; transfer steaks to warm plates to rest.",
+      "In a small skillet over medium-low heat, melt the remaining 1 tablespoon butter with 2 tablespoons of water and fresh lemon juice, nestle the lobster tails in, cover with a lid, and gently butter-poach for 5 to 6 minutes until opaque and tender.",
+      "Plate each rested filet mignon alongside a lobster tail, drizzle with the warm lemon pan butter and black truffle oil, scatter with fresh chives, and serve immediately!"
+    ]
   }
 ]
