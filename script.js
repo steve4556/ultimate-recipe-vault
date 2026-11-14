@@ -23,7 +23,14 @@ let isHandlingPopState = false; // Prevents duplicate history entries when press
 
 const SUPABASE_URL = "https://" + "ygvnxeeehvgqpsaiajhx" + ".supabase.co";
 const SUPABASE_KEY = "sb_publishable_EnAl79eRY-lzaacQuVpggA_IDiDvK-R";
-const supabaseClient = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY) : null;
+let supabaseClient = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY) : null;
+
+function getSupabaseClient() {
+    if (!supabaseClient && window.supabase) {
+        supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    }
+    return supabaseClient;
+}
 
 let currentUser = null;
 let cloudFavoritesCache = [];
@@ -378,12 +385,13 @@ async function loadRecipeVaultData() {
         initApp();
 
         // Fetch cloud recipes in the background with a 4-second timeout
-        if (supabaseClient) {
+        const client = getSupabaseClient();
+        if (client) {
             try {
                 const timeoutPromise = new Promise((_, reject) =>
                     setTimeout(() => reject(new Error("Supabase timed out")), 4000)
                 );
-                const supabasePromise = supabaseClient.from("user_recipes").select("*");
+                const supabasePromise = client.from("user_recipes").select("*");
 
                 const { data, error } = await Promise.race([supabasePromise, timeoutPromise]);
                 if (!error && data && data.length > 0) {
