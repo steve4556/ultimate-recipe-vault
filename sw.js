@@ -26,7 +26,7 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-// 3. Fetch: Serve cached files offline, and cache viewed recipe photos on the fly
+// 3. Fetch: Network-First for fresh updates, Cache fallback for offline use
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
 
@@ -36,28 +36,25 @@ self.addEventListener("fetch", (event) => {
   }
 
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-
-      return fetch(event.request)
-        .then((networkResponse) => {
-          // Dynamically cache recipe photos and assets as the user views them
-          if (networkResponse && networkResponse.status === 200) {
-            const responseClone = networkResponse.clone();
-            caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, responseClone);
-            });
-          }
-          return networkResponse;
-        })
-        .catch(() => {
-          // Fallback if completely offline and asset wasn't cached
+    fetch(event.request)
+      .then((networkResponse) => {
+        // Save the fresh copy into the cache
+        if (networkResponse && networkResponse.status === 200) {
+          const responseClone = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseClone);
+          });
+        }
+        return networkResponse;
+      })
+      .catch(() => {
+        // If offline, serve from cache
+        return caches.match(event.request).then((cachedResponse) => {
+          if (cachedResponse) return cachedResponse;
           if (event.request.mode === "navigate") {
             return caches.match("/ultimate-recipe-vault/index.html");
           }
         });
-    })
+      })
   );
 });
