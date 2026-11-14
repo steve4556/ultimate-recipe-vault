@@ -373,27 +373,34 @@ async function loadRecipeVaultData() {
         if (!response.ok) throw new Error("Could not find or read recipes.json");
         const staticRecipes = await response.json();
 
-        let cloudRecipes = [];
+        // Render all 68 recipes immediately without waiting for Supabase
+        myRecipes = [...staticRecipes].sort((a, b) => a.title.localeCompare(b.title));
+        initApp();
+
+        // Fetch cloud recipes in the background with a 4-second timeout
         if (supabaseClient) {
             try {
-                const { data, error } = await supabaseClient
-                    .from("user_recipes")
-                    .select("*");
-                if (!error && data) {
-                    cloudRecipes = data;
+                const timeoutPromise = new Promise((_, reject) =>
+                    setTimeout(() => reject(new Error("Supabase timed out")), 4000)
+                );
+                const supabasePromise = supabaseClient.from("user_recipes").select("*");
+
+                const { data, error } = await Promise.race([supabasePromise, timeoutPromise]);
+                if (!error && data && data.length > 0) {
+                    myRecipes = [...staticRecipes, ...data].sort((a, b) => a.title.localeCompare(b.title));
+                    initApp();
                 }
             } catch (supabaseErr) {
-                console.warn("Cloud recipes skipped (Tracking Prevention or offline):", supabaseErr);
+                console.warn("Cloud recipes skipped:", supabaseErr.message);
             }
         }
-
-        myRecipes = [...staticRecipes, ...cloudRecipes].sort((a, b) => a.title.localeCompare(b.title));
-        initApp();
     } catch (error) {
         console.error("Vault critical error loading data array:", error);
-        gridContainer.innerHTML = `<p style="text-align:center; color:#ff4d4d; font-weight:bold;">
-            🔒 Vault Error: Could not read recipes.json.
-        </p>`;
+        if (gridContainer) {
+            gridContainer.innerHTML = `<p style="text-align:center; color:#ff4d4d; font-weight:bold;">
+                🔒 Vault Error: Could not read recipes.json.
+            </p>`;
+        }
     }
 }
 
