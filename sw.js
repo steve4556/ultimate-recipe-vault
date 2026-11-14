@@ -8,37 +8,42 @@ const CORE_ASSETS = [
   "/ultimate-recipe-vault/manifest.json"
 ];
 
-// 1. Install: Cache core app files immediately
+// 1. Install: Cache core files safely one by one so one missing file never breaks the whole worker
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(CORE_ASSETS))
+    caches.open(CACHE_NAME).then(async (cache) => {
+      for (const url of CORE_ASSETS) {
+        try {
+          await cache.add(url);
+        } catch (err) {
+          console.warn("Skipped caching asset:", url, err);
+        }
+      }
+    })
   );
   self.skipWaiting();
 });
 
-// 2. Activate: Clean up old caches when you update CACHE_NAME
+// 2. Activate: Wipe out v11 and any older caches immediately
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))
+      Promise.all(
+        keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))
+      )
     )
   );
   self.clients.claim();
 });
 
-// 3. Fetch: Network-First for fresh updates, Cache fallback for offline use
+// 3. Fetch: Always get fresh files from the network; only use cache when offline
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
-
-  // Let live Supabase API calls go straight to the network
-  if (event.request.url.includes("supabase.co")) {
-    return;
-  }
+  if (event.request.url.includes("supabase.co")) return;
 
   event.respondWith(
     fetch(event.request)
       .then((networkResponse) => {
-        // Save the fresh copy into the cache
         if (networkResponse && networkResponse.status === 200) {
           const responseClone = networkResponse.clone();
           caches.open(CACHE_NAME).then((cache) => {
@@ -47,14 +52,13 @@ self.addEventListener("fetch", (event) => {
         }
         return networkResponse;
       })
-      .catch(() => {
-        // If offline, serve from cache
-        return caches.match(event.request).then((cachedResponse) => {
-          if (cachedResponse) return cachedResponse;
-          if (event.request.mode === "navigate") {
-            return caches.match("/ultimate-recipe-vault/index.html");
-          }
-        });
+      .catch(async () => {
+        const cachedResponse = await caches.match(event.request);
+        if (cachedResponse) return cachedResponse;
+        if (event.request.mode === "navigate") {
+          return caches.match("/ultimate-recipe-vault/index.html");
+        }
+        return new Response("Offline", { status: 503, statusText: "Offline" });
       })
   );
 });
