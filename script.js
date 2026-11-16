@@ -417,6 +417,9 @@ function getRecipeImageSrc(imageField) {
     if (imageField.startsWith("http://") || imageField.startsWith("https://")) {
         return imageField;
     }
+    if (imageField.includes("/")) {
+        return imageField;
+    }
     return `images/${imageField}`;
 }
 
@@ -536,9 +539,10 @@ function initApp() {
                 <p>${escapeHTML(recipe.subtitle)}</p>
                  <div>
                     <img src="${escapeHTML(getRecipeImageSrc(recipe.image))}" 
-                         ${recipe.image && recipe.image.startsWith("http") ? "" : `onerror="handleImageFallback(this, '${escapeHTML(recipe.image)}', 2)"`} 
-                         alt="${escapeHTML(recipe.title)}" 
-                         class="recipe-photo">
+     alt="${escapeHTML(recipe.title)}" 
+     class="recipe-photo"
+     loading="lazy"
+     decoding="async">
                 </div>
                 <table>
                     <thead>
@@ -722,13 +726,8 @@ function openDetailedView(recipeId, sourceView = null) {
         overlayImg = document.getElementById("overlay-photo");
     }
     overlayImg.alt = targetRecipe.title;
-    if (targetRecipe.image && targetRecipe.image.startsWith("http")) {
-        overlayImg.onerror = null;
-        overlayImg.src = targetRecipe.image;
-    } else {
-        overlayImg.onerror = () => handleImageFallback(overlayImg, targetRecipe.image, 2);
-        overlayImg.src = `images/${targetRecipe.image}`;
-    }
+    overlayImg.onerror = null;
+    overlayImg.src = getRecipeImageSrc(targetRecipe.image);
 
     // Bring back tables, list text nodes, and layout headers safely for normal card viewing
     const overlayTables = overlay.querySelectorAll("table");
