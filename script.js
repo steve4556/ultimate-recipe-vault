@@ -1490,8 +1490,10 @@ if (masterGroceryBtn) {
 }
 
 // --- SUPABASE AUTH MODAL & CLOUD SYNC ENGINE ---
+// --- SUPABASE AUTH MODAL & CLOUD SYNC ENGINE ---
 async function syncUserCloudData() {
-    if (!supabaseClient || !currentUser) {
+    const client = getSupabaseClient();
+    if (!client || !currentUser) {
         cloudFavoritesCache = [];
         cloudMultipliersCache = {};
         updateAuthButtonUI();
@@ -1499,7 +1501,7 @@ async function syncUserCloudData() {
         return;
     }
 
-    const { data, error } = await supabaseClient
+    const { data, error } = await client
         .from("user_favorites")
         .select("recipe_id, multiplier")
         .eq("user_id", currentUser.id);
@@ -1545,8 +1547,9 @@ function updateAuthButtonUI() {
 document.addEventListener("click", async (e) => {
     const authBtn = e.target.closest("#vault-auth-btn");
     if (authBtn) {
-        if (currentUser && supabaseClient) {
-            await supabaseClient.auth.signOut();
+        const client = getSupabaseClient();
+        if (currentUser && client) {
+            await client.auth.signOut();
         } else {
             openAuthModal();
         }
@@ -1559,7 +1562,8 @@ document.addEventListener("click", async (e) => {
 });
 
 function openChangePasswordModal(isRecovery = false) {
-    if (!supabaseClient) return;
+    const client = getSupabaseClient();
+    if (!client) return;
 
     returnToView = null;
     if (closeOverlayBtn) closeOverlayBtn.textContent = "← Back to Main Menu";
@@ -1607,7 +1611,7 @@ function openChangePasswordModal(isRecovery = false) {
         statusMsg.style.color = "#d4af37";
         statusMsg.textContent = "Updating password...";
 
-        const { error } = await supabaseClient.auth.updateUser({ password: newPass });
+        const { error } = await client.auth.updateUser({ password: newPass });
 
         if (error) {
             statusMsg.style.color = "#ff4d4d";
@@ -1624,7 +1628,8 @@ function openChangePasswordModal(isRecovery = false) {
 }
 
 function openAuthModal() {
-    if (!supabaseClient) {
+    const client = getSupabaseClient();
+    if (!client) {
         alert("Supabase library failed to load. Check your index.html script tag.");
         return;
     }
@@ -1664,7 +1669,7 @@ function openAuthModal() {
     document.getElementById("auth-signin-submit").onclick = async () => {
         statusMsg.style.color = "#d4af37";
         statusMsg.textContent = "Signing in...";
-        const { error } = await supabaseClient.auth.signInWithPassword({
+        const { error } = await client.auth.signInWithPassword({
             email: emailInput.value.trim(),
             password: passInput.value
         });
@@ -1679,7 +1684,7 @@ function openAuthModal() {
     document.getElementById("auth-signup-submit").onclick = async () => {
         statusMsg.style.color = "#d4af37";
         statusMsg.textContent = "Creating account...";
-        const { error } = await supabaseClient.auth.signUp({
+        const { error } = await client.auth.signUp({
             email: emailInput.value.trim(),
             password: passInput.value
         });
@@ -1705,7 +1710,7 @@ function openAuthModal() {
         statusMsg.textContent = "Sending password reset email...";
 
         const redirectUrl = "https://" + "steve4556.github.io" + "/ultimate-recipe-vault/";
-        const { error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+        const { error } = await client.auth.resetPasswordForEmail(email, {
             redirectTo: redirectUrl
         });
 
@@ -1723,8 +1728,9 @@ function openAuthModal() {
 }
 
 // Listen for auth state changes (login, logout, or password recovery link)
-if (supabaseClient) {
-    supabaseClient.auth.onAuthStateChange((event, session) => {
+const authClient = getSupabaseClient();
+if (authClient) {
+    authClient.auth.onAuthStateChange((event, session) => {
         currentUser = session ? session.user : null;
         syncUserCloudData();
 
