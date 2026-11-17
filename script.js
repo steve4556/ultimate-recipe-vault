@@ -25,6 +25,10 @@ const SUPABASE_URL = "https://" + "ygvnxeeehvgqpsaiajhx" + ".supabase.co";
 const SUPABASE_KEY = "sb_publishable_EnAl79eRY-lzaacQuVpggA_IDiDvK-R";
 const supabaseOptions = {
     auth: {
+        persistSession: true,
+        autoRefreshToken: true,
+        detectSessionInUrl: true,
+        storageKey: "vault-supabase-auth-v2",
         lock: async (name, acquireTimeout, fn) => {
             return await fn();
         }
@@ -1677,7 +1681,10 @@ function openAuthModal() {
     document.getElementById("auth-signin-submit").onclick = async () => {
         statusMsg.style.color = "#d4af37";
         statusMsg.textContent = "Signing in...";
-        const { error } = await client.auth.signInWithPassword({
+
+        await client.auth.signOut({ scope: "local" }).catch(() => {});
+
+        const { data, error } = await client.auth.signInWithPassword({
             email: emailInput.value.trim(),
             password: passInput.value
         });
@@ -1685,6 +1692,8 @@ function openAuthModal() {
             statusMsg.style.color = "#ff4d4d";
             statusMsg.textContent = error.message;
         } else {
+            currentUser = data.user;
+            await syncUserCloudData();
             hideModalOnly();
         }
     };
@@ -1705,7 +1714,6 @@ function openAuthModal() {
             setTimeout(() => hideModalOnly(), 1000);
         }
     };
-
     document.getElementById("forgot-password-btn").onclick = async () => {
         const email = emailInput.value.trim();
         if (!email) {
