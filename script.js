@@ -1560,8 +1560,18 @@ document.addEventListener("click", async (e) => {
     const authBtn = e.target.closest("#vault-auth-btn");
     if (authBtn) {
         const client = getSupabaseClient();
-        if (currentUser && client) {
-            await client.auth.signOut();
+        if (currentUser) {
+            authBtn.textContent = "Signing out...";
+            currentUser = null;
+            cloudFavoritesCache = [];
+            cloudMultipliersCache = {};
+            localStorage.removeItem("vault-supabase-auth-v2");
+            updateAuthButtonUI();
+            if (myRecipes.length > 0) initApp();
+
+            if (client) {
+                await client.auth.signOut({ scope: "local" }).catch(() => {});
+            }
         } else {
             openAuthModal();
         }
