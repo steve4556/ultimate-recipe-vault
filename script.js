@@ -36,7 +36,7 @@ let currentUser = null;
 let cloudFavoritesCache = [];
 let cloudMultipliersCache = {};
 
-const ADMIN_EMAIL = "0ded6d51-e225-40bb-b26a-56c77e283b4b";
+const ADMIN_UID = "0ded6d51-e225-40bb-b26a-56c77e283b4b";
 function isVaultAdmin() {
     return currentUser && currentUser.id === ADMIN_UID;
 }
