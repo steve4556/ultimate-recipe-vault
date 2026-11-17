@@ -36,9 +36,9 @@ let currentUser = null;
 let cloudFavoritesCache = [];
 let cloudMultipliersCache = {};
 
-const ADMIN_EMAIL = "steve4556@gmail.com";
+const ADMIN_EMAIL = "0ded6d51-e225-40bb-b26a-56c77e283b4b";
 function isVaultAdmin() {
-    return currentUser && currentUser.email === ADMIN_EMAIL;
+    return currentUser && currentUser.id === ADMIN_UID;
 }
 
 /// --- HYBRID STORAGE HELPERS (CLOUD WHEN LOGGED IN, LOCALSTORAGE FOR GUESTS) ---
