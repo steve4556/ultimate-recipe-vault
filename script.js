@@ -23,11 +23,18 @@ let isHandlingPopState = false; // Prevents duplicate history entries when press
 
 const SUPABASE_URL = "https://" + "ygvnxeeehvgqpsaiajhx" + ".supabase.co";
 const SUPABASE_KEY = "sb_publishable_EnAl79eRY-lzaacQuVpggA_IDiDvK-R";
-let supabaseClient = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY) : null;
+const supabaseOptions = {
+    auth: {
+        lock: async (name, acquireTimeout, fn) => {
+            return await fn();
+        }
+    }
+};
+let supabaseClient = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY, supabaseOptions) : null;
 
 function getSupabaseClient() {
     if (!supabaseClient && window.supabase) {
-        supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+        supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY, supabaseOptions);
     }
     return supabaseClient;
 }
@@ -487,6 +494,7 @@ function setupCategoryFilterBar() {
     });
 
     dashboardWrapper.appendChild(filterBar);
+     updateAuthButtonUI();
 }
 
 function initApp() {
