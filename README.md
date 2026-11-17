@@ -52,7 +52,7 @@ ultimate-recipe-vault/
 ├── index.html          # Main dashboard layout, PWA meta tags & fullscreen modal overlay
 ├── styles.css          # Responsive Fort Knox Gold & Slate theme (Desktop, Tablet & Mobile)
 ├── script.js           # Core engine: search, fraction scaler, grocery combiner, auth & CMS
-├── recipes.json        # Master static database (90+ recipes with full macros & instructions)
+├── recipes.json        # Master static database (300+ recipes with full macros & instructions)
 ├── manifest.json       # PWA installation config, icons & standalone display settings
 ├── sw.js               # Network-first Service Worker for seamless updates & offline fallback
 ├── images/             # Primary image directory (with automatic fallback up to images12/)
