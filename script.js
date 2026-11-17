@@ -472,6 +472,9 @@ function setupCategoryFilterBar() {
         <a href="https://ko-fi.com/stephenstinson" target="_blank" rel="noopener noreferrer" class="category-btn kofi-dashboard-btn">
             ☕ Support the Vault
         </a>
+        <a href="https://the-ultimate-recipe-vault-shop.fourthwall.com" target="_blank" rel="noopener noreferrer" class="category-btn kofi-dashboard-btn">
+            🛍️ Vault Merch
+        </a>
         <button type="button" id="vault-auth-btn" class="category-btn auth-dashboard-btn">
             🔐 Log In / Sign Up
         </button>
