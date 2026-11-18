@@ -484,6 +484,7 @@ function setupCategoryFilterBar() {
         <button type="button" id="open-add-recipe-btn" class="category-btn auth-dashboard-btn" style="display: none;">
             ➕ Add Recipe
         </button>
+        <div id="google_translate_element" class="vault-translate-pill"></div>
     `;
 
     filterBar.addEventListener("click", (e) => {
