@@ -1320,10 +1320,11 @@ function generateMasterShoppingList() {
     const actionPanel = document.createElement("div");
     actionPanel.className = "multiplier-controls";
     actionPanel.style.cssText = "display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 10px 0; justify-content: center; align-items: center;";
-    actionPanel.innerHTML = `
+     actionPanel.innerHTML = `
         <button id="toggle-combine-btn" style="background: ${combineGroceryItems ? '#d4af37' : '#2d3238'}; color: ${combineGroceryItems ? '#1c212a' : '#d4af37'}; border: 2px solid #d4af37; padding: 6px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">
             ${combineGroceryItems ? "📋 Group by Recipe" : "🧩 Combine Duplicates"}
         </button>
+        <button id="send-instacart-btn" disabled title="Instacart integration pending partner approval" style="background: #2d3238; color: #848d9e; border: 2px dashed #848d9e; padding: 6px 16px; border-radius: 4px; cursor: not-allowed; font-weight: bold; font-size: 0.85rem; opacity: 0.75;">🛒 Instacart Sync (Coming Soon)</button>
         <button id="copy-master-list-btn" style="background: #2d3238; color: #d4af37; border: 2px solid #d4af37; padding: 6px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">📋 Copy Grocery List</button>
         <button id="clear-checks-btn" style="background: #2d3238; color: #ff4d4d; border: 2px solid #ff4d4d; padding: 6px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">🔄 Clear Checks</button>
         <button id="reset-scales-btn" style="background: #2d3238; color: #dce0e9; border: 2px solid #848d9e; padding: 6px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">⚖️ Reset Scales (1x)</button>
@@ -1365,7 +1366,7 @@ function generateMasterShoppingList() {
             `;
         }).join("");
 
-        combinedSection.innerHTML = `
+         combinedSection.innerHTML = `
             <h3 style="color: #d4af37; margin-bottom: 10px; font-size: 1.15rem; border-bottom: 1px solid rgba(132, 141, 158, 0.3); padding-bottom: 5px; text-align: left;">
                 🛒 Combined Ingredients (${combinedItems.length} items)
             </h3>
@@ -1493,6 +1494,59 @@ function generateMasterShoppingList() {
                     copyMasterBtn.style.color = "#d4af37";
                 }, 2000);
             });
+        };
+    }
+    const sendInstacartBtn = document.getElementById("send-instacart-btn");
+    if (sendInstacartBtn) {
+        sendInstacartBtn.onclick = async (e) => {
+            e.stopPropagation();
+
+            const uncheckedSpans = Array.from(
+                ingredientsElement.querySelectorAll(".checklist-item:not(.checked) .ing-text")
+            );
+
+            let itemsToExport = [];
+            if (combineGroceryItems) {
+                itemsToExport = uncheckedSpans.map(span => span.textContent.trim());
+            } else {
+                const allCombined = buildCombinedIngredients(currentFavorites, savedMultipliers);
+                itemsToExport = allCombined.filter(item => !storedChecks.includes(item));
+            }
+
+            if (itemsToExport.length === 0) {
+                alert("All items are already checked off! Uncheck items you want to buy first.");
+                return;
+            }
+
+            const originalText = sendInstacartBtn.textContent;
+            sendInstacartBtn.disabled = true;
+            sendInstacartBtn.textContent = "⏳ Building Cart...";
+
+            try {
+                const client = getSupabaseClient();
+                const { data, error } = await client.functions.invoke("create-instacart-list", {
+                    body: {
+                        title: `Recipe Vault Grocery List (${currentFavorites.length} recipes)`,
+                        items: itemsToExport
+                    }
+                });
+
+                if (error || !data?.url) {
+                    throw new Error(error?.message || data?.error || "Could not generate Instacart link.");
+                }
+
+                window.open(data.url, "_blank", "noopener,noreferrer");
+                sendInstacartBtn.textContent = "✅ Sent to Instacart!";
+            } catch (err) {
+                console.error("Instacart export error:", err);
+                alert(`Instacart Error: ${err.message}`);
+                sendInstacartBtn.textContent = originalText;
+            } finally {
+                setTimeout(() => {
+                    sendInstacartBtn.disabled = false;
+                    sendInstacartBtn.textContent = originalText;
+                }, 2500);
+            }
         };
     }
 
