@@ -98,24 +98,28 @@ async function toggleFavorite(recipeId) {
     localStorage.setItem("vault_favorites", JSON.stringify(favs));
 }
 // Helper to convert decimals back to readable kitchen fractions
-    function formatKitchenFraction(num) {
-        const whole = Math.floor(num);
-        const remainder = num - whole;
-        const fractions = [
-            { val: 0.25, str: "1/4" },
-            { val: 0.33, str: "1/3" },
-            { val: 0.5,  str: "1/2" },
-            { val: 0.67, str: "2/3" },
-            { val: 0.75, str: "3/4" }
-        ];
+function formatKitchenFraction(num) {
+    const whole = Math.floor(num);
+    const remainder = num - whole;
+    const fractions = [
+        { val: 0.125, str: "1/8" },
+        { val: 0.25,  str: "1/4" },
+        { val: 0.33,  str: "1/3" },
+        { val: 0.375, str: "3/8" },
+        { val: 0.5,   str: "1/2" },
+        { val: 0.625, str: "5/8" },
+        { val: 0.67,  str: "2/3" },
+        { val: 0.75,  str: "3/4" },
+        { val: 0.875, str: "7/8" }
+    ];
 
-        for (let f of fractions) {
-            if (Math.abs(remainder - f.val) < 0.04) {
-                return whole > 0 ? `${whole} ${f.str}` : f.str;
-            }
+    for (let f of fractions) {
+        if (Math.abs(remainder - f.val) < 0.03) {
+            return whole > 0 ? `${whole} ${f.str}` : f.str;
         }
-        return parseFloat(num.toFixed(2));
     }
+    return parseFloat(num.toFixed(2));
+}
 
     function multiplyIngredientQuantity(ingredientString, factor) {
         return ingredientString.replace(/^(\d+\s+\d+\/\d+|\d+\/\d+|\d+(\.\d+)?)/, match => {
@@ -183,23 +187,23 @@ function parseIngredientLine(ingredientString, factor = 1) {
         itemText = words.slice(1).join(" ");
     }
 
-    // 3. Strip prep instructions after commas or parentheses so matching ingredients merge cleanly
-    const cleanName = itemText
-        .split(",")[0]
-        .replace(/\(.*?\)/g, "")
-        .trim()
-        .toLowerCase();
+    // 3. Only strip prep notes after a comma if it doesn't introduce a second ingredient (", and ")
+    let cleanedDisplay = itemText.replace(/\(.*?\)/g, "").trim();
+    if (!cleanedDisplay.toLowerCase().includes(", and ")) {
+        cleanedDisplay = cleanedDisplay.split(",")[0].trim();
+    }
 
     return {
         quantity: scaledQty,
         unit: unit,
-        item: cleanName,
-        displayName: itemText.split(",")[0].replace(/\(.*?\)/g, "").trim()
+        item: cleanedDisplay.toLowerCase(),
+        displayName: cleanedDisplay
     };
 }
 
-function buildCombinedIngredients(favoriteIds, savedMultipliers) {
+function buildCombinedIngredients(favoriteIds, savedMultipliers, returnObjects = false) {
     const combinedMap = new Map();
+    const storedChecks = getCheckedIngredients();
 
     favoriteIds.forEach(favId => {
         const recipe = myRecipes.find(r => r.id === favId);
@@ -208,47 +212,58 @@ function buildCombinedIngredients(favoriteIds, savedMultipliers) {
         const factor = savedMultipliers[recipe.id] || 1;
 
         recipe.ingredients.forEach(ing => {
+            const scaledIng = multiplyIngredientQuantity(ing, factor);
             const parsed = parseIngredientLine(ing, factor);
 
             if (parsed.quantity === null) {
-                // Non-numeric items like "Salt and pepper to taste"
                 const key = `nonum_${parsed.item.toLowerCase()}`;
                 if (!combinedMap.has(key)) {
-                    combinedMap.set(key, { text: parsed.raw, count: 1 });
+                    combinedMap.set(key, { text: parsed.raw, originals: [scaledIng] });
+                } else if (!combinedMap.get(key).originals.includes(scaledIng)) {
+                    combinedMap.get(key).originals.push(scaledIng);
                 }
                 return;
             }
 
-            // Group by normalized item name + unit
             const key = `${parsed.item}|${parsed.unit}`;
             if (combinedMap.has(key)) {
-                combinedMap.get(key).quantity += parsed.quantity;
+                const existing = combinedMap.get(key);
+                existing.quantity += parsed.quantity;
+                if (!existing.originals.includes(scaledIng)) {
+                    existing.originals.push(scaledIng);
+                }
             } else {
                 combinedMap.set(key, {
                     quantity: parsed.quantity,
                     unit: parsed.unit,
-                    displayName: parsed.displayName
+                    displayName: parsed.displayName,
+                    originals: [scaledIng]
                 });
             }
         });
     });
 
-    // Format combined entries back into readable strings
-    return Array.from(combinedMap.values()).map(entry => {
-        if (entry.text) return entry.text;
+    const formattedList = Array.from(combinedMap.values()).map(entry => {
+        let label = entry.text;
+        if (!label) {
+            const formattedQty = formatKitchenFraction(entry.quantity);
+            let unitLabel = entry.unit;
 
-        const formattedQty = formatKitchenFraction(entry.quantity);
-        let unitLabel = entry.unit;
+            if (unitLabel && entry.quantity > 1 && unitLabel !== "oz" && unitLabel !== "lb") {
+                unitLabel = unitLabel === "pinch" ? "pinches" : `${unitLabel}s`;
+            }
 
-        // Pluralize unit when quantity > 1 (except "oz" and "lb")
-        if (unitLabel && entry.quantity > 1 && unitLabel !== "oz" && unitLabel !== "lb") {
-            unitLabel = unitLabel === "pinch" ? "pinches" : `${unitLabel}s`;
+            label = unitLabel
+                ? `${formattedQty} ${unitLabel} ${entry.displayName}`
+                : `${formattedQty} ${entry.displayName}`;
         }
 
-        return unitLabel
-            ? `${formattedQty} ${unitLabel} ${entry.displayName}`
-            : `${formattedQty} ${entry.displayName}`;
+        const isChecked = entry.originals.every(orig => storedChecks.includes(orig));
+        return { label, originals: entry.originals, isChecked };
     });
+
+    // Return plain strings for Instacart export, or full objects for the UI checklist
+    return returnObjects ? formattedList : formattedList.map(item => item.label);
 }
 
 function getSavedMultipliers() {
@@ -383,7 +398,38 @@ function getRecipeCategory(recipe) {
     // 6. Dinner
     return "dinner";
 }
+function getDietaryBadges(recipe) {
+    // Allow optional manual override in recipes.json (e.g., "dietary": "☪️✡️" or "none")
+    if (recipe.dietary !== undefined) {
+        return recipe.dietary === "none" ? "" : ` ${recipe.dietary}`;
+    }
 
+    const fullText = `${recipe.title} ${recipe.subtitle} ${recipe.ingredients.join(" ")}`.toLowerCase();
+
+    // 1. Check Pork & Alcohol (Disqualifies BOTH Halal and Kosher)
+    const hasPork = /\b(pork|bacon|ham|prosciutto|pancetta|sausage|pepperoni|salami|chorizo|lard|ribs)\b/.test(fullText);
+    const hasAlcohol = /\b(wine|beer|rum|bourbon|whiskey|vodka|brandy|cognac|champagne|mirin|sake|liqueur|amaretto|marsala|sherry)\b/.test(fullText);
+
+    if (hasPork || hasAlcohol) {
+        return "";
+    }
+
+    // 2. Check Shellfish / Non-Kosher Seafood (Halal OK, NOT Kosher)
+    const hasShellfish = /\b(squid|calamari|octopus|shrimp|prawn|crab|lobster|clam|mussel|oyster|scallop|crawfish|crayfish)\b/.test(fullText);
+
+    // 3. Check Meat + Dairy combination (Halal OK, NOT Kosher)
+    const hasMeat = /\b(beef|steak|sirloin|ribeye|brisket|chicken|turkey|lamb|veal|duck|venison|meatball|ground meat)\b/.test(fullText);
+    const hasDairy = /\b(milk|cream|cheese|butter|yogurt|parmesan|mozzarella|cheddar|gruyere|gruyère|feta|ricotta|sour cream|ghee|whey)\b/.test(fullText);
+
+    const isHalal = true;
+    const isKosher = !hasShellfish && !(hasMeat && hasDairy);
+
+    let badges = "";
+    if (isHalal) badges += "☪️";
+    if (isKosher) badges += "✡️";
+
+    return badges ? ` ${badges}` : "";
+}
 // --- DYNAMIC DATA LOADER (REPLACES THE OLD DATA.JS FILE) ---
 async function loadRecipeVaultData() {
     try {
@@ -518,9 +564,10 @@ function initApp() {
     myRecipes.forEach(recipe => {
         const option = document.createElement("option");
         option.value = recipe.id;
-        option.textContent = `${recipe.emoji} ${recipe.title}`;
+        option.textContent = `${recipe.emoji} ${recipe.title}${getDietaryBadges(recipe)}`;
         navDropdown.appendChild(option);
     });
+    
 
     const query = searchInput ? searchInput.value.toLowerCase().trim() : "";
     // Filter the array based on text search, favorites, AND active category
@@ -551,7 +598,7 @@ function initApp() {
         cardWrapper.innerHTML = `
             <section class="recipe-card">
                 <button class="heart-btn" aria-label="${escapeHTML(heartLabel)}" data-recipe-id="${escapeHTML(recipe.id)}">${heartEmoji}</button>
-                <h2>${escapeHTML(recipe.emoji)} ${escapeHTML(recipe.title)}</h2>
+                <h2>${escapeHTML(recipe.emoji)} ${escapeHTML(recipe.title)}${getDietaryBadges(recipe)}</h2>
                 <p>${escapeHTML(recipe.subtitle)}</p>
                  <div>
                     <img src="${escapeHTML(getRecipeImageSrc(recipe.image))}" 
@@ -714,7 +761,7 @@ function openDetailedView(recipeId, sourceView = null) {
     }
 
     // Injects raw text parameters safely
-    document.getElementById("overlay-title").textContent = `${targetRecipe.emoji} ${targetRecipe.title}`;
+    document.getElementById("overlay-title").textContent = `${targetRecipe.emoji} ${targetRecipe.title}${getDietaryBadges(targetRecipe)}`;
     document.getElementById("overlay-subtitle").textContent = targetRecipe.subtitle;
     
     const subtitleEl = document.getElementById("overlay-subtitle");
@@ -1043,7 +1090,7 @@ function generateRandomMealPlan(reusePrevious = false) {
 
     // 3. Inject a Gorgeous Custom Menu Grid with Clickable Meal Cards
     const highlightsElement = document.getElementById("overlay-highlights");
-     highlightsElement.innerHTML = `
+    highlightsElement.innerHTML = `
         <div style="display: flex; flex-direction: column; gap: 20px; background: rgba(45, 50, 56, 0.95); padding: 25px; border-radius: 12px; border: 2px solid #848d9e; margin: 20px 0; box-shadow: 0 8px 16px rgba(0,0,0,0.4);">
             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #d4af37; padding-bottom: 12px; margin-bottom: 10px;">
                 <span style="font-size: 1.2rem; color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Today's Specials</span>
@@ -1053,23 +1100,23 @@ function generateRandomMealPlan(reusePrevious = false) {
             <div style="display: flex; flex-direction: column; gap: 15px;">
                 <div class="meal-plan-item" data-recipe-id="${escapeHTML(bfastChoice.id)}" style="cursor: pointer; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                     <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🌅 Breakfast</span>
-                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(bfastChoice.emoji)} ${escapeHTML(bfastChoice.title)}</span>
+                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(bfastChoice.emoji)} ${escapeHTML(bfastChoice.title)}${bfastChoice.id ? getDietaryBadges(bfastChoice) : ""}</span>
                 </div>
                 <div class="meal-plan-item" data-recipe-id="${escapeHTML(appChoice.id)}" style="cursor: pointer; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                     <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🧅 Appetizer Snack</span>
-                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(appChoice.emoji)} ${escapeHTML(appChoice.title)}</span>
+                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(appChoice.emoji)} ${escapeHTML(appChoice.title)}${appChoice.id ? getDietaryBadges(appChoice) : ""}</span>
                 </div>
                 <div class="meal-plan-item" data-recipe-id="${escapeHTML(lunchChoice.id)}" style="cursor: pointer; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                     <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">☀️ Lunch</span>
-                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(lunchChoice.emoji)} ${escapeHTML(lunchChoice.title)}</span>
+                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(lunchChoice.emoji)} ${escapeHTML(lunchChoice.title)}${lunchChoice.id ? getDietaryBadges(lunchChoice) : ""}</span>
                 </div>
                 <div class="meal-plan-item" data-recipe-id="${escapeHTML(dinnerChoice.id)}" style="cursor: pointer; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                     <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🌙 Dinner</span>
-                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(dinnerChoice.emoji)} ${escapeHTML(dinnerChoice.title)}</span>
+                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(dinnerChoice.emoji)} ${escapeHTML(dinnerChoice.title)}${dinnerChoice.id ? getDietaryBadges(dinnerChoice) : ""}</span>
                 </div>
                 <div class="meal-plan-item" data-recipe-id="${escapeHTML(dessertChoice.id)}" style="cursor: pointer; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                     <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🍪 Dessert</span>
-                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(dessertChoice.emoji)} ${escapeHTML(dessertChoice.title)}</span>
+                    <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(dessertChoice.emoji)} ${escapeHTML(dessertChoice.title)}${dessertChoice.id ? getDietaryBadges(dessertChoice) : ""}</span>
                 </div>
             </div>
             <p style="text-align: center; margin: 10px 0 0 0; font-size: 0.85rem; color: #848d9e;">
@@ -1178,23 +1225,23 @@ function generateHealthyMealPlan(reusePrevious = false) {
                     <div style="display: flex; flex-direction: column; gap: 15px;">
                         <div class="meal-plan-item" data-recipe-id="${escapeHTML(bfastChoice.id)}" style="cursor: ${bfastChoice.id ? 'pointer' : 'default'}; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                             <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🌅 Breakfast</span>
-                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(bfastChoice.emoji)} ${escapeHTML(bfastChoice.title)} (${escapeHTML(bfastChoice.nutrition?.calories || 0)} kcal)</span>
+                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(bfastChoice.emoji)} ${escapeHTML(bfastChoice.title)}${bfastChoice.id ? getDietaryBadges(bfastChoice) : ""} (${escapeHTML(bfastChoice.nutrition?.calories || 0)} kcal)</span>
                         </div>
                         <div class="meal-plan-item" data-recipe-id="${escapeHTML(appChoice.id)}" style="cursor: ${appChoice.id ? 'pointer' : 'default'}; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                             <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🧅 Appetizer Snack</span>
-                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(appChoice.emoji)} ${escapeHTML(appChoice.title)} (${escapeHTML(appChoice.nutrition?.calories || 0)} kcal)</span>
+                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(appChoice.emoji)} ${escapeHTML(appChoice.title)}${appChoice.id ? getDietaryBadges(appChoice) : ""} (${escapeHTML(appChoice.nutrition?.calories || 0)} kcal)</span>
                         </div>
                         <div class="meal-plan-item" data-recipe-id="${escapeHTML(lunchChoice.id)}" style="cursor: ${lunchChoice.id ? 'pointer' : 'default'}; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                             <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">☀️ Lunch</span>
-                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(lunchChoice.emoji)} ${escapeHTML(lunchChoice.title)} (${escapeHTML(lunchChoice.nutrition?.calories || 0)} kcal)</span>
+                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(lunchChoice.emoji)} ${escapeHTML(lunchChoice.title)}${lunchChoice.id ? getDietaryBadges(lunchChoice) : ""} (${escapeHTML(lunchChoice.nutrition?.calories || 0)} kcal)</span>
                         </div>
                         <div class="meal-plan-item" data-recipe-id="${escapeHTML(dinnerChoice.id)}" style="cursor: ${dinnerChoice.id ? 'pointer' : 'default'}; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                             <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🌙 Dinner</span>
-                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(dinnerChoice.emoji)} ${escapeHTML(dinnerChoice.title)} (${escapeHTML(dinnerChoice.nutrition?.calories || 0)} kcal)</span>
+                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(dinnerChoice.emoji)} ${escapeHTML(dinnerChoice.title)}${dinnerChoice.id ? getDietaryBadges(dinnerChoice) : ""} (${escapeHTML(dinnerChoice.nutrition?.calories || 0)} kcal)</span>
                         </div>
                         <div class="meal-plan-item" data-recipe-id="${escapeHTML(dessertChoice.id)}" style="cursor: ${dessertChoice.id ? 'pointer' : 'default'}; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
                             <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">🍪 Dessert</span>
-                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(dessertChoice.emoji)} ${escapeHTML(dessertChoice.title)} (${escapeHTML(dessertChoice.nutrition?.calories || 0)} kcal)</span>
+                            <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(dessertChoice.emoji)} ${escapeHTML(dessertChoice.title)}${dessertChoice.id ? getDietaryBadges(dessertChoice) : ""} (${escapeHTML(dessertChoice.nutrition?.calories || 0)} kcal)</span>
                         </div>
                     </div>
                     <p style="text-align: center; margin: 10px 0 0 0; font-size: 0.85rem; color: #848d9e;">
@@ -1322,8 +1369,8 @@ function generateMasterShoppingList() {
     actionPanel.style.cssText = "display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 10px 0; justify-content: center; align-items: center;";
      actionPanel.innerHTML = `
         <button id="toggle-combine-btn" style="background: ${combineGroceryItems ? '#d4af37' : '#2d3238'}; color: ${combineGroceryItems ? '#1c212a' : '#d4af37'}; border: 2px solid #d4af37; padding: 6px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">
-            ${combineGroceryItems ? "📋 Group by Recipe" : "🧩 Combine Duplicates"}
-        </button>
+    ${combineGroceryItems ? "📋 Group by Recipe" : "🧩 Combine All"}
+</button>
         <button id="send-instacart-btn" disabled title="Instacart integration pending partner approval" style="background: #2d3238; color: #848d9e; border: 2px dashed #848d9e; padding: 6px 16px; border-radius: 4px; cursor: not-allowed; font-weight: bold; font-size: 0.85rem; opacity: 0.75;">🛒 Instacart Sync (Coming Soon)</button>
         <button id="copy-master-list-btn" style="background: #2d3238; color: #d4af37; border: 2px solid #d4af37; padding: 6px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">📋 Copy Grocery List</button>
         <button id="clear-checks-btn" style="background: #2d3238; color: #ff4d4d; border: 2px solid #ff4d4d; padding: 6px 16px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 0.85rem; transition: all 0.2s ease;">🔄 Clear Checks</button>
@@ -1349,31 +1396,28 @@ function generateMasterShoppingList() {
 
     const savedMultipliers = getSavedMultipliers();
 
-    if (combineGroceryItems) {
-        const combinedItems = buildCombinedIngredients(currentFavorites, savedMultipliers);
+     if (combineGroceryItems) {
+        const combinedItems = buildCombinedIngredients(currentFavorites, savedMultipliers, true);
         const combinedSection = document.createElement("div");
         combinedSection.className = "shopping-list-group";
         combinedSection.style.marginBottom = "25px";
         combinedSection.setAttribute("data-title", "Combined Shopping List");
         combinedSection.setAttribute("data-emoji", "🛒");
 
-        const itemsHTML = combinedItems.map(itemText => {
-            const isChecked = storedChecks.includes(itemText);
-            return `
-                <li class="${isChecked ? "checklist-item checked" : "checklist-item"}">
-                    <span class="ing-text">${escapeHTML(itemText)}</span>
-                </li>
-            `;
-        }).join("");
+        const itemsHTML = combinedItems.map(item => `
+            <li class="${item.isChecked ? "checklist-item checked" : "checklist-item"}" data-originals="${escapeHTML(JSON.stringify(item.originals))}">
+                <span class="ing-text">${escapeHTML(item.label)}</span>
+            </li>
+        `).join("");
 
-         combinedSection.innerHTML = `
+        combinedSection.innerHTML = `
             <h3 style="color: #d4af37; margin-bottom: 10px; font-size: 1.15rem; border-bottom: 1px solid rgba(132, 141, 158, 0.3); padding-bottom: 5px; text-align: left;">
                 🛒 Combined Ingredients (${combinedItems.length} items)
             </h3>
             <ul style="list-style: none; padding-left: 0; margin: 0;">${itemsHTML}</ul>
         `;
         ingredientsElement.appendChild(combinedSection);
-    } else {
+    }else {
         currentFavorites.forEach(favId => {
             const recipe = myRecipes.find(r => r.id === favId);
             if (recipe) {
@@ -1389,7 +1433,7 @@ function generateMasterShoppingList() {
 
                 const headerHTML = `
                     <h3 style="color: #d4af37; margin-bottom: 10px; font-size: 1.15rem; border-bottom: 1px solid rgba(132, 141, 158, 0.3); padding-bottom: 5px; text-align: left;">
-                        ${escapeHTML(recipe.emoji)} ${escapeHTML(recipe.title)}${scaleBadge}
+                        ${escapeHTML(recipe.emoji)} ${escapeHTML(recipe.title)}${getDietaryBadges(recipe)}${scaleBadge}
                     </h3>
                 `;
 
@@ -1408,17 +1452,40 @@ function generateMasterShoppingList() {
         });
     }
 
-    // --- INTERACTIVE EVENT CLICK STATE ROUTER ---
+   // --- INTERACTIVE EVENT CLICK STATE ROUTER ---
     ingredientsElement.onclick = (e) => {
         const listItem = e.target.closest(".checklist-item");
         if (!listItem) return;
 
-        const textSpan = listItem.querySelector(".ing-text");
-        toggleCheckedIngredient(textSpan.textContent.trim());
-        listItem.classList.toggle("checked");
-    };
+        const willBeChecked = !listItem.classList.contains("checked");
+        listItem.classList.toggle("checked", willBeChecked);
 
-    // --- TOGGLE COMBINE DUPLICATES BUTTON ROUTER ---
+        const originalsAttr = listItem.getAttribute("data-originals");
+        let checked = getCheckedIngredients();
+
+        if (originalsAttr) {
+            // Sync all underlying recipe lines in "Combine All" mode
+            const originals = JSON.parse(originalsAttr);
+            if (willBeChecked) {
+                originals.forEach(orig => {
+                    if (!checked.includes(orig)) checked.push(orig);
+                });
+            } else {
+                checked = checked.filter(text => !originals.includes(text));
+            }
+        } else {
+            // Standard single-item toggle in "Group by Recipe" mode
+            const itemText = listItem.querySelector(".ing-text").textContent.trim();
+            if (willBeChecked) {
+                if (!checked.includes(itemText)) checked.push(itemText);
+            } else {
+                checked = checked.filter(text => text !== itemText);
+            }
+        }
+
+        localStorage.setItem("vault_checked_ingredients", JSON.stringify(checked));
+    };
+    // --- TOGGLE COMBINE ALL BUTTON ROUTER ---
     const toggleCombineBtn = document.getElementById("toggle-combine-btn");
     if (toggleCombineBtn) {
         toggleCombineBtn.onclick = (e) => {
@@ -1427,7 +1494,6 @@ function generateMasterShoppingList() {
             generateMasterShoppingList();
         };
     }
-
     // --- REFRESH RESET BUTTON ROUTER ---
     const clearChecksBtn = document.getElementById("clear-checks-btn");
     if (clearChecksBtn) {
@@ -1559,7 +1625,7 @@ if (masterGroceryBtn) {
     masterGroceryBtn.addEventListener("click", generateMasterShoppingList);
 }
 
-// --- SUPABASE AUTH MODAL & CLOUD SYNC ENGINE ---
+
 // --- SUPABASE AUTH MODAL & CLOUD SYNC ENGINE ---
 async function syncUserCloudData() {
     const client = getSupabaseClient();
