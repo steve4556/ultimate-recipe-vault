@@ -70,6 +70,20 @@ function escapeHTML(str) {
 }
 
 async function toggleFavorite(recipeId) {
+    const isCurrentlyFavorited = getFavorites().includes(recipeId);
+
+    // 📊 Track when a user favorites a recipe in Google Analytics 4
+    if (!isCurrentlyFavorited && typeof gtag === "function") {
+        const favRecipe = myRecipes.find(r => r.id === recipeId);
+        if (favRecipe) {
+            gtag("event", "favorite_recipe", {
+                recipe_id: favRecipe.id,
+                recipe_name: favRecipe.title,
+                recipe_category: getRecipeCategory(favRecipe)
+            });
+        }
+    }
+
     if (currentUser && supabaseClient) {
         if (cloudFavoritesCache.includes(recipeId)) {
             cloudFavoritesCache = cloudFavoritesCache.filter(id => id !== recipeId);
@@ -715,6 +729,16 @@ function openDetailedView(recipeId, sourceView = null) {
 
     // Remember if we came from a meal planner so "Back" returns there
     returnToView = sourceView;
+
+    // 📊 Track which recipe was opened in Google Analytics 4
+    if (typeof gtag === "function") {
+        gtag("event", "view_recipe", {
+            recipe_id: targetRecipe.id,
+            recipe_name: targetRecipe.title,
+            recipe_category: getRecipeCategory(targetRecipe),
+            source_view: sourceView || "main_vault"
+        });
+    }
 
     // Push browser history state unless triggered by the browser's Back button
     if (!isHandlingPopState) {
