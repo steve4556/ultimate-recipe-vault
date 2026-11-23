@@ -1,5 +1,6 @@
 const gridContainer = document.getElementById("recipe-grid-container");
 const navDropdown = document.getElementById("recipe-selector");
+const drinkDropdown = document.getElementById("drink-selector");
 const overlay = document.getElementById("fullscreen-overlay");
 const closeOverlayBtn = document.getElementById("close-overlay");
 const searchInput = document.getElementById("recipe-search");
@@ -16,10 +17,13 @@ let visibleCount = 12; // 🧠 Change this number to control how many cards show
 let healthyModalMaxCalories = 500; // Tracks the interactive slider inside the healthy modal
 
 // --- NAVIGATION & HISTORY STATE TRACKING ---
-let returnToView = null;        // Tracks "random-menu" or "healthy-menu" when clicking a meal card
+let returnToView = null;        // Tracks "random-menu", "healthy-menu", or "drink-menu"
 let lastRandomMenuPicks = null; // Saves the rolled dishes so going "Back" keeps your exact menu
 let lastHealthyMenuPicks = null;
-let isHandlingPopState = false; // Prevents duplicate history entries when pressing browser Back
+let lastDrinkMenuPicks = null;    // Saves the 7 rolled drinks for Monday–Sunday
+let lastMocktailMenuPicks = null; // Saves the 7 rolled zero-proof drinks for Monday–Sunday
+let isHandlingPopState = false;
+
 
 const SUPABASE_URL = "https://" + "ygvnxeeehvgqpsaiajhx" + ".supabase.co";
 const SUPABASE_KEY = "sb_publishable_EnAl79eRY-lzaacQuVpggA_IDiDvK-R";
@@ -321,6 +325,40 @@ function getRecipeCategory(recipe) {
 
     const titleText = `${recipe.id} ${recipe.title}`.toLowerCase();
 
+    // 1.5 Adult Beverages / Drinks (Checked BEFORE food categories)
+    if (
+        titleText.includes("cocktail") ||
+        titleText.includes("margarita") ||
+        titleText.includes("mojito") ||
+        titleText.includes("martini") ||
+        titleText.includes("sangria") ||
+        titleText.includes("spritz") ||
+        titleText.includes("daiquiri") ||
+        titleText.includes("old-fashioned") ||
+        titleText.includes("negroni") ||
+        titleText.includes("paloma") ||
+        titleText.includes("mimosa") ||
+        titleText.includes("bellini") ||
+        titleText.includes("mule")
+    ) {
+        return "drink";
+    }
+    // 1.4 Zero-Proof / Non-Alcoholic Drinks (Checked BEFORE alcoholic drinks & food)
+    if (
+        titleText.includes("mocktail") ||
+        titleText.includes("non-alcoholic") ||
+        titleText.includes("zero-proof") ||
+        titleText.includes("spirit-free") ||
+        titleText.includes("virgin-") ||
+        titleText.includes("agua-fresca") ||
+        titleText.includes("lemonade") ||
+        titleText.includes("iced-tea") ||
+        titleText.includes("shirley-temple") ||
+        titleText.includes("horchata")
+    ) {
+        return "mocktail";
+    }
+
     // 2. Breakfast
     if (
         (titleText.includes("egg") && !titleText.includes("eggplant") && !titleText.includes("deviled")) ||
@@ -338,8 +376,6 @@ function getRecipeCategory(recipe) {
     ) {
         return "breakfast";
     }
-
-    // 3. Appetizer (Checked BEFORE dessert so savory tarts & hor d'oeuvres are caught first)
     if (
         titleText.includes("canape") ||
         titleText.includes("date") ||
@@ -418,11 +454,18 @@ function getDietaryBadges(recipe) {
         return recipe.dietary === "none" ? "" : ` ${recipe.dietary}`;
     }
 
+    const category = getRecipeCategory(recipe);
+
+    // 🚫 NEVER apply Halal or Kosher badges to alcoholic drinks
+    if (category === "drink") {
+        return "";
+    }
+
     const fullText = `${recipe.title} ${recipe.subtitle} ${recipe.ingredients.join(" ")}`.toLowerCase();
 
-    // 1. Check Pork & Alcohol (Disqualifies BOTH Halal and Kosher)
+    // 1. Check Pork & All Spirits/Alcohol (Disqualifies BOTH Halal and Kosher)
     const hasPork = /\b(pork|bacon|ham|prosciutto|pancetta|sausage|pepperoni|salami|chorizo|lard|ribs)\b/.test(fullText);
-    const hasAlcohol = /\b(wine|beer|rum|bourbon|whiskey|vodka|brandy|cognac|champagne|mirin|sake|liqueur|amaretto|marsala|sherry)\b/.test(fullText);
+    const hasAlcohol = /\b(wine|beer|rum|bourbon|whiskey|whisky|vodka|brandy|cognac|champagne|prosecco|gin|tequila|mezcal|scotch|vermouth|cachaça|cachaca|absinthe|pisco|campari|aperol|amaro|limoncello|midori|kahlua|kahlúa|mirin|sake|liqueur|amaretto|marsala|sherry|bitters)\b/.test(fullText);
 
     if (hasPork || hasAlcohol) {
         return "";
@@ -517,7 +560,9 @@ function setupCategoryFilterBar() {
         { id: "appetizer", label: "🧅 Appetizers" },
         { id: "lunch",     label: "🥗 Lunch" },
         { id: "dinner",    label: "🍽️ Dinner" },
-        { id: "dessert",   label: "🍪 Desserts" }
+        { id: "dessert",   label: "🍪 Desserts" },
+        { id: "drink",     label: "🍹 All Drinks" },
+        { id: "mocktail",  label: "🍹 Zero-Proof Drinks" }
     ];
 
     const filterBar = document.createElement("div");
@@ -563,23 +608,37 @@ function setupCategoryFilterBar() {
 
     dashboardWrapper.appendChild(filterBar);
      updateAuthButtonUI();
+
+     // Render Google Translate immediately if its script loaded before this bar was created
+    if (window.googleTranslateReady && typeof window.googleTranslateElementInit === "function") {
+        window.googleTranslateElementInit();
+    }
 }
 
 function initApp() {
     setupCategoryFilterBar();
     gridContainer.innerHTML = "";
     
-    // Clear old options out of the dropdown to prevent duplicates on refresh
+    // Clear old options out of both dropdowns to prevent duplicates on refresh
     navDropdown.innerHTML = '<option value="">-- Select a Dish --</option>';
+    if (drinkDropdown) {
+        drinkDropdown.innerHTML = '<option value="">-- Select a Drink --</option>';
+    }
     
     const currentFavorites = getFavorites();
     
-    // 🚀 SCALING FIX: Populate the dropdown with ALL titles so users can search everything...
+    // 🚀 Populate Food dropdown with food only, and Drink dropdown with cocktails & zero-proof drinks
     myRecipes.forEach(recipe => {
+        const category = getRecipeCategory(recipe);
         const option = document.createElement("option");
         option.value = recipe.id;
         option.textContent = `${recipe.emoji} ${recipe.title}${getDietaryBadges(recipe)}`;
-        navDropdown.appendChild(option);
+
+        if (category === "drink" || category === "mocktail") {
+            if (drinkDropdown) drinkDropdown.appendChild(option);
+        } else {
+            navDropdown.appendChild(option);
+        }
     });
     
 
@@ -592,7 +651,11 @@ function initApp() {
         
         const matchesSearch = matchesTitle || matchesSubtitle || matchesIngredients;
         const matchesFavorites = !showFavoritesOnly || currentFavorites.includes(recipe.id);
-        const matchesCategory = activeCategory === "all" || getRecipeCategory(recipe) === activeCategory;
+        const category = getRecipeCategory(recipe);
+        const matchesCategory =
+            activeCategory === "all"
+                ? category !== "drink" && category !== "mocktail"
+                : category === activeCategory;
         
         return matchesSearch && matchesFavorites && matchesCategory;
     });
@@ -675,6 +738,7 @@ function hideModalOnly() {
     overlay.classList.remove("is-active");
     document.body.classList.remove("modal-open");
     navDropdown.value = "";
+    if (drinkDropdown) drinkDropdown.value = "";
     returnToView = null;
     if (closeOverlayBtn) closeOverlayBtn.textContent = "← Back to Main Menu";
 }
@@ -687,6 +751,14 @@ function closeDetailedView() {
     }
     if (returnToView === "healthy-menu") {
         generateHealthyMealPlan(true);
+        return;
+    }
+    if (returnToView === "drink-menu") {
+        generateWeeklyDrinkPlan(true);
+        return;
+    }
+    if (returnToView === "mocktail-menu") {
+        generateWeeklyMocktailPlan(true);
         return;
     }
 
@@ -718,6 +790,10 @@ window.addEventListener("popstate", (e) => {
         openChangePasswordModal(false);
     } else if (state.view === "recipe" && state.recipeId) {
         openDetailedView(state.recipeId, state.returnTo || null);
+    }  else if (state.view === "drink-menu") {
+        generateWeeklyDrinkPlan(true);
+    } else if (state.view === "mocktail-menu") {
+        generateWeeklyMocktailPlan(true);
     }
 
     isHandlingPopState = false;
@@ -746,15 +822,17 @@ function openDetailedView(recipeId, sourceView = null) {
     }
 
     // Update the Back button label based on where the user came from
-    if (closeOverlayBtn) {
-        if (returnToView === "random-menu") {
+    if (returnToView === "random-menu") {
             closeOverlayBtn.textContent = "← Back to Daily Menu";
         } else if (returnToView === "healthy-menu") {
             closeOverlayBtn.textContent = "← Back to Custom Menu";
-        } else {
+        } else if (returnToView === "drink-menu") {
+          closeOverlayBtn.textContent = "← Back to Weekly Drinks";
+      } else if (returnToView === "mocktail-menu") {
+          closeOverlayBtn.textContent = "← Back to Zero-Proof Plan";
+      } else {
             closeOverlayBtn.textContent = "← Back to Main Menu";
         }
-    }
 
     // Reset layout view content slots cleanly before rendering text parameters
     clearOverlayLayout();
@@ -839,11 +917,16 @@ function openDetailedView(recipeId, sourceView = null) {
 
     // Loops over Array elements to cleanly render bullet lists via String formatting
     // 1. Highlights
-    const highlightsElement = document.getElementById("overlay-highlights");
-    highlightsElement.innerHTML = targetRecipe.highlights.map(h => `
-        <dt>*${escapeHTML(h.category)}</dt>
-        <dd>${escapeHTML(h.text)}</dd>
-    `).join("");
+   const highlightsElement = document.getElementById("overlay-highlights");
+    highlightsElement.innerHTML = targetRecipe.highlights
+        .map(h => {
+            const formattedText = escapeHTML(h.text).replace(
+                /^IMPORTANT:/,
+                '<strong style="color: #ff6b6b; letter-spacing: 0.5px;">IMPORTANT:</strong>'
+            );
+            return `<dt>*${escapeHTML(h.category)}</dt><dd>${formattedText}</dd>`;
+        })
+        .join("");
 
     // Scale servings text cleanly alongside ingredients
     function updateScaledServings(factor) {
@@ -1024,6 +1107,14 @@ navDropdown.addEventListener("change", (e) => {
         openDetailedView(e.target.value);
     }
 });
+
+if (drinkDropdown) {
+    drinkDropdown.addEventListener("change", (e) => {
+        if (e.target.value) {
+            openDetailedView(e.target.value);
+        }
+    });
+}
 
 if (searchInput) {
     searchInput.addEventListener("input", () => {
@@ -1325,6 +1416,101 @@ function generateHealthyMealPlan(reusePrevious = false) {
 if (healthyMenuBtn) {
     healthyMenuBtn.addEventListener("click", () => generateHealthyMealPlan(false));
 }
+const drinkMenuBtn = document.getElementById("drink-menu-btn");
+
+function generateWeeklyDrinkPlan(reusePrevious = false) {
+    if (myRecipes.length === 0) return;
+
+    const drinksPool = myRecipes.filter(r => getRecipeCategory(r) === "drink");
+    if (drinksPool.length === 0) {
+        alert("No adult beverages in the vault yet! Add drinks with category: 'drink' first. 🍸");
+        return;
+    }
+
+    returnToView = null;
+    if (closeOverlayBtn) closeOverlayBtn.textContent = "← Back to Main Menu";
+
+    if (!isHandlingPopState) {
+        history.pushState({ view: "drink-menu" }, "", "#weekly-drinks");
+    }
+
+    clearOverlayLayout();
+
+    const daysOfWeek = [
+        { day: "Monday",    icon: "🌙" },
+        { day: "Tuesday",   icon: "🌮" },
+        { day: "Wednesday", icon: "🐪" },
+        { day: "Thursday",  icon: "⚡" },
+        { day: "Friday",    icon: "🎉" },
+        { day: "Saturday",  icon: "🥂" },
+        { day: "Sunday",    icon: "☀️" }
+    ];
+
+    if (!reusePrevious || !lastDrinkMenuPicks) {
+        const shuffled = [...drinksPool].sort(() => Math.random() - 0.5);
+        lastDrinkMenuPicks = daysOfWeek.map((slot, index) => ({
+            ...slot,
+            drink: shuffled[index % shuffled.length]
+        }));
+    }
+
+    document.getElementById("overlay-title").textContent = "🍸 Weekly Adult Beverage Menu";
+    document.getElementById("overlay-subtitle").textContent = "7 curated pours — one for every day of the week.";
+
+    const overlayImg = document.getElementById("overlay-photo");
+    if (overlayImg) overlayImg.style.display = "none";
+
+    overlay.querySelectorAll("table").forEach(t => t.style.display = "none");
+    overlay.querySelectorAll("h2").forEach(h => h.style.display = "none");
+    document.getElementById("overlay-ingredients").style.display = "none";
+    document.getElementById("overlay-instructions").style.display = "none";
+
+    const highlightsElement = document.getElementById("overlay-highlights");
+    highlightsElement.innerHTML = `
+        <div style="display: flex; flex-direction: column; gap: 20px; background: rgba(45, 50, 56, 0.95); padding: 25px; border-radius: 12px; border: 2px solid #848d9e; margin: 20px 0; box-shadow: 0 8px 16px rgba(0,0,0,0.4);">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #d4af37; padding-bottom: 12px; margin-bottom: 10px;">
+                <span style="font-size: 1.2rem; color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">7-Day Drink Lineup</span>
+                <button id="reroll-drinks-btn" style="background: #d4af37; color: #1c212a; border: none; padding: 6px 14px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: all 0.2s ease;">🔄 Re-Roll Drinks</button>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+                ${lastDrinkMenuPicks.map(({ day, icon, drink }) => `
+                    <div class="meal-plan-item" data-recipe-id="${escapeHTML(drink.id)}" style="cursor: pointer; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                        <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">${icon} ${day}</span>
+                        <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(drink.emoji)} ${escapeHTML(drink.title)}${drink.id ? getDietaryBadges(drink) : ""}</span>
+                    </div>
+                `).join("")}
+            </div>
+            <p style="text-align: center; margin: 10px 0 0 0; font-size: 0.85rem; color: #848d9e;">
+                Tip: Click any drink above to open its full ingredients and mixing instructions!
+            </p>
+        </div>
+    `;
+
+    const rerollDrinksBtn = document.getElementById("reroll-drinks-btn");
+    if (rerollDrinksBtn) {
+        rerollDrinksBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            generateWeeklyDrinkPlan(false);
+        });
+    }
+
+    highlightsElement.querySelectorAll(".meal-plan-item").forEach(card => {
+        card.addEventListener("click", () => {
+            const recipeId = card.getAttribute("data-recipe-id");
+            if (recipeId && recipeId !== "undefined") {
+                openDetailedView(recipeId, "drink-menu");
+            }
+        });
+    });
+
+    overlay.classList.add("is-active");
+    document.body.classList.add("modal-open");
+}
+
+if (drinkMenuBtn) {
+    drinkMenuBtn.addEventListener("click", () => generateWeeklyDrinkPlan(false));
+}
 
 if (loadMoreBtn && loadMoreContainer) {
     const infiniteScrollObserver = new IntersectionObserver((entries) => {
@@ -1341,6 +1527,102 @@ if (loadMoreBtn && loadMoreContainer) {
     });
 
     infiniteScrollObserver.observe(loadMoreContainer);
+}
+
+const mocktailMenuBtn = document.getElementById("mocktail-menu-btn");
+
+function generateWeeklyMocktailPlan(reusePrevious = false) {
+    if (myRecipes.length === 0) return;
+
+    const mocktailsPool = myRecipes.filter(r => getRecipeCategory(r) === "mocktail");
+    if (mocktailsPool.length === 0) {
+        alert("No zero-proof drinks in the vault yet! Add drinks with category: 'mocktail' first. 🍹");
+        return;
+    }
+
+    returnToView = null;
+    if (closeOverlayBtn) closeOverlayBtn.textContent = "← Back to Main Menu";
+
+    if (!isHandlingPopState) {
+        history.pushState({ view: "mocktail-menu" }, "", "#weekly-mocktails");
+    }
+
+    clearOverlayLayout();
+
+    const daysOfWeek = [
+        { day: "Monday",    icon: "🌙" },
+        { day: "Tuesday",   icon: "🌮" },
+        { day: "Wednesday", icon: "🐪" },
+        { day: "Thursday",  icon: "⚡" },
+        { day: "Friday",    icon: "🎉" },
+        { day: "Saturday",  icon: "🥂" },
+        { day: "Sunday",    icon: "☀️" }
+    ];
+
+    if (!reusePrevious || !lastMocktailMenuPicks) {
+        const shuffled = [...mocktailsPool].sort(() => Math.random() - 0.5);
+        lastMocktailMenuPicks = daysOfWeek.map((slot, index) => ({
+            ...slot,
+            drink: shuffled[index % shuffled.length]
+        }));
+    }
+
+    document.getElementById("overlay-title").textContent = "🍹 Weekly Zero-Proof Plan";
+    document.getElementById("overlay-subtitle").textContent = "7 alcohol-free craft refreshers — one for every day of the week.";
+
+    const overlayImg = document.getElementById("overlay-photo");
+    if (overlayImg) overlayImg.style.display = "none";
+
+    overlay.querySelectorAll("table").forEach(t => t.style.display = "none");
+    overlay.querySelectorAll("h2").forEach(h => h.style.display = "none");
+    document.getElementById("overlay-ingredients").style.display = "none";
+    document.getElementById("overlay-instructions").style.display = "none";
+
+    const highlightsElement = document.getElementById("overlay-highlights");
+    highlightsElement.innerHTML = `
+        <div style="display: flex; flex-direction: column; gap: 20px; background: rgba(45, 50, 56, 0.95); padding: 25px; border-radius: 12px; border: 2px solid #848d9e; margin: 20px 0; box-shadow: 0 8px 16px rgba(0,0,0,0.4);">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #d4af37; padding-bottom: 12px; margin-bottom: 10px;">
+                <span style="font-size: 1.2rem; color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">7-Day Zero-Proof Lineup</span>
+                <button id="reroll-mocktails-btn" style="background: #d4af37; color: #1c212a; border: none; padding: 6px 14px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: all 0.2s ease;">🔄 Re-Roll Drinks</button>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+                ${lastMocktailMenuPicks.map(({ day, icon, drink }) => `
+                    <div class="meal-plan-item" data-recipe-id="${escapeHTML(drink.id)}" style="cursor: pointer; background: rgba(28, 33, 42, 0.6); padding: 12px; border-radius: 8px; border-left: 4px solid #d4af37;">
+                        <span style="color: #848d9e; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 4px;">${icon} ${day}</span>
+                        <span style="font-size: 1.1rem; font-weight: 500; color: #ffffff;">${escapeHTML(drink.emoji)} ${escapeHTML(drink.title)}${drink.id ? getDietaryBadges(drink) : ""}</span>
+                    </div>
+                `).join("")}
+            </div>
+            <p style="text-align: center; margin: 10px 0 0 0; font-size: 0.85rem; color: #848d9e;">
+                Tip: Click any drink above to open its full ingredients and mixing instructions!
+            </p>
+        </div>
+    `;
+
+    const rerollMocktailsBtn = document.getElementById("reroll-mocktails-btn");
+    if (rerollMocktailsBtn) {
+        rerollMocktailsBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            generateWeeklyMocktailPlan(false);
+        });
+    }
+
+    highlightsElement.querySelectorAll(".meal-plan-item").forEach(card => {
+        card.addEventListener("click", () => {
+            const recipeId = card.getAttribute("data-recipe-id");
+            if (recipeId && recipeId !== "undefined") {
+                openDetailedView(recipeId, "mocktail-menu");
+            }
+        });
+    });
+
+    overlay.classList.add("is-active");
+    document.body.classList.add("modal-open");
+}
+
+if (mocktailMenuBtn) {
+    mocktailMenuBtn.addEventListener("click", () => generateWeeklyMocktailPlan(false));
 }
 
 function getCheckedIngredients() {
@@ -1362,7 +1644,6 @@ function clearAllCheckedIngredients() {
     localStorage.removeItem("vault_checked_ingredients");
 }
 
-// --- UPDATED MASTER GROCERY LIST LOGIC ENGINE ---
 // --- UPDATED MASTER GROCERY LIST LOGIC ENGINE ---
 function generateMasterShoppingList() {
     const currentFavorites = getFavorites();
