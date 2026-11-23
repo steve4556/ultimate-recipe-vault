@@ -67,7 +67,7 @@ p {
 
 .dashboard-wrapper .vault-control-panel {
     display: grid;
-    grid-template-columns: 25% 25% 1fr 1fr 1fr;
+    grid-template-columns: 20% 22% 22% 1fr 1fr;
     align-items: flex-end;
     justify-content: stretch;
     gap: 15px;
@@ -75,6 +75,44 @@ p {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+}
+.dashboard-wrapper #recipe-search,
+.dashboard-wrapper #recipe-selector,
+.dashboard-wrapper #drink-selector,
+.dashboard-wrapper .vault-control-panel .dashboard-btn {
+    height: 44px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.dashboard-wrapper #recipe-search,
+.dashboard-wrapper #recipe-selector,
+.dashboard-wrapper #drink-selector {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 2px solid #848d9e;
+    background-color: #2d3238;
+    color: #fff;
+    font-size: 0.95rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.dashboard-wrapper #recipe-selector,
+.dashboard-wrapper #drink-selector {
+    cursor: pointer;
+}
+
+.dashboard-wrapper #recipe-search:hover,
+.dashboard-wrapper #recipe-search:focus,
+.dashboard-wrapper #recipe-selector:hover,
+.dashboard-wrapper #recipe-selector:focus,
+.dashboard-wrapper #drink-selector:hover,
+.dashboard-wrapper #drink-selector:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.8);
+    outline: none;
 }
 
 .dashboard-wrapper .vault-control-panel .control-item {
@@ -847,8 +885,9 @@ dd {
         color: #d4af37 !important;
     }
 
-    .dashboard-wrapper #recipe-search,
-    .dashboard-wrapper #recipe-selector {
+     .dashboard-wrapper #recipe-search,
+    .dashboard-wrapper #recipe-selector,
+    .dashboard-wrapper #drink-selector {
         height: 36px !important;
         font-size: 0.82rem !important;
         padding: 4px 8px !important;
@@ -944,18 +983,22 @@ dd {
         white-space: nowrap !important;
     }
 }
+
 /* =========================================================
-   GOOGLE TRANSLATE CUSTOM VAULT STYLING
+   7. GOOGLE TRANSLATE CUSTOM VAULT STYLING
    ========================================================= */
 
 /* Hide Google's white top banner bar & keep body from shifting down */
+iframe.goog-te-banner-frame,
 .goog-te-banner-frame.skiptranslate,
-.VIpgJd-ZVi9od-ORHb-OEVmcd {
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
     display: none !important;
 }
 
 body {
     top: 0px !important;
+    position: static !important;
 }
 
 /* Hide "Powered by Google" branding text & icons */
@@ -966,7 +1009,7 @@ body {
     align-items: center;
 }
 
-.goog-te-gadget span,
+.goog-te-gadget > span,
 .goog-logo-link {
     display: none !important;
 }
