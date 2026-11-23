@@ -25764,5 +25764,1233 @@
       "Add a scoop of cubed ice, shake briskly for 12 seconds until frosty cold, then double-strain over the fresh ice and top slowly with chilled club soda.",
       "Tuck a crisp cucumber half-moon wedge and the remaining 2 fresh green jalapeño coins into the top of the ice, and serve immediately!"
     ]
+  },
+   {
+    "id": "spiced-chai-vanilla-oat-milk-fizz-mocktail",
+    "emoji": "🫖",
+    "title": "Iced Spiced Masala Chai & Vanilla Cream Fizz (Zero-Proof — Black Tea, Warm Spice & Soda)",
+    "image": "images7/spiced-chai-vanilla-fizz.jpg",
+    "subtitle": "Creamy warm-ivory, aromatic, and velvety—double-brewed masala chai black tea poured over clear cubed ice in a tall straight highball, swirled with chilled vanilla cream and crowned with two cinnamon sticks and a whole star anise pod.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 105, "protein": 2, "carbs": 17, "fats": 4 },
+    "highlights": [
+      { "category": "Aromatic Double-Brewed Masala Chai Concentrate", "text": "Steeping bold black tea with cinnamon bark, green cardamom, cloves, and ginger creates a deeply spiced café base." },
+      { "category": "Silky Swirled Vanilla Cream & Light Fizz", "text": "Pouring chilled vanilla cream into sparkling spiced tea creates a rich creamy marble swirl over clear ice." },
+      { "category": "Dual Cinnamon Sticks & Whole Star Anise Crown", "text": "Tucking two whole cinnamon sticks alongside a floating star anise pod infuses warming spice aroma into every sip." }
+    ],
+    "ingredients": [
+      "4 oz chilled double-strength unsweetened masala chai black tea",
+      "1/2 oz pure cane simple syrup (1:1 organic cane sugar and water)",
+      "2 oz cold half-and-half or heavy whipping cream (or barista oat milk for a dairy-free option)",
+      "1/4 tsp pure vanilla extract",
+      "1 1/2 oz chilled club soda (optional, for light effervescence) and 1 1/2 cups clear cubed ice",
+      "2 whole cinnamon sticks and 1 whole star anise pod for garnish"
+    ],
+    "instructions": [
+      "Pour the chilled double-strength masala chai tea, pure cane simple syrup, and optional chilled club soda into a tall straight highball glass filled generously with clear cubed ice.",
+      "Stir the pure vanilla extract into the cold half-and-half (or cream), then slowly pour it over the ice so it swirls into a creamy ivory blend.",
+      "Tuck 2 whole cinnamon sticks into the side of the glass, float 1 whole star anise pod on top of the ice, and serve immediately!"
+    ]
+  },
+  {
+    "id": "kumquat-ginger-thyme-sparkler-mocktail",
+    "emoji": "🍊",
+    "title": "Bright Kumquat, Fresh Ginger & Lemon Thyme Sparkler (Zero-Proof — Tart Citrus & Herb)",
+    "image": "images7/kumquat-ginger-thyme-sparkler.jpg",
+    "subtitle": "Soft blush-amber, zesty, and garden-fresh—muddled whole kumquats, fresh ginger root, and wildflower honey topped with sparkling mineral water in a tall straight highball packed with cubed ice, bright kumquat wheels, and fresh thyme sprigs.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 75, "protein": 0, "carbs": 19, "fats": 0 },
+    "highlights": [
+      { "category": "Sweet-Tart Whole Muddled Kumquats", "text": "Because kumquat peel is naturally sweet while the pulp is bright and tart, muddling whole slices yields rich citrus oil." },
+      { "category": "Fiery Pressed Ginger & Wildflower Honey", "text": "Freshly grated ginger root adds a lively warm kick softened by floral wildflower honey syrup." },
+      { "category": "Layered Kumquat Wheels & Fresh Thyme Inside the Ice", "text": "Tucking bright orange kumquat coins and whole lemon thyme sprigs directly between clear ice cubes in a tall highball creates a vibrant botanical display." }
+    ],
+    "ingredients": [
+      "6 ripe whole kumquats, thinly sliced and seeded (3 for muddling, 3 for layering inside the glass)",
+      "3 thin coins peeled fresh ginger root",
+      "3/4 oz wildflower honey syrup (1:1 raw wildflower honey and warm water, cooled)",
+      "1/2 oz freshly squeezed lemon juice",
+      "4 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "3 fresh lemon thyme sprigs (for layering inside the ice and crowning the top)"
+    ],
+    "instructions": [
+      "Place 3 sliced kumquats, the fresh ginger coins, wildflower honey syrup, and freshly squeezed lemon juice in the bottom of a cocktail shaker and muddle firmly until juicy and fragrant.",
+      "Add a small scoop of ice and shake briskly for 12 seconds until frosty cold.",
+      "Layer the remaining 3 sliced kumquats and 2 fresh lemon thyme sprigs among clear cubed ice inside a chilled tall straight highball glass, double-strain the citrus-ginger base over the ice, top slowly with sparkling mineral water, crown with the final thyme sprig, and serve immediately!"
+    ]
+  },
+  {
+    "id": "tart-cherry-yuzu-vanilla-fizz-mocktail",
+    "emoji": "🍒",
+    "title": "Ruby Montmorency Tart Cherry, Yuzu & Vanilla Fizz (Zero-Proof — Sour Cherry & Citrus)",
+    "image": "images7/tart-cherry-yuzu-fizz.jpg",
+    "subtitle": "Glowing ruby-crimson, tangy, and frothy—unsweetened Montmorency tart cherry juice shaken with aromatic yuzu citrus and vanilla bean syrup over whole cherries and clear ice in a curved stemless glass, topped with sparkling soda, fresh mint, and stemmed dark cherries.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 85, "protein": 0, "carbs": 21, "fats": 0 },
+    "highlights": [
+      { "category": "Bold Unsweetened Montmorency Tart Cherry Juice", "text": "Pure sour cherry juice delivers luminous ruby-red color and bright, mouthwatering acidity." },
+      { "category": "Fragrant Japanese Yuzu & Pure Vanilla Bean", "text": "Aromatic yuzu citrus bridges grapefruit and mandarin notes while real vanilla bean syrup rounds out the tartness." },
+      { "category": "Curved Stemless Glass with Sunken Cherries & Mint Crown", "text": "Drop-in dark cherries at the base and a frothy top garnished with fresh mint leaves and a stemmed cherry complete the pour." }
+    ],
+    "ingredients": [
+      "2 1/2 oz chilled 100% pure unsweetened Montmorency tart cherry juice",
+      "3/4 oz pure unsweetened yuzu citrus juice (or equal parts fresh lemon and mandarin juice)",
+      "3/4 oz pure vanilla bean simple syrup (1:1 cane sugar and water steeped with split vanilla bean)",
+      "3 1/2 oz chilled club soda or sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "5 fresh dark red cherries, pitted for the glass (3 dropped in the base, 2 with stems for garnish) and 2 fresh mint leaves"
+    ],
+    "instructions": [
+      "Drop 3 whole pitted dark cherries into the bottom of a chilled curved stemless glass and fill generously with clear cubed ice.",
+      "Combine the chilled Montmorency tart cherry juice, yuzu citrus juice, and pure vanilla bean simple syrup in a cocktail shaker with ice and shake briskly for 12 seconds until lightly frothy and icy cold.",
+      "Strain over the cherries and fresh ice, top slowly with chilled club soda to create a delicate white foam cap, garnish with the fresh mint leaves and 2 stemmed cherries, and serve immediately!"
+    ]
+  },
+  {
+    "id": "mulberry-rosewater-lemon-sparkler-mocktail",
+    "emoji": "🫐",
+    "title": "Velvet Black Mulberry, Rosewater & Fresh Lemon Sparkler (Zero-Proof — Berry & Floral)",
+    "image": "images7/mulberry-rosewater-sparkler.jpg",
+    "subtitle": "Deep ruby-burgundy, floral, and lush—ripe black mulberries muddled with freshly squeezed lemon juice and a whisper of culinary rosewater over clear cubed ice, topped with chilled sparkling mineral water, whole berries, and a fresh flowering lavender sprig.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 70, "protein": 1, "carbs": 17, "fats": 0 },
+    "highlights": [
+      { "category": "Rich Honey-Sweet Ripe Black Mulberries", "text": "Muddled ripe dark mulberries bring deep wine-like berry color and natural fruit texture without heavy tartness." },
+      { "category": "Delicate Food-Grade Rosewater & Fresh Lemon", "text": "Two drops of aromatic rosewater and bright freshly squeezed lemon juice lift the dark berry base into a crisp botanical refresher." },
+      { "category": "Whole Mulberries & Flowering Herb Sprig Garnish", "text": "Crowning the ruby-violet pour with whole dark mulberries and a fresh flowering lavender sprig completes the garden presentation." }
+    ],
+    "ingredients": [
+      "1/3 cup ripe black mulberries (plus 2 whole berries for garnish)",
+      "3/4 oz freshly squeezed lemon juice",
+      "1/2 oz pure cane simple syrup (1:1 organic cane sugar and water)",
+      "2 drops food-grade culinary rosewater",
+      "3 1/2 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 fresh flowering culinary lavender or thyme sprig for garnish"
+    ],
+    "instructions": [
+      "Place the black mulberries, freshly squeezed lemon juice, and pure cane simple syrup in the bottom of a cocktail shaker and muddle thoroughly until juicy.",
+      "Add the culinary rosewater and a scoop of cubed ice, then shake briskly for 12 seconds until frosty cold.",
+      "Pour (or coarse-strain for rich berry texture) into a chilled glass filled with clear cubed ice, top slowly with chilled sparkling mineral water, garnish with the 2 whole mulberries and fresh flowering herb sprig, and serve immediately!"
+    ]
+  },
+  {
+    "id": "persimmon-cinnamon-orange-fizz-mocktail",
+    "emoji": "🧡",
+    "title": "Spiced Fuyu Persimmon, Navel Orange & Cinnamon Fizz (Zero-Proof — Autumn Orchard)",
+    "image": "images7/persimmon-cinnamon-fizz.jpg",
+    "subtitle": "Warm sunset-tangerine, velvety, and gently spiced—ripe Fuyu persimmon puree shaken with sweet navel orange juice, lemon, and Ceylon cinnamon syrup over clear ice, lengthened with crisp club soda and crowned with a round persimmon wheel and cinnamon stick.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 90, "protein": 1, "carbs": 22, "fats": 0 },
+    "highlights": [
+      { "category": "Silky Ripe Fuyu Persimmon Nectar", "text": "Blended sweet Fuyu persimmon lends a luscious nectar texture and vibrant golden-tangerine glow." },
+      { "category": "Warm Ceylon Cinnamon & Fresh Citrus", "text": "Infused cinnamon simple syrup and bright citrus juice keep the sweet orchard fruit balanced and lively." },
+      { "category": "Round Persimmon Wheel & Cinnamon Stick Garnish", "text": "Crowning the ice with a thin cross-section persimmon wheel alongside a whole cinnamon stick highlights the warm seasonal profile." }
+    ],
+    "ingredients": [
+      "2 oz smooth ripe Fuyu persimmon puree (peeled, seeded, and blended smooth)",
+      "1 1/2 oz freshly squeezed navel orange juice (strained)",
+      "1/2 oz freshly squeezed lemon juice",
+      "1/2 oz Ceylon cinnamon simple syrup (1:1 cane sugar and water steeped with 1 cinnamon stick, cooled)",
+      "3 oz chilled club soda (for topping) and 1 1/2 cups clear cubed ice",
+      "1 thin round cross-section slice Fuyu persimmon (fresh or dehydrated) and 1 whole cinnamon stick for garnish"
+    ],
+    "instructions": [
+      "Combine the smooth Fuyu persimmon puree, freshly squeezed orange juice, lemon juice, and cooled Ceylon cinnamon simple syrup in a cocktail shaker with ice and shake vigorously for 15 seconds until well chilled and lightly frothy.",
+      "Double-strain into a chilled glass packed with clear cubed ice.",
+      "Top slowly with chilled club soda, stir gently once to incorporate, garnish with the round Fuyu persimmon wheel tucked beside the whole cinnamon stick, and serve immediately!"
+    ]
+  },
+  {
+    "id": "starfruit-mint-lime-cooler-mocktail",
+    "emoji": "⭐",
+    "title": "Crisp Carambola Starfruit, Garden Mint & Key Lime Cooler (Zero-Proof — Tropical Citrus)",
+    "image": "images7/starfruit-mint-cooler.jpg",
+    "subtitle": "Luminous golden-amber, crisp, and tropical—juicy ripe starfruit muddled with fresh spearmint leaves, freshly squeezed lime juice, and light agave over clear cubed ice with a coarse sugar-salt rim, a pressed starfruit slice, and a dehydrated starfruit crown.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 75, "protein": 0, "carbs": 19, "fats": 0 },
+    "highlights": [
+      { "category": "Crisp Sweet-Tart Ripe Carambola Starfruit", "text": "Freshly muddled starfruit delivers bright apple-citrus-grape notes and a vibrant golden-yellow hue." },
+      { "category": "Cool Garden Spearmint & Fresh Key Lime Snap", "text": "Shaking bruised spearmint leaves and freshly squeezed lime juice into the tropical nectar keeps every sip clean and invigorating." },
+      { "category": "Coarse Sugar-Salt Rim & Dual Starfruit Wheel Presentation", "text": "Pressing a fresh five-pointed starfruit slice against the ice and topping with a dehydrated starfruit wheel creates a signature tropical finish." }
+    ],
+    "ingredients": [
+      "4 thin cross-section slices ripe yellow starfruit, seeds removed (2 for muddling, 1 fresh slice pressed inside the glass, plus 1 dehydrated starfruit wheel for topping)",
+      "5 fresh spearmint leaves (for muddling)",
+      "3/4 oz freshly squeezed lime juice",
+      "1/2 oz light organic agave nectar",
+      "3 1/2 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 tsp coarse cane sugar mixed with 1/2 tsp flaky sea salt (for rimming the glass)"
+    ],
+    "instructions": [
+      "Run a lime wedge around the rim of a chilled glass, dip into the coarse sugar and flaky sea salt mixture, press 1 fresh five-pointed starfruit slice against the inside wall, and fill with clear cubed ice.",
+      "Place 2 ripe starfruit slices, the fresh spearmint leaves, freshly squeezed lime juice, and light organic agave nectar in the bottom of a cocktail shaker and muddle thoroughly until juicy and fragrant.",
+      "Add a scoop of cubed ice, shake briskly for 12 seconds until frosty cold, double-strain into the prepared glass, top slowly with chilled sparkling mineral water, crown with the dehydrated starfruit wheel, and serve immediately!"
+    ]
+  },
+  {
+    "id": "iced-chamomile-honey-lemon-fizz-mocktail",
+    "emoji": "🌼",
+    "title": "Chilled Egyptian Chamomile, Wildflower Honey & Lemon Fizz (Zero-Proof — Botanical Tea)",
+    "image": "images7/chamomile-honey-lemon-fizz.jpg",
+    "subtitle": "Sunlit golden-amber, soothing, and crisp—double-brewed whole chamomile blossom tea shaken with freshly squeezed lemon juice and raw wildflower honey over clear cubed ice, lengthened with chilled sparkling mineral water and crowned with a floating chamomile blossom.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 65, "protein": 0, "carbs": 17, "fats": 0 },
+    "highlights": [
+      { "category": "Fragrant Whole Blossom Chamomile Infusion", "text": "Double-steeping whole dried chamomile flowers yields natural apple-blossom sweetness and a luminous golden hue." },
+      { "category": "Raw Wildflower Honey & Fresh Lemon Brightness", "text": "Floral honey syrup and freshly squeezed lemon juice balance the soothing herbal notes for a crisp daytime refresher." },
+      { "category": "Floating Fresh Chamomile Blossom Garnish", "text": "Crowning the effervescent golden pour with a fresh white-and-yellow chamomile flower creates a clean botanical presentation." }
+    ],
+    "ingredients": [
+      "4 oz chilled double-strength unsweetened chamomile flower tea",
+      "3/4 oz freshly squeezed lemon juice",
+      "3/4 oz wildflower honey syrup (1:1 raw wildflower honey and warm water, cooled)",
+      "3 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 fresh culinary chamomile blossom for garnish"
+    ],
+    "instructions": [
+      "Combine the chilled double-strength chamomile tea, freshly squeezed lemon juice, and wildflower honey syrup in a cocktail shaker filled with cubed ice and shake briskly for 12 seconds until frothy cold.",
+      "Strain into a chilled glass packed with clear cubed ice.",
+      "Top slowly with chilled sparkling mineral water, float 1 fresh culinary chamomile blossom on top of the ice, and serve immediately!"
+    ]
+  },
+  {
+    "id": "red-currant-sage-lime-spritz-mocktail",
+    "emoji": "🍒",
+    "title": "Ruby Red Currant, Garden Sage & Key Lime Spritz (Zero-Proof — Tart Berry & Citrus)",
+    "image": "images7/red-currant-sage-spritz.jpg",
+    "subtitle": "Luminous jewel-scarlet, tart, and effervescent—muddled ruby red currants shaken with fresh garden sage leaves, freshly squeezed lime juice, and pure cane syrup over clear cubed ice, topped with chilled club soda, crushed berries, and a fresh lime wedge.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 70, "protein": 0, "carbs": 18, "fats": 0 },
+    "highlights": [
+      { "category": "Bright Tart Ruby Red Currant Berries", "text": "Freshly muddled red currants deliver vibrant scarlet color and a crisp, wine-like tartness." },
+      { "category": "Earthy Garden Sage & Fresh Key Lime Snap", "text": "Gently bruised sage leaves add savory aromatic depth balanced by zesty freshly squeezed lime juice." },
+      { "category": "Frothy Crushed Berry Crown & Fresh Lime Wedge", "text": "Topping the sparkling crimson pour with whole and crushed red currants alongside a bright green lime wedge creates a vivid contrast." }
+    ],
+    "ingredients": [
+      "1/3 cup fresh or thawed ruby red currants, stemmed (plus 1 tbsp whole berries for topping)",
+      "3 fresh garden sage leaves (for muddling)",
+      "3/4 oz freshly squeezed lime juice (plus 1 fresh lime wedge for garnish)",
+      "3/4 oz pure cane simple syrup (1:1 organic cane sugar and water)",
+      "3 1/2 oz chilled club soda or sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice"
+    ],
+    "instructions": [
+      "Place the stemmed red currants, fresh garden sage leaves, freshly squeezed lime juice, and pure cane simple syrup in the bottom of a cocktail shaker and muddle thoroughly until bright red and juicy.",
+      "Add a scoop of cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Strain into a chilled glass filled with clear cubed ice, top slowly with chilled club soda so a ruby berry froth rises to the rim, spoon the remaining red currants over the ice, garnish with a fresh lime wedge, and serve immediately!"
+    ]
+  },
+  {
+    "id": "yellow-nectarine-sweet-basil-smash-mocktail",
+    "emoji": "🍑",
+    "title": "Sun-Ripened Nectarine, Sweet Basil & Lime Smash (Zero-Proof — Stone Fruit & Herb)",
+    "image": "images7/nectarine-sweet-basil-smash.jpg",
+    "subtitle": "Luminous sunlit-gold, aromatic, and refreshing—ripe yellow nectarine wedges muddled with fresh sweet basil leaves, lime juice, and light agave over clear cubed ice layered with sliced nectarine wedges and whole basil leaves, topped with chilled sparkling water.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 75, "protein": 1, "carbs": 19, "fats": 0 },
+    "highlights": [
+      { "category": "Juicy Sun-Ripened Yellow Nectarine", "text": "Muddling ripe, unpeeled yellow nectarine wedges releases sweet stone-fruit nectar and a glowing pale-gold hue." },
+      { "category": "Fragrant Sweet Genovese Basil & Key Lime", "text": "Fresh sweet basil leaves bring peppery herbal brightness that balances the lush stone fruit." },
+      { "category": "Layered Nectarine Wedges & Whole Basil Leaves in Ice", "text": "Tucking crisp yellow nectarine slices and whole green basil leaves throughout the clear cubed ice creates a vibrant summer presentation." }
+    ],
+    "ingredients": [
+      "1 ripe yellow nectarine, pitted and thinly sliced into wedges (4 wedges for muddling, 4 wedges for layering inside the glass)",
+      "8 fresh sweet basil leaves (4 for muddling, 3 folded inside the glass, plus 1 top sprig for garnish)",
+      "3/4 oz freshly squeezed lime juice",
+      "1/2 oz light organic agave nectar",
+      "3 1/2 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice"
+    ],
+    "instructions": [
+      "Place 4 ripe yellow nectarine wedges, 4 sweet basil leaves, freshly squeezed lime juice, and light organic agave nectar in the bottom of a cocktail shaker and muddle firmly until juicy and fragrant.",
+      "Add a handful of cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Layer the remaining 4 nectarine wedges and 3 whole basil leaves among clear cubed ice inside a chilled glass, double-strain the nectarine-basil base over the ice, top slowly with chilled sparkling mineral water, crown with the top basil sprig, and serve immediately!"
+    ]
+  },
+  {
+    "id": "tangerine-sweet-basil-lime-smash-mocktail",
+    "emoji": "🍊",
+    "title": "Sun-Ripened Tangerine, Sweet Basil & Key Lime Smash (Zero-Proof — Citrus & Herb)",
+    "image": "images7/tangerine-sweet-basil-smash.jpg",
+    "subtitle": "Luminous sunlit-amber, aromatic, and crisp—freshly squeezed tangerine and key lime juices shaken with sweet garden basil leaves and light agave over clear cubed ice, topped with chilled sparkling mineral water, a lush basil crown, and a fresh tangerine wedge.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 70, "protein": 0, "carbs": 18, "fats": 0 },
+    "highlights": [
+      { "category": "Sweet Fresh-Pressed Tangerine Citrus", "text": "Peak-season tangerines deliver bright golden-orange color and honeyed citrus sweetness." },
+      { "category": "Fragrant Sweet Genovese Basil & Key Lime", "text": "Fresh sweet basil leaves folded into the ice release peppery herbal aroma balanced by zesty lime juice." },
+      { "category": "Lush Basil Sprig & Fresh Tangerine Wedge Garnish", "text": "Crowning the ice with a leafy green basil top and a bright tangerine slice creates a vivid garden presentation." }
+    ],
+    "ingredients": [
+      "3 oz freshly squeezed tangerine juice (strained)",
+      "1/2 oz freshly squeezed key lime juice",
+      "1/2 oz light organic agave nectar",
+      "6 fresh sweet basil leaves (3 for shaking, 2 folded inside the glass, plus 1 leafy top sprig for garnish)",
+      "3 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 fresh tangerine wedge for garnish"
+    ],
+    "instructions": [
+      "Gently press 3 fresh sweet basil leaves with the freshly squeezed tangerine juice, key lime juice, and light organic agave nectar in the bottom of a cocktail shaker.",
+      "Add a scoop of cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Layer the 2 whole basil leaves among clear cubed ice inside a chilled glass, double-strain the citrus-basil base over the ice, top slowly with chilled sparkling mineral water, garnish with the leafy basil top sprig and fresh tangerine wedge, and serve immediately!"
+    ]
+  },
+   {
+    "id": "sun-kissed-papaya-key-lime-cooler-mocktail",
+    "emoji": "🥭",
+    "title": "Tropical Ripe Papaya, Key Lime & Sea Salt Cooler (Zero-Proof — Island Fruit Fizz)",
+    "image": "images7/papaya-key-lime-cooler.jpg",
+    "subtitle": "Vibrant sunset-coral, silky, and refreshing—blended ripe red papaya nectar shaken with freshly squeezed key lime juice and light organic agave over clear cubed ice, lengthened with chilled sparkling mineral water and crowned with a skewered lime wheel and papaya cube.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 80, "protein": 1, "carbs": 20, "fats": 0 },
+    "highlights": [
+      { "category": "Velvety Ripe Tropical Red Papaya", "text": "Pureed sweet papaya creates a rich coral-orange hue and smooth nectar body without heavy added sugars." },
+      { "category": "Zesty Key Lime & Pinch of Flaky Sea Salt", "text": "Freshly squeezed lime juice and a whisper of mineral salt brighten the mellow tropical sweetness." },
+      { "category": "Bamboo Pick with Lime Wheel & Ripe Papaya Cube", "text": "Skewering a crisp green key lime wheel alongside a bite-sized cube of fresh orange papaya creates vivid island contrast." }
+    ],
+    "ingredients": [
+      "2 1/2 oz smooth ripe red papaya puree (peeled, seeded, and blended smooth)",
+      "3/4 oz freshly squeezed key lime juice",
+      "1/2 oz light organic agave nectar",
+      "1 tiny pinch flaky sea salt",
+      "3 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 fresh key lime wheel and 1 small cube ripe papaya on a cocktail pick for garnish"
+    ],
+    "instructions": [
+      "Combine the smooth ripe papaya puree, freshly squeezed key lime juice, light organic agave nectar, and pinch of flaky sea salt in a cocktail shaker with cubed ice and shake vigorously for 15 seconds until lightly frothy and icy cold.",
+      "Double-strain into a chilled glass filled generously with clear cubed ice.",
+      "Top slowly with chilled sparkling mineral water, stir gently once to lift the tropical nectar, rest the skewered key lime wheel and ripe papaya cube across the rim, and serve immediately!"
+    ]
+  },
+  {
+    "id": "iced-red-rooibos-vanilla-citrus-spritz-mocktail",
+    "emoji": "🍂",
+    "title": "Iced South African Red Rooibos, Vanilla & Lemon Spritz (Zero-Proof — Caffeine-Free Tea)",
+    "image": "images7/red-rooibos-vanilla-spritz.jpg",
+    "subtitle": "Deep mahogany-amber, smooth, and aromatic—double-brewed caffeine-free red rooibos tea shaken with freshly squeezed lemon juice and pure vanilla bean syrup over clear cubed ice, topped with crisp club soda, a fresh lemon half-wheel, and a garden mint sprig.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 65, "protein": 0, "carbs": 17, "fats": 0 },
+    "highlights": [
+      { "category": "Naturally Sweet Caffeine-Free Red Rooibos", "text": "Double-steeped red bush tea delivers rich mahogany color and warm nutty-caramel notes with zero bitterness." },
+      { "category": "Pure Madagascar Vanilla Bean & Fresh Lemon", "text": "Real vanilla bean syrup rounds out the earthy tea while freshly squeezed lemon juice adds bright lift." },
+      { "category": "Fresh Lemon Half-Wheel & Mint Crown Garnish", "text": "Perching a bright yellow lemon slice on the rim beside a leafy green mint sprig highlights the crisp herbal citrus finish." }
+    ],
+    "ingredients": [
+      "4 oz chilled double-strength unsweetened red rooibos herbal tea",
+      "3/4 oz freshly squeezed lemon juice",
+      "3/4 oz pure vanilla bean simple syrup (1:1 cane sugar and water steeped with split vanilla bean)",
+      "3 oz chilled club soda or sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 fresh yellow lemon half-wheel and 1 leafy fresh mint sprig for garnish"
+    ],
+    "instructions": [
+      "Combine the chilled double-strength red rooibos tea, freshly squeezed lemon juice, and pure vanilla bean simple syrup in a cocktail shaker filled with cubed ice and shake briskly for 12 seconds until icy cold.",
+      "Strain into a chilled glass packed with clear cubed ice.",
+      "Top slowly with chilled club soda, perch the fresh lemon half-wheel on the rim beside the leafy mint sprig, and serve immediately!"
+    ]
+  },
+   {
+    "id": "black-currant-tarragon-lime-fizz-mocktail",
+    "emoji": "🫐",
+    "title": "Deep Black Currant, French Tarragon & Key Lime Fizz (Zero-Proof — Dark Berry & Herb)",
+    "image": "images7/black-currant-tarragon-fizz.jpg",
+    "subtitle": "Inky royal-violet, bold, and herbaceous—pressed black currants shaken with fresh French tarragon leaves, key lime juice, and pure cane syrup over clear cubed ice, lengthened with sparkling mineral water and crowned with a fresh mint sprig and lime half-wheel.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 75, "protein": 0, "carbs": 19, "fats": 0 },
+    "highlights": [
+      { "category": "Rich Deep-Violet Black Currant Berries", "text": "Muddled black currants bring intense dark-berry depth and striking royal-purple color." },
+      { "category": "Aromatic French Tarragon & Crisp Key Lime", "text": "Delicate fresh tarragon leaves add subtle sweet-anise complexity balanced by zesty lime acidity." },
+      { "category": "Fresh Mint Sprig & Lime Half-Wheel Crown", "text": "Topping the dark jewel-toned pour with a leafy green mint sprig and a fresh lime slice perched on the rim creates vibrant color contrast." }
+    ],
+    "ingredients": [
+      "1/3 cup fresh or thawed black currants",
+      "4 fresh French tarragon leaves (for muddling)",
+      "3/4 oz freshly squeezed key lime juice",
+      "3/4 oz pure cane simple syrup (1:1 organic cane sugar and water)",
+      "3 1/2 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 leafy fresh mint sprig and 1 fresh key lime half-wheel for garnish"
+    ],
+    "instructions": [
+      "Place the black currants, fresh French tarragon leaves, freshly squeezed key lime juice, and pure cane simple syrup in the bottom of a cocktail shaker and muddle thoroughly until deep purple and juicy.",
+      "Add a scoop of cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Double-strain through a fine-mesh sieve into a chilled glass filled with clear cubed ice, top slowly with chilled sparkling mineral water, garnish with the leafy fresh mint sprig and key lime half-wheel on the rim, and serve immediately!"
+    ]
+  },
+  {
+    "id": "golden-cape-gooseberry-rosemary-honey-fizz-mocktail",
+    "emoji": "💛",
+    "title": "Sunlit Golden Gooseberry, Fresh Rosemary & Honey Fizz (Zero-Proof — Tart Berry & Herb)",
+    "image": "images7/golden-gooseberry-verbena-fizz.jpg",
+    "subtitle": "Luminous golden-amber, tangy, and aromatic—ripe golden cape gooseberries muddled with freshly squeezed lemon juice and wildflower honey over clear cubed ice, lengthened with chilled sparkling mineral water and crowned with a tall fresh rosemary sprig.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 70, "protein": 1, "carbs": 18, "fats": 0 },
+    "highlights": [
+      { "category": "Sweet-Tart Ripe Golden Cape Gooseberries", "text": "Muddled golden berries deliver vibrant tropical-citrus tang and rich sunlit amber color." },
+      { "category": "Raw Wildflower Honey & Fresh Lemon Lift", "text": "Floral wildflower honey syrup and freshly squeezed lemon juice balance the bright berry acidity." },
+      { "category": "Tall Fresh Rosemary Sprig Garnish", "text": "Tucking an upright evergreen rosemary sprig into the ice infuses crisp pine aroma into every sip." }
+    ],
+    "ingredients": [
+      "8 ripe golden cape gooseberries, husks removed (for muddling)",
+      "1/2 oz freshly squeezed lemon juice",
+      "3/4 oz wildflower honey syrup (1:1 raw wildflower honey and warm water, cooled)",
+      "3 1/2 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 tall fresh rosemary sprig for garnish"
+    ],
+    "instructions": [
+      "Place the husked golden gooseberries, freshly squeezed lemon juice, and wildflower honey syrup in the bottom of a cocktail shaker and muddle thoroughly until bright gold and juicy.",
+      "Add a scoop of cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Double-strain into a chilled glass filled with clear cubed ice, top slowly with chilled sparkling mineral water, tuck 1 tall fresh rosemary sprig upright into the ice, and serve immediately!"
+    ]
+  },
+  {
+    "id": "pink-pomelo-thai-basil-sea-salt-spritz-mocktail",
+    "emoji": "🍈",
+    "title": "Crisp Pink Pomelo, Thai Basil & Sea Salt Spritz (Zero-Proof — Sweet Citrus & Herb)",
+    "image": "images7/pink-pomelo-thai-basil-spritz.jpg",
+    "subtitle": "Two-tone ruby-blush and cloud-white, floral, and invigorating—sparkling lime-agave soda over clear cubed ice crowned with a vibrant pink pomelo float, skewered pink pomelo wedges, and fresh Thai basil leaves.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 70, "protein": 0, "carbs": 18, "fats": 0 },
+    "highlights": [
+      { "category": "Layered Ruby-Pink Pomelo Float", "text": "Floating freshly pressed pink pomelo juice over chilled sparkling lime soda creates a dramatic sunset-crimson top layer." },
+      { "category": "Anise-Spiced Thai Basil & Key Lime Lift", "text": "Gently bruised Thai basil leaves add subtle clove-and-anise spice balanced by crisp lime juice and flaky sea salt." },
+      { "category": "Skewered Pink Pomelo Wedges & Fresh Basil Leaves", "text": "Threading two bite-sized pink pomelo triangles and fresh green basil leaves onto a wooden cocktail pick frames the glass." }
+    ],
+    "ingredients": [
+      "3 oz freshly squeezed deep-pink pomelo juice (strained)",
+      "1/2 oz freshly squeezed lime juice",
+      "1/2 oz light organic agave nectar",
+      "5 fresh Thai basil leaves (3 for shaking, plus 2 crisp leaves for skewering)",
+      "1 tiny pinch flaky sea salt",
+      "3 oz chilled sparkling mineral water, 1 1/2 cups clear cubed ice, and 2 small pink pomelo triangles on a cocktail pick for garnish"
+    ],
+    "instructions": [
+      "Gently press 3 fresh Thai basil leaves with the freshly squeezed lime juice, light organic agave nectar, and pinch of flaky sea salt in a chilled glass filled with clear cubed ice, then pour in the chilled sparkling mineral water and stir gently.",
+      "Slowly pour the freshly squeezed pink pomelo juice over the back of a spoon onto the top of the ice so it floats in a vibrant ruby-pink layer.",
+      "Thread the 2 small pink pomelo triangles and 2 fresh Thai basil leaves onto a cocktail pick, rest it across the rim, and serve immediately!"
+    ]
+  },
+   {
+    "id": "frozen-cinnamon-vanilla-almond-horchata-mocktail",
+    "emoji": "🥛",
+    "title": "Frosty Toasted Rice, Almond & Ceylon Cinnamon Horchata Frappe (Zero-Proof — Spiced Cream)",
+    "image": "images7/cinnamon-vanilla-horchata-fizz.jpg",
+    "subtitle": "Warm toasted-ivory, velvety, and frosty—chilled homemade cinnamon-infused rice and almond horchata blended with ice and real vanilla bean into a creamy café slush, crowned with two whole cinnamon sticks and a dusting of ground Ceylon cinnamon.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 115, "protein": 2, "carbs": 21, "fats": 3 },
+    "highlights": [
+      { "category": "Velvety Homemade Cinnamon Rice & Almond Milk", "text": "Soaked long-grain white rice blended with raw almonds, Ceylon cinnamon bark, and real vanilla bean yields a rich dairy-free café base." },
+      { "category": "Frosty Café Slush Texture", "text": "Blending chilled spiced horchata with ice creates a thick, refreshing snow-cone consistency piled above the rim." },
+      { "category": "Dual Cinnamon Sticks & Ground Spice Dusting", "text": "Tucking two whole Ceylon cinnamon sticks into the frosty peak with a sprinkle of ground cinnamon delivers warm aroma in every sip." }
+    ],
+    "ingredients": [
+      "5 oz chilled homemade cinnamon-vanilla rice and almond horchata (unsweetened rice-almond milk steeped with cinnamon bark)",
+      "1/2 oz pure vanilla bean simple syrup (1:1 organic cane sugar and water steeped with split vanilla bean)",
+      "1 1/2 cups clear cubed ice (for blending)",
+      "2 whole Ceylon cinnamon sticks and 1 pinch ground Ceylon cinnamon for garnish"
+    ],
+    "instructions": [
+      "Pour the chilled cinnamon-vanilla rice and almond horchata, pure vanilla bean simple syrup, and cubed ice into a high-speed blender.",
+      "Blend on high for 20 to 25 seconds until thick, smooth, and frosty like a café slush.",
+      "Spoon or pour into a chilled glass so the frosty peak rises slightly above the rim, tuck 2 whole Ceylon cinnamon sticks into the side, dust lightly with ground Ceylon cinnamon, and serve immediately!"
+    ]
+  },
+  {
+    "id": "charred-pineapple-toasted-coconut-cream-fizz-mocktail",
+    "emoji": "🍍",
+    "title": "Caramelized Pineapple, Toasted Coconut & Lime Cream Fizz (Zero-Proof — Tropical)",
+    "image": "images7/charred-pineapple-coconut-fizz.jpg",
+    "subtitle": "Golden-amber, silky, and tropical—sweet caramelized pineapple juice shaken with rich coconut cream, freshly squeezed lime juice, and pure cane syrup over clear ice cubes in a toasted-coconut-rimmed glass, topped with sparkling mineral water and a fresh pineapple wedge.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 115, "protein": 1, "carbs": 19, "fats": 4 },
+    "highlights": [
+      { "category": "Sweet Golden Pineapple & Rich Coconut Cream", "text": "Shaking bright pineapple juice with pure unsweetened coconut cream creates a silky, tropical foam cap." },
+      { "category": "Fresh Key Lime & Sparkling Mineral Lift", "text": "Zesty freshly squeezed lime juice and crisp club soda keep the creamy island base light and refreshing." },
+      { "category": "Toasted Coconut Flake Rim & Fresh Pineapple Wedge", "text": "Coating the rim in lightly toasted unsweetened coconut flakes and perching a thick golden pineapple wedge on the edge frames the tropical pour." }
+    ],
+    "ingredients": [
+      "3 oz chilled 100% pure golden pineapple juice",
+      "1 oz unsweetened full-fat coconut cream",
+      "3/4 oz freshly squeezed lime juice",
+      "1/2 oz pure cane simple syrup (1:1 organic cane sugar and water)",
+      "2 1/2 oz chilled club soda or sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 tbsp toasted unsweetened shredded coconut flakes (for rimming the glass) and 1 thick fresh pineapple wedge for garnish"
+    ],
+    "instructions": [
+      "Run a lime wedge around the rim of a chilled glass, dip into the toasted unsweetened shredded coconut flakes to coat the edge, and fill with clear cubed ice.",
+      "Combine the chilled golden pineapple juice, unsweetened coconut cream, freshly squeezed lime juice, and pure cane simple syrup in a cocktail shaker filled with cubed ice and shake vigorously for 15 seconds until thick and frothy.",
+      "Strain into the toasted-coconut-rimmed glass, top slowly with chilled club soda, perch the fresh pineapple wedge on the rim, and serve immediately!"
+    ]
+  },
+  {
+    "id": "boysenberry-crushed-cardamom-lemon-spritz-mocktail",
+    "emoji": "🫐",
+    "title": "Velvet Boysenberry, Crushed Cardamom & Lemon Spritz (Zero-Proof — Dark Berry & Spice)",
+    "image": "images7/boysenberry-cardamom-spritz.jpg",
+    "subtitle": "Luminous royal-violet ombré, aromatic, and crisp—ripe boysenberries muddled with lightly crushed green cardamom pods, freshly squeezed lemon juice, and wildflower honey over clear cubed ice layered with whole boysenberries, lengthened with sparkling mineral water and a fresh mint crown.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 75, "protein": 1, "carbs": 18, "fats": 0 },
+    "highlights": [
+      { "category": "Juicy Sweet-Tart Ripe Boysenberries", "text": "Crossing blackberry, raspberry, and loganberry notes, muddled boysenberries deliver luminous royal-violet color." },
+      { "category": "Fragrant Green Cardamom & Wildflower Honey", "text": "Crushed green cardamom pods release warm citrus-herbal spice softened by raw wildflower honey syrup." },
+      { "category": "Suspended Whole Boysenberries & Fresh Mint Crown", "text": "Tucking whole dark berries throughout the clear ice cubes and crowning the sparkling violet gradient with a fresh mint sprig creates a striking presentation." }
+    ],
+    "ingredients": [
+      "1/3 cup fresh or thawed ripe boysenberries (plus 4 whole berries for layering inside the ice)",
+      "3 whole green cardamom pods (lightly cracked to release the seeds)",
+      "3/4 oz freshly squeezed lemon juice",
+      "3/4 oz wildflower honey syrup (1:1 raw wildflower honey and warm water, cooled)",
+      "3 1/2 oz chilled sparkling mineral water (for topping), 1 1/2 cups clear cubed ice, and 1 leafy fresh mint sprig for garnish"
+    ],
+    "instructions": [
+      "Place the boysenberries, lightly cracked green cardamom pods, freshly squeezed lemon juice, and wildflower honey syrup in the bottom of a cocktail shaker and muddle thoroughly until juicy and fragrant.",
+      "Add a scoop of cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Layer the 4 whole boysenberries among clear cubed ice inside a chilled glass, double-strain the royal-violet berry base into the glass, top slowly with chilled sparkling mineral water to create a violet-to-clear gradient, garnish with the fresh mint sprig, and serve immediately!"
+    ]
+  },
+   {
+    "id": "bosc-pear-rosemary-cinnamon-white-tea-fizz-mocktail",
+    "emoji": "🍐",
+    "title": "Crisp Bosc Pear, Fresh Rosemary & Cinnamon White Tea Fizz (Zero-Proof — Orchard & Herb)",
+    "image": "images7/asian-pear-white-tea-fizz.jpg",
+    "subtitle": "Luminous champagne-ivory, aromatic, and crisp—freshly pressed russet Bosc pear nectar shaken with chilled white peony tea, lemon juice, and cinnamon syrup over clear cubed ice and a thin pear slice, topped with sparkling mineral water, a whole cinnamon stick, and a fresh rosemary sprig.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 75, "protein": 0, "carbs": 19, "fats": 0 },
+    "highlights": [
+      { "category": "Honeyed Russet Bosc Pear & White Peony Tea", "text": "Freshly pressed Bosc pear juice paired with delicate white peony tea creates a silky, pale-gold orchard base." },
+      { "category": "Warm Ceylon Cinnamon & Crisp Garden Rosemary", "text": "Infused cinnamon syrup and evergreen rosemary aroma balance the sweet pear with botanical depth." },
+      { "category": "Layered Pear Slice, Cinnamon Stick & Rosemary Crown", "text": "Tucking a thin russet-edged pear slice against the ice alongside a whole cinnamon stick and upright rosemary sprig creates an elegant presentation." }
+    ],
+    "ingredients": [
+      "2 1/2 oz freshly pressed Bosc pear juice (grated and strained through fine mesh)",
+      "2 oz chilled double-strength unsweetened white peony tea",
+      "1/2 oz freshly squeezed lemon juice",
+      "1/2 oz Ceylon cinnamon simple syrup (1:1 organic cane sugar and water steeped with cinnamon bark, cooled)",
+      "3 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 paper-thin vertical slice ripe Bosc pear, 1 whole Ceylon cinnamon stick, and 1 fresh rosemary sprig for garnish"
+    ],
+    "instructions": [
+      "Combine the freshly pressed Bosc pear juice, chilled white peony tea, freshly squeezed lemon juice, and cooled Ceylon cinnamon simple syrup in a cocktail shaker filled with cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Press the paper-thin vertical Bosc pear slice against the inside wall of a chilled glass filled with clear cubed ice, then strain the pear-tea base over the ice.",
+      "Top slowly with chilled sparkling mineral water, tuck 1 whole Ceylon cinnamon stick and 1 upright fresh rosemary sprig into the top of the ice, and serve immediately!"
+    ]
+  },
+  {
+    "id": "ruby-red-beet-ginger-key-lime-cooler-mocktail",
+    "emoji": "🫜",
+    "title": "Vibrant Ruby Beet, Pressed Ginger & Key Lime Cooler (Zero-Proof — Earthy Citrus)",
+    "image": "images7/ruby-beet-ginger-cooler.jpg",
+    "subtitle": "Deep crimson-magenta, crisp, and invigorating—cold-pressed red beet juice shaken with fiery fresh ginger root, freshly squeezed key lime juice, and raw wildflower honey over clear cubed ice, topped with chilled sparkling mineral water and a fresh lime wheel.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 70, "protein": 1, "carbs": 17, "fats": 0 },
+    "highlights": [
+      { "category": "Jewel-Toned Cold-Pressed Red Beet Juice", "text": "Fresh red beet juice delivers dramatic crimson color and rich, subtly sweet earthy depth." },
+      { "category": "Fiery Fresh Ginger & Key Lime Snap", "text": "Muddled ginger root and freshly squeezed lime juice cut right through the earthiness for a bright, zesty finish." },
+      { "category": "Fresh Key Lime Wheel Rim Garnish", "text": "Perching a crisp green lime wheel on the rim highlights the bright citrus lift against the deep ruby-red pour." }
+    ],
+    "ingredients": [
+      "2 oz chilled cold-pressed pure red beet juice",
+      "3 thin coins peeled fresh ginger root",
+      "3/4 oz freshly squeezed key lime juice",
+      "3/4 oz wildflower honey syrup (1:1 raw wildflower honey and warm water, cooled)",
+      "3 1/2 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 fresh key lime wheel for garnish"
+    ],
+    "instructions": [
+      "Place the 3 peeled fresh ginger coins, freshly squeezed key lime juice, and wildflower honey syrup in the bottom of a cocktail shaker and muddle firmly until fragrant.",
+      "Pour in the chilled cold-pressed red beet juice, add a scoop of cubed ice, and shake briskly for 12 seconds until frosty cold.",
+      "Double-strain into a chilled glass filled with clear cubed ice, top slowly with chilled sparkling mineral water, perch the fresh key lime wheel on the rim, and serve immediately!"
+    ]
+  },
+   {
+    "id": "nordic-lingonberry-rosemary-lime-spritz-mocktail",
+    "emoji": "🍒",
+    "title": "Tart Nordic Lingonberry, Rosemary & Key Lime Spritz (Zero-Proof — Forest Berry)",
+    "image": "images7/lingonberry-rosemary-spritz.jpg",
+    "subtitle": "Luminous scarlet-ruby, tangy, and crisp—tart wild lingonberries shaken with bruised garden rosemary, freshly squeezed key lime juice, and pure cane syrup over crushed ice layered with whole berries and thin green lime wheels, lengthened with club soda.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 70, "protein": 0, "carbs": 18, "fats": 0 },
+    "highlights": [
+      { "category": "Bright Tart Wild Lingonberry Nectar", "text": "Smaller and more aromatic than cranberries, lingonberries bring crisp Nordic tang and vivid scarlet-magenta color." },
+      { "category": "Aromatic Garden Rosemary & Fresh Key Lime", "text": "Evergreen rosemary oils and zesty freshly squeezed lime juice elevate the forest berry base into a crisp refresher." },
+      { "category": "Suspended Whole Berries & Fresh Key Lime Wheels", "text": "Tucking thin green lime slices and whole red berries throughout the ice highlights the bright poolside sparkle." }
+    ],
+    "ingredients": [
+      "1/3 cup thawed or fresh wild lingonberries (plus 1 tbsp whole berries for layering inside the ice)",
+      "1 fresh rosemary sprig (bruised for shaking)",
+      "3/4 oz freshly squeezed key lime juice (plus 2 thin fresh key lime wheels for the glass)",
+      "3/4 oz pure cane simple syrup (1:1 organic cane sugar and water)",
+      "3 1/2 oz chilled club soda or sparkling mineral water (for topping) and 1 1/2 cups clear cubed or crushed ice"
+    ],
+    "instructions": [
+      "Place the lingonberries, bruised rosemary sprig, freshly squeezed key lime juice, and pure cane simple syrup in the bottom of a cocktail shaker and muddle thoroughly until bright scarlet and juicy.",
+      "Add a scoop of cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Layer the 2 thin key lime wheels and remaining whole lingonberries among fresh ice inside a chilled glass, double-strain the ruby berry base over the ice, top slowly with chilled club soda, and serve immediately!"
+    ]
+  },
+  {
+    "id": "cara-cara-orange-rosemary-crushed-ice-spritz-mocktail",
+    "emoji": "🍊",
+    "title": "Blush Cara Cara Orange, Fresh Rosemary & Vanilla Spritz (Zero-Proof — Pink Citrus)",
+    "image": "images7/cara-cara-rosemary-spritz.jpg",
+    "subtitle": "Luminous blush-coral ombré, sweet, and aromatic—freshly squeezed pink-fleshed Cara Cara navel orange juice shaken with pure vanilla bean syrup and lemon over crushed pebble ice, topped with sparkling mineral water, a thick pink orange half-wheel, and a fresh rosemary sprig.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 75, "protein": 1, "carbs": 19, "fats": 0 },
+    "highlights": [
+      { "category": "Sweet Low-Acid Pink Cara Cara Navel Orange", "text": "Naturally rose-fleshed Cara Cara oranges deliver vibrant coral-blush color and honeyed berry-citrus sweetness." },
+      { "category": "Pure Vanilla Bean & Evergreen Rosemary Aroma", "text": "A hint of real vanilla bean syrup rounds out the pink citrus while an upright rosemary sprig perfumes every sip." },
+      { "category": "Crushed Pebble Ice & Pink Orange Half-Wheel", "text": "Packing the glass with crushed ice creates a dramatic coral-to-frosty-white gradient framed by a thick Cara Cara slice on the rim." }
+    ],
+    "ingredients": [
+      "3 oz freshly squeezed pink Cara Cara navel orange juice (strained)",
+      "1/2 oz freshly squeezed lemon juice",
+      "1/2 oz pure vanilla bean simple syrup (1:1 organic cane sugar and water steeped with split vanilla bean)",
+      "3 oz chilled sparkling mineral water (for topping) and 1 1/2 cups crushed pebble ice",
+      "1 thick fresh Cara Cara orange half-wheel and 1 upright fresh rosemary sprig for garnish"
+    ],
+    "instructions": [
+      "Combine the freshly squeezed Cara Cara orange juice, freshly squeezed lemon juice, and pure vanilla bean simple syrup in a cocktail shaker with a handful of ice and shake briskly for 10 seconds until well chilled.",
+      "Pack a chilled glass with crushed pebble ice, strain the blush-coral citrus base over the ice, and top slowly with chilled sparkling mineral water to create a sunset ombré gradient.",
+      "Perch the thick Cara Cara orange half-wheel on the rim beside the upright fresh rosemary sprig, and serve immediately!"
+    ]
+  },
+   {
+    "id": "iced-pistachio-orange-blossom-cream-fizz-mocktail",
+    "emoji": "🌿",
+    "title": "Silky Roasted Pistachio, Orange Blossom & Cardamom Cream Fizz (Zero-Proof — Nutty Café)",
+    "image": "images7/pistachio-orange-blossom-fizz.jpg",
+    "subtitle": "Pastel sage-pistachio, floral, and velvety—creamy roasted pistachio milk shaken with pure cane syrup, crushed cardamom, and two drops of orange blossom water over ice, lifted with chilled club soda and crowned with whipped cream and crushed green pistachios.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 135, "protein": 3, "carbs": 18, "fats": 7 },
+    "highlights": [
+      { "category": "Rich Roasted Pistachio Cream Base", "text": "Smooth unsweetened roasted pistachio milk creates a pastel sage-green hue and toasted nutty depth." },
+      { "category": "Fragrant Orange Blossom & Green Cardamom", "text": "A whisper of floral orange blossom water and lightly crushed cardamom pods evoke classic Mediterranean pastries." },
+      { "category": "Whipped Cream Swirl & Crushed Green Pistachios", "text": "Crowning the frothy sage-green pour with a swirl of vanilla whipped cream and chopped roasted pistachios creates a decadent dessert-style finish." }
+    ],
+    "ingredients": [
+      "4 1/2 oz chilled unsweetened roasted pistachio milk (or pistachio paste blended smooth with barista oat milk)",
+      "1/2 oz pure cane simple syrup (1:1 organic cane sugar and water)",
+      "2 whole green cardamom pods (lightly cracked) and 2 drops food-grade orange blossom water",
+      "1 1/2 oz chilled club soda or sparkling mineral water (for light effervescence) and 1 cup clear cubed ice",
+      "2 tbsp lightly sweetened whipped cream and 1 tbsp finely chopped unsalted roasted green pistachios for garnish"
+    ],
+    "instructions": [
+      "Combine the chilled roasted pistachio milk, pure cane simple syrup, lightly cracked cardamom pods, and orange blossom water in a cocktail shaker with cubed ice and shake briskly for 15 seconds until thick and frothy cold.",
+      "Double-strain into a chilled glass (over fresh ice if desired) and top gently with chilled club soda so a delicate white foam layer rises to the surface.",
+      "Crown with a swirl of whipped cream, scatter the finely chopped roasted green pistachios generously over the top, and serve immediately!"
+    ]
+  },
+   {
+    "id": "toasted-black-sesame-vanilla-oat-fizz-mocktail",
+    "emoji": "🧋",
+    "title": "Velvety Toasted Black Sesame, Vanilla Bean & Oat Fizz (Zero-Proof — Roasted Café Cream)",
+    "image": "images7/black-sesame-vanilla-fizz.jpg",
+    "subtitle": "Marbled charcoal-black and snow-ivory, nutty, and silky—stone-ground roasted black sesame paste swirled through chilled barista oat milk and real vanilla bean syrup over ice, lifted with crisp club soda and crowned with whipped cream and a dark sesame drizzle.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 125, "protein": 3, "carbs": 18, "fats": 5 },
+    "highlights": [
+      { "category": "Dramatic Charcoal & Ivory Black Sesame Marbling", "text": "Swirling thick roasted black sesame paste along the inside of the glass before pouring chilled oat milk creates high-contrast monochromatic marbling." },
+      { "category": "Real Madagascar Vanilla Bean & Sparkling Lift", "text": "Pure vanilla bean syrup rounds out the deep toasted-nut richness while a splash of chilled club soda keeps the texture light." },
+      { "category": "Whipped Cream Peak & Black Sesame Paste Drizzle", "text": "Crowning the marbled pour with a generous swirl of whipped cream and a dark spoonful of black sesame paste completes the artisanal café presentation." }
+    ],
+    "ingredients": [
+      "1 1/2 tbsp smooth roasted black sesame paste (unsweetened, divided: 1 tbsp for marbling the glass and base, 1/2 tbsp for topping)",
+      "4 oz chilled barista oat milk",
+      "3/4 oz pure vanilla bean simple syrup (1:1 organic cane sugar and water steeped with split vanilla bean)",
+      "1 1/2 oz chilled club soda (for light effervescence) and 1 1/2 cups clear cubed ice",
+      "2 tbsp lightly sweetened whipped cream for garnish"
+    ],
+    "instructions": [
+      "Use the back of a spoon to smear 1 tbsp of the smooth roasted black sesame paste in bold vertical swirls along the inside wall and base of a chilled glass, then fill with clear cubed ice.",
+      "Whisk the chilled barista oat milk, pure vanilla bean simple syrup, and chilled club soda together gently and pour over the ice so the ivory milk marbles through the dark sesame swirls.",
+      "Top with a generous swirl of whipped cream, spoon the remaining 1/2 tbsp roasted black sesame paste into the center of the cream, and serve immediately!"
+    ]
+  },
+   {
+    "id": "botanical-juniper-berry-fennel-tonic-spritz-mocktail",
+    "emoji": "🌲",
+    "title": "Crisp Crushed Juniper Berry, Fennel & Key Lime Tonic Spritz (Zero-Proof — Botanical)",
+    "image": "images7/juniper-fennel-tonic-spritz.jpg",
+    "subtitle": "Crystal-clear, piney, and dry—lightly crushed dried juniper berries and fresh fennel fronds shaken with freshly squeezed key lime juice and pure cane syrup over large clear ice cubes and fresh lime wheels, lengthened with chilled botanical tonic water.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 60, "protein": 0, "carbs": 15, "fats": 0 },
+    "highlights": [
+      { "category": "Aromatic Crushed Wild Juniper Berries", "text": "Lightly muddled juniper berries deliver classic crisp pine-and-citrus botanical notes without alcohol." },
+      { "category": "Feathery Garden Fennel & Botanical Tonic", "text": "Fresh green fennel fronds add delicate sweet-anise complexity balanced by quinine-crisp tonic water." },
+      { "category": "Crystal-Clear Pour with Dual Fresh Key Lime Wheels", "text": "Tucking two thin green lime slices inside the glass against large clear ice cubes keeps the presentation crisp and classic." }
+    ],
+    "ingredients": [
+      "5 dried wild juniper berries (lightly crushed for shaking)",
+      "1 feathery fresh green fennel frond (bruised for shaking)",
+      "3/4 oz freshly squeezed key lime juice (plus 2 thin fresh key lime wheels for the glass)",
+      "1/2 oz pure cane simple syrup (1:1 organic cane sugar and water)",
+      "4 oz chilled botanical tonic water (for topping) and 1 1/2 cups clear cubed ice"
+    ],
+    "instructions": [
+      "Place the lightly crushed juniper berries, bruised fennel frond, freshly squeezed key lime juice, and pure cane simple syrup in the bottom of a cocktail shaker and muddle gently for 10 seconds to release the essential oils.",
+      "Add a scoop of cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Tuck the 2 thin key lime wheels against the inside wall of a chilled glass filled with clear cubed ice, double-strain the crystal-clear botanical base over the ice, top slowly with chilled botanical tonic water, and serve immediately!"
+    ]
+  },
+  {
+    "id": "tart-green-mango-chili-lime-agave-cooler-mocktail",
+    "emoji": "🥭",
+    "title": "Zesty Green Mango, Chili-Lime Salt & Agave Cooler (Zero-Proof — Tart & Spicy)",
+    "image": "images7/green-mango-chili-lime-cooler.jpg",
+    "subtitle": "Luminous golden-chartreuse, tangy, and fiery—tart green-skinned mango blended with freshly squeezed lime juice and organic agave over clear cubed ice with a bold red chili-lime salt side-rim, topped with sparkling mineral water, fresh basil leaves, and a lime wedge.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 75, "protein": 0, "carbs": 19, "fats": 0 },
+    "highlights": [
+      { "category": "Crisp Sour-Sweet Green-Skinned Mango", "text": "Firm green-skinned mango brings bright, tangy tropical acidity and a vibrant golden-chartreuse glow." },
+      { "category": "Homemade Bold Red Chili-Lime Sea Salt Coat", "text": "Brushing a side-rim of flaky sea salt, mild red chili powder, and lime zest adds a savory-spicy kick to every sip." },
+      { "category": "Fresh Green Basil Sprig & Key Lime Wedge Garnish", "text": "Crowning the icy mango pour with leafy green basil and a crisp lime wedge adds fresh herbal contrast." }
+    ],
+    "ingredients": [
+      "1/3 cup peeled, pitted firm tart green-skinned mango, diced",
+      "3/4 oz freshly squeezed lime juice (plus 1 fresh lime wedge for garnish)",
+      "3/4 oz light organic agave nectar",
+      "3 1/2 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 tbsp mild red chili powder mixed with 1 tsp flaky sea salt and 1/4 tsp finely grated lime zest (for side-rimming)",
+      "1 fresh green basil sprig for garnish"
+    ],
+    "instructions": [
+      "Rub a lime wedge along the rim and down one side of a chilled glass, press into the homemade red chili-lime sea salt mixture, and fill with clear cubed ice.",
+      "Blend the diced green mango with the freshly squeezed lime juice and light organic agave nectar until completely smooth, then shake briefly with ice and strain into the prepared glass.",
+      "Top slowly with chilled sparkling mineral water, tuck the fresh green basil sprig and lime wedge into the ice, and serve immediately!"
+    ]
+  },
+  {
+    "id": "toasted-hazelnut-maple-rosemary-cream-fizz-mocktail",
+    "emoji": "🌰",
+    "title": "Silky Toasted Hazelnut, Pure Maple & Rosemary Cream Fizz (Zero-Proof — Winter Café)",
+    "image": "images7/hazelnut-maple-chicory-fizz.jpg",
+    "subtitle": "Creamy warm-ivory, nutty, and aromatic—unsweetened roasted hazelnut milk shaken with pure Grade-A amber maple syrup and vanilla bean over clear cubed ice, lifted with crisp club soda and crowned with an upright fresh rosemary sprig.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 115, "protein": 2, "carbs": 16, "fats": 5 },
+    "highlights": [
+      { "category": "Velvety Roasted Hazelnut & Oat Cream Base", "text": "Shaking chilled unsweetened hazelnut milk with a splash of barista oat cream creates a rich warm-ivory winter refresher." },
+      { "category": "Pure Grade-A Maple Syrup & Sparkling Lift", "text": "Amber maple syrup brings deep caramel-woodland sweetness balanced by a crisp splash of chilled club soda." },
+      { "category": "Upright Fresh Rosemary Sprig Garnish", "text": "Tucking a fragrant evergreen rosemary sprig into the ice infuses crisp pine aroma into every creamy sip." }
+    ],
+    "ingredients": [
+      "4 oz chilled unsweetened roasted hazelnut milk",
+      "1 oz cold barista oat milk or half-and-half",
+      "3/4 oz pure Grade-A amber maple syrup",
+      "1/4 tsp pure vanilla extract",
+      "2 oz chilled club soda (for light effervescence) and 1 1/2 cups clear cubed ice",
+      "1 upright fresh rosemary sprig for garnish"
+    ],
+    "instructions": [
+      "Combine the chilled roasted hazelnut milk, barista oat milk (or half-and-half), pure amber maple syrup, and pure vanilla extract in a cocktail shaker filled with cubed ice and shake briskly for 12 seconds until frosty and lightly frothy.",
+      "Strain into a chilled glass packed with clear cubed ice and top gently with chilled club soda.",
+      "Tuck 1 upright fresh rosemary sprig into the top of the ice, and serve immediately!"
+    ]
+  },
+   {
+    "id": "wild-rosehip-red-sumac-citrus-spritz-mocktail",
+    "emoji": "🌺",
+    "title": "Ruby Rosehip, Tangy Red Sumac & Citrus Spritz (Zero-Proof — Botanical Tart)",
+    "image": "images7/rosehip-sumac-citrus-spritz.jpg",
+    "subtitle": "Glowing ruby-rose, tart, and floral—chilled wild rosehip blossom infusion shaken with lemon juice, wildflower honey, and a pinch of ground red sumac over clear cubed ice, lengthened with sparkling mineral water and crowned with a floating lemon wheel and fresh thyme sprig.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 65, "protein": 0, "carbs": 17, "fats": 0 },
+    "highlights": [
+      { "category": "Jewel-Toned Wild Rosehip & Sumac Infusion", "text": "Steeped dried rosehips and crimson sumac berries deliver bright berry-citrus acidity and luminous ruby-rose color." },
+      { "category": "Raw Wildflower Honey & Fresh Lemon Lift", "text": "Floral wildflower honey syrup and freshly squeezed lemon juice round out the lively botanical tang." },
+      { "category": "Floating Yellow Lemon Wheel & Fresh Thyme Sprig", "text": "Crowning the effervescent ruby pour with a thin citrus wheel and delicate garden thyme stem creates a clean aperitif presentation." }
+    ],
+    "ingredients": [
+      "4 oz chilled double-strength unsweetened wild rosehip herbal tea",
+      "3/4 oz freshly squeezed lemon juice (plus 1 thin fresh yellow lemon wheel for floating)",
+      "3/4 oz wildflower honey syrup (1:1 raw wildflower honey and warm water, cooled)",
+      "1/4 tsp ground crimson sumac",
+      "3 oz chilled sparkling mineral water (for topping), 1 1/2 cups clear cubed ice, and 1 delicate fresh thyme sprig for garnish"
+    ],
+    "instructions": [
+      "Combine the chilled rosehip tea, freshly squeezed lemon juice, wildflower honey syrup, and ground crimson sumac in a cocktail shaker with cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Double-strain through a fine-mesh sieve into a chilled glass filled with clear cubed ice.",
+      "Top slowly with chilled sparkling mineral water, float the thin yellow lemon wheel and fresh thyme sprig across the surface, and serve immediately!"
+    ]
+  },
+  {
+    "id": "sweet-garden-carrot-ginger-valencia-fizz-mocktail",
+    "emoji": "🥕",
+    "title": "Sunlit Garden Carrot, Fresh Ginger & Valencia Orange Fizz (Zero-Proof — Pressed)",
+    "image": "images7/carrot-ginger-orange-fizz.jpg",
+    "subtitle": "Vibrant tangerine-orange, crisp, and revitalizing—cold-pressed sweet garden carrot juice shaken with fresh ginger root, Valencia orange juice, and lemon over clear cubed ice, topped with chilled sparkling mineral water and a feathery fresh carrot top frond.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 80, "protein": 1, "carbs": 19, "fats": 0 },
+    "highlights": [
+      { "category": "Earthy-Sweet Cold-Pressed Garden Carrot Juice", "text": "Freshly pressed carrot juice lends natural velvety sweetness and brilliant tangerine-orange color." },
+      { "category": "Fiery Pressed Ginger & Bright Valencia Orange", "text": "Muddled ginger root and sweet orange juice create a lively, aromatic citrus-spice balance." },
+      { "category": "Feathery Fresh Carrot Top Frond Garnish", "text": "Tucking a crisp green carrot-top herb sprig into the ice highlights the fresh farm-to-glass ingredients." }
+    ],
+    "ingredients": [
+      "2 1/2 oz chilled cold-pressed sweet garden carrot juice",
+      "1 1/2 oz freshly squeezed Valencia orange juice (strained)",
+      "1/2 oz freshly squeezed lemon juice",
+      "3 thin coins peeled fresh ginger root and 1/2 oz light organic agave nectar",
+      "3 oz chilled sparkling mineral water (for topping), 1 1/2 cups clear cubed ice, and 1 feathery fresh green carrot top frond for garnish"
+    ],
+    "instructions": [
+      "Place the 3 peeled fresh ginger coins, freshly squeezed lemon juice, and light organic agave nectar in the bottom of a cocktail shaker and muddle firmly until fragrant.",
+      "Pour in the chilled carrot juice and Valencia orange juice, add a scoop of cubed ice, and shake briskly for 12 seconds until frosty cold.",
+      "Double-strain into a chilled glass filled with clear cubed ice, top slowly with chilled sparkling mineral water, tuck the feathery fresh green carrot top frond into the top of the ice, and serve immediately!"
+    ]
+  },
+   {
+    "id": "sweet-golden-corn-vanilla-cinnamon-cream-fizz-mocktail",
+    "emoji": "🌽",
+    "title": "Velvety Sweet Golden Corn, Vanilla Bean & Cinnamon Cream Fizz (Zero-Proof — Café)",
+    "image": "images7/sweet-corn-vanilla-fizz.jpg",
+    "subtitle": "Warm buttercream-ivory, silky, and comforting—chilled sweet corn and oat milk infused with real Madagascar vanilla bean over clear cubed ice, lifted with crisp club soda and crowned with whipped cream, a whole cinnamon stick, and ground Ceylon cinnamon.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 130, "protein": 2, "carbs": 21, "fats": 5 },
+    "highlights": [
+      { "category": "Silky Homemade Sweet Golden Corn Milk", "text": "Simmering fresh sweet corn kernels with barista oat milk and straining smooth creates a naturally sweet, creamy buttercream base." },
+      { "category": "Real Madagascar Vanilla Bean & Sparkling Lift", "text": "Fragrant vanilla bean syrup and a gentle splash of chilled club soda lighten the rich café cream into a refreshing cooler." },
+      { "category": "Whipped Cream Swirl, Cinnamon Stick & Spice Dusting", "text": "Crowning the creamy pour with a swirl of vanilla whipped cream, a whole cinnamon stick, and a dusting of ground Ceylon cinnamon delivers warm aroma." }
+    ],
+    "ingredients": [
+      "4 1/2 oz chilled homemade sweet golden corn and oat milk (strained smooth)",
+      "1/2 oz pure vanilla bean simple syrup (1:1 organic cane sugar and water steeped with split vanilla bean)",
+      "1 1/2 oz chilled club soda or sparkling mineral water (for light effervescence) and 1 1/2 cups clear cubed ice",
+      "2 tbsp lightly sweetened whipped cream, 1 whole Ceylon cinnamon stick, and 1 pinch ground Ceylon cinnamon for garnish"
+    ],
+    "instructions": [
+      "Combine the chilled sweet corn and oat milk with the pure vanilla bean simple syrup in a cocktail shaker filled with cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Strain into a chilled glass filled generously with clear cubed ice and top gently with chilled club soda.",
+      "Crown with a swirl of whipped cream, tuck 1 whole Ceylon cinnamon stick into the side, dust lightly with ground Ceylon cinnamon, and serve immediately!"
+    ]
+  },
+  {
+    "id": "crisp-garden-celery-white-grape-lime-cooler-mocktail",
+    "emoji": "🍇",
+    "title": "Crisp Garden Celery, White Grape & Key Lime Cooler (Zero-Proof — Pressed Green)",
+    "image": "images7/celery-white-grape-cooler.jpg",
+    "subtitle": "Luminous pale-champagne, savory-sweet, and ultra-crisp—cold-pressed garden celery juice shaken with sweet white grape juice, freshly squeezed key lime, and light agave over clear cubed ice in a sugar-rimmed glass, topped with sparkling mineral water, frosted green grapes, and ruby berries.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 70, "protein": 1, "carbs": 18, "fats": 0 },
+    "highlights": [
+      { "category": "Mineral-Rich Cold-Pressed Garden Celery", "text": "Freshly pressed green celery stalks bring crisp herbal salinity and a luminous pale-champagne hue." },
+      { "category": "Sweet Seedless White Grape & Key Lime Snap", "text": "Chilled white grape juice and freshly squeezed lime balance the savory celery for an invigorating refresher." },
+      { "category": "Sparkling Sugar Rim, Frosted Green Grapes & Ruby Berries", "text": "Coating the rim in coarse cane sugar and suspending whole green grapes and tart red berries in the ice creates a festive jewel-like finish." }
+    ],
+    "ingredients": [
+      "2 1/2 oz chilled cold-pressed green celery juice (strained)",
+      "1 1/2 oz chilled 100% pure white grape juice",
+      "3/4 oz freshly squeezed key lime juice",
+      "1/4 oz light organic agave nectar",
+      "3 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 tbsp coarse cane sugar (for rimming), 4 whole green seedless grapes, and 4 whole fresh red cranberries for garnish"
+    ],
+    "instructions": [
+      "Run a lime wedge around the rim of a chilled glass, dip into the coarse cane sugar to coat the edge, and fill with clear cubed ice layered with the whole green grapes and fresh red cranberries.",
+      "Combine the chilled cold-pressed celery juice, white grape juice, freshly squeezed key lime juice, and light organic agave nectar in a cocktail shaker with ice and shake briskly for 12 seconds until frosty cold.",
+      "Strain into the prepared glass, top slowly with chilled sparkling mineral water, and serve immediately!"
+    ]
+  },
+  {
+    "id": "wild-elderberry-orange-clove-spritz-mocktail",
+    "emoji": "🫐",
+    "title": "Deep Wild Elderberry, Sweet Orange & Clove Spritz (Zero-Proof — Botanical Berry)",
+    "image": "images7/elderberry-orange-clove-spritz.jpg",
+    "subtitle": "Inky garnet-ruby, rich, and aromatic—cooked and strained wild elderberry elixir shaken with freshly squeezed orange juice, lemon, and warm clove syrup over clear cubed ice in a spiced-sugar-rimmed glass, topped with sparkling mineral water, a thick orange wheel, and a fresh green herb sprig.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 80, "protein": 0, "carbs": 20, "fats": 0 },
+    "highlights": [
+      { "category": "Rich Deep-Garnet Wild Elderberry Elixir", "text": "Simmered and strained dark elderberries deliver wine-like tannic structure and intense jewel-toned color." },
+      { "category": "Sweet Orange Juice & Whole Clove Spice", "text": "Bright freshly squeezed orange juice and gently spiced clove syrup add warming apothecary depth." },
+      { "category": "Spiced Cane Sugar Rim, Fresh Orange Wheel & Herb Sprig", "text": "Coating the rim in fine cinnamon-clove sugar and perching a thick orange wheel beside a crisp green herb sprig frames the dark ruby pour." }
+    ],
+    "ingredients": [
+      "2 oz chilled unsweetened cooked wild elderberry juice or elixir (strained)",
+      "1 1/2 oz freshly squeezed sweet orange juice (strained, plus 1 thick fresh orange wheel for garnish)",
+      "1/2 oz freshly squeezed lemon juice",
+      "3/4 oz warm clove simple syrup (1:1 organic cane sugar and water steeped with 3 whole cloves, cooled)",
+      "3 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice",
+      "1 tbsp fine cane sugar mixed with 1 pinch ground clove (for rimming) and 1 lacy fresh green chervil or parsley herb sprig for garnish"
+    ],
+    "instructions": [
+      "Run an orange wedge around the rim of a chilled glass, dip into the fine clove-spiced cane sugar to coat the edge, and fill with clear cubed ice.",
+      "Combine the chilled elderberry elixir, freshly squeezed orange juice, lemon juice, and cooled clove simple syrup in a cocktail shaker with cubed ice and shake briskly for 12 seconds until icy cold.",
+      "Strain into the prepared glass, top slowly with chilled sparkling mineral water, perch the thick fresh orange wheel on the rim beside the lacy green herb sprig, and serve immediately!"
+    ]
+  },
+  {
+    "id": "butterfly-pea-flower-meyer-lemon-spritz-mocktail",
+    "emoji": "🦋",
+    "title": "Color-Shifting Butterfly Pea Flower & Meyer Lemon Spritz (Zero-Proof — Botanical)",
+    "image": "images7/butterfly-pea-lemon-spritz.jpg",
+    "subtitle": "Vibrant jewel-violet, floral, and crisp—chilled sapphire butterfly pea blossom tea poured over clear cubed ice and pure vanilla bean syrup, swirled with freshly squeezed Meyer lemon juice and sparkling mineral water and crowned with a fresh lemon wedge and leafy mint sprig.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 65, "protein": 0, "carbs": 17, "fats": 0 },
+    "highlights": [
+      { "category": "Vibrant Indigo-to-Violet Butterfly Pea Infusion", "text": "Steeped dried butterfly pea blossoms yield deep sapphire blue tea that transforms into luminous amethyst-violet when lemon juice is poured over top." },
+      { "category": "Sweet-Tart Meyer Lemon & Vanilla Bean Syrup", "text": "Fragrant freshly squeezed Meyer lemon juice and real vanilla bean syrup create a smooth, floral citrus balance." },
+      { "category": "Fresh Lemon Wedge & Leafy Green Mint Crown", "text": "Crowning the vivid violet spritz with a bright yellow lemon wedge and a crisp green mint sprig creates striking color contrast." }
+    ],
+    "ingredients": [
+      "3 1/2 oz chilled double-strength unsweetened butterfly pea flower tea",
+      "3/4 oz freshly squeezed Meyer lemon juice (plus 1 fresh yellow lemon wedge for garnish)",
+      "3/4 oz pure vanilla bean simple syrup (1:1 organic cane sugar and water steeped with split vanilla bean)",
+      "3 oz chilled sparkling mineral water (for topping), 1 1/2 cups clear cubed ice, and 1 leafy fresh mint sprig for garnish"
+    ],
+    "instructions": [
+      "Pour the pure vanilla bean simple syrup and chilled sparkling mineral water into a chilled glass packed with clear cubed ice.",
+      "Slowly pour the chilled sapphire butterfly pea flower tea over the ice, then drizzle the freshly squeezed Meyer lemon juice across the top to shift the color into luminous jewel-violet.",
+      "Tuck the fresh yellow lemon wedge and leafy green mint sprig into the top of the ice, and serve immediately!"
+    ]
+  },
+  {
+    "id": "jamun-black-plum-mint-lime-slush-mocktail",
+    "emoji": "🫐",
+    "title": "Velvet Jamun Black Plum, Fresh Mint & Key Lime Slush (Zero-Proof — Tart & Frosty)",
+    "image": "images7/plum-green-shiso-fizz.jpg",
+    "subtitle": "Deep jewel-magenta, tangy, and frosty—ripe pitted black plum pulp blended with freshly squeezed key lime juice, organic agave, and ice in a salt-and-sugar-rimmed glass, crowned with a fresh green mint sprig.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 75, "protein": 1, "carbs": 19, "fats": 0 },
+    "highlights": [
+      { "category": "Rich Deep-Magenta Black Plum Nectar", "text": "Blended ripe Java black plums (jamun) deliver vibrant royal-magenta color and crisp sweet-tart astringency." },
+      { "category": "Flaky Sea Salt & Cane Sugar Rim", "text": "A contrasting white rim of fine sea salt and cane sugar balances the tangy dark fruit with every sip." },
+      { "category": "Frosty Blended Texture & Fresh Mint Crown", "text": "Blending with ice creates a smooth, chilled slush topped with a bright green mint sprig." }
+    ],
+    "ingredients": [
+      "1/2 cup ripe pitted dark black plums (jamun or black-skinned plums)",
+      "3/4 oz freshly squeezed key lime juice",
+      "3/4 oz light organic agave nectar",
+      "1 cup clear cubed ice (for blending)",
+      "1 tsp flaky sea salt mixed with 1 tsp fine cane sugar (for rimming) and 1 fresh green mint sprig for garnish"
+    ],
+    "instructions": [
+      "Run a lime wedge around the rim of a chilled glass, dip into the flaky sea salt and fine cane sugar mixture to coat the edge, and set aside.",
+      "Combine the pitted black plums, freshly squeezed key lime juice, light organic agave nectar, and cubed ice in a blender and blend on high for 20 seconds until thick, vibrant magenta, and frosty.",
+      "Pour into the salt-and-sugar-rimmed glass, crown with the fresh green mint sprig, and serve immediately!"
+    ]
+  },
+  {
+    "id": "midnight-blackberry-spearmint-meyer-lemon-spritz-mocktail",
+    "emoji": "🫐",
+    "title": "Midnight Blackberry, Garden Spearmint & Meyer Lemon Spritz (Zero-Proof — Berry)",
+    "image": "images7/blackberry-mint-lemon-spritz.jpg",
+    "subtitle": "Deep garnet-violet ombré, lush, and crisp—ripe muddled blackberries shaken with freshly squeezed Meyer lemon juice and pure cane syrup over clear cubed ice layered with whole blackberries, thin yellow lemon wheels, and fresh spearmint leaves, topped with chilled sparkling mineral water.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 75, "protein": 1, "carbs": 19, "fats": 0 },
+    "highlights": [
+      { "category": "Rich Muddled Ripe Blackberries & Jewel Ombré", "text": "Pressed dark blackberries create a deep ruby-violet base that fades upward through crystal-clear cubed ice." },
+      { "category": "Sweet-Tart Meyer Lemon & Crisp Garden Spearmint", "text": "Freshly squeezed Meyer lemon juice and cool spearmint leaves brighten the rich dark-berry sweetness." },
+      { "category": "Layered Lemon Wheels, Whole Blackberries & Mint Crown", "text": "Tucking thin yellow lemon slices, whole glossy blackberries, and fresh green mint leaves throughout the ice creates a dramatic dark-moody presentation." }
+    ],
+    "ingredients": [
+      "1/3 cup ripe fresh blackberries (6 berries for muddling, plus 4 whole berries for layering inside the ice and topping)",
+      "8 fresh garden spearmint leaves (4 for muddling, 2 tucked inside the ice, plus 1 leafy top sprig for garnish)",
+      "3/4 oz freshly squeezed Meyer lemon juice (plus 2 thin fresh lemon wheels pressed inside the glass and 1 half-wheel on the rim)",
+      "3/4 oz pure cane simple syrup (1:1 organic cane sugar and water)",
+      "3 1/2 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice"
+    ],
+    "instructions": [
+      "Place 6 ripe blackberries, 4 spearmint leaves, freshly squeezed Meyer lemon juice, and pure cane simple syrup in the bottom of a cocktail shaker and muddle thoroughly until deep violet and juicy.",
+      "Add a scoop of cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Press the 2 thin yellow lemon wheels against the inside wall of a chilled glass layered with clear cubed ice, 3 whole blackberries, and 2 spearmint leaves, then double-strain the dark berry base over the ice.",
+      "Top slowly with chilled sparkling mineral water, crown with the leafy mint sprig, lemon half-wheel, and remaining blackberry, and serve immediately!"
+    ]
+  },
+  {
+    "id": "chilled-saffron-cardamom-almond-milk-fizz-mocktail",
+    "emoji": "🌼",
+    "title": "Golden Saffron, Crushed Cardamom & Roasted Almond Milk Fizz (Zero-Proof — Spiced Cream)",
+    "image": "images7/saffron-cardamom-almond-fizz.jpg",
+    "subtitle": "Luminous marigold-ivory, floral, and velvety—chilled unsweetened roasted almond milk steeped with crimson saffron threads, crushed green cardamom, lemon, and wildflower honey over ice in a saffron-almond-rimmed glass, lifted with club soda and a fresh lemon wheel.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 110, "protein": 2, "carbs": 17, "fats": 4 },
+    "highlights": [
+      { "category": "Fragrant Golden Saffron & Roasted Almond Milk", "text": "Blooming crimson saffron threads in warm almond milk imparts a delicate honeyed aroma and sunlit marigold-ivory glow." },
+      { "category": "Crushed Green Cardamom, Wildflower Honey & Lemon", "text": "Aromatic green cardamom pods, floral honey syrup, and a bright squeeze of fresh lemon balance the creamy base." },
+      { "category": "Saffron-Almond Rim & Thick Fresh Lemon Wheel", "text": "Coating the rim in finely crushed roasted almonds and saffron strands alongside a fresh yellow lemon slice frames the frothy pour." }
+    ],
+    "ingredients": [
+      "4 1/2 oz chilled saffron-infused unsweetened roasted almond milk (steeped with 5 crimson saffron threads and cooled)",
+      "2 whole green cardamom pods (lightly cracked to release the seeds)",
+      "3/4 oz wildflower honey syrup (1:1 raw wildflower honey and warm water, cooled)",
+      "1/2 oz freshly squeezed lemon juice (plus 1 thick fresh yellow lemon wheel for the rim)",
+      "1 1/2 oz chilled club soda or sparkling mineral water (for light effervescence) and 1 cup clear cubed ice",
+      "1 tbsp finely crushed toasted almonds mixed with 2 crushed crimson saffron threads (for rimming the glass)"
+    ],
+    "instructions": [
+      "Run a lemon wedge around the rim of a chilled glass, dip into the finely crushed toasted almond and crimson saffron mixture to coat the edge, and fill with clear cubed ice.",
+      "Combine the chilled saffron-infused almond milk, lightly cracked green cardamom pods, wildflower honey syrup, and freshly squeezed lemon juice in a cocktail shaker with ice and shake vigorously for 15 seconds until thick and frothy.",
+      "Double-strain through a fine-mesh sieve into the prepared glass, top gently with chilled club soda so a rich white foam cap rises to the rim, perch the thick fresh lemon wheel on the edge, and serve immediately!"
+    ]
+  },
+   {
+    "id": "velvet-ube-purple-yam-coconut-vanilla-fizz-mocktail",
+    "emoji": "🪻",
+    "title": "Velvety Purple Ube, Coconut & Vanilla Bean Fizz (Zero-Proof — Café Cream)",
+    "image": "images7/ube-coconut-vanilla-fizz.jpg",
+    "subtitle": "Two-tone snow-ivory and royal-violet, nutty, and silky—chilled coconut and barista oat milk over clear cubed ice and real vanilla bean syrup, lifted with crisp club soda and crowned with a thick cascading purple ube cold foam cloud.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 115, "protein": 2, "carbs": 19, "fats": 3 },
+    "highlights": [
+      { "category": "Two-Tone Ivory Coconut Milk & Purple Ube Contrast", "text": "Pouring chilled coconut-oat milk over clear ice beneath vibrant violet ube cold foam creates dramatic café marbling." },
+      { "category": "Real Madagascar Vanilla Bean & Sparkling Lift", "text": "Fragrant vanilla bean syrup and a gentle splash of chilled club soda keep the creamy island refresher light and crisp." },
+      { "category": "Thick Pillowy Purple Ube Cold Foam Cap", "text": "Frothing cold milk with pure purple yam extract forms a dense, velvety lavender-violet cloud that cascades slowly into the ice." }
+    ],
+    "ingredients": [
+      "4 oz chilled unsweetened coconut and barista oat milk blend (divided: 2 1/2 oz for the ivory base, 1 1/2 oz for the ube cold foam)",
+      "3/4 oz pure vanilla bean simple syrup (1:1 organic cane sugar and water steeped with split vanilla bean, divided)",
+      "1/2 tsp pure purple ube extract (for the cold foam)",
+      "1 1/2 oz chilled club soda (for light effervescence) and 1 1/2 cups clear cubed ice"
+    ],
+    "instructions": [
+      "Pour 2 1/2 oz chilled coconut-oat milk and 1/2 oz vanilla bean simple syrup over clear cubed ice in a chilled glass, then top gently with chilled club soda.",
+      "In a small jar or frothing pitcher, froth the remaining 1 1/2 oz cold coconut-oat milk, 1/4 oz vanilla bean simple syrup, and pure purple ube extract for 15 to 20 seconds until thick and pillowy.",
+      "Slowly pour the royal-purple ube cold foam over the back of a spoon onto the top of the ice so it floats in a thick violet cap and cascades down through the milk, and serve immediately!"
+    ]
+  },
+  {
+    "id": "layered-ube-toasted-coconut-decaf-cold-brew-fizz-mocktail",
+    "emoji": "💜",
+    "title": "Three-Layer Purple Ube, Toasted Coconut & Cold Brew Fizz (Zero-Proof — Café)",
+    "image": "images7/ube-coconut-cold-brew-fizz.jpg",
+    "subtitle": "Three-tone ivory, roasted amber, and royal-violet—chilled coconut milk layered with smooth unsweetened cold brew coffee over clear ice, lifted with crisp club soda and crowned with purple ube cold foam and toasted coconut flakes.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 120, "protein": 2, "carbs": 18, "fats": 4 },
+    "highlights": [
+      { "category": "Dramatic Three-Layer Café Presentation", "text": "Layering snow-white coconut milk, dark roasted cold brew coffee, and royal-purple ube cold foam creates three distinct color bands." },
+      { "category": "Smooth Cold Brew & Sparkling Mineral Lift", "text": "Low-acid decaf or regular cold brew coffee paired with a gentle splash of chilled club soda balances the sweet coconut-ube foam." },
+      { "category": "Toasted Coconut Flake Crown", "text": "Scattering golden-toasted unsweetened coconut flakes across the thick purple foam cap adds crisp texture and nutty aroma." }
+    ],
+    "ingredients": [
+      "3 1/2 oz chilled unsweetened coconut and barista oat milk blend (divided: 2 oz for the bottom ivory layer, 1 1/2 oz for the ube cold foam)",
+      "2 1/2 oz chilled unsweetened cold brew coffee (decaf or regular)",
+      "3/4 oz pure vanilla bean simple syrup (1:1 organic cane sugar and water steeped with split vanilla bean, divided)",
+      "1/2 tsp pure purple ube extract (for the cold foam)",
+      "1 1/2 oz chilled club soda (for light effervescence), 1 1/2 cups clear cubed ice, and 1 tbsp toasted unsweetened coconut flakes for garnish"
+    ],
+    "instructions": [
+      "Pour 2 oz chilled coconut-oat milk and 1/2 oz vanilla bean simple syrup over clear cubed ice in a chilled glass, then slowly pour the chilled cold brew coffee and chilled club soda over the back of a spoon to form a distinct roasted-amber middle layer.",
+      "In a small jar or frothing pitcher, froth the remaining 1 1/2 oz cold coconut-oat milk, 1/4 oz vanilla bean simple syrup, and pure purple ube extract for 15 to 20 seconds until thick and pillowy.",
+      "Spoon the royal-purple ube cold foam across the top, scatter generously with toasted unsweetened coconut flakes, and serve immediately!"
+    ]
+  },
+  {
+    "id": "crisp-green-gooseberry-elderflower-lime-spritz-mocktail",
+    "emoji": "🍏",
+    "title": "Crisp Green Gooseberry, Elderflower & Key Lime Spritz (Zero-Proof — Tart Botanical)",
+    "image": "images7/green-gooseberry-elderflower-spritz.jpg",
+    "subtitle": "Luminous pale-celadon gold, tangy, and floral—fresh green gooseberries muddled with fragrant elderflower syrup and freshly squeezed key lime juice over clear cubed ice and two fresh green lime wheels, lengthened with sparkling mineral water and crowned with an upright rosemary sprig.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 70, "protein": 1, "carbs": 18, "fats": 0 },
+    "highlights": [
+      { "category": "Bright Tart Green Orchard Gooseberries", "text": "Muddled tart green gooseberries deliver crisp white-wine acidity and a luminous pale-gold hue." },
+      { "category": "Fragrant Elderflower Blossom & Key Lime", "text": "Floral elderflower cordial syrup and zesty freshly squeezed lime juice balance the bright berry tang." },
+      { "category": "Dual Key Lime Wheels & Upright Rosemary Sprig", "text": "Pressing two thin green lime slices inside the glass over clear ice and crowning with a fresh rosemary sprig highlights the crisp botanical notes." }
+    ],
+    "ingredients": [
+      "8 fresh tart green gooseberries, stemmed (for muddling)",
+      "3/4 oz pure elderflower blossom syrup (1:1 organic cane sugar and water steeped with dried elderflowers)",
+      "3/4 oz freshly squeezed key lime juice (plus 2 thin fresh key lime wheels pressed inside the glass)",
+      "3 1/2 oz chilled sparkling mineral water (for topping), 1 1/2 cups clear cubed ice, and 1 upright fresh rosemary sprig for garnish"
+    ],
+    "instructions": [
+      "Place the stemmed green gooseberries, pure elderflower blossom syrup, and freshly squeezed key lime juice in the bottom of a cocktail shaker and muddle thoroughly until bright and juicy.",
+      "Add a scoop of cubed ice and shake briskly for 12 seconds until frosty cold.",
+      "Press the 2 thin key lime wheels against the inside wall of a chilled glass filled with clear cubed ice, double-strain the gooseberry-elderflower base over the ice, top slowly with chilled sparkling mineral water, tuck 1 upright fresh rosemary sprig into the top, and serve immediately!"
+    ]
+  },
+  {
+    "id": "creamy-key-lime-pie-coconut-vanilla-frappe-mocktail",
+    "emoji": "🍋‍🟩",
+    "title": "Creamy Key Lime Pie, Coconut Milk & Vanilla Frappe (Zero-Proof — Dessert Cooler)",
+    "image": "images7/key-lime-pie-coconut-frappe.jpg",
+    "subtitle": "Frosty snow-ivory, tangy, and velvety—freshly squeezed key lime juice blended with rich coconut milk, real vanilla bean syrup, and ice in a crushed graham cracker and lime-zest-rimmed glass, crowned with whipped cream, graham crumbs, and a tiny key lime wedge.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 145, "protein": 1, "carbs": 21, "fats": 6 },
+    "highlights": [
+      { "category": "Tangy Key Lime & Velvety Coconut Milk Blend", "text": "Blending freshly squeezed key lime juice with unsweetened coconut milk and vanilla bean syrup recreates classic key lime pie in a frosty glass." },
+      { "category": "Toasted Graham Cracker & Fresh Lime Zest Rim", "text": "Coating the rim and crowning the whipped cream peak with crushed honey graham cracker crumbs and grated green lime zest adds authentic pie-crust crunch." },
+      { "category": "Whipped Cream Swirl & Petite Key Lime Wedge", "text": "Topping the snow-white frappe with whipped cream, golden crumbs, and a bite-sized key lime slice completes the dessert presentation." }
+    ],
+    "ingredients": [
+      "4 oz chilled unsweetened full-fat canned coconut milk (shaken smooth)",
+      "1 oz freshly squeezed key lime juice (plus 1 petite key lime wedge and 1/2 tsp finely grated lime zest for garnish)",
+      "3/4 oz pure vanilla bean simple syrup (1:1 organic cane sugar and water steeped with split vanilla bean)",
+      "1 1/2 cups clear cubed ice (for blending)",
+      "2 tbsp finely crushed honey graham cracker crumbs (for rimming and topping) and 2 tbsp lightly sweetened whipped cream for garnish"
+    ],
+    "instructions": [
+      "Rub a lime wedge around the rim of a chilled glass, dip into half of the crushed graham cracker crumbs mixed with a pinch of grated lime zest to coat the edge, and set aside.",
+      "Combine the chilled coconut milk, freshly squeezed key lime juice, pure vanilla bean simple syrup, and cubed ice in a blender and blend on high for 20 seconds until thick, snow-white, and frosty.",
+      "Pour into the graham-rimmed glass, top with a swirl of whipped cream, sprinkle the remaining graham crumbs and grated lime zest over the peak, tuck in the petite key lime wedge, and serve immediately!"
+    ]
+  },
+  {
+    "id": "velvet-dark-cacao-sweet-orange-cinnamon-cooler-mocktail",
+    "emoji": "🍫",
+    "title": "Velvety Dark Cacao, Sweet Orange & Ceylon Cinnamon Cooler (Zero-Proof — Café)",
+    "image": "images7/cacao-husk-orange-fizz.jpg",
+    "subtitle": "Rich dark-chocolate mahogany, citrusy, and warming—chilled unsweetened dark cacao and barista oat milk shaken with freshly squeezed orange juice and Ceylon cinnamon syrup over ice, crowned with whipped cream, a floating orange wheel, grated orange zest, and shaved dark cacao.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 135, "protein": 3, "carbs": 19, "fats": 5 },
+    "highlights": [
+      { "category": "Rich Roasted Dark Cacao & Oat Milk Base", "text": "Whisking unsweetened dark cacao powder with chilled barista oat milk delivers deep chocolate richness without heaviness." },
+      { "category": "Bright Sweet Orange Juice & Ceylon Cinnamon", "text": "Freshly squeezed orange juice, aromatic orange zest, and warm cinnamon syrup pair naturally with dark roasted cacao." },
+      { "category": "Floating Orange Wheel, Cream Swirl & Cacao Shavings", "text": "Topping the dark cacao pour with a thin orange slice, a whisper of whipped cream, grated citrus zest, and dark chocolate shavings completes the café finish." }
+    ],
+    "ingredients": [
+      "4 oz chilled barista oat milk (or unsweetened almond milk)",
+      "1 tbsp unsweetened dark Dutch-process cacao powder",
+      "1 1/2 oz freshly squeezed sweet orange juice (strained, plus 1 thin fresh orange wheel and 1/2 tsp grated orange zest for garnish)",
+      "3/4 oz Ceylon cinnamon simple syrup (1:1 organic cane sugar and water steeped with cinnamon bark, cooled)",
+      "1 cup clear cubed ice, 1 tbsp lightly sweetened whipped cream, and 1 tsp finely shaved dark cacao or chocolate for garnish"
+    ],
+    "instructions": [
+      "Whisk the unsweetened dark cacao powder with 1 oz warm water until completely smooth, then pour into a cocktail shaker with the chilled barista oat milk, freshly squeezed orange juice, cooled Ceylon cinnamon simple syrup, and cubed ice.",
+      "Shake briskly for 15 seconds until frosty cold and velvety, then strain into a chilled glass (over fresh ice if desired).",
+      "Float the thin orange wheel and a swirl of whipped cream on the surface, scatter with grated orange zest and finely shaved dark cacao, and serve immediately!"
+    ]
+  },
+  {
+    "id": "fragrant-pandan-leaf-citrus-crushed-ice-spritz-mocktail",
+    "emoji": "🌿",
+    "title": "Fragrant Pandan Leaf, Sweet Citrus & Vanilla Spritz (Zero-Proof — Botanical)",
+    "image": "images7/pandan-coconut-cream-fizz.jpg",
+    "subtitle": "Luminous pale-jade, floral, and crisp—chilled aromatic green pandan leaf infusion shaken with sweet white citrus juice and real vanilla bean syrup over crushed pebble ice, topped with sparkling mineral water, a knotted green pandan leaf, and a curled citrus peel twist.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 70, "protein": 0, "carbs": 18, "fats": 0 },
+    "highlights": [
+      { "category": "Aromatic Southeast Asian Pandan Leaf Infusion", "text": "Steeped green pandan leaves lend sweet vanilla-coconut aroma and a vibrant pale-jade glow." },
+      { "category": "Sweet White Citrus & Real Vanilla Bean", "text": "Freshly squeezed white pomelo or sweet lime juice paired with real vanilla bean syrup keeps every sip bright and refreshing." },
+      { "category": "Knotted Green Pandan Leaf & Curled Citrus Peel", "text": "Crowning the crushed pebble ice with a neatly knotted pandan leaf and draped citrus peel twist creates a resort-style presentation." }
+    ],
+    "ingredients": [
+      "3 1/2 oz chilled double-strength unsweetened green pandan leaf tea (steeped from bruised fresh pandan leaves and cooled)",
+      "1 1/2 oz freshly squeezed white pomelo or sweet Meyer lemon juice (strained)",
+      "3/4 oz pure vanilla bean simple syrup (1:1 organic cane sugar and water steeped with split vanilla bean)",
+      "3 oz chilled sparkling mineral water (for topping) and 1 1/2 cups crushed pebble ice",
+      "1 fresh green pandan leaf tied in a neat knot and 1 long curled citrus peel twist for garnish"
+    ],
+    "instructions": [
+      "Combine the chilled pandan leaf tea, freshly squeezed citrus juice, and pure vanilla bean simple syrup in a cocktail shaker with ice and shake briskly for 12 seconds until frosty cold.",
+      "Pack a chilled glass with crushed pebble ice, strain the pale-jade pandan base over the ice, and top slowly with chilled sparkling mineral water.",
+      "Tuck the knotted green pandan leaf and curled citrus peel twist into the top of the ice, and serve immediately!"
+    ]
+  },
+  {
+    "id": "salted-caramel-toasted-pecan-vanilla-frappe-mocktail",
+    "emoji": "🍮",
+    "title": "Frosty Salted Caramel, Toasted Pecan & Vanilla Frappe (Zero-Proof — Dessert Café)",
+    "image": "images7/salted-caramel-pecan-fizz.jpg",
+    "subtitle": "Rich golden-caramel, buttery, and frosty—chilled barista oat milk blended with homemade sea-salted caramel sauce, real vanilla bean, and ice into a velvety café frappe, crowned with whipped cream, warm caramel ribbons, and chopped toasted pecans.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 150, "protein": 2, "carbs": 23, "fats": 6 },
+    "highlights": [
+      { "category": "Frosty Sea-Salted Amber Caramel & Oat Milk Base", "text": "Blending chilled barista oat milk with burnt-sugar sea-salted caramel sauce and ice creates a smooth, golden-tan café frappe." },
+      { "category": "Real Madagascar Vanilla Bean Depth", "text": "Pure vanilla bean extract rounds out the rich caramelized sugar and toasted nut notes." },
+      { "category": "Whipped Cream Peak, Caramel Drizzle & Toasted Pecans", "text": "Crowning the frosty pour with a generous swirl of whipped cream, golden caramel ribbons, and crunchy roasted pecan pieces delivers a bakery-style finish." }
+    ],
+    "ingredients": [
+      "4 1/2 oz chilled barista oat milk (or unsweetened pecan milk)",
+      "1 1/2 tbsp homemade sea-salted caramel sauce (divided: 1 tbsp for blending, 1/2 tbsp for drizzling on top)",
+      "1/4 tsp pure vanilla bean paste or extract",
+      "1 1/2 cups clear cubed ice (for blending)",
+      "3 tbsp lightly sweetened whipped cream and 1 tbsp chopped toasted pecans for garnish"
+    ],
+    "instructions": [
+      "Combine the chilled barista oat milk, 1 tbsp sea-salted caramel sauce, pure vanilla bean paste, and cubed ice in a blender and blend on high for 20 seconds until thick, smooth, and frosty.",
+      "Pour into a chilled glass and crown generously with a swirl of whipped cream.",
+      "Drizzle the remaining 1/2 tbsp sea-salted caramel sauce over the whipped cream, scatter the chopped toasted pecans across the top, and serve immediately!"
+    ]
+  },
+  {
+    "id": "wild-mountain-huckleberry-thyme-lemon-spritz-mocktail",
+    "emoji": "🫐",
+    "title": "Wild Mountain Huckleberry, Garden Thyme & Lemon Spritz (Zero-Proof — Forest Berry)",
+    "image": "images7/huckleberry-thyme-spritz.jpg",
+    "subtitle": "Deep indigo-violet ombré, tangy, and crisp—wild mountain huckleberries muddled with fresh lemon thyme, freshly squeezed lemon juice, and wildflower honey over clear cubed ice, lengthened with sparkling mineral water and a fresh yellow lemon wheel.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 70, "protein": 0, "carbs": 18, "fats": 0 },
+    "highlights": [
+      { "category": "Bold Tart-Sweet Wild Mountain Huckleberries", "text": "Smaller and more intensely flavored than cultivated blueberries, muddled huckleberries deliver luminous indigo-crimson ombré color." },
+      { "category": "Aromatic Lemon Thyme & Raw Wildflower Honey", "text": "Shaking fresh garden thyme leaves and floral wildflower honey syrup into the crushed berries adds herbal depth." },
+      { "category": "Luminous Violet-to-Clear Ombré & Fresh Lemon Wheel", "text": "Pouring chilled sparkling mineral water gently over the dark berry base creates a dramatic jewel gradient framed by a fresh yellow lemon slice on the rim." }
+    ],
+    "ingredients": [
+      "1/3 cup fresh or thawed wild mountain huckleberries",
+      "2 fresh lemon thyme sprigs (stripped leaves for muddling)",
+      "3/4 oz freshly squeezed lemon juice (plus 1 fresh yellow lemon wheel for the rim)",
+      "3/4 oz wildflower honey syrup (1:1 raw wildflower honey and warm water, cooled)",
+      "3 1/2 oz chilled sparkling mineral water (for topping) and 1 1/2 cups clear cubed ice"
+    ],
+    "instructions": [
+      "Place the huckleberries, stripped lemon thyme leaves, freshly squeezed lemon juice, and wildflower honey syrup in the bottom of a cocktail shaker and muddle thoroughly until deep violet and juicy.",
+      "Add a scoop of cubed ice, shake briskly for 12 seconds until frosty cold, and double-strain through a fine-mesh sieve into a chilled glass packed with clear cubed ice.",
+      "Top slowly with chilled sparkling mineral water to create a deep violet-to-clear ombré gradient, perch the fresh yellow lemon wheel on the rim (with an optional cocktail parasol), and serve immediately!"
+    ]
+  },
+   {
+    "id": "sparkling-yuzu-honey-blossom-mint-fizz-mocktail",
+    "emoji": "🥂",
+    "title": "Champagne-Gold Yuzu, Orange Blossom Honey & Garden Mint Fizz (Zero-Proof — Finale)",
+    "image": "images7/yuzu-genmaicha-honey-fizz.jpg",
+    "subtitle": "Luminous champagne-gold, bright, and effervescent—freshly pressed Japanese yuzu citrus juice shaken with raw orange blossom honey and bruised garden mint leaves over crystal-clear ice, lengthened with fine sparkling mineral water and crowned with a fresh yellow yuzu wheel and leafy mint sprig.",
+    "category": "mocktail",
+    "times": { "prep": "5 mins", "cook": "0 mins", "servings": "1 mocktail" },
+    "nutrition": { "calories": 65, "protein": 0, "carbs": 17, "fats": 0 },
+    "highlights": [
+      { "category": "Aromatic Fresh Japanese Yuzu Citrus", "text": "Fragrant yuzu juice bridges tart lemon, sweet mandarin, and floral grapefruit notes for a vibrant champagne-gold base." },
+      { "category": "Raw Orange Blossom Honey & Cool Garden Mint", "text": "Floral blossom honey syrup and gently muddled mint leaves round out the lively citrus tartness." },
+      { "category": "Fresh Yellow Yuzu Wheel & Leafy Green Mint Crown", "text": "Perching a thin golden yuzu slice on the rim beside a crisp green mint sprig highlights the fresh botanical aromatics." }
+    ],
+    "ingredients": [
+      "1 1/4 oz pure freshly pressed Japanese yuzu juice (or equal parts fresh Meyer lemon and mandarin juice)",
+      "3/4 oz orange blossom honey syrup (1:1 raw orange blossom honey and warm water, cooled)",
+      "5 fresh garden mint leaves (4 gently bruised for shaking, plus 1 leafy top sprig for garnish)",
+      "4 1/2 oz chilled fine-bubble sparkling mineral water (for topping) and 1 1/2 cups crystal-clear cubed ice",
+      "1 thin fresh yellow yuzu (or Meyer lemon) wheel for the rim"
+    ],
+    "instructions": [
+      "Gently press 4 fresh garden mint leaves with the pure yuzu juice and orange blossom honey syrup in the bottom of a cocktail shaker to release their aromatic oils.",
+      "Add a scoop of cubed ice, shake briskly for 12 seconds until frosty cold, and double-strain into a chilled glass filled with crystal-clear cubed ice.",
+      "Top slowly with chilled fine-bubble sparkling mineral water, perch the thin yellow yuzu wheel on the rim beside the leafy green mint sprig, and serve immediately!"
+    ]
   }
 ]
